@@ -248,6 +248,20 @@ def collect_authorized_sources(config: dict) -> tuple[list[dict], dict]:
         try:
             document = instance.fetch()
             parsed = instance.parse(document)
+            if not parsed:
+                reason = (
+                    "Parser returned zero records; the page may be JavaScript-rendered, "
+                    "the search URL may have changed, or selectors/JSON-LD may need updating. "
+                    "Source remains enabled for the next scheduled retry."
+                )
+                log.warning("Source %s returned zero records: %s", source_id, reason)
+                return source_id, [], {
+                    "status": "no_records",
+                    "records_accepted": 0,
+                    "reason": reason,
+                    "location_query": instance.location,
+                    "keyword_query": instance.keyword,
+                }
             return source_id, parsed, {
                 "status": "ok",
                 "records_accepted": len(parsed),
@@ -255,8 +269,19 @@ def collect_authorized_sources(config: dict) -> tuple[list[dict], dict]:
                 "keyword_query": instance.keyword,
             }
         except SourceNotAllowed as exc:
+            log.warning("Source %s skipped: %s", source_id, exc)
             return source_id, [], {"status": "skipped", "reason": str(exc)[:240]}
         except Exception as exc:
+            response = getattr(exc, "response", None)
+            http_status = getattr(response, "status_code", None)
+            if http_status in (403, 429):
+                log.warning("Source %s blocked with HTTP %s; keeping adapter enabled for later retry", source_id, http_status)
+                return source_id, [], {
+                    "status": "blocked",
+                    "http_status": http_status,
+                    "error": str(exc)[:240],
+                    "retry_on_next_scheduled_run": True,
+                }
             log.exception("Source %s failed; continuing other scrapers", source_id)
             return source_id, [], {"status": "error", "error": str(exc)[:240]}
 
