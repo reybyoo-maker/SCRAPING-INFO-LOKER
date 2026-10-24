@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-24T22:09:43Z",
-  "finished_at": "2026-10-24T22:10:40Z",
+  "started_at": "2026-10-24T22:11:05Z",
+  "finished_at": "2026-10-24T22:11:59Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 509,
+      "records": 485,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,7 +42,7 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 668,
+  "records_received_this_run": 644,
   "records_after_deduplication": 744,
   "quality_label_counts": {
     "HOT": 155,
