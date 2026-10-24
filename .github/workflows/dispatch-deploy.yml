@@ -1,0 +1,27 @@
+name: Dispatch INFO LOKER Pages Deployment
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/dispatch-deploy.yml"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  dispatch-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Trigger deploy.yml through workflow_dispatch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh workflow run deploy.yml --repo "$GH_REPO" --ref main
+          echo "Queued deploy.yml via workflow_dispatch."
