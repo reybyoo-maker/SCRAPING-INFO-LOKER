@@ -16,6 +16,7 @@ from scrapers.company_sites.generic_parser import GenericCompanyParser
 from scrapers.company_sites import load_targets
 from scripts.run_all import normalize_record
 from scrapers.company_sites.specific import SPECIFIC_PARSERS
+from scrapers.company_sites.categories import CATEGORY_PARSERS
 
 
 class CompanyTargetConfigTests(unittest.TestCase):
@@ -34,6 +35,7 @@ class CompanyTargetConfigTests(unittest.TestCase):
 
     def test_twenty_specific_parsers_are_registered(self):
         self.assertGreaterEqual(len(SPECIFIC_PARSERS), 20)
+        self.assertGreaterEqual(len(CATEGORY_PARSERS), 13)
 
     def test_company_job_schema_and_source_namespace(self):
         target = {
