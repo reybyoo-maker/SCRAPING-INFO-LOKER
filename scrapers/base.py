@@ -149,6 +149,11 @@ class BaseScraper:
         self.enabled = self.settings.get("enabled") is True
         self.authorized = self.settings.get("authorized") is True
         self.timeout = min(HTTP_TIMEOUT, max(5, int(self.settings.get("timeout_seconds", HTTP_TIMEOUT))))
+        try:
+            self.min_delay_seconds = max(0.0, float(self.settings.get("min_delay_seconds", 2.0)))
+            self.max_delay_seconds = max(self.min_delay_seconds, float(self.settings.get("max_delay_seconds", 5.0)))
+        except (TypeError, ValueError):
+            self.min_delay_seconds, self.max_delay_seconds = 2.0, 5.0
         self.user_agent = os.getenv("USER_AGENT", DEFAULT_USER_AGENT).strip() or DEFAULT_USER_AGENT
         self.session = requests.Session()
         self.session.headers.update({
@@ -176,32 +181,34 @@ class BaseScraper:
         return url
 
     @staticmethod
-    def _paced_get(session: requests.Session, url: str, timeout: int, **kwargs):
-        """Space all outbound request starts by a random 2–5 seconds, with bounded retries."""
+    def _paced_request(session: requests.Session, method: str, url: str, timeout: int, **kwargs):
+        """Pace HTTP requests using per-source bounds, with bounded retries for transient errors."""
         global _LAST_REQUEST_START
+        min_delay = max(0.0, float(kwargs.pop("min_delay_seconds", 2.0)))
+        max_delay = max(min_delay, float(kwargs.pop("max_delay_seconds", 5.0)))
         last_error = None
         for attempt in range(1, MAX_ATTEMPTS + 1):
             with _REQUEST_LOCK:
                 now = time.monotonic()
                 if _LAST_REQUEST_START:
-                    delay = max(0.0, random.uniform(2.0, 5.0) - (now - _LAST_REQUEST_START))
+                    delay = max(0.0, random.uniform(min_delay, max_delay) - (now - _LAST_REQUEST_START))
                     if delay:
                         time.sleep(delay)
                 _LAST_REQUEST_START = time.monotonic()
             try:
-                response = session.get(url, timeout=timeout, allow_redirects=True, **kwargs)
-                if response.status_code == 429 or response.status_code >= 500:
-                    if attempt < MAX_ATTEMPTS:
-                        retry_after = response.headers.get("Retry-After", "")
+                response = session.request(method, url, timeout=timeout, allow_redirects=True, **kwargs)
+                # Never retry 403: respect explicit denial. Retry only transient 429/5xx responses.
+                if (response.status_code == 429 or response.status_code >= 500) and attempt < MAX_ATTEMPTS:
+                    retry_after = response.headers.get("Retry-After", "")
+                    try:
+                        wait_seconds = min(20.0, max(0.0, float(retry_after)))
+                    except ValueError:
                         try:
-                            wait_seconds = min(20.0, max(0.0, float(retry_after)))
-                        except ValueError:
-                            try:
-                                wait_seconds = min(20.0, max(0.0, (parsedate_to_datetime(retry_after) - datetime.now(UTC)).total_seconds()))
-                            except Exception:
-                                wait_seconds = 0.0
-                        time.sleep(wait_seconds or (2 ** attempt))
-                        continue
+                            wait_seconds = min(20.0, max(0.0, (parsedate_to_datetime(retry_after) - datetime.now(UTC)).total_seconds()))
+                        except Exception:
+                            wait_seconds = 0.0
+                    time.sleep(wait_seconds or (2 ** attempt))
+                    continue
                 return response
             except requests.RequestException as exc:
                 last_error = exc
@@ -211,6 +218,14 @@ class BaseScraper:
         if last_error:
             raise last_error
         raise requests.RequestException(f"Request failed for {url}")
+
+    @staticmethod
+    def _paced_get(session: requests.Session, url: str, timeout: int, **kwargs):
+        return BaseScraper._paced_request(session, "GET", url, timeout, **kwargs)
+
+    @staticmethod
+    def _paced_post(session: requests.Session, url: str, timeout: int, **kwargs):
+        return BaseScraper._paced_request(session, "POST", url, timeout, **kwargs)
 
     def robots_allowed(self, url: str) -> bool:
         parsed = urlparse(url)
@@ -224,15 +239,29 @@ class BaseScraper:
 
         robots_url = origin + "/robots.txt"
         try:
-            response = self._paced_get(self.session, robots_url, min(15, self.timeout))
+            response = self._paced_get(
+                self.session,
+                robots_url,
+                min(15, self.timeout),
+                min_delay_seconds=self.min_delay_seconds,
+                max_delay_seconds=self.max_delay_seconds,
+            )
         except requests.RequestException as exc:
             logger.warning("%s skipped: cannot verify robots.txt (%s)", self.source_id, exc)
             allowed = False
         else:
             if response.status_code in (404, 410):
                 allowed = True
+            elif response.status_code in (403, 429):
+                # Do not request the listing if robots.txt itself is access-denied/rate-limited.
+                # Propagate the response so orchestration records an explicit blocked status.
+                raise requests.HTTPError(
+                    f"{self.source_id} robots.txt returned HTTP {response.status_code}; "
+                    "listing URL was not requested",
+                    response=response,
+                )
             elif response.status_code < 200 or response.status_code >= 300:
-                # Fail closed on forbidden, rate-limited, or server-error robots endpoints.
+                # Fail closed when access rules cannot be verified.
                 logger.warning(
                     "%s skipped: robots.txt returned HTTP %s; access rules cannot be verified",
                     self.source_id,
@@ -259,7 +288,13 @@ class BaseScraper:
         url = self.build_url()
         if not self.robots_allowed(url):
             raise SourceNotAllowed(f"{self.source_id}: robots.txt blocks the configured search URL or could not be verified")
-        response = self._paced_get(self.session, url, self.timeout)
+        response = self._paced_get(
+            self.session,
+            url,
+            self.timeout,
+            min_delay_seconds=self.min_delay_seconds,
+            max_delay_seconds=self.max_delay_seconds,
+        )
         if response.status_code in (403, 429):
             raise requests.HTTPError(
                 f"{self.source_id} blocked the request with HTTP {response.status_code}; "

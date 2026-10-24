@@ -1,7 +1,7 @@
 # INFO LOKER sources.
-# The primary public RSS/API collector remains active. Site-specific adapters are
-# attempted only when enabled AND authorized, then only if robots.txt permits the URL.
-# 403/429 and parser mismatches are logged per source; no adapter is permanently disabled.
+# Public RSS/APIs remain active. Site adapters run only when enabled AND authorized,
+# and only when robots.txt permits the requested URL.
+# Non-official/permission-gated endpoints stay disabled until written permission is obtained.
 version: 1
 timezone: Asia/Jakarta
 legacy_pipeline:
@@ -56,8 +56,10 @@ sources:
   karir:
     enabled: false
     authorized: false
-    search_url: "https://www.karir.com/search?q={keyword}"
-    permission: "Current terms prohibit automated data collection without permission."
+    search_url: "https://karir-ms-beta.karir.com/v2/search/opportunities"
+    request_method: POST
+    page_size: 50
+    permission: "INACTIVE - written permission or official API documentation required. The endpoint is referenced by third-party material, not documented in Karir.com's official developer docs; Karir.com terms prohibit automated data collection without permission."
   dealls:
     enabled: true
     authorized: true
@@ -79,12 +81,14 @@ sources:
     search_url: "https://disnakerja.id/?s={keyword}"
     permission: "Terms restrict reproducing/distributing website content without written consent; enable only with permission or an authorized feed."
   techinasia:
-    enabled: true
-    authorized: true
+    enabled: false
+    authorized: false
     search_url: "https://www.techinasia.com/jobs"
-    permission: "Only public pages allowed by robots.txt are queried. No full article mirroring; metadata and source links only. Parser mismatches are logged without auto-disabling."
+    permission: "INACTIVE - no official Jobs RSS feed was verified. The general /feed route is disallowed by robots.txt; do not substitute it for a jobs feed. Reassess only if Tech in Asia publishes an allowed official Jobs feed."
   maganghub:
     enabled: true
     authorized: true
     search_url: "https://maganghub.kemnaker.go.id/"
-    permission: "Public government site adapter; robots.txt must be readable and permit the configured URL or the source will be skipped and logged."
+    min_delay_seconds: 5
+    max_delay_seconds: 10
+    permission: "Use a transparent INFO LOKER User-Agent and Indonesian Accept-Language. Respect robots.txt; if the site returns 403/429, log blocked and do not disguise the client or bypass the restriction."
