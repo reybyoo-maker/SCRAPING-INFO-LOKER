@@ -269,6 +269,27 @@
               "string",
               "null"
             ]
+          },
+          "job_category": {
+            "type": "string"
+          },
+          "source_expiry_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "experience_level": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "provider_categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         },
         "additionalProperties": true
