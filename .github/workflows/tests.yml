@@ -5,8 +5,11 @@ on:
     branches: [main]
     paths:
       - "scraper/**"
+      - "scrapers/**"
+      - "scripts/**"
       - "tests/**"
       - "requirements.txt"
+      - "config.yaml"
       - "config/locations.json"
       - ".github/workflows/tests.yml"
   pull_request:
@@ -38,7 +41,10 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Check Python syntax
-        run: python -m compileall -q scraper tests
+        run: python -m compileall -q scraper scrapers scripts tests
+
+      - name: Import adapter framework and validate source config
+        run: python -c "import scrapers; import scripts.run_all; print(len(scrapers.SCRAPER_CLASSES), 'adapters import successfully')"
 
       - name: Run unit tests
         run: python -m unittest discover -s tests -v
