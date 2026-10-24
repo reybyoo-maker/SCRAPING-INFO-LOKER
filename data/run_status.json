@@ -1,25 +1,27 @@
 {
   "status": "ok",
-  "started_at": "2026-10-24T20:04:14Z",
-  "finished_at": "2026-10-24T20:04:46Z",
+  "started_at": "2026-10-24T20:06:37Z",
+  "finished_at": "2026-10-24T20:07:09Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 90,
       "succeeded": 90,
-      "errors": 28,
-      "records": 3,
+      "errors": 0,
+      "records": 243,
       "query_pool_size": 404,
       "batch_start": 306
     },
     "public_apis": {
       "jobicy": {
-        "status": "error",
-        "error": "can only concatenate str (not \"NoneType\") to str"
+        "status": "ok",
+        "items_received": 193,
+        "records_accepted": 103
       },
       "remoteok": {
-        "status": "error",
-        "error": "can only concatenate str (not \"NoneType\") to str"
+        "status": "ok",
+        "items_received": 100,
+        "records_accepted": 56
       },
       "himalayas": {
         "status": "ok",
@@ -37,15 +39,16 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 3,
-  "records_after_deduplication": 3,
+  "records_received_this_run": 402,
+  "records_after_deduplication": 364,
   "quality_label_counts": {
-    "HOT": 0,
-    "MEDIUM": 3,
+    "HOT": 150,
+    "MEDIUM": 214,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 3
+    "active_unverified": 357,
+    "stale": 7
   },
   "flyer_ocr_attempted": 0,
   "configuration": {
