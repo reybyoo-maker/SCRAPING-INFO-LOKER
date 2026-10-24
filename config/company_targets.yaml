@@ -13,7 +13,7 @@ targets:
     domain: "bca.co.id"
     website: "https://bca.co.id/"
     career_url: "https://karir.bca.co.id/"
-    career_url_verified: true
+    career_url_verified: false
     category: "Bank & Fintech"
     enabled: true
     specific_parser: "bca"
@@ -22,7 +22,7 @@ targets:
     domain: "bankmandiri.co.id"
     website: "https://bankmandiri.co.id/"
     career_url: "https://www.bankmandiri.co.id/karir"
-    career_url_verified: true
+    career_url_verified: false
     category: "Bank & Fintech"
     enabled: true
     specific_parser: "mandiri"
@@ -31,7 +31,7 @@ targets:
     domain: "bni.co.id"
     website: "https://bni.co.id/"
     career_url: "https://recruitment.bni.co.id/"
-    career_url_verified: true
+    career_url_verified: false
     category: "Bank & Fintech"
     enabled: true
     specific_parser: "bni"
@@ -40,7 +40,7 @@ targets:
     domain: "bri.co.id"
     website: "https://bri.co.id/"
     career_url: "https://e-recruitment.bri.co.id/"
-    career_url_verified: true
+    career_url_verified: false
     category: "Bank & Fintech"
     enabled: true
     specific_parser: "bri"
@@ -497,7 +497,7 @@ targets:
     domain: "telkom.co.id"
     website: "https://telkom.co.id/"
     career_url: "https://careers.telkom.co.id/"
-    career_url_verified: true
+    career_url_verified: false
     category: "Telecom"
     enabled: true
     specific_parser: "telkom"
@@ -506,7 +506,7 @@ targets:
     domain: "telkomsel.com"
     website: "https://telkomsel.com/"
     career_url: "https://www.telkomsel.com/about-us/career"
-    career_url_verified: true
+    career_url_verified: false
     category: "Telecom"
     enabled: true
     specific_parser: "telkomsel"
@@ -563,7 +563,7 @@ targets:
     domain: "gojek.com"
     website: "https://gojek.com/"
     career_url: "https://www.gojek.com/careers/"
-    career_url_verified: true
+    career_url_verified: false
     category: "Startup"
     enabled: true
     specific_parser: "gojek"
@@ -572,7 +572,7 @@ targets:
     domain: "tokopedia.com"
     website: "https://tokopedia.com/"
     career_url: "https://careers.tokopedia.com/"
-    career_url_verified: true
+    career_url_verified: false
     category: "Startup"
     enabled: true
     specific_parser: "tokopedia"
@@ -590,7 +590,7 @@ targets:
     domain: "bukalapak.com"
     website: "https://bukalapak.com/"
     career_url: "https://careers.bukalapak.com/"
-    career_url_verified: true
+    career_url_verified: false
     category: "Startup"
     enabled: true
     specific_parser: "bukalapak"
@@ -599,7 +599,7 @@ targets:
     domain: "blibli.com"
     website: "https://blibli.com/"
     career_url: "https://careers.blibli.com/"
-    career_url_verified: true
+    career_url_verified: false
     category: "Corporate"
     enabled: true
     specific_parser: "blibli"
@@ -608,7 +608,7 @@ targets:
     domain: "shopee.co.id"
     website: "https://shopee.co.id/"
     career_url: "https://careers.shopee.co.id/"
-    career_url_verified: true
+    career_url_verified: false
     category: "Corporate"
     enabled: true
     specific_parser: "shopee"
@@ -905,7 +905,7 @@ targets:
     domain: "astra.co.id"
     website: "https://astra.co.id/"
     career_url: "https://career.astra.co.id/"
-    career_url_verified: true
+    career_url_verified: false
     category: "Corporate"
     enabled: true
     specific_parser: "astra"
@@ -970,7 +970,7 @@ targets:
     domain: "mayoraindah.co.id"
     website: "https://mayoraindah.co.id/"
     career_url: "https://www.mayoraindah.co.id/"
-    career_url_verified: true
+    career_url_verified: false
     category: "Manufaktur"
     enabled: true
     specific_parser: "mayora"
@@ -979,7 +979,7 @@ targets:
     domain: "indofood.com"
     website: "https://indofood.com/"
     career_url: "https://www.indofood.com/"
-    career_url_verified: true
+    career_url_verified: false
     category: "Manufaktur"
     enabled: true
     specific_parser: "indofood"
@@ -988,7 +988,7 @@ targets:
     domain: "unilever.co.id"
     website: "https://unilever.co.id/"
     career_url: "https://careers.unilever.com/indonesia"
-    career_url_verified: true
+    career_url_verified: false
     category: "Manufaktur"
     enabled: true
     specific_parser: "unilever"
@@ -1085,7 +1085,7 @@ targets:
     domain: "pertamina.com"
     website: "https://pertamina.com/"
     career_url: "https://recruitment.pertamina.com/"
-    career_url_verified: true
+    career_url_verified: false
     category: "BUMN"
     enabled: true
     specific_parser: "pertamina"
@@ -1399,7 +1399,7 @@ targets:
     domain: "fcx.com"
     website: "https://fcx.com/"
     career_url: "https://ptfi.co.id/id/career"
-    career_url_verified: true
+    career_url_verified: false
     category: "Manufaktur"
     enabled: true
     specific_parser: "freeport"
@@ -1960,7 +1960,7 @@ targets:
     domain: "kalbe.co.id"
     website: "https://kalbe.co.id/"
     career_url: "https://www.kalbe.co.id/career"
-    career_url_verified: true
+    career_url_verified: false
     category: "Healthcare"
     enabled: true
     specific_parser: "kalbe"
@@ -2995,14 +2995,6 @@ targets:
     career_url: "https://bprkencana.com/careers"
     career_url_verified: false
     category: "Fintech"
-    enabled: true
-  - id: "mataharimall-legacy-brand-not-active"
-    name: "MatahariMall legacy brand not active"
-    domain: "matahari.com"
-    website: "https://matahari.com/"
-    career_url: "https://matahari.com/careers"
-    career_url_verified: false
-    category: "Startup"
     enabled: true
   - id: "qoala"
     name: "Qoala"
