@@ -416,8 +416,8 @@ def match_location(text: str, hint: dict | None = None) -> tuple[str | None, str
     # An explicit place in the vacancy takes priority over the search query hint.
     # Do not label a vacancy in an unknown city as the city that was used in RSS search.
     explicit_patterns = [
-        r"(?i)\b(?:lowongan(?:\s+kerja)?\s+(?:di|area)|penempatan\s*[:\-]?|lokasi\s*[:\-]?|area\s*(?:kerja)?\s*[:\-]?)\s+([^,.;:\\n|]{1,60})",
-        r"(?i)\b(?:kota|kabupaten|kab\.|kecamatan)\s+([^,.;:\\n|]{1,60})",
+        r"(?i)\b(?:lowongan(?:\s+kerja)?\s+(?:di|area)|penempatan\s*[:\-]?|lokasi\s*[:\-]?|area\s*(?:kerja)?\s*[:\-]?)\s+([^,.;:|]{1,60})",
+        r"(?i)\b(?:kota|kabupaten|kab\.|kecamatan)\s+([^,.;:|]{1,60})",
     ]
     non_place_prefixes = (
         "pt ", "cv ", "bank ", "hotel ", "rumah sakit", "rs ", "yayasan ",
