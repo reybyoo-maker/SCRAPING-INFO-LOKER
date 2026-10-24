@@ -1,98 +1,56 @@
 name: Daily Job Scraper
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "scraper/**"
-      - "config/**"
-      - "requirements.txt"
-      - ".github/workflows/daily-scrape.yml"
-  schedule:
-    # 07:15, 15:15 and 23:15 WIB (UTC+7)
-    - cron: "15 0,8,16 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: daily-job-scraper
+  group: scrape
   cancel-in-progress: false
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
+    env:
+      QUERY_BATCH_SIZE: "120"
+      DATA_RETENTION_DAYS: "120"
+      ENABLE_FLYER_OCR: "1"
+      MAX_OCR_PER_RUN: "10"
+      PYTHONUNBUFFERED: "1"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: main
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: requirements.txt
 
       - name: Install OCR engine
         run: |
           sudo apt-get update
-          sudo apt-get install -y tesseract-ocr
+          sudo apt-get install --yes tesseract-ocr
 
-      - name: Install Python dependencies
-        run: pip install -r requirements.txt
+      - name: Install pinned dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
 
-      - name: Test scraper helpers
+      - name: Run unit tests
         run: python -m unittest discover -s tests -v
 
-      - name: Run scraper
-        env:
-          GITHUB_ACTIONS_RUN: "1"
-          QUERY_BATCH_SIZE: "120"
-          DATA_RETENTION_DAYS: "120"
-          ENABLE_FLYER_OCR: "1"
-          ENABLE_HIMALAYAS_API: "0"
-          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
-          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
-          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
-        run: python -m scraper.main
+      - name: Run all collectors
+        run: python scripts/run_all.py
 
-      - name: Commit updated dataset safely
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          # Preserve this run's dataset while refreshing the branch. Other source or
-          # test commits may land while the scraper is running.
-          saved_dir="$(mktemp -d)"
-          cp data/jobs.json "$saved_dir/jobs.json"
-          cp data/run_status.json "$saved_dir/run_status.json"
-
-          for attempt in 1 2 3 4; do
-            git fetch origin main
-            git reset --hard origin/main
-            cp "$saved_dir/jobs.json" data/jobs.json
-            cp "$saved_dir/run_status.json" data/run_status.json
-            git add data/jobs.json data/run_status.json
-
-            if git diff --cached --quiet; then
-              echo "No dataset changes to commit."
-              exit 0
-            fi
-
-            git commit -m "chore(data): refresh job listings"
-            if git push origin HEAD:main; then
-              echo "Dataset update pushed successfully."
-              exit 0
-            fi
-
-            echo "Push raced with another commit (attempt $attempt); retrying on latest main."
-            sleep "$((attempt * 2))"
-          done
-
-          echo "Could not push the dataset after four attempts."
-          exit 1
+      - name: Commit refreshed dataset and static website
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(data): refresh job listings manually"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          file_pattern: data/jobs.json data/run_status.json data/jobs_*.json index.html
