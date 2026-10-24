@@ -36,6 +36,7 @@ You can add a source's official RSS feed to config/approved_feeds.json. Flyer im
    - JOOBLE_API_KEY
    - ADZUNA_APP_ID, ADZUNA_APP_KEY (only if Adzuna confirms Indonesia coverage for your account)
    - ENABLE_FLYER_OCR=1 to enable OCR for flyer images in approved RSS items.
+   - ENABLE_HIMALAYAS_API=1 only after owned-site/backend integration that follows the provider's attribution and no-redistribution terms; leave it at 0 for the public GitHub feed.
 6. Keep this repository public only if you intend the dataset and source metadata to be public. A public repository's scheduled workflow may be disabled by GitHub after 60 days without repository activity, so check the Actions tab periodically.
 
 ## Website integration
