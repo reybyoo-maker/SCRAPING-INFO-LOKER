@@ -1,0 +1,27 @@
+name: Dispatch INFO LOKER Website Tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/dispatch-tests.yml"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  dispatch-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Trigger tests.yml through workflow_dispatch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh workflow run tests.yml --repo "$GH_REPO" --ref main
+          echo "Queued tests.yml via workflow_dispatch."
