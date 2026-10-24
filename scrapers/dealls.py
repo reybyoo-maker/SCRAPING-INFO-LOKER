@@ -120,7 +120,7 @@ class DeallsScraper(BaseScraper):
                     location = clean(match_location.group(1), 220)
 
             salary_match = re.search(
-                r"Rp\s*[\d.]+(?:,[\d]{1,2})?(?:\s*[–—-]\s*Rp?\s*[\d.]+(?:,[\d]{1,2})?)?",
+                r"Rp\s*[\d.]+(?:,[\d]{1,2})?(?:\s*[–—-]\s*(?:Rp\s*)?[\d.]+(?:,[\d]{1,2})?)?",
                 card_text,
                 re.I,
             )
