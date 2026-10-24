@@ -1,0 +1,27 @@
+name: Dispatch INFO LOKER Scraper
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/dispatch-scrape.yml"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  dispatch-scraper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Trigger scrape.yml through workflow_dispatch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh workflow run scrape.yml --repo "$GH_REPO" --ref main
+          echo "Queued scrape.yml via workflow_dispatch."
