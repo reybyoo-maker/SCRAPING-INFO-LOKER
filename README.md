@@ -1,66 +1,74 @@
-# INFO LOKER Indonesia — website and automated collector
+# INFO LOKER Indonesia — Website and Automated Collector
 
-INFO LOKER is a static job-search website backed by a daily/hourly collector. It gathers public RSS/API metadata, normalizes job records, deduplicates records, keeps source links, and publishes `data/jobs.json` plus `index.html`.
+INFO LOKER is a static job-search website backed by a collector. The system normalizes listings, retains original source links, deduplicates records, maintains run status, and publishes `data/jobs.json` plus `index.html`.
 
-## Current collection sources
+## Currently configured sources
 
-These sources are enabled in the current default configuration:
-- Google News RSS search for Indonesian vacancy/recruitment terms, rotated across provinces and cities. The collector stores source links and metadata; it does not crawl every linked article.
-- Jobicy public jobs API.
-- Remote OK public jobs API.
+### Three existing RSS/API sources
+- **Google News RSS** — searches public news-feed results for Indonesian vacancy/recruitment terms by province and city. It stores result metadata and outbound links; it does not crawl every linked article.
+- **Jobicy public API**
+- **Remote OK public API**
 
-Latest source health and run counts are recorded in `data/run_status.json`. A previous run's record count is not the same as the number of new jobs discovered by that run.
+### Four additional HTML adapters enabled
+- **Kalibrr**
+- **Dealls**
+- **Tech in Asia Jobs**
+- **Maganghub**
 
-Optional sources:
-- Jooble is skipped unless `JOOBLE_API_KEY` is configured.
-- Adzuna is skipped unless both credentials are configured and the account/API supports Indonesia.
-- Additional public employer RSS/Atom feeds can be added to `config/approved_feeds.json`, only when their feed terms and permissions allow aggregation.
-- Remotive is disabled because redistribution to third-party job boards is restricted by its API terms.
-- Himalayas is disabled in the public GitHub data pipeline. It must be integrated only in a way that follows the provider's attribution, original application-link, expiry, and no-redistribution requirements.
+The HTML adapters use ordinary HTTPS requests only. Before requesting a search page, each adapter reads and checks its source `robots.txt`; if robots rules cannot be verified or disallow the URL, that source is skipped and the reason is logged. A 403/429 response is logged as `blocked`; the adapter remains configured and can retry on a later scheduled run. A zero-record parse is logged as `no_records` so selectors/search URLs can be updated without permanently disabling the adapter.
 
-## Multi-source adapter framework
+### Sources that require written permission or an authorized feed before direct scraping
+- **JobStreet** — its published terms prohibit automated data gathering/scraping without prior written consent.
+- **Indeed** — its current terms require express written permission for automated scraper/data extraction and limit crawling to the conditions set in its robots.txt; crawling permission is not automatically permission to extract/re-publish job data.
+- **Glints** — its terms prohibit screen scraping/data mining to reproduce website information without prior written consent; its robots.txt also disallows the configured jobs-explore URL.
+- **Karir.com** — its terms prohibit automated data collection without permission.
+- **Loker.id** — its terms restrict reproducing/copying/distributing website content without written permission.
+- **Disnakerja** — its terms restrict copying/reproducing/distributing website content without written consent.
+- **LinkedIn Jobs** — disabled by default; use authorized API/partner access only.
 
-The repository includes 11 separate adapter modules under `scrapers/`:
-`jobstreet`, `indeed`, `glints`, `kalibrr`, `karir`, `dealls`, `linkedin`, `lokerid`, `disnakerja`, `techinasia`, and `maganghub`.
+Official source policy links reviewed for this configuration:
+- JobStreet: https://id.jobstreet.com/id/terms
+- Indeed: https://id.indeed.com/legal
+- Glints: https://glints.com/about/terms and https://glints.com/robots.txt
+- Karir.com: https://karir.com/info/terms-conditions
+- Loker.id: https://www.loker.id/disclaimer
+- Disnakerja: https://disnakerja.id/blog/terms-of-service/
+- Tech in Asia robots policy/sitemap: https://www.techinasia.com/robots.txt
+- Dealls: https://dealls.com/terms-and-condition
+- MagangHub official information: https://maganghub.kemnaker.go.id/magang-nasional/faq
 
-They inherit from `scrapers/base.py` and share the normalized schema:
+A page being publicly visible or indexed by a search engine is not by itself a grant to scrape and republish all of its contents. This configuration uses the documented site policies and machine-readable robots rules as gates. Enable a permission-gated site only after its owner grants access or provides an approved feed.
+
+## Adapter framework and normalized output
+
+The repository contains eleven separate HTML adapter files under `scrapers/`:
+`jobstreet.py`, `indeed.py`, `glints.py`, `kalibrr.py`, `karir.py`, `dealls.py`, `linkedin.py`, `lokerid.py`, `disnakerja.py`, `techinasia.py`, and `maganghub.py`.
+
+All inherit from `scrapers/base.py` and normalize to these fields:
 `id`, `title`, `company`, `location`, `source`, `url`, `posted_at`, `salary`, `job_type`, `description_snippet`, and `scraped_at`.
-Compatibility aliases are retained for the existing website, so the adapter framework does not discard existing fields.
+Compatibility aliases are preserved for the current website and existing collector.
 
-**These 11 site-specific adapters are present but disabled by default.** In `config.yaml`, each adapter requires both `enabled: true` and `authorized: true`. The adapter then checks the source's `robots.txt`, uses HTTPS on the declared source domain, uses a descriptive User-Agent, spaces requests by 2–5 seconds, times out after 30 seconds, and retries transient errors at most three attempts. A disabled or failing adapter does not block the other sources.
-
-Do not enable an adapter without verifying the site's current terms and obtaining permission where required. JobStreet prohibits automated data gathering without prior written consent; Glints also prohibits screen scraping without prior written consent; LinkedIn prohibits unauthorized scraping and bypassing access controls:
-- https://id.jobstreet.com/id/terms
-- https://glints.com/about/terms
-- https://www.linkedin.com/legal/user-agreement
-
-There is deliberately **no stealth browser, fake-user-agent rotation, private/internal endpoint probing, login automation, or anti-bot bypass**. JavaScript-heavy pages may return no records through ordinary public HTML; use an authorized API/partner feed instead.
+Each request has a 30-second maximum timeout, up to three attempts for transient failures, a descriptive User-Agent, and a global 2–5 second spacing between HTTP request starts. Each run uses at most four workers. A source failure does not cancel other sources. The adapter does not use stealth browsers, proxy rotation, login automation, private endpoint probing, or anti-bot bypass.
 
 ## Architecture
 
-- `scraper/main.py` remains the active public RSS/API collector.
-- `scripts/run_all.py` runs the existing collector, optionally runs enabled and authorized adapters using at most four workers, normalizes the unified schema, deduplicates, writes a daily backup, updates the run status, and renders `templates/index.html.j2` to `index.html`.
-- `data/jobs.json` is the website dataset. The wrapper metadata includes `generated_at`, `timezone`, `total`, and `jobs`.
-- `data/run_status.json` records source outcomes and orchestration status.
-- `index.html` is a static frontend. It reads the local static JSON asset and contains keyword search, source/location/job filters, sorting, pagination, saved jobs, and a details dialog.
-- `config.yaml` controls the 11 optional HTML adapters and rotation settings. Existing public RSS/API source settings remain in the original collector and `config/source_registry.json`.
+- `scraper/main.py`: original public RSS/API collector.
+- `scripts/run_all.py`: calls the original collector, runs enabled adapters, normalizes/deduplicates records, saves one daily backup, writes `data/run_status.json`, and renders the Jinja template into `index.html`.
+- `scrapers/base.py`: common request, robots, JSON-LD/HTML parsing, and schema normalizer.
+- `config.yaml`: per-source on/off and authorization flags.
+- `config/source_registry.json`: source inventory/status notes.
+- `data/jobs.json`: published job dataset.
+- `data/run_status.json`: counts, errors, blocked sources, and timestamps.
+- `templates/index.html.j2`: source template for the current static website.
 
-## Automatic workflows
+## Automation
 
-- `.github/workflows/scrape.yml`: schedule `0 * * * *` (hourly) plus manual trigger. It installs pinned dependencies, runs `python scripts/run_all.py`, and commits changed dataset/status/website/daily-backup files.
-- `.github/workflows/deploy.yml`: deploys the validated static bundle to GitHub Pages after successful scraper completion, after relevant direct pushes, or manually.
-- `.github/workflows/healthcheck.yml`: runs every six hours and manually. It checks JSON validity, at least 100 records, and that the newest `scraped_at` is less than three hours old. A failed check creates an issue labeled `scraper-broken`; if one is already open, it adds a comment instead of flooding duplicate issues.
+- `.github/workflows/scrape.yml`: hourly cron `0 * * * *` and manual `workflow_dispatch`; installs pinned dependencies and runs `python scripts/run_all.py`.
+- `.github/workflows/deploy.yml`: validates HTML/JavaScript/JSON, builds the static artifact, deploys GitHub Pages after a successful scraping run, and supports manual deployment.
+- `.github/workflows/healthcheck.yml`: checks every six hours and on demand; checks valid JSON, at least 100 job records, and a newest `scraped_at` under three hours old. On failure it opens or updates a `scraper-broken` issue.
+- `.github/workflows/tests.yml`: runs Python tests, checks the live Pages URL with `curl -sSf`, runs a headless Playwright browser smoke test, and uploads a screenshot artifact for seven days.
 
-GitHub Actions scheduled jobs are best-effort, not a real-time service-level guarantee. The repository must have Actions enabled and workflow permissions configured. Scheduled workflows in public repositories can be paused by GitHub after prolonged repository inactivity; review the Actions tab periodically.
-
-## First-time setup
-
-1. In repository Settings → Actions → General, enable Actions and allow workflows to write repository contents.
-2. In Settings → Pages, choose **GitHub Actions** as the build/deploy source if it has not already been selected.
-3. Open Actions → **INFO LOKER Hourly Scraping** → Run workflow once to test the collection and deploy flow.
-4. Open Actions → **INFO LOKER Health Check** → Run workflow once to test the alert path/data freshness.
-5. For Jooble or Adzuna, add the required provider credentials under Settings → Secrets and variables → Actions. Never store API keys in tracked files.
-6. For an HTML adapter, verify permission/terms first; then set that source's `enabled` and `authorized` values to `true` in `config.yaml`. If `robots.txt` disallows its URL, the adapter will skip it.
+GitHub Actions scheduled jobs are best-effort and can be delayed. The repository's Actions feature must be enabled and Pages must use GitHub Actions as its source.
 
 ## Local run
 
@@ -75,17 +83,20 @@ python scripts/healthcheck.py
 python3 -m http.server 8000
 ```
 
-Then open `http://localhost:8000`. Keep the terminal process running during testing. Open the page through the local server rather than double-clicking `index.html`, because browsers may block local JSON fetches.
+Open `http://localhost:8000`; keep the server running while testing so the website can fetch `data/jobs.json`.
 
-## Adding an authorized RSS feed
+## Optional API/feed sources
 
-Edit `config/approved_feeds.json` and append a feed object supported by the current collector, following the existing parser's fields and respecting the feed's terms. Store source names and original outbound links, avoid copying full protected descriptions, and never add private or login-required feeds.
+- Jooble is skipped without `JOOBLE_API_KEY`.
+- Adzuna is skipped without `ADZUNA_APP_ID` and `ADZUNA_APP_KEY` and country support verification.
+- Employer RSS/Atom feeds can be added to `config/approved_feeds.json` after confirming aggregation/republication is allowed.
+- Remotive remains disabled pending a provider-approved redistribution arrangement.
+- Himalayas remains disabled in the public GitHub dataset pipeline because the provider has attribution, expiry, and redistribution restrictions.
 
 ## Troubleshooting
 
-- Check Actions → the latest **INFO LOKER Hourly Scraping** run for HTTP/source errors.
-- Inspect `data/run_status.json` for per-source counts and skip reasons.
-- `JOOBLE_API_KEY not configured` or `Adzuna credentials not configured` means that optional connector is not active.
-- A disabled adapter is intentional; it will not send a request until both required flags are explicitly enabled.
-- A `robots.txt blocks` message means the adapter must be skipped or switched to an authorized API/feed.
-- If the health-check alert says data is stale, inspect the hourly scrape run and Pages deployment rather than assuming that previously stored records are newly found jobs.
+- Read `data/run_status.json` for per-source `ok`, `no_records`, `blocked`, `skipped`, and `error` statuses.
+- A `no_records` status means parsing found no supported JSON-LD or HTML cards. It does not disable the source; review its search URL and selectors.
+- A `blocked` status means HTTP 403/429. The source remains enabled and can be retried on the next scheduled run; do not bypass the provider's restrictions.
+- A `skipped` status may mean robots.txt disallowed the URL or could not be verified.
+- If the website test fails, inspect the uploaded `info-loker-playwright-screenshot` artifact and the Actions logs.
