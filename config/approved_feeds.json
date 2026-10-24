@@ -1,0 +1,4 @@
+{
+  "feeds": [],
+  "note": "Only add public RSS/Atom feeds you are authorized to aggregate. The collector stores metadata and outbound links; flyer OCR is capped per run."
+}
