@@ -257,6 +257,18 @@
           },
           "listing_state": {
             "type": "string"
+          },
+          "salary_currency": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "salary_period": {
+            "type": [
+              "string",
+              "null"
+            ]
           }
         },
         "additionalProperties": true
