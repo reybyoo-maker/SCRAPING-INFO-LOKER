@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import re
+import xml.etree.ElementTree as ET
 from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 
@@ -23,8 +24,16 @@ def _html_text(html):
 
 
 def _sitemap_locations(xml_text):
-    soup = BeautifulSoup(xml_text or "", "xml")
-    return [node.get_text(" ", strip=True) for node in soup.find_all("loc") if node.get_text(" ", strip=True)]
+    try:
+        root = ET.fromstring(xml_text or "")
+        return [
+            (node.text or "").strip()
+            for node in root.iter()
+            if node.tag.rsplit("}", 1)[-1].lower() == "loc" and (node.text or "").strip()
+        ]
+    except (ET.ParseError, ValueError, TypeError):
+        # Some sites serve malformed XML; keep a conservative, escaped-tag fallback.
+        return [match.strip() for match in re.findall(r"<loc[^>]*>\s*(.*?)\s*</loc>", xml_text or "", re.I | re.S) if match.strip()]
 
 
 def _career_content(response):
@@ -72,6 +81,12 @@ def discover_target(target: dict, client: CompanySiteClient | None = None) -> di
     # Layer C: robots.txt plus the conventional sitemap and any published Sitemap directives.
     host = urlparse(website).hostname or target["domain"]
     sitemap_urls = ["https://%s/sitemap.xml" % host]
+    try:
+        client.robots_allowed("https://%s/sitemap.xml" % host)
+    except DomainBlocked as exc:
+        return {"status": "blocked", "reason": str(exc), "pages": pages, "career_url": career_url}
+    except Exception:
+        pass
     robots_text = getattr(client, "robots_text", "") or ""
     for line in robots_text.splitlines():
         match = re.match(r"\s*sitemap:\s*(https://\S+)", line, re.I)
