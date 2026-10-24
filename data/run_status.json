@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-24T22:14:22Z",
-  "finished_at": "2026-10-24T22:15:17Z",
+  "started_at": "2026-10-24T22:16:06Z",
+  "finished_at": "2026-10-24T22:17:02Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 486,
+      "records": 510,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,7 +42,7 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 645,
+  "records_received_this_run": 669,
   "records_after_deduplication": 746,
   "quality_label_counts": {
     "HOT": 155,
@@ -65,5 +65,63 @@
     "HOT/MEDIUM/LOW is an information-quality and freshness estimate, not a guarantee of employer legitimacy.",
     "Google News RSS results link to original publishers; not every linked page is crawled.",
     "Records without a source date or full details remain visible but should be verified by applicants."
-  ]
+  ],
+  "orchestration": {
+    "status": "ok",
+    "started_at": "2026-10-24T22:16:05Z",
+    "finished_at": "2026-10-24T22:17:02Z",
+    "legacy_pipeline_return_code": 0,
+    "legacy_pipeline_error": null,
+    "additional_sources": {
+      "jobstreet": {
+        "status": "skipped",
+        "reason": "disabled in config.yaml"
+      },
+      "indeed": {
+        "status": "skipped",
+        "reason": "disabled in config.yaml"
+      },
+      "glints": {
+        "status": "skipped",
+        "reason": "disabled in config.yaml"
+      },
+      "kalibrr": {
+        "status": "skipped",
+        "reason": "disabled in config.yaml"
+      },
+      "karir": {
+        "status": "skipped",
+        "reason": "disabled in config.yaml"
+      },
+      "dealls": {
+        "status": "skipped",
+        "reason": "disabled in config.yaml"
+      },
+      "linkedin": {
+        "status": "skipped",
+        "reason": "disabled in config.yaml"
+      },
+      "lokerid": {
+        "status": "skipped",
+        "reason": "disabled in config.yaml"
+      },
+      "disnakerja": {
+        "status": "skipped",
+        "reason": "disabled in config.yaml"
+      },
+      "techinasia": {
+        "status": "skipped",
+        "reason": "disabled in config.yaml"
+      },
+      "maganghub": {
+        "status": "skipped",
+        "reason": "disabled in config.yaml"
+      }
+    },
+    "additional_records": 0,
+    "records_after_deduplication": 746,
+    "output_schema": "common v2 plus compatibility aliases",
+    "hourly_rotation_slot": 498022,
+    "elapsed_seconds": 57.2
+  }
 }
