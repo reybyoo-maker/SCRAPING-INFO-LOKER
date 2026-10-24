@@ -32,6 +32,7 @@ career_url in the YAML is a first candidate, not a claim that every career route
 - scrapers/company_sites/base_company.py — clear InfoLokerBot/1.0 User-Agent, Indonesian Accept-Language, HTTPS-only requests, per-host robots checks, safe redirect handling, rate limiting, and persisted blocklist.
 - scrapers/company_sites/discovery.py — three-layer career URL and sitemap discovery.
 - scrapers/company_sites/generic_parser.py — JSON-LD JobPosting, job/career card heuristics, data-attribute selectors, and URL/text-based fallback extraction.
+- scrapers/company_sites/categories/ — one selector fallback module per configured company category (Bank & Fintech, Fintech, Telecom, Startup, Corporate, Healthcare, Properti, Manufaktur, BUMN, Retail, Transport & Logistics, Education, Media).
 - scrapers/company_sites/specific/ — 20 selector overrides for Astra, Unilever, Telkom, Gojek, Tokopedia, Mandiri, BCA, BRI, BNI, Pertamina, PLN, Telkomsel, Traveloka, Bukalapak, Kalbe, Indofood, Shopee, Blibli, Freeport, and Mayora. Each also falls back to the generic parser.
 - scripts/discover_company_careers.py — one-shot discovery/validation. Run without arguments to record career URLs; pass --scrape --force to also collect and publish results immediately.
 - data/blocked_domains.json — persistent blocklist. An HTTP 403/429 adds the hostname and stops further requests to that hostname on future runs until a maintainer manually removes the entry after reviewing the site's policy.
