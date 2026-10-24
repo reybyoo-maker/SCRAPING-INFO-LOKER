@@ -1,0 +1,89 @@
+# INFO LOKER source configuration.
+# The original collector remains the active default for public RSS/APIs.
+# Site-specific HTML adapters are disabled until authorized.
+version: 1
+timezone: Asia/Jakarta
+legacy_pipeline:
+  enabled: true
+  query_batch_size: 120
+  retention_days: 120
+  timeout_seconds: 30
+  max_workers: 4
+rotation:
+  requests_per_source_per_run: 1
+  max_workers: 4
+  min_delay_seconds: 2
+  max_delay_seconds: 5
+keywords:
+  - lowongan kerja
+  - loker terbaru
+  - rekrutmen
+  - staff
+  - admin
+  - customer service
+  - operator produksi
+  - warehouse
+  - sales
+  - marketing
+  - finance
+  - programmer
+  - data analyst
+  - magang
+  - fresh graduate
+  - walk in interview
+sources:
+  jobstreet:
+    enabled: false
+    authorized: false
+    search_url: "https://id.jobstreet.com/id/job-search/lowongan-kerja?keywords={keyword}&where={location}"
+    permission: "Requires explicit written consent or an authorized partner feed."
+  indeed:
+    enabled: false
+    authorized: false
+    search_url: "https://id.indeed.com/jobs?q={keyword}&l={location}"
+    permission: "Enable only if an authorized API/partner arrangement permits collection."
+  glints:
+    enabled: false
+    authorized: false
+    search_url: "https://glints.com/id/opportunities/jobs/explore?keyword={keyword}&locationName={location}"
+    permission: "Requires written consent or an authorized data feed; no circumvention."
+  kalibrr:
+    enabled: false
+    authorized: false
+    search_url: "https://www.kalibrr.com/id-ID/job-board/te/{keyword}?location={location}"
+    permission: "Enable only after confirming terms, robots.txt, and authorization."
+  karir:
+    enabled: false
+    authorized: false
+    search_url: "https://www.karir.com/search?q={keyword}"
+    permission: "Enable only after confirming terms, robots.txt, and authorization."
+  dealls:
+    enabled: false
+    authorized: false
+    search_url: "https://dealls.com/jobs?search={keyword}"
+    permission: "Use authorized public HTML or an approved feed; no internal endpoint probing."
+  linkedin:
+    enabled: false
+    authorized: false
+    search_url: "https://www.linkedin.com/jobs/search/?keywords={keyword}&location={location}"
+    permission: "LinkedIn prohibits unauthorized scraping and circumvention; use approved API/partner access."
+  lokerid:
+    enabled: false
+    authorized: false
+    search_url: "https://www.loker.id/cari-lowongan-kerja?keyword={keyword}&lokasi={location}"
+    permission: "Enable only after confirming terms, robots.txt, and authorization."
+  disnakerja:
+    enabled: false
+    authorized: false
+    search_url: "https://www.disnakerja.com/?s={keyword}"
+    permission: "Enable only after confirming terms, robots.txt, and authorization."
+  techinasia:
+    enabled: false
+    authorized: false
+    search_url: "https://www.techinasia.com/jobs/search?query={keyword}"
+    permission: "Enable only after confirming terms, robots.txt, and authorization."
+  maganghub:
+    enabled: false
+    authorized: false
+    search_url: "https://maganghub.kemnaker.go.id/"
+    permission: "Enable only if public access, terms, and robots.txt permit automated collection."
