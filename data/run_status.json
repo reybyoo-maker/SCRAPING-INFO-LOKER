@@ -1,21 +1,25 @@
 {
   "status": "ok",
-  "started_at": "2026-10-24T20:18:31Z",
-  "finished_at": "2026-10-24T20:19:05Z",
+  "started_at": "2026-10-24T20:37:31Z",
+  "finished_at": "2026-10-24T20:38:30Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
-      "attempted": 90,
-      "succeeded": 90,
+      "attempted": 120,
+      "succeeded": 120,
       "errors": 0,
-      "records": 170,
-      "query_pool_size": 802,
-      "batch_start": 94
+      "records": 498,
+      "query_pool_size": 2477,
+      "geo_pool_size": 189,
+      "selected_geo_queries": 63,
+      "selected_targeted_queries": 57,
+      "run_slot": 2,
+      "batch_start": 1125
     },
     "public_apis": {
       "jobicy": {
         "status": "ok",
-        "items_received": 193,
+        "items_received": 200,
         "records_accepted": 103
       },
       "remoteok": {
@@ -38,21 +42,21 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 329,
-  "records_after_deduplication": 456,
+  "records_received_this_run": 657,
+  "records_after_deduplication": 729,
   "quality_label_counts": {
-    "HOT": 151,
-    "MEDIUM": 305,
+    "HOT": 155,
+    "MEDIUM": 574,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 449,
+    "active_unverified": 722,
     "stale": 7
   },
   "flyer_ocr_attempted": 0,
   "configuration": {
-    "query_batch_size": 90,
-    "query_pool_size": 802,
+    "query_batch_size": 120,
+    "query_pool_size": 2477,
     "retention_days": 120,
     "flyer_ocr_enabled": true,
     "max_flyer_ocr_per_run": 10
