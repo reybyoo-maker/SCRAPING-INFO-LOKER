@@ -14,6 +14,7 @@ from scrapers.company_sites.base_company import (
 )
 from scrapers.company_sites.generic_parser import GenericCompanyParser
 from scrapers.company_sites import load_targets
+from scripts.run_all import normalize_record
 from scrapers.company_sites.specific import SPECIFIC_PARSERS
 
 
@@ -63,6 +64,10 @@ class CompanyTargetConfigTests(unittest.TestCase):
         self.assertEqual(row["category"], "Fintech")
         self.assertEqual(row["source_group"], "Company Sites")
         self.assertEqual(row["url"], "https://examplebank.co.id/careers/jobs/senior-data-engineer")
+        normalized = normalize_record(row)
+        self.assertEqual(normalized["source"], "company:examplebank.co.id")
+        self.assertEqual(normalized["category"], "Fintech")
+        self.assertEqual(normalized["source_group"], "Company Sites")
 
     def test_persisted_blocklist_prevents_domain_retries(self):
         with tempfile.TemporaryDirectory() as temp:
