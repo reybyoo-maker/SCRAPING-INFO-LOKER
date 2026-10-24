@@ -233,6 +233,11 @@ class BaseScraper:
                 allowed = True
             elif response.status_code < 200 or response.status_code >= 300:
                 # Fail closed on forbidden, rate-limited, or server-error robots endpoints.
+                logger.warning(
+                    "%s skipped: robots.txt returned HTTP %s; access rules cannot be verified",
+                    self.source_id,
+                    response.status_code,
+                )
                 allowed = False
             else:
                 parser = RobotFileParser()
