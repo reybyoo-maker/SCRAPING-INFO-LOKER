@@ -18,6 +18,7 @@ from .base_company import BlockedDomainRegistry, CompanySiteClient, RATE_LIMITER
 from .discovery import discover_target
 from .generic_parser import GenericCompanyParser
 from .specific import SPECIFIC_PARSERS
+from .categories import CATEGORY_PARSERS
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data"
@@ -80,7 +81,7 @@ def scrape_target(target: dict, client: CompanySiteClient | None = None) -> tupl
             base_status["career_url"] = discovery.get("career_url")
             return [], base_status
 
-        parser_class = SPECIFIC_PARSERS.get(target.get("specific_parser"), GenericCompanyParser)
+        parser_class = SPECIFIC_PARSERS.get(target.get("specific_parser")) or CATEGORY_PARSERS.get(target.get("category"), GenericCompanyParser)
         parser = parser_class(target)
         records = []
         seen = set()
