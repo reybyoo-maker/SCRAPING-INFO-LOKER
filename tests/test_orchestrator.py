@@ -51,6 +51,35 @@ class OrchestratorSchemaTests(unittest.TestCase):
         self.assertEqual(len(SCRAPER_CLASSES), 11)
         self.assertTrue(all(issubclass(adapter, BaseScraper) for adapter in SCRAPER_CLASSES))
 
+    def test_dealls_parser_extracts_public_loker_cards(self):
+        from scrapers.dealls import DeallsScraper
+
+        settings = {
+            "enabled": True,
+            "authorized": True,
+            "search_url": "https://dealls.com/loker",
+        }
+        scraper = DeallsScraper(settings, keyword="lowongan kerja", location="Indonesia")
+        html = """
+        <html><body><main>
+          <a href="/loker/content-creator-and-live-host~pt-jaya-mulia-permata">
+            <article>
+              <h2>Content Creator &amp; Live Host</h2>
+              <span class="company-name">PT Jaya Mulia Permata</span>
+              <span class="location">On-site • Jakarta Timur</span>
+              <span class="salary">Rp4.000.000 – 5.000.000</span>
+              <span>Penuh waktu</span>
+            </article>
+          </a>
+        </main></body></html>
+        """
+        rows = scraper.parse(html)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["title"], "Content Creator & Live Host")
+        self.assertEqual(rows[0]["source"], "dealls")
+        self.assertEqual(rows[0]["salary"], "Rp4.000.000 – 5.000.000")
+        self.assertEqual(rows[0]["url"], "https://dealls.com/loker/content-creator-and-live-host~pt-jaya-mulia-permata")
+
     def test_only_robots_gated_public_html_adapters_are_enabled(self):
         config = yaml.safe_load(open("config.yaml", encoding="utf-8"))
         sources = config["sources"]
