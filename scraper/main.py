@@ -403,10 +403,43 @@ def infer_employment_type(text: str) -> str | None:
 
 
 def match_location(text: str, hint: dict | None = None) -> tuple[str | None, str | None, str]:
-    low = clean_text(text).lower()
+    original = clean_text(text)
+    low = original.lower()
     locations = read_json(LOCATIONS_FILE, {"regions": [], "cities": []})
     city_items = locations.get("cities", [])
-    # Longest city name first avoids matching a short city inside a longer name.
+    known_city_map = {
+        clean_text(item.get("city")).lower(): item
+        for item in city_items if item.get("city")
+    }
+    known_province_map = {province.lower(): province for province in PROVINCES}
+
+    # An explicit place in the vacancy takes priority over the search query hint.
+    # Do not label a vacancy in an unknown city as the city that was used in RSS search.
+    explicit_patterns = [
+        r"(?i)\b(?:lowongan(?:\s+kerja)?\s+(?:di|area)|penempatan\s*[:\-]?|lokasi\s*[:\-]?|area\s*(?:kerja)?\s*[:\-]?)\s+([A-ZÀ-ÿ][A-Za-zÀ-ÿ'-]+(?:\s+[A-ZÀ-ÿ][A-Za-zÀ-ÿ'-]+){0,2})",
+        r"(?i)\b(?:kota|kabupaten|kab\.|kecamatan)\s+([A-ZÀ-ÿ][A-Za-zÀ-ÿ'-]+(?:\s+[A-ZÀ-ÿ][A-Za-zÀ-ÿ'-]+){0,2})",
+    ]
+    non_place_prefixes = (
+        "pt ", "cv ", "bank ", "hotel ", "rumah sakit", "rs ", "yayasan ",
+        "koperasi ", "perusahaan ", "pabrik ", "kantor ", "instansi ",
+        "sekolah ", "universitas ", "kampus ", "seluruh indonesia",
+        "berbagai lokasi", "indonesia", "remote ", "work from home",
+    )
+    for pattern in explicit_patterns:
+        for match in re.finditer(pattern, original):
+            candidate = clean_text(match.group(1), 80).strip(" .,:;-")
+            candidate_low = candidate.lower()
+            if not candidate:
+                continue
+            if candidate_low in known_city_map:
+                item = known_city_map[candidate_low]
+                return item.get("city"), item.get("province"), "matched_in_listing"
+            if candidate_low in known_province_map:
+                return None, known_province_map[candidate_low], "matched_in_listing"
+            if candidate_low.startswith(non_place_prefixes):
+                continue
+            return None, None, "unresolved_location_in_text"
+
     for item in sorted(city_items, key=lambda x: len(x.get("city") or ""), reverse=True):
         city = item.get("city")
         if city and re.search(r"(?<!\w)" + re.escape(city.lower()) + r"(?!\w)", low):
@@ -420,7 +453,6 @@ def match_location(text: str, hint: dict | None = None) -> tuple[str | None, str
         if city or province:
             return city, province, "search_context"
     return None, None, "unknown"
-
 
 def find_flyer_url(entry) -> str | None:
     candidates = []
@@ -579,6 +611,7 @@ def make_record(
     query: str | None = None,
 ) -> dict:
     title = clean_text(title, 250)
+    raw_body = body
     body = clean_text(body, 900)
     full_text = " ".join(x for x in (title, body, location or "") if x)
     company = clean_text(company, 120) or guess_company(full_text)
@@ -616,7 +649,7 @@ def make_record(
     if req_match:
         requirements = clean_text(req_match.group(1), 240)
     phone = extract_phone(full_text)
-    social_links = extract_social_links(full_text + " " + (body or ""))
+    social_links = extract_social_links(full_text + " " + str(raw_body or ""))
     if flyer_text:
         # OCR text can provide missing salary/education/contact/location clues.
         flyer_salary, flyer_min, flyer_max = extract_salary(flyer_text)
@@ -954,7 +987,7 @@ def fetch_public_api_records() -> tuple[list[dict], dict]:
                 # applicationLink for Apply; never rewrite or substitute that URL.
                 record = make_record(
                     title=clean_text(title, 250),
-                    body=clean_text(body, 900),
+                    body=body,
                     url=str(provider_url),
                     application_url=str(apply_url) if apply_url else None,
                     source_name=source_labels[source_name],
@@ -1091,7 +1124,7 @@ def fetch_approved_rss() -> tuple[list[dict], dict]:
                 if not title or not is_vacancy_relevant(title, summary):
                     continue
                 image_url = find_flyer_url(entry)
-                body = summary + (" " + clean_text(summary_html) if summary_html else "")
+                body = summary_html or summary
                 item_url = clean_url(entry.get("link")) or url
                 records.append(make_record(
                     title=title, body=body, url=item_url,
@@ -1132,6 +1165,11 @@ def merge_records(existing: list[dict], incoming: list[dict]) -> list[dict]:
         combined["first_seen_at"] = old.get("first_seen_at") or new.get("first_seen_at")
         combined["last_seen_at"] = iso_now()
         combined["last_checked_at"] = iso_now()
+        if new.get("location_confidence") == "unresolved_location_in_text":
+            combined["city"] = None
+            combined["province"] = None
+            combined["location_label"] = None
+            combined["location_confidence"] = "unresolved_location_in_text"
         # Re-score after old fields are combined.
         combined["risk_flags"] = list(dict.fromkeys((old.get("risk_flags") or []) + (new.get("risk_flags") or [])))
         score, label, reasons = quality(combined)
