@@ -170,6 +170,15 @@ def collect_company_sites(force: bool = False, *, targets_path: Path = TARGETS_F
                     "records_accepted": 0,
                 }
             statuses[key] = status
+            logger.info(
+                "Company target %s (%s): status=%s records=%d career_url=%s reason=%s",
+                status.get("company") or target.get("name"),
+                status.get("domain") or target.get("domain"),
+                status.get("status"),
+                int(status.get("records_accepted", len(rows)) or 0),
+                status.get("career_url") or "-",
+                (status.get("reason") or status.get("error") or "-")[:180],
+            )
             records.extend(rows)
 
     finished = utc_now()
