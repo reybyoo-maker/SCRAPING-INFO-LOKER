@@ -16,7 +16,7 @@ Top-level shape:
 ## Recommended filters
 
 - Province and city: province, city
-- Position/category: position or title
+- Position/category: job_category, position or title
 - Freshness: source_updated_at, published_at, last_seen_at
 - Education: education_minimum
 - Salary: salary_min_idr, salary_max_idr, salary_text
@@ -33,7 +33,7 @@ Top-level shape:
 3. Treat location_confidence=search_context as an inferred filter hint, not a confirmed workplace. Display a subtle “lokasi dari konteks pencarian” label.
 4. HOT/MEDIUM/LOW reflects freshness, completeness and source signals. It does not certify that a company or vacancy is legitimate. Keep the source link prominent.
 5. Use the original listing_url/application_url to let applicants verify the vacancy. Do not copy full vacancy text or download/re-host original flyers.
-6. For Himalayas jobs, keep the Apply action on the exact applicationLink supplied by the API and show a visible Himalayas source link. Do not pass those jobs to other job boards or third-party feeds. For Jobicy and Remote OK, preserve their source listing links and attribution. The feed can be stale when GitHub Actions is paused, a source is rate-limited, or a provider removes items. Check data/run_status.json and show the last data refresh time.
+6. Himalayas is disabled in the public GitHub data feed by default. If enabled after moving to your own website/backend, keep Apply on the exact applicationLink, show visible Himalayas attribution, remove expired listings, and never redistribute those listings through third-party feeds. For Jobicy and Remote OK, preserve source listing links and attribution. The feed can be stale when GitHub Actions is paused, a source is rate-limited, or a provider removes items. Check data/run_status.json and show the last data refresh time.
 7. For production, migrate the data into a database and serve it from an API instead of using Git history as a database. Use official APIs or written permission for job boards and social platforms that restrict automated collection.
 
 ## Example filter function
