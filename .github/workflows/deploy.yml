@@ -1,0 +1,90 @@
+name: Deploy INFO LOKER to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "data/jobs.json"
+      - "data/run_status.json"
+      - "config/locations.json"
+      - ".github/workflows/deploy.yml"
+  workflow_run:
+    workflows: ["INFO LOKER Hourly Scraping"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Validate website, script, and dataset
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+          html = Path("index.html").read_text(encoding="utf-8")
+          if "<!doctype html>" not in html.lower():
+              raise SystemExit("index.html is missing a doctype")
+          scripts = re.findall(r"<script>(.*?)</script>", html, flags=re.S | re.I)
+          if len(scripts) != 1:
+              raise SystemExit(f"Expected one inline application script; found {len(scripts)}")
+          Path("/tmp/info-loker-app.js").write_text(scripts[0], encoding="utf-8")
+          data = json.loads(Path("data/jobs.json").read_text(encoding="utf-8"))
+          jobs = data if isinstance(data, list) else data.get("jobs", [])
+          if not isinstance(jobs, list):
+              raise SystemExit("data/jobs.json does not contain a jobs list")
+          print(f"HTML valid; {len(jobs)} jobs parsed.")
+          PY
+          node --check /tmp/info-loker-app.js
+          python -m json.tool data/run_status.json >/dev/null
+          python -m json.tool config/locations.json >/dev/null
+
+      - name: Build static website artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site/data _site/config
+          cp index.html _site/index.html
+          cp data/jobs.json _site/data/jobs.json
+          cp data/run_status.json _site/data/run_status.json
+          cp config/locations.json _site/config/locations.json
+          touch _site/.nojekyll
+          test -s _site/index.html
+          test -s _site/data/jobs.json
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
