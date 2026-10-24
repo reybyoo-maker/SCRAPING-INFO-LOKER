@@ -117,18 +117,26 @@ class DomainRateLimiter:
         domain = domain_key(url)
         domain_lock = self._lock_for(domain)
         domain_lock.acquire()
-        with self._state_lock:
-            count = self._counts.get(domain, 0)
-            if count >= self.max_requests:
-                domain_lock.release()
-                raise DomainRequestLimit("Per-domain request cap (%d) reached for %s" % (self.max_requests, domain))
-            previous = self._last_start.get(domain)
-            delay = self.delay_seconds - (time.monotonic() - previous) if previous else 0.0
+        try:
+            with self._state_lock:
+                count = self._counts.get(domain, 0)
+                if count >= self.max_requests:
+                    raise DomainRequestLimit("Per-domain request cap (%d) reached for %s" % (self.max_requests, domain))
+                previous = self._last_start.get(domain)
+                next_allowed = max(time.monotonic(), (previous + self.delay_seconds) if previous else time.monotonic())
+                delay = max(0.0, next_allowed - time.monotonic())
+                self._counts[domain] = count + 1
+                # Reserve the expected start while holding only this domain's lock.
+                # Other hosts remain free to proceed in parallel.
+                self._last_start[domain] = next_allowed
             if delay > 0:
                 time.sleep(delay)
-            self._last_start[domain] = time.monotonic()
-            self._counts[domain] = count + 1
-        return domain_lock
+            with self._state_lock:
+                self._last_start[domain] = time.monotonic()
+            return domain_lock
+        except Exception:
+            domain_lock.release()
+            raise
 
     def finish_slot(self, lock):
         lock.release()
