@@ -36,9 +36,10 @@
       "id": "himalayas",
       "name": "Himalayas jobs API",
       "type": "json_api",
-      "enabled": true,
-      "coverage": "Remote roles; Indonesia/Worldwide only",
-      "endpoint": "https://himalayas.app/jobs/api?limit=100"
+      "enabled": false,
+      "coverage": "Remote roles only; disabled in public GitHub data feed by default. Enable only for direct display on the owned site/backend with visible attribution and expiry handling.",
+      "endpoint": "https://himalayas.app/jobs/api?limit=100",
+      "method": "Set ENABLE_HIMALAYAS_API=1 only after owned-site/backend integration; use applicationLink unchanged, credit Himalayas, remove expired jobs, and never redistribute listings to other aggregators."
     },
     {
       "id": "jooble",
