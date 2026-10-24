@@ -403,7 +403,15 @@ def main() -> int:
         "hourly_rotation_slot": int(time.time() // 3600),
         "elapsed_seconds": round(time.monotonic() - run_started, 2),
     }
-    status["company_sites"] = company_status
+    # Preserve the last complete per-company report on hourly runs that are not due.
+    if company_status.get("status") != "skipped" or not status.get("company_sites"):
+        status["company_sites"] = company_status
+    else:
+        status["company_sites"]["schedule_status"] = {
+            "status": "skipped",
+            "reason": company_status.get("reason"),
+            "due_at": company_status.get("due_at"),
+        }
     write_json(STATUS_FILE, status)
 
     counts = {}
