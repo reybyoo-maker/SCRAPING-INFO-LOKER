@@ -1,14 +1,6 @@
 name: Deploy INFO LOKER website
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "index.html"
-      - "data/jobs.json"
-      - "data/run_status.json"
-      - "config/locations.json"
-      - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
 permissions:
