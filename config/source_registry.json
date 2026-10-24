@@ -20,8 +20,8 @@
       "id": "remotive",
       "name": "Remotive public jobs API",
       "type": "json_api",
-      "enabled": true,
-      "coverage": "Remote roles; Indonesia/Worldwide only",
+      "enabled": false,
+      "coverage": "Disabled pending explicit permission to republish listings on an external job board; terms restrict redistribution",
       "endpoint": "https://remotive.com/api/remote-jobs"
     },
     {
