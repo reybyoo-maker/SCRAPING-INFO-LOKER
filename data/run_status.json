@@ -1,16 +1,16 @@
 {
   "status": "ok",
-  "started_at": "2026-10-24T20:13:20Z",
-  "finished_at": "2026-10-24T20:13:53Z",
+  "started_at": "2026-10-24T20:18:31Z",
+  "finished_at": "2026-10-24T20:19:05Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 90,
       "succeeded": 90,
       "errors": 0,
-      "records": 245,
-      "query_pool_size": 404,
-      "batch_start": 306
+      "records": 170,
+      "query_pool_size": 802,
+      "batch_start": 94
     },
     "public_apis": {
       "jobicy": {
@@ -24,9 +24,8 @@
         "records_accepted": 56
       },
       "himalayas": {
-        "status": "ok",
-        "items_received": 60,
-        "records_accepted": 0
+        "status": "skipped",
+        "reason": "disabled in the public GitHub feed; enable only for direct display on the owned website/backend with attribution and expiry checks"
       },
       "jooble": {
         "status": "skipped",
@@ -39,21 +38,21 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 404,
-  "records_after_deduplication": 370,
+  "records_received_this_run": 329,
+  "records_after_deduplication": 456,
   "quality_label_counts": {
-    "HOT": 148,
-    "MEDIUM": 222,
+    "HOT": 151,
+    "MEDIUM": 305,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 363,
+    "active_unverified": 449,
     "stale": 7
   },
   "flyer_ocr_attempted": 0,
   "configuration": {
     "query_batch_size": 90,
-    "query_pool_size": 404,
+    "query_pool_size": 802,
     "retention_days": 120,
     "flyer_ocr_enabled": true,
     "max_flyer_ocr_per_run": 10
