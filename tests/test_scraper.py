@@ -1,11 +1,26 @@
 import unittest
+from datetime import datetime, timedelta, timezone
 from scraper.main import (
     clean_position, extract_education, extract_phone, extract_salary,
-    infer_job_category, match_location, quality, safe_public_url
+    infer_job_category, match_location, quality, query_pool, safe_public_url,
+    select_query_batch
 )
 
 
 class ScraperHelpersTest(unittest.TestCase):
+    def test_three_daily_runs_cover_all_configured_areas(self):
+        pool = query_pool()
+        expected = {item["q"] for item in pool if item.get("priority") == "geo"}
+        base = datetime(2026, 10, 25, 0, 15, tzinfo=timezone.utc)
+        selected_geo = []
+        for run_offset in (0, 8, 16):
+            batch, stats = select_query_batch(pool, 120, base + timedelta(hours=run_offset))
+            self.assertEqual(len(batch), 120)
+            self.assertEqual(stats["selected_geo_queries"], 64)
+            selected_geo.extend(item["q"] for item in batch if item.get("priority") == "geo")
+        self.assertEqual(set(selected_geo), expected)
+        self.assertEqual(len(selected_geo), len(expected))
+
     def test_position_cleanup(self):
         self.assertEqual(
             clean_position("Lowongan Kerja Staff Admin - PT Contoh Indonesia"),
