@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-24T22:16:06Z",
-  "finished_at": "2026-10-24T22:17:02Z",
+  "started_at": "2026-10-24T22:30:33Z",
+  "finished_at": "2026-10-24T22:31:25Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 510,
+      "records": 474,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 669,
-  "records_after_deduplication": 746,
+  "records_received_this_run": 633,
+  "records_after_deduplication": 750,
   "quality_label_counts": {
-    "HOT": 155,
-    "MEDIUM": 591,
+    "HOT": 179,
+    "MEDIUM": 571,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 738,
+    "active_unverified": 742,
     "stale": 8
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-24T22:16:05Z",
-    "finished_at": "2026-10-24T22:17:02Z",
+    "started_at": "2026-10-24T22:30:33Z",
+    "finished_at": "2026-10-24T22:31:47Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -85,15 +85,7 @@
         "status": "skipped",
         "reason": "disabled in config.yaml"
       },
-      "kalibrr": {
-        "status": "skipped",
-        "reason": "disabled in config.yaml"
-      },
       "karir": {
-        "status": "skipped",
-        "reason": "disabled in config.yaml"
-      },
-      "dealls": {
         "status": "skipped",
         "reason": "disabled in config.yaml"
       },
@@ -111,17 +103,32 @@
       },
       "techinasia": {
         "status": "skipped",
-        "reason": "disabled in config.yaml"
+        "reason": "techinasia: robots.txt blocks the configured search URL or could not be verified"
+      },
+      "kalibrr": {
+        "status": "ok",
+        "records_accepted": 15,
+        "location_query": "Demak",
+        "keyword_query": "marketing"
+      },
+      "dealls": {
+        "status": "no_records",
+        "records_accepted": 0,
+        "reason": "Parser returned zero records; the page may be JavaScript-rendered, the search URL may have changed, or selectors/JSON-LD may need updating. Source remains enabled for the next scheduled retry.",
+        "location_query": "Labuan Bajo",
+        "keyword_query": "programmer"
       },
       "maganghub": {
-        "status": "skipped",
-        "reason": "disabled in config.yaml"
+        "status": "blocked",
+        "http_status": 403,
+        "error": "maganghub blocked the request with HTTP 403; source will be logged and retried on a later scheduled run",
+        "retry_on_next_scheduled_run": true
       }
     },
-    "additional_records": 0,
-    "records_after_deduplication": 746,
+    "additional_records": 15,
+    "records_after_deduplication": 765,
     "output_schema": "common v2 plus compatibility aliases",
     "hourly_rotation_slot": 498022,
-    "elapsed_seconds": 57.2
+    "elapsed_seconds": 74.08
   }
 }
