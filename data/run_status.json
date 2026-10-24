@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-24T22:38:32Z",
-  "finished_at": "2026-10-24T22:39:22Z",
+  "started_at": "2026-10-24T22:42:30Z",
+  "finished_at": "2026-10-24T22:43:20Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 512,
+      "records": 483,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 671,
-  "records_after_deduplication": 785,
+  "records_received_this_run": 642,
+  "records_after_deduplication": 786,
   "quality_label_counts": {
     "HOT": 198,
-    "MEDIUM": 587,
+    "MEDIUM": 588,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 777,
+    "active_unverified": 778,
     "stale": 8
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-24T22:38:32Z",
-    "finished_at": "2026-10-24T22:39:42Z",
+    "started_at": "2026-10-24T22:42:29Z",
+    "finished_at": "2026-10-24T22:43:46Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -128,6 +128,6 @@
     "records_after_deduplication": 786,
     "output_schema": "common v2 plus compatibility aliases",
     "hourly_rotation_slot": 498022,
-    "elapsed_seconds": 69.57
+    "elapsed_seconds": 76.58
   }
 }
