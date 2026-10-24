@@ -660,11 +660,11 @@ def make_record(
         city, province, location_confidence = match_location(location + " " + full_text)
         if not city and not province:
             city, province, location_confidence = match_location(full_text, location_hint)
-        if not city and not province and is_remote:
+        if not city and not province and is_remote and location_confidence != "unresolved_location_in_text":
             city, province, location_confidence = "Remote", "Remote / Global", "source_declared"
     else:
         city, province, location_confidence = match_location(full_text, location_hint)
-        if is_remote:
+        if is_remote and location_confidence != "unresolved_location_in_text":
             city, province, location_confidence = "Remote", "Remote / Global", "source_declared"
 
     detected_salary, salary_min, salary_max = extract_salary(" ".join((salary_text or "", body, title)))
@@ -773,8 +773,13 @@ def query_pool() -> list[dict]:
             continue
         seen.add(key)
         targets.append(item)
+
+    # One baseline query per province/city target, designed so the three daily runs
+    # collectively cover every configured location. More targeted searches rotate
+    # across the remaining queries instead of delaying whole cities for several days.
+    geo_queries = []
+    targeted_queries = []
     intents = [
-        '"lowongan kerja"',
         '"walk in interview"',
         '"loker SMA SMK"',
         '"lowongan fresh graduate"',
@@ -782,14 +787,26 @@ def query_pool() -> list[dict]:
         '"lowongan kerja operator produksi"',
         '"lowongan kerja driver kurir"',
         '"lowongan kerja part time"',
+        '"lowongan kerja magang"',
+        '"lowongan kerja admin"',
+        '"lowongan kerja customer service"',
+        '"lowongan kerja sales marketing"',
+        '"lowongan kerja gudang"',
     ]
-    queries = []
     for item in targets:
+        place = item["query"]
+        geo_queries.append({
+            "q": f'("lowongan kerja" OR loker OR "walk in interview" OR rekrutmen OR dibutuhkan) "{place}" when:7d',
+            "hint": item,
+            "priority": "geo",
+        })
         for intent in intents:
-            queries.append({
-                "q": f'{intent} "{item["query"]}" when:7d',
+            targeted_queries.append({
+                "q": f'{intent} "{place}" when:7d',
                 "hint": item,
+                "priority": "targeted",
             })
+
     national_queries = [
         '"lowongan kerja" Indonesia when:7d',
         '"loker seluruh Indonesia" when:7d',
@@ -809,10 +826,12 @@ def query_pool() -> list[dict]:
         '"rekrutmen BUMN" Indonesia when:7d',
         '"rekrutmen" Indonesia when:7d',
         '"penerimaan tenaga kerja" Indonesia when:7d',
+        '"lowongan kerja terbaru" Indonesia when:2d',
+        '"walk in interview hari ini" Indonesia when:7d',
     ]
     for query in national_queries:
-        queries.append({"q": query, "hint": None})
-    return queries
+        targeted_queries.append({"q": query, "hint": None, "priority": "national"})
+    return geo_queries + targeted_queries
 
 
 def fetch_google_news(batch_size: int) -> tuple[list[dict], dict]:
@@ -821,11 +840,29 @@ def fetch_google_news(batch_size: int) -> tuple[list[dict], dict]:
         return [], {"attempted": 0, "succeeded": 0, "errors": 0, "records": 0}
     now = now_utc()
     slot = (now.hour // 8) % 3
-    # Shift the starting offset each day so all query groups are reached even if the
-    # query pool size changes; normal scheduled runs cover the pool with some overlap.
     day_index = now.date().toordinal()
-    start = (day_index * batch_size * 3 + slot * batch_size) % len(pool)
-    selected = [pool[(start + offset) % len(pool)] for offset in range(min(batch_size, len(pool)))]
+    geo_pool = [item for item in pool if item.get("priority") == "geo"]
+    extra_pool = [item for item in pool if item.get("priority") != "geo"]
+
+    # Every calendar day, distribute the full location list over the three scheduled
+    # runs (slots 0/1/2). The day offset changes which area is searched first but
+    # still keeps the three chunks covering every configured area.
+    geo_per_run = min(batch_size, max(1, (len(geo_pool) + 2) // 3))
+    day_rotation = (day_index % 3) * geo_per_run
+    geo_start = (day_rotation + slot * geo_per_run) % len(geo_pool) if geo_pool else 0
+    selected_geo = [
+        geo_pool[(geo_start + offset) % len(geo_pool)]
+        for offset in range(min(geo_per_run, len(geo_pool)))
+    ]
+
+    extra_count = max(0, batch_size - len(selected_geo))
+    extra_start = ((day_index * 3 + slot) * max(extra_count, 1)) % len(extra_pool) if extra_pool else 0
+    selected_extra = [
+        extra_pool[(extra_start + offset) % len(extra_pool)]
+        for offset in range(min(extra_count, len(extra_pool)))
+    ]
+    selected = selected_geo + selected_extra
+
     records = []
     errors = 0
     succeeded = 0
@@ -839,17 +876,17 @@ def fetch_google_news(batch_size: int) -> tuple[list[dict], dict]:
             succeeded += 1
             for entry in parsed_feed.entries:
                 title = clean_text(entry.get("title", ""), 250)
-                summary = clean_text(entry.get("summary", "") or entry.get("description", ""), 900)
+                summary_html = entry.get("summary", "") or entry.get("description", "") or ""
+                summary = clean_text(summary_html, 900)
                 if not is_vacancy_relevant(title, summary):
                     continue
                 publisher = clean_text((entry.get("source") or {}).get("title") or "Google News RSS", 100)
                 published = entry.get("published") or entry.get("updated")
                 image_url = find_flyer_url(entry)
-                body_html = entry.get("summary", "") or entry.get("description", "") or ""
-                social_links = extract_social_links(body_html)
+                social_links = extract_social_links(summary_html)
                 record = make_record(
                     title=title,
-                    body=summary,
+                    body=summary_html or summary,
                     url=entry.get("link", ""),
                     source_name=publisher,
                     source_type="rss_search",
@@ -875,7 +912,11 @@ def fetch_google_news(batch_size: int) -> tuple[list[dict], dict]:
         "errors": errors,
         "records": len(records),
         "query_pool_size": len(pool),
-        "batch_start": start,
+        "geo_pool_size": len(geo_pool),
+        "selected_geo_queries": len(selected_geo),
+        "selected_targeted_queries": len(selected_extra),
+        "run_slot": slot,
+        "batch_start": extra_start,
     }
     return records, stats
 
