@@ -74,9 +74,11 @@
     {
       "id": "karir_com",
       "name": "Karir.com",
-      "type": "permission_required",
+      "type": "api_candidate_permission_gated",
       "enabled": false,
-      "coverage": "Disabled: terms prohibit automated data collection without permission."
+      "coverage": "Inactive: endpoint referenced by third-party material but not verified in official developer documentation; Karir.com terms prohibit automated collection without permission. Enable only after written permission/official API authorization.",
+      "endpoint": "https://karir-ms-beta.karir.com/v2/search/opportunities",
+      "method": "Guarded JSON adapter is present; no live endpoint probe is performed."
     },
     {
       "id": "indeed",
@@ -145,15 +147,15 @@
       "id": "techinasia",
       "name": "Tech in Asia Jobs",
       "type": "permission_required",
-      "enabled": true,
-      "coverage": "Enabled for public pages allowed by robots.txt; source links and job metadata only."
+      "enabled": false,
+      "coverage": "Inactive: no official Jobs RSS feed was verified; robots.txt disallows the general /feed route. Existing adapter is retained for a future permitted source."
     },
     {
       "id": "maganghub",
       "name": "Maganghub",
       "type": "permission_required",
       "enabled": true,
-      "coverage": "Enabled; robots.txt must be readable and permit the configured public URL or source is skipped."
+      "coverage": "Configured for permitted public-page requests only; Indonesian Accept-Language, transparent User-Agent, 5-10 second spacing. If HTTP 403/429 occurs, status is blocked; no access-control workaround."
     }
   ],
   "notes": {
@@ -165,7 +167,6 @@
     "html_adapters_enabled": [
       "kalibrr",
       "dealls",
-      "techinasia",
       "maganghub"
     ],
     "html_adapters_permission_gated": [
@@ -177,6 +178,9 @@
       "lokerid",
       "disnakerja"
     ],
-    "policy": "The enabled adapters check robots.txt before fetching. 403/429 and zero-record parser results are logged without permanently disabling a source."
+    "policy": "Only enabled+authorized adapters are contacted after robots.txt checks. Karir.com requires written permission/official API authorization; Tech in Asia remains inactive without a verified permitted Jobs RSS feed. HTTP 403/429 is logged as blocked and is never bypassed.",
+    "inactive_no_official_jobs_rss": [
+      "techinasia"
+    ]
   }
 }
