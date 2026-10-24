@@ -58,10 +58,27 @@ jobs:
       - name: Run all collectors
         run: python scripts/run_all.py
 
-      - name: Commit refreshed dataset and static website
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore(data): refresh Indonesia job listings"
-          commit_user_name: "github-actions[bot]"
-          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
-          file_pattern: data/jobs.json data/run_status.json data/jobs_*.json index.html
+      - name: Commit refreshed dataset safely
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/jobs.json data/run_status.json data/jobs_*.json index.html
+          if git diff --cached --quiet; then
+            echo "No data or website changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(data): refresh Indonesia job listings"
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            if git push origin HEAD:main; then
+              echo "Scraped dataset committed successfully."
+              exit 0
+            fi
+            echo "Push raced with a newer commit. Rebasing on origin/main (attempt $attempt)."
+            git rebase origin/main
+            sleep "$((attempt * 2))"
+          done
+          echo "Could not push refreshed data after four attempts."
+          exit 1
