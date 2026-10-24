@@ -20,7 +20,7 @@ The normalized record may contain: job title/position, employer (only when detec
 
 Enabled by default:
 - Google News RSS searches for Indonesian vacancy/recruitment terms by province and major city. Items link out to the source; the collector does not crawl every linked website.
-- Public remote-job APIs: Jobicy, Remotive, Remote OK and Himalayas. Remote records are included only when the API indicates Indonesia, worldwide/anywhere, or a location broad enough to be eligible from Indonesia.
+- Public remote-job APIs: Jobicy, Remote OK and Himalayas. Remote records are included only when the API indicates Indonesia, APAC/worldwide availability, or no restrictions that block Indonesia. Remotive is left disabled because its public API terms restrict redistribution to third-party job boards; enable it only after obtaining explicit permission.
 
 You can add a source's official RSS feed to config/approved_feeds.json. Flyer image OCR is bounded per run and runs only for images exposed by those feeds. Do not add a feed or crawler unless its terms, robots instructions, license and permission allow republication/aggregation.
 
