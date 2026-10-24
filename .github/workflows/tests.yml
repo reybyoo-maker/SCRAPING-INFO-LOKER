@@ -28,6 +28,7 @@ on:
       - "requirements.txt"
       - "config.yaml"
       - "config/**"
+  workflow_dispatch:
 
 permissions:
   contents: read
