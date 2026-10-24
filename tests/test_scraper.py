@@ -35,6 +35,26 @@ class ScraperHelpersTest(unittest.TestCase):
         self.assertEqual(province, "Jawa Barat")
         self.assertEqual(confidence, "matched_in_listing")
 
+    def test_explicit_unknown_city_is_not_replaced_by_search_hint(self):
+        title = "PT Arwana Citramulia Buka Lowongan Kerja di Mojokerto, Simak Syarat"
+        city, province, confidence = match_location(
+            title,
+            {"city": "Karawang", "province": "Jawa Barat"},
+        )
+        self.assertIsNone(city)
+        self.assertIsNone(province)
+        self.assertEqual(confidence, "unresolved_location_in_text")
+
+    def test_explicit_known_city_beats_search_hint(self):
+        title = "Lowongan Kerja di Gresik, Jawa Timur"
+        city, province, confidence = match_location(
+            title,
+            {"city": "Karawang", "province": "Jawa Barat"},
+        )
+        self.assertEqual(city, "Gresik")
+        self.assertEqual(province, "Jawa Timur")
+        self.assertEqual(confidence, "matched_in_listing")
+
     def test_quality_handles_missing_description(self):
         sample = {
             "source_type": "rss_search",
