@@ -1,0 +1,267 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "INFO LOKER Indonesia job feed",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "total",
+    "jobs"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "total": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "fresh_seen_in_this_run": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "jobs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "source_name",
+          "quality_label",
+          "listing_state"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "position": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "company_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "listing_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "application_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_name": {
+            "type": "string"
+          },
+          "source_type": {
+            "type": "string",
+            "enum": [
+              "rss_search",
+              "public_api",
+              "approved_feed"
+            ]
+          },
+          "source_updated_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "published_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "first_seen_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "last_seen_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "last_checked_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "city": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "province": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "location_label": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "location_confidence": {
+            "type": "string"
+          },
+          "work_mode": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "employment_type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "salary_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "salary_min_idr": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "salary_max_idr": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "education_minimum": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "requirements": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "description_excerpt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contact_phone": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "social_links": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "walk_in": {
+            "type": "boolean"
+          },
+          "walk_in_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "walk_in_location": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "flyer_image_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "flyer_ocr_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "application_deadline": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "risk_flags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "quality_score": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "quality_label": {
+            "type": "string",
+            "enum": [
+              "HOT",
+              "MEDIUM",
+              "LOW"
+            ]
+          },
+          "quality_explanation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "verification_status": {
+            "type": "string"
+          },
+          "listing_state": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
