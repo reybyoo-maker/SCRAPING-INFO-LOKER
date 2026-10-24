@@ -173,6 +173,14 @@ class CompanySiteClient:
             raise DomainBlocked(domain, response.status_code, "Domain %s returned HTTP %d" % (domain, response.status_code))
         return response
 
+    @staticmethod
+    def _cache_deny_all(host: str):
+        parser = RobotFileParser()
+        parser.set_url("https://%s/robots.txt" % host)
+        parser.parse(["User-agent: *", "Disallow: /"])
+        with _ROBOTS_LOCK:
+            _ROBOTS_CACHE[host] = (time.monotonic(), "User-agent: *\\nDisallow: /", parser)
+
     def robots_allowed(self, url: str) -> bool:
         parsed = urlparse(url)
         if parsed.scheme != "https" or not parsed.hostname:
@@ -199,18 +207,22 @@ class CompanySiteClient:
         elif response.status_code in (301, 302, 303, 307, 308):
             location = response.headers.get("Location")
             if not location:
+                self._cache_deny_all(host)
                 raise RobotsDisallowed("%s robots.txt redirected without a Location" % host)
             redirected = urljoin(robots_url, location)
             if domain_key(redirected) != host or urlparse(redirected).scheme != "https":
+                self._cache_deny_all(host)
                 raise RobotsDisallowed("%s robots.txt redirected outside its host" % host)
             redirected_response = self._send(redirected, robots_request=True)
             if not 200 <= redirected_response.status_code < 300:
+                self._cache_deny_all(host)
                 raise RobotsDisallowed("%s robots.txt returned HTTP %d" % (host, redirected_response.status_code))
             robots_text = redirected_response.text
             parser = RobotFileParser()
             parser.set_url(redirected)
             parser.parse(robots_text.splitlines())
         else:
+            self._cache_deny_all(host)
             raise RobotsDisallowed("%s robots.txt returned HTTP %d; fail closed" % (host, response.status_code))
         with _ROBOTS_LOCK:
             _ROBOTS_CACHE[host] = (time.monotonic(), robots_text, parser)
