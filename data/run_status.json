@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-24T22:57:09Z",
-  "finished_at": "2026-10-24T22:58:04Z",
+  "started_at": "2026-10-24T23:14:28Z",
+  "finished_at": "2026-10-24T23:15:23Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 461,
+      "records": 472,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 620,
-  "records_after_deduplication": 788,
+  "records_received_this_run": 631,
+  "records_after_deduplication": 789,
   "quality_label_counts": {
     "HOT": 200,
-    "MEDIUM": 588,
+    "MEDIUM": 589,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 780,
+    "active_unverified": 781,
     "stale": 8
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-24T22:57:09Z",
-    "finished_at": "2026-10-24T22:58:31Z",
+    "started_at": "2026-10-24T23:14:27Z",
+    "finished_at": "2026-10-24T23:15:43Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,15 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Demak",
-        "keyword_query": "marketing"
+        "location_query": "Gianyar",
+        "keyword_query": "finance"
       },
       "dealls": {
-        "status": "ok",
-        "records_accepted": 18,
-        "location_query": "Labuan Bajo",
-        "keyword_query": "programmer"
+        "status": "no_records",
+        "records_accepted": 0,
+        "reason": "Parser returned zero records; the page may be JavaScript-rendered, the search URL may have changed, or selectors/JSON-LD may need updating. Source remains enabled for the next scheduled retry.",
+        "location_query": "Madiun",
+        "keyword_query": "data analyst"
       },
       "maganghub": {
         "status": "blocked",
@@ -124,10 +125,10 @@
         "retry_on_next_scheduled_run": true
       }
     },
-    "additional_records": 33,
-    "records_after_deduplication": 788,
+    "additional_records": 15,
+    "records_after_deduplication": 789,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498022,
-    "elapsed_seconds": 82.22
+    "hourly_rotation_slot": 498023,
+    "elapsed_seconds": 75.38
   }
 }
