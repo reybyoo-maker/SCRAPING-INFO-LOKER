@@ -10,7 +10,7 @@ on:
       - "config/locations.json"
       - ".github/workflows/deploy.yml"
   workflow_run:
-    workflows: ["INFO LOKER Hourly Scraping"]
+    workflows: ["INFO LOKER Hourly Scraping", "Daily Job Scraper"]
     types: [completed]
   workflow_dispatch:
 
