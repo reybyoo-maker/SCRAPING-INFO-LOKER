@@ -1,0 +1,61 @@
+name: Daily Job Scraper
+
+on:
+  schedule:
+    # 07:15, 15:15 and 23:15 WIB (UTC+7)
+    - cron: "15 0,8,16 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-job-scraper
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install OCR engine
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        env:
+          GITHUB_ACTIONS_RUN: "1"
+          QUERY_BATCH_SIZE: "90"
+          DATA_RETENTION_DAYS: "120"
+          ENABLE_FLYER_OCR: "1"
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: python -m scraper.main
+
+      - name: Commit updated dataset
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/jobs.json data/run_status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(data): refresh job listings"
+            git push origin HEAD:main
+          else
+            echo "No dataset changes to commit."
+          fi
