@@ -80,17 +80,65 @@ class OrchestratorSchemaTests(unittest.TestCase):
         self.assertEqual(rows[0]["salary"], "Rp4.000.000 – 5.000.000")
         self.assertEqual(rows[0]["url"], "https://dealls.com/loker/content-creator-and-live-host~pt-jaya-mulia-permata")
 
-    def test_only_robots_gated_public_html_adapters_are_enabled(self):
+    def test_only_safe_source_adapters_are_enabled(self):
         config = yaml.safe_load(open("config.yaml", encoding="utf-8"))
         sources = config["sources"]
         self.assertEqual(len(sources), 11)
         enabled = {name for name, item in sources.items() if item.get("enabled") is True}
-        self.assertEqual(enabled, {"kalibrr", "dealls", "techinasia", "maganghub"})
+        self.assertEqual(enabled, {"kalibrr", "dealls", "maganghub"})
         self.assertTrue(all(sources[name]["authorized"] is True for name in enabled))
-        for name in ("jobstreet", "indeed", "glints", "karir", "linkedin", "lokerid", "disnakerja"):
-            self.assertIs(sources[name]["enabled"], False, f"{name} must remain permission-gated")
-            self.assertIs(sources[name]["authorized"], False, f"{name} must remain permission-gated")
-        self.assertIs(sources["linkedin"]["enabled"], False)
+        for name in ("jobstreet", "indeed", "glints", "karir", "linkedin", "lokerid", "disnakerja", "techinasia"):
+            self.assertIs(sources[name]["enabled"], False, f"{name} must remain inactive")
+            self.assertIs(sources[name]["authorized"], False, f"{name} must remain inactive")
+        self.assertEqual(sources["maganghub"]["min_delay_seconds"], 5)
+        self.assertEqual(sources["maganghub"]["max_delay_seconds"], 10)
+        self.assertFalse(sources["linkedin"]["enabled"])
+
+    def test_maganghub_uses_indonesian_language_and_explicit_bot_identity(self):
+        from scrapers.maganghub import MaganghubScraper
+
+        settings = yaml.safe_load(open("config.yaml", encoding="utf-8"))["sources"]["maganghub"]
+        scraper = MaganghubScraper(settings, keyword="magang", location="Indonesia")
+        self.assertIn("INFOLOKERIndonesiaBot", scraper.session.headers["User-Agent"])
+        self.assertTrue(scraper.session.headers["Accept-Language"].startswith("id-ID"))
+        self.assertEqual(scraper.min_delay_seconds, 5)
+        self.assertEqual(scraper.max_delay_seconds, 10)
+
+    def test_karir_api_adapter_parses_sample_json_without_live_requests(self):
+        import json
+        from scrapers.karir import KarirScraper
+
+        scraper = KarirScraper({"enabled": False, "authorized": False,
+                                "search_url": "https://karir-ms-beta.karir.com/v2/search/opportunities"})
+        payload = {
+            "data": {
+                "opportunities": [{
+                    "title": "Backend Engineer",
+                    "company": {"name": "PT Contoh"},
+                    "location": {"city": "Bandung"},
+                    "url": "/jobs/backend-engineer",
+                    "published_at": "2026-10-20T08:00:00Z",
+                    "salary": "Rp8.000.000",
+                    "description": "Build backend services."
+                }]
+            }
+        }
+        rows = scraper.parse(json.dumps(payload))
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["title"], "Backend Engineer")
+        self.assertEqual(rows[0]["company"], "PT Contoh")
+        self.assertEqual(rows[0]["location"], "Bandung")
+        self.assertEqual(rows[0]["url"], "https://www.karir.com/jobs/backend-engineer")
+        self.assertEqual(rows[0]["source_type"], "permission_gated_json_api")
+
+    def test_karir_api_adapter_cannot_fetch_without_authorization(self):
+        from scrapers.karir import KarirScraper
+        from scrapers.base import SourceNotAllowed
+
+        scraper = KarirScraper({"enabled": True, "authorized": False,
+                                "search_url": "https://karir-ms-beta.karir.com/v2/search/opportunities"})
+        with self.assertRaises(SourceNotAllowed):
+            scraper.fetch()
 
 
 if __name__ == "__main__":
