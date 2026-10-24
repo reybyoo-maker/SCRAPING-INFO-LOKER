@@ -1,6 +1,11 @@
 name: INFO LOKER Health Check
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/healthcheck.py"
+      - ".github/workflows/healthcheck.yml"
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
