@@ -51,7 +51,7 @@ sources:
   kalibrr:
     enabled: true
     authorized: true
-    search_url: "https://www.kalibrr.com/id-ID/job-board/te/{keyword}?location={location}"
+    search_url: "https://www.kalibrr.id/home/i/general-services/t/full-time/1"
     permission: "Public HTML adapter; each run verifies robots.txt. 403/429 or a selector mismatch is logged and retried on later scheduled runs."
   karir:
     enabled: false
@@ -61,7 +61,7 @@ sources:
   dealls:
     enabled: true
     authorized: true
-    search_url: "https://dealls.com/jobs?search={keyword}"
+    search_url: "https://dealls.com/loker"
     permission: "Public listing HTML only; robots.txt is checked first. No login, private endpoint probing, or access-control bypass."
   linkedin:
     enabled: false
@@ -81,10 +81,10 @@ sources:
   techinasia:
     enabled: true
     authorized: true
-    search_url: "https://www.techinasia.com/jobs/search?query={keyword}"
+    search_url: "https://www.techinasia.com/jobs"
     permission: "Only public pages allowed by robots.txt are queried. No full article mirroring; metadata and source links only. Parser mismatches are logged without auto-disabling."
   maganghub:
     enabled: true
     authorized: true
-    search_url: "https://maganghub.kemnaker.go.id/magang-nasional/faq"
+    search_url: "https://maganghub.kemnaker.go.id/"
     permission: "Public government site adapter; robots.txt must be readable and permit the configured URL or the source will be skipped and logged."
