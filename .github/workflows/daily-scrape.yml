@@ -58,14 +58,40 @@ jobs:
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
         run: python -m scraper.main
 
-      - name: Commit updated dataset
+      - name: Commit updated dataset safely
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/jobs.json data/run_status.json
-          if ! git diff --cached --quiet; then
+
+          # Preserve this run's dataset while refreshing the branch. Other source or
+          # test commits may land while the scraper is running.
+          saved_dir="$(mktemp -d)"
+          cp data/jobs.json "$saved_dir/jobs.json"
+          cp data/run_status.json "$saved_dir/run_status.json"
+
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp "$saved_dir/jobs.json" data/jobs.json
+            cp "$saved_dir/run_status.json" data/run_status.json
+            git add data/jobs.json data/run_status.json
+
+            if git diff --cached --quiet; then
+              echo "No dataset changes to commit."
+              exit 0
+            fi
+
             git commit -m "chore(data): refresh job listings"
-            git push origin HEAD:main
-          else
-            echo "No dataset changes to commit."
-          fi
+            if git push origin HEAD:main; then
+              echo "Dataset update pushed successfully."
+              exit 0
+            fi
+
+            echo "Push raced with another commit (attempt $attempt); retrying on latest main."
+            sleep "$((attempt * 2))"
+          done
+
+          echo "Could not push the dataset after four attempts."
+          exit 1
