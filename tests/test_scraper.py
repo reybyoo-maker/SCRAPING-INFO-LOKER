@@ -16,7 +16,8 @@ class ScraperHelpersTest(unittest.TestCase):
         for run_offset in (0, 8, 16):
             batch, stats = select_query_batch(pool, 120, base + timedelta(hours=run_offset))
             self.assertEqual(len(batch), 120)
-            self.assertEqual(stats["selected_geo_queries"], 64)
+            expected_geo_per_run = min(120, (len(expected) + 2) // 3)
+            self.assertEqual(stats["selected_geo_queries"], expected_geo_per_run)
             selected_geo.extend(item["q"] for item in batch if item.get("priority") == "geo")
         self.assertEqual(set(selected_geo), expected)
         self.assertEqual(len(selected_geo), len(expected))
