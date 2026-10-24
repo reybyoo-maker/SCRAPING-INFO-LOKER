@@ -1,0 +1,130 @@
+{
+  "sources": [
+    {
+      "id": "google_news_rss",
+      "name": "Google News RSS search",
+      "type": "rss_search",
+      "enabled": true,
+      "coverage": "Indonesia national/province/city",
+      "method": "Public RSS search results; outbound links only"
+    },
+    {
+      "id": "jobicy",
+      "name": "Jobicy public jobs API",
+      "type": "json_api",
+      "enabled": true,
+      "coverage": "Remote / Indonesia filter",
+      "endpoint": "https://jobicy.com/api/v2/remote-jobs"
+    },
+    {
+      "id": "remotive",
+      "name": "Remotive public jobs API",
+      "type": "json_api",
+      "enabled": true,
+      "coverage": "Remote roles; Indonesia/Worldwide only",
+      "endpoint": "https://remotive.com/api/remote-jobs"
+    },
+    {
+      "id": "remoteok",
+      "name": "Remote OK public jobs API",
+      "type": "json_api",
+      "enabled": true,
+      "coverage": "Remote roles; Indonesia/Worldwide only",
+      "endpoint": "https://remoteok.com/api"
+    },
+    {
+      "id": "himalayas",
+      "name": "Himalayas jobs API",
+      "type": "json_api",
+      "enabled": true,
+      "coverage": "Remote roles; Indonesia/Worldwide only",
+      "endpoint": "https://himalayas.app/jobs/api?limit=100"
+    },
+    {
+      "id": "jooble",
+      "name": "Jooble API",
+      "type": "api_key",
+      "enabled": "when_JOOBLE_API_KEY_present",
+      "coverage": "Indonesia city searches if allowed by account",
+      "endpoint": "https://jooble.org/api/{key}"
+    },
+    {
+      "id": "adzuna",
+      "name": "Adzuna API",
+      "type": "api_key",
+      "enabled": "when_ADZUNA_credentials_present_and_Indonesia_supported",
+      "coverage": "Provider/country support must be verified before enabling",
+      "endpoint": "https://api.adzuna.com"
+    },
+    {
+      "id": "approved_rss",
+      "name": "Employer/official RSS feeds",
+      "type": "approved_feed",
+      "enabled": "when_added_to_approved_feeds_json",
+      "coverage": "Depends on the authorized feeds"
+    },
+    {
+      "id": "jobstreet",
+      "name": "Jobstreet",
+      "type": "permission_required",
+      "enabled": false,
+      "coverage": "Use only authorized API/partner feed or written permission"
+    },
+    {
+      "id": "karir_com",
+      "name": "Karir.com",
+      "type": "permission_required",
+      "enabled": false,
+      "coverage": "Use only authorized API/partner feed or written permission"
+    },
+    {
+      "id": "indeed",
+      "name": "Indeed",
+      "type": "permission_required",
+      "enabled": false,
+      "coverage": "Do not scrape directly; use authorized API/partner channel"
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "type": "permission_required",
+      "enabled": false,
+      "coverage": "Use authorized APIs/partner access only"
+    },
+    {
+      "id": "glints",
+      "name": "Glints",
+      "type": "permission_required",
+      "enabled": false,
+      "coverage": "Use authorized API/partner feed or written permission"
+    },
+    {
+      "id": "kalibrr",
+      "name": "Kalibrr",
+      "type": "permission_required",
+      "enabled": false,
+      "coverage": "Use authorized API/partner feed or written permission"
+    },
+    {
+      "id": "dealls",
+      "name": "Dealls",
+      "type": "permission_required",
+      "enabled": false,
+      "coverage": "Use authorized API/partner feed or written permission"
+    },
+    {
+      "id": "kitalulus",
+      "name": "KitaLulus",
+      "type": "permission_required",
+      "enabled": false,
+      "coverage": "Use authorized API/partner feed or written permission"
+    },
+    {
+      "id": "social_platforms",
+      "name": "Instagram/Facebook/TikTok",
+      "type": "official_api_required",
+      "enabled": false,
+      "coverage": "Only official platform APIs and authorized accounts/pages"
+    }
+  ]
+}
