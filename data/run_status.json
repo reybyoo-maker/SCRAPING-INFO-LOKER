@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-24T20:06:37Z",
-  "finished_at": "2026-10-24T20:07:09Z",
+  "started_at": "2026-10-24T20:13:20Z",
+  "finished_at": "2026-10-24T20:13:53Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 90,
       "succeeded": 90,
       "errors": 0,
-      "records": 243,
+      "records": 245,
       "query_pool_size": 404,
       "batch_start": 306
     },
@@ -39,15 +39,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 402,
-  "records_after_deduplication": 364,
+  "records_received_this_run": 404,
+  "records_after_deduplication": 370,
   "quality_label_counts": {
-    "HOT": 150,
-    "MEDIUM": 214,
+    "HOT": 148,
+    "MEDIUM": 222,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 357,
+    "active_unverified": 363,
     "stale": 7
   },
   "flyer_ocr_attempted": 0,
