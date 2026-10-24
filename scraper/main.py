@@ -531,7 +531,7 @@ def quality(job: dict) -> tuple[int, str, list[str]]:
         score -= 10
         reasons.append("Informasi sumber mungkin sudah lama")
 
-    combined = (job.get("title", "") + " " + job.get("description_excerpt", "") + " " + job.get("requirements", "")).lower()
+    combined = " ".join(str(job.get(field) or "") for field in ("title", "description_excerpt", "requirements")).lower()
     risk_flags = []
     negative = any(phrase in combined for phrase in NEGATED_FEE_PHRASES)
     if not negative:
@@ -780,7 +780,7 @@ def fetch_google_news(batch_size: int) -> tuple[list[dict], dict]:
                 records.append(record)
         except Exception as exc:
             errors += 1
-            log.warning("RSS search failed (%s): %s", item["q"], exc)
+            log.warning("RSS search failed (%s): %s", item["q"], exc, exc_info=True)
         if index % 10 == 0:
             log.info("Google News RSS query batch: %s/%s", index, len(selected))
         time.sleep(0.12)
@@ -984,7 +984,7 @@ def fetch_public_api_records() -> tuple[list[dict], dict]:
             }
         except Exception as exc:
             stats[source_name] = {"status": "error", "error": str(exc)[:240]}
-            log.warning("Public API source %s failed: %s", source_name, exc)
+            log.warning("Public API source %s failed: %s", source_name, exc, exc_info=True)
 
     # Jooble is opt-in: the API key must be supplied by the repository owner.
     jooble_key = os.getenv("JOOBLE_API_KEY", "").strip()
