@@ -1,4 +1,63 @@
 {
-  "status": "not_run",
-  "message": "The scraper has not run yet."
+  "status": "ok",
+  "started_at": "2026-10-24T20:04:14Z",
+  "finished_at": "2026-10-24T20:04:46Z",
+  "timezone": "Asia/Jakarta",
+  "sources": {
+    "google_news_rss": {
+      "attempted": 90,
+      "succeeded": 90,
+      "errors": 28,
+      "records": 3,
+      "query_pool_size": 404,
+      "batch_start": 306
+    },
+    "public_apis": {
+      "jobicy": {
+        "status": "error",
+        "error": "can only concatenate str (not \"NoneType\") to str"
+      },
+      "remoteok": {
+        "status": "error",
+        "error": "can only concatenate str (not \"NoneType\") to str"
+      },
+      "himalayas": {
+        "status": "ok",
+        "items_received": 60,
+        "records_accepted": 0
+      },
+      "jooble": {
+        "status": "skipped",
+        "reason": "JOOBLE_API_KEY not configured"
+      },
+      "adzuna": {
+        "status": "skipped",
+        "reason": "Adzuna credentials not configured"
+      }
+    },
+    "approved_rss": {}
+  },
+  "records_received_this_run": 3,
+  "records_after_deduplication": 3,
+  "quality_label_counts": {
+    "HOT": 0,
+    "MEDIUM": 3,
+    "LOW": 0
+  },
+  "listing_state_counts": {
+    "active_unverified": 3
+  },
+  "flyer_ocr_attempted": 0,
+  "configuration": {
+    "query_batch_size": 90,
+    "query_pool_size": 404,
+    "retention_days": 120,
+    "flyer_ocr_enabled": true,
+    "max_flyer_ocr_per_run": 10
+  },
+  "notes": [
+    "HOT/MEDIUM/LOW is an information-quality and freshness estimate, not a guarantee of employer legitimacy.",
+    "Google News RSS results link to original publishers; not every linked page is crawled.",
+    "Records without a source date or full details remain visible but should be verified by applicants."
+  ]
 }
