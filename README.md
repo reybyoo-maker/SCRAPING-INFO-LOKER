@@ -18,11 +18,20 @@ The normalized record may contain: job title/position, employer (only when detec
 
 ## Sources and responsible collection
 
-Enabled by default:
+Enabled and running in the current configuration:
 - Google News RSS searches for Indonesian vacancy/recruitment terms by province and major city. Items link out to the source; the collector does not crawl every linked website.
-- Public remote-job APIs: Jobicy, Remote OK and Himalayas. Remote records are included only when the API indicates Indonesia, APAC/worldwide availability, or no restrictions that block Indonesia. Remotive is left disabled because its public API terms restrict redistribution to third-party job boards; enable it only after obtaining explicit permission.
+- Jobicy public jobs API.
+- Remote OK public jobs API.
 
-You can add a source's official RSS feed to config/approved_feeds.json. Flyer image OCR is bounded per run and runs only for images exposed by those feeds. Do not add a feed or crawler unless its terms, robots instructions, license and permission allow republication/aggregation.
+Not active in the current configuration:
+- Himalayas is disabled in the public GitHub data pipeline. Its API allows display on a site you operate if attribution, original application links, expiry handling and no-redistribution requirements are followed. Do not enable it in this public dataset workflow unless the integration is changed so listings are served only through the owned site/backend and are not redistributed as a third-party feed.
+- Jooble requires the `JOOBLE_API_KEY` secret.
+- Adzuna requires credentials and confirmation that Indonesia is supported for the account.
+- `approved_rss` has no feeds yet; add only feeds you are authorized to aggregate.
+- Remotive is disabled because its public API terms restrict submission of its listings to third-party job boards; obtain explicit permission or use an arrangement that its provider approves.
+- Jobstreet, Karir.com, Indeed, LinkedIn, Glints, Kalibrr, Dealls and KitaLulus require an authorized API/partner feed or written permission before direct collection. Social networks require official API access and authorized pages/accounts.
+
+You can add a source's official RSS feed to config/approved_feeds.json when its terms allow aggregation. Flyer image OCR is bounded per run and runs only for eligible images exposed by approved feeds. Do not add a feed or crawler unless its terms, robots instructions, license and permission allow republication/aggregation.
 
 **Do not enable direct scraping of Jobstreet, Karir.com, Indeed, LinkedIn, Glints, Kalibrr, Dealls, KitaLulus, Instagram, Facebook or TikTok without an authorized API/feed or written permission.** Some of these services restrict automated collection. For example, Jobstreet's terms prohibit screen scraping and automated data gathering without prior written consent: https://id.jobstreet.com/id/terms. Prefer an official API, partner feed or employer-provided RSS. Store source links and only the minimum metadata needed; don't copy full copyrighted job descriptions or mirror flyer files.
 
