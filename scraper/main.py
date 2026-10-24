@@ -834,11 +834,17 @@ def query_pool() -> list[dict]:
     return geo_queries + targeted_queries
 
 
-def fetch_google_news(batch_size: int) -> tuple[list[dict], dict]:
-    pool = query_pool()
-    if not pool:
-        return [], {"attempted": 0, "succeeded": 0, "errors": 0, "records": 0}
-    now = now_utc()
+def select_query_batch(pool: list[dict], batch_size: int, now: datetime | None = None) -> tuple[list[dict], dict]:
+    if not pool or batch_size <= 0:
+        return [], {
+            "query_pool_size": len(pool),
+            "geo_pool_size": 0,
+            "selected_geo_queries": 0,
+            "selected_targeted_queries": 0,
+            "run_slot": 0,
+            "batch_start": 0,
+        }
+    now = now or now_utc()
     slot = (now.hour // 8) % 3
     day_index = now.date().toordinal()
     geo_pool = [item for item in pool if item.get("priority") == "geo"]
@@ -846,7 +852,7 @@ def fetch_google_news(batch_size: int) -> tuple[list[dict], dict]:
 
     # Every calendar day, distribute the full location list over the three scheduled
     # runs (slots 0/1/2). The day offset changes which area is searched first but
-    # still keeps the three chunks covering every configured area.
+    # keeps the three chunks covering every configured area.
     geo_per_run = min(batch_size, max(1, (len(geo_pool) + 2) // 3))
     day_rotation = (day_index % 3) * geo_per_run
     geo_start = (day_rotation + slot * geo_per_run) % len(geo_pool) if geo_pool else 0
@@ -862,7 +868,21 @@ def fetch_google_news(batch_size: int) -> tuple[list[dict], dict]:
         for offset in range(min(extra_count, len(extra_pool)))
     ]
     selected = selected_geo + selected_extra
+    return selected, {
+        "query_pool_size": len(pool),
+        "geo_pool_size": len(geo_pool),
+        "selected_geo_queries": len(selected_geo),
+        "selected_targeted_queries": len(selected_extra),
+        "run_slot": slot,
+        "batch_start": extra_start,
+    }
 
+
+def fetch_google_news(batch_size: int) -> tuple[list[dict], dict]:
+    pool = query_pool()
+    if not pool:
+        return [], {"attempted": 0, "succeeded": 0, "errors": 0, "records": 0}
+    selected, selection_stats = select_query_batch(pool, batch_size)
     records = []
     errors = 0
     succeeded = 0
@@ -911,12 +931,7 @@ def fetch_google_news(batch_size: int) -> tuple[list[dict], dict]:
         "succeeded": succeeded,
         "errors": errors,
         "records": len(records),
-        "query_pool_size": len(pool),
-        "geo_pool_size": len(geo_pool),
-        "selected_geo_queries": len(selected_geo),
-        "selected_targeted_queries": len(selected_extra),
-        "run_slot": slot,
-        "batch_start": extra_start,
+        **selection_stats,
     }
     return records, stats
 
