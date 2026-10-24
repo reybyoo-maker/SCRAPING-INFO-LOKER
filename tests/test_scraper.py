@@ -1,7 +1,7 @@
 import unittest
 from scraper.main import (
     clean_position, extract_education, extract_phone, extract_salary,
-    match_location, quality, safe_public_url
+    infer_job_category, match_location, quality, safe_public_url
 )
 
 
@@ -11,6 +11,11 @@ class ScraperHelpersTest(unittest.TestCase):
             clean_position("Lowongan Kerja Staff Admin - PT Contoh Indonesia"),
             "Staff Admin - PT Contoh Indonesia",
         )
+
+    def test_job_category_inference(self):
+        self.assertEqual(infer_job_category("Customer Service Representative"), "Customer Service")
+        self.assertEqual(infer_job_category("Operator Produksi Pabrik"), "Operations & Logistics")
+        self.assertEqual(infer_job_category("UI/UX Designer"), "Design & Creative")
 
     def test_salary_range(self):
         text, minimum, maximum = extract_salary("Gaji Rp 4.000.000 - Rp 6.000.000 per bulan")
@@ -36,7 +41,7 @@ class ScraperHelpersTest(unittest.TestCase):
         self.assertEqual(confidence, "matched_in_listing")
 
     def test_explicit_unknown_city_is_not_replaced_by_search_hint(self):
-        title = "PT Arwana Citramulia Buka Lowongan Kerja di Mojokerto, Simak Syarat"
+        title = "PT Arwana Citramulia Buka Lowongan Kerja di Pamekasan, Simak Syarat"
         city, province, confidence = match_location(
             title,
             {"city": "Karawang", "province": "Jawa Barat"},
