@@ -1303,9 +1303,25 @@ def fetch_approved_rss() -> tuple[list[dict], dict]:
 
 
 def merge_records(existing: list[dict], incoming: list[dict]) -> list[dict]:
-    merged = {str(job.get("id") or make_id(job.get("listing_url", ""), job.get("title", ""), job.get("company_name", ""), job.get("city", ""))): job for job in existing if isinstance(job, dict)}
+    """Merge records while preserving the stable ID used before schema normalization."""
+    def merge_key(job: dict) -> str:
+        key = job.get("collector_id") or job.get("legacy_id") or job.get("id")
+        if key:
+            return str(key)
+        return make_id(
+            job.get("listing_url", ""),
+            job.get("title", ""),
+            job.get("company_name", ""),
+            job.get("city", ""),
+        )
+
+    merged = {
+        merge_key(job): job
+        for job in existing
+        if isinstance(job, dict)
+    }
     for new in incoming:
-        key = str(new.get("id") or make_id(new.get("listing_url", ""), new.get("title", ""), new.get("company_name", ""), new.get("city", "")))
+        key = merge_key(new)
         old = merged.get(key)
         if not old:
             merged[key] = new
@@ -1320,6 +1336,7 @@ def merge_records(existing: list[dict], incoming: list[dict]) -> list[dict]:
                 combined[field] = old.get(field) or value
             else:
                 combined[field] = value
+        combined["collector_id"] = old.get("collector_id") or old.get("id") or new.get("collector_id") or new.get("id")
         combined["first_seen_at"] = old.get("first_seen_at") or new.get("first_seen_at")
         combined["last_seen_at"] = iso_now()
         combined["last_checked_at"] = iso_now()
@@ -1328,7 +1345,6 @@ def merge_records(existing: list[dict], incoming: list[dict]) -> list[dict]:
             combined["province"] = None
             combined["location_label"] = None
             combined["location_confidence"] = "unresolved_location_in_text"
-        # Re-score after old fields are combined.
         combined["risk_flags"] = list(dict.fromkeys((old.get("risk_flags") or []) + (new.get("risk_flags") or [])))
         score, label, reasons = quality(combined)
         combined["quality_score"] = score
