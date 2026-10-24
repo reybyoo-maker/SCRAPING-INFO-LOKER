@@ -567,6 +567,10 @@ def make_record(
     location_hint: dict | None = None,
     application_url: str | None = None,
     salary_text: str | None = None,
+    salary_currency: str | None = None,
+    salary_period: str | None = None,
+    salary_min_source=None,
+    salary_max_source=None,
     education: str | None = None,
     image_url: str | None = None,
     employment_type: str | None = None,
@@ -590,6 +594,20 @@ def make_record(
             city, province, location_confidence = "Remote", "Remote / Global", "source_declared"
 
     detected_salary, salary_min, salary_max = extract_salary(" ".join((salary_text or "", body, title)))
+    detected_salary = detected_salary or clean_text(salary_text, 100) or None
+    currency = clean_text(salary_currency, 12).upper() if salary_currency else None
+    period = clean_text(salary_period, 40) if salary_period else None
+    try:
+        source_min = int(float(salary_min_source)) if salary_min_source is not None else None
+    except (TypeError, ValueError):
+        source_min = None
+    try:
+        source_max = int(float(salary_max_source)) if salary_max_source is not None else None
+    except (TypeError, ValueError):
+        source_max = None
+    if currency in ("IDR", "RP", "RUPIAH"):
+        salary_min = salary_min if salary_min is not None else source_min
+        salary_max = salary_max if salary_max is not None else source_max
     walk_in = bool(re.search(r"(?i)\bwalk[\s-]?in(?: interview)?\b|\binterview langsung\b", full_text))
     flyer_text = flyer_ocr(image_url)
     description = body[:450] if body else None
@@ -617,7 +635,7 @@ def make_record(
         "position": clean_position(title),
         "company_name": company or None,
         "listing_url": clean_url(url) or None,
-        "application_url": clean_url(application_url) or None,
+        "application_url": (str(application_url).strip() if application_url and safe_public_url(str(application_url)) else None),
         "source_name": source_name,
         "source_type": source_type,
         "source_updated_at": parse_date(updated) or parse_date(published),
@@ -633,6 +651,8 @@ def make_record(
         "work_mode": work_mode or infer_work_mode(full_text) or ("Remote" if is_remote else None),
         "employment_type": employment_type or infer_employment_type(full_text),
         "salary_text": detected_salary,
+        "salary_currency": currency,
+        "salary_period": period,
         "salary_min_idr": salary_min,
         "salary_max_idr": salary_max,
         "education_minimum": education or extract_education(full_text + " " + (flyer_text or "")),
@@ -799,7 +819,7 @@ def location_is_eligible(location: str, allow_missing: bool = False) -> tuple[bo
         return allow_missing, allow_missing
     eligible_terms = [
         "indonesia", "worldwide", "anywhere", "any location", "global", "work from anywhere",
-        "all countries", "asia", "remote - global", "remote globally",
+        "all countries", "asia", "apac", "remote - global", "remote globally",
     ]
     if any(term in text for term in eligible_terms):
         return True, True
@@ -809,79 +829,149 @@ def location_is_eligible(location: str, allow_missing: bool = False) -> tuple[bo
 def fetch_public_api_records() -> tuple[list[dict], dict]:
     records = []
     stats = {}
-    # Jobicy API query is scoped to Indonesia. Keep it remote-specific and avoid
-    # silently treating a location-restricted foreign role as Indonesian.
     sources = [
-        ("jobicy", "https://jobicy.com/api/v2/remote-jobs", {"count": 50, "geo": "Indonesia"}),
-        ("remotive", "https://remotive.com/api/remote-jobs", {"limit": 100}),
+        ("jobicy", "https://jobicy.com/api/v2/remote-jobs", {"count": 200, "geo": "apac"}),
         ("remoteok", "https://remoteok.com/api", None),
-        ("himalayas", "https://himalayas.app/jobs/api", {"limit": 100}),
+        ("himalayas", "https://himalayas.app/jobs/api", {"limit": 20}),
     ]
+    source_labels = {
+        "jobicy": "Jobicy API",
+        "remoteok": "Remote OK API",
+        "himalayas": "Himalayas API",
+    }
+
     for source_name, endpoint, params in sources:
         try:
-            response = http_get(endpoint, params=params)
-            payload = response.json()
-            items = extract_api_jobs(payload)
-            if source_name == "remoteok" and items and isinstance(items[0], dict) and ("legal" in items[0] or "terms" in items[0]):
-                items = items[1:]
+            if source_name == "himalayas":
+                # Himalayas caps pages at 20 and requires its nextCursor to be passed
+                # through unchanged. Keep this bounded to three pages per run.
+                items = []
+                cursor = None
+                raw_count = 0
+                for _page in range(3):
+                    page_params = {"limit": 20}
+                    if cursor:
+                        page_params["cursor"] = cursor
+                    response = http_get(endpoint, params=page_params)
+                    payload = response.json()
+                    page_items = extract_api_jobs(payload)
+                    raw_count += len(page_items)
+                    items.extend(page_items)
+                    cursor = payload.get("nextCursor") if isinstance(payload, dict) else None
+                    if not cursor or not page_items:
+                        break
+            else:
+                response = http_get(endpoint, params=params)
+                payload = response.json()
+                items = extract_api_jobs(payload)
+                raw_count = len(items)
+                if source_name == "remoteok" and items and isinstance(items[0], dict) and ("legal" in items[0] or "terms" in items[0]):
+                    items = items[1:]
+
             count_before = len(records)
             for item in items:
                 if not isinstance(item, dict):
                     continue
-                title = value_from(item, "title", "job_title", "position", "name")
-                url = value_from(item, "url", "job_url", "jobUrl", "apply_url", "application_url", "link")
-                if not title or not url or not safe_public_url(str(url)):
+                title = value_from(item, "title", "jobTitle", "job_title", "position", "name")
+                provider_url = value_from(item, "url", "job_url", "jobUrl", "link")
+                if source_name == "himalayas":
+                    guid = value_from(item, "guid")
+                    if guid and str(guid).startswith(("https://", "http://")):
+                        provider_url = guid
+                    elif guid and str(guid).startswith("/"):
+                        provider_url = "https://himalayas.app" + str(guid)
+                if not title or not provider_url or not safe_public_url(str(provider_url)):
                     continue
-                body = value_from(item, "description", "job_description", "excerpt", "summary", default="")
+
+                body = value_from(item, "description", "job_description", "jobDescription", "jobExcerpt", "excerpt", "summary", default="")
                 location = value_from(
-                    item, "candidate_required_location", "location", "job_location", "locations", "geo",
-                    "location_name", default=""
+                    item, "candidate_required_location", "jobGeo", "location", "job_location", "locations",
+                    "geo", "location_name", default=""
                 )
                 if isinstance(location, list):
                     location = ", ".join(clean_text(x) for x in location)
                 if isinstance(location, dict):
                     location = ", ".join(clean_text(x) for x in location.values())
                 location = clean_text(location, 250)
-                eligible, broad = location_is_eligible(
-                    location,
-                    allow_missing=(source_name == "jobicy"),
-                )
-                if not eligible:
-                    continue
-                company = value_from(item, "company_name", "company", "employer", "organization")
-                published = value_from(item, "publication_date", "date", "pubDate", "published_at", "created_at")
+
+                if source_name == "himalayas":
+                    restrictions = value_from(item, "locationRestrictions", "location_restrictions", default=[])
+                    if isinstance(restrictions, str):
+                        restrictions = [restrictions]
+                    restriction_text = " ".join(clean_text(x) for x in restrictions or []).lower()
+                    if restriction_text and not any(term in restriction_text for term in ("indonesia", "idn", "worldwide", "anywhere", "global")):
+                        continue
+                    timezone_restrictions = value_from(item, "timezoneRestrictions", "timezone_restrictions", default=[])
+                    if isinstance(timezone_restrictions, str):
+                        timezone_restrictions = [timezone_restrictions]
+                    timezone_text = " ".join(clean_text(x) for x in timezone_restrictions or []).lower()
+                    if timezone_text:
+                        indonesia_time_match = any(term in timezone_text for term in ("utc+7", "utc +7", "+07", "7:00", "asia/jakarta", "7"))
+                        if not indonesia_time_match:
+                            continue
+                    eligible = True
+                    broad = not restriction_text
+                    if not location:
+                        location = "Worldwide / Remote" if broad else restriction_text
+                else:
+                    # Jobicy is queried for APAC. Remote OK is a remote-only feed;
+                    # unknown location remains visible as global eligibility unverified.
+                    eligible, broad = location_is_eligible(
+                        location,
+                        allow_missing=(source_name in ("jobicy", "remoteok")),
+                    )
+                    if not eligible:
+                        continue
+
+                company = value_from(item, "company_name", "companyName", "company", "employer", "organization")
+                published = value_from(item, "publication_date", "pubDate", "date", "pub_date", "published_at", "created_at")
                 updated = value_from(item, "updated_at", "updated", "last_updated", default=published)
+                salary_currency = value_from(item, "salaryCurrency", "salary_currency", "currency")
+                salary_period = value_from(item, "salaryPeriod", "salary_period", "salary_frequency", "pay_period")
+                salary_min = value_from(item, "salaryMin", "salary_min", "min_salary", "minSalary")
+                salary_max = value_from(item, "salaryMax", "salary_max", "max_salary", "maxSalary")
                 salary_text = value_from(item, "salary", "salary_text", "compensation")
-                salary_min = value_from(item, "salary_min", "min_salary")
-                salary_max = value_from(item, "salary_max", "max_salary")
-                if not salary_text and (salary_min or salary_max):
-                    salary_text = f'{salary_min or ""} - {salary_max or ""}'.strip(" -")
-                job_type = value_from(item, "job_type", "employment_type", "type")
-                work_mode = value_from(item, "workplace_type", "remote", "work_mode")
+                if not salary_text and (salary_min is not None or salary_max is not None):
+                    currency_prefix = (str(salary_currency) + " ") if salary_currency else ""
+                    range_text = " - ".join(str(x) for x in (salary_min, salary_max) if x is not None)
+                    salary_text = currency_prefix + range_text
+                    if salary_period:
+                        salary_text += " / " + str(salary_period)
+                job_type = value_from(item, "job_type", "jobType", "employment_type", "employmentType", "type")
+                if isinstance(job_type, list):
+                    job_type = ", ".join(clean_text(x) for x in job_type)
+                work_mode = value_from(item, "workplace_type", "workplaceType", "remote", "work_mode") or "Remote"
+                apply_url = value_from(item, "applicationLink", "application_link", "apply_url", "application_url")
+                # Jobicy's public url is its source listing. Himalayas requires the exact
+                # applicationLink for Apply; never rewrite or substitute that URL.
                 record = make_record(
                     title=clean_text(title, 250),
                     body=clean_text(body, 900),
-                    url=str(url),
-                    application_url=str(value_from(item, "apply_url", "application_url", "url", "job_url", default=url)),
-                    source_name={"jobicy": "Jobicy API", "remotive": "Remotive API", "remoteok": "Remote OK API", "himalayas": "Himalayas API"}[source_name],
+                    url=str(provider_url),
+                    application_url=str(apply_url) if apply_url else None,
+                    source_name=source_labels[source_name],
                     source_type="public_api",
                     published=published,
                     updated=updated,
                     company=clean_text(company, 120) if company else None,
                     location=location,
                     salary_text=clean_text(salary_text, 100) if salary_text else None,
+                    salary_currency=str(salary_currency) if salary_currency else None,
+                    salary_period=str(salary_period) if salary_period else None,
+                    salary_min_source=salary_min,
+                    salary_max_source=salary_max,
                     employment_type=clean_text(job_type, 60) if job_type else None,
                     work_mode=clean_text(work_mode, 60) if work_mode else "Remote",
                     is_remote=True,
                 )
-                record["source_name"] = {"jobicy": "Jobicy API", "remotive": "Remotive API", "remoteok": "Remote OK API", "himalayas": "Himalayas API"}[source_name]
-                # A provider's broad/unknown location is not proof of specific Indonesian eligibility.
                 if broad and "indonesia" not in location.lower():
                     record["location_confidence"] = "source_declared"
                     record["location_label"] = "Remote / eligibility to be verified"
+                    record["quality_score"], record["quality_label"], record["quality_explanation"] = quality(record)
                 records.append(record)
+
             stats[source_name] = {
-                "status": "ok", "items_received": len(items),
+                "status": "ok", "items_received": raw_count,
                 "records_accepted": len(records) - count_before,
             }
         except Exception as exc:
@@ -932,10 +1022,8 @@ def fetch_public_api_records() -> tuple[list[dict], dict]:
     adzuna_id = os.getenv("ADZUNA_APP_ID", "").strip()
     adzuna_key = os.getenv("ADZUNA_APP_KEY", "").strip()
     if adzuna_id and adzuna_key:
-        # Indonesia country code may not be available on every Adzuna account.
-        # Keep this opt-in and fail softly if provider returns unsupported-country status.
         try:
-            endpoint = f"https://api.adzuna.com/v1/api/jobs/id/search/1"
+            endpoint = "https://api.adzuna.com/v1/api/jobs/id/search/1"
             response = http_get(endpoint, params={
                 "app_id": adzuna_id, "app_key": adzuna_key,
                 "results_per_page": 50, "what": "lowongan kerja",
@@ -954,7 +1042,7 @@ def fetch_public_api_records() -> tuple[list[dict], dict]:
                 location_obj = item.get("location") or {}
                 loc = value_from(location_obj, "display_name", default="Indonesia") if isinstance(location_obj, dict) else location_obj
                 salary = None
-                if item.get("salary_min") or item.get("salary_max"):
+                if item.get("salary_min") is not None or item.get("salary_max") is not None:
                     salary = f'{item.get("salary_min", "")} - {item.get("salary_max", "")}'.strip(" -")
                 records.append(make_record(
                     title=title, body=value_from(item, "description", default=""),
@@ -971,7 +1059,6 @@ def fetch_public_api_records() -> tuple[list[dict], dict]:
     else:
         stats["adzuna"] = {"status": "skipped", "reason": "Adzuna credentials not configured"}
     return records, stats
-
 
 def fetch_approved_rss() -> tuple[list[dict], dict]:
     config = read_json(APPROVED_FEEDS_FILE, {"feeds": []})
