@@ -37,6 +37,9 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
+      - name: Test scraper helpers
+        run: python -m unittest discover -s tests -v
+
       - name: Run scraper
         env:
           GITHUB_ACTIONS_RUN: "1"
