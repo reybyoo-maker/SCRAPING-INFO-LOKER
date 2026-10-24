@@ -74,7 +74,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          curl -sSfL --max-time 30 "https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/" | grep -q "INFO LOKER"
+          curl -sSfL --max-time 30 "https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/" -o /tmp/info-loker-live.html
+          grep -q "INFO LOKER" /tmp/info-loker-live.html
           echo "Live Pages returned HTTP 200 and contains INFO LOKER."
 
       - name: Start local static website server
