@@ -35,6 +35,20 @@ class ScraperHelpersTest(unittest.TestCase):
         self.assertEqual(province, "Jawa Barat")
         self.assertEqual(confidence, "matched_in_listing")
 
+    def test_quality_handles_missing_description(self):
+        sample = {
+            "source_type": "rss_search",
+            "title": "Lowongan Staff",
+            "description_excerpt": None,
+            "requirements": None,
+            "risk_flags": [],
+            "published_at": None,
+            "source_updated_at": None,
+        }
+        score, label, reasons = quality(sample)
+        self.assertEqual(label, "LOW")
+        self.assertGreaterEqual(score, 0)
+
     def test_quality_hot_is_not_a_legitimacy_claim(self):
         sample = {
             "source_type": "public_api",
