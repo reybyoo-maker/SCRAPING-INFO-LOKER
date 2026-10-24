@@ -1,4 +1,4 @@
-name: Scraper Tests
+name: Scraper Tests and Website Smoke Test
 
 on:
   push:
@@ -8,17 +8,26 @@ on:
       - "scrapers/**"
       - "scripts/**"
       - "tests/**"
+      - "index.html"
+      - "data/jobs.json"
+      - "data/run_status.json"
       - "requirements.txt"
       - "config.yaml"
-      - "config/locations.json"
+      - "config/**"
+      - "README.md"
       - ".github/workflows/tests.yml"
   pull_request:
     branches: [main]
     paths:
       - "scraper/**"
+      - "scrapers/**"
+      - "scripts/**"
       - "tests/**"
+      - "index.html"
+      - "data/jobs.json"
       - "requirements.txt"
-      - "config/locations.json"
+      - "config.yaml"
+      - "config/**"
 
 permissions:
   contents: read
@@ -26,7 +35,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,15 +45,70 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: requirements.txt
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Python dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
 
       - name: Check Python syntax
         run: python -m compileall -q scraper scrapers scripts tests
 
-      - name: Import adapter framework and validate source config
+      - name: Import all adapters and validate source config
         run: python -c "import scrapers; import scripts.run_all; print(len(scrapers.SCRAPER_CLASSES), 'adapters import successfully')"
 
-      - name: Run unit tests
+      - name: Run Python unit tests
         run: python -m unittest discover -s tests -v
+
+      - name: Install pinned Playwright
+        run: npm install --no-save playwright@1.64.1
+
+      - name: Install headless Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Verify live GitHub Pages responds with INFO LOKER
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -sSfL --max-time 30 "https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/" | grep -q "INFO LOKER"
+          echo "Live Pages returned HTTP 200 and contains INFO LOKER."
+
+      - name: Start local static website server
+        shell: bash
+        run: |
+          set -euo pipefail
+          nohup python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/info-loker-http.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl -sSf "http://127.0.0.1:8000/" >/dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat /tmp/info-loker-http.log
+          exit 1
+
+      - name: Check static response and content
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -sSf "http://127.0.0.1:8000/" | grep -q "INFO LOKER"
+          curl -sSf "http://127.0.0.1:8000/data/jobs.json" | python -c "import json,sys; p=json.load(sys.stdin); jobs=p if isinstance(p,list) else p.get('jobs',[]); assert len(jobs)>0, 'jobs.json is empty'; print('Local dataset records:',len(jobs))"
+
+      - name: Run Playwright website smoke test and capture screenshot
+        env:
+          BASE_URL: "http://127.0.0.1:8000/"
+          SCREENSHOT_PATH: "artifacts/info-loker-home.png"
+        run: node tests/playwright_smoke.mjs
+
+      - name: Upload Playwright screenshot artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: info-loker-playwright-screenshot
+          path: artifacts/info-loker-home.png
+          if-no-files-found: warn
+          retention-days: 7
