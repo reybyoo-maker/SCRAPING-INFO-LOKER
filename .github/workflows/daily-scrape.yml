@@ -1,6 +1,13 @@
 name: Daily Job Scraper
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "scraper/**"
+      - "config/**"
+      - "requirements.txt"
+      - ".github/workflows/daily-scrape.yml"
   schedule:
     # 07:15, 15:15 and 23:15 WIB (UTC+7)
     - cron: "15 0,8,16 * * *"
