@@ -1,6 +1,6 @@
-# INFO LOKER Indonesia — scraper & daily data pipeline
+# INFO LOKER Indonesia — website & daily data pipeline
 
-This repository is the collection engine for a future Indonesian job-search website. It collects **public feed/API records**, normalizes them into one schema, deduplicates repeats, adds city/province filters and a transparent HOT / MEDIUM / LOW information-quality label, and publishes the dataset at data/jobs.json.
+This repository contains the INFO LOKER Indonesian job-search website and its automated collection engine. It collects **public feed/API records**, normalizes them into one schema, deduplicates repeats, adds city/province filters and a transparent HOT / MEDIUM / LOW information-quality label, and publishes the dataset at data/jobs.json.
 
 ## What runs automatically
 
@@ -51,3 +51,23 @@ Python 3.12+:
     python -m scraper.main
 
 The collector is deliberately polite and bounded: timeouts, retries, limited feed batches, source-specific parsing and capped flyer OCR. A feed can be temporarily unavailable without stopping the whole run.
+
+## Website (INFO LOKER by Ai)
+
+A responsive job-search website is available in `index.html`. It reads `data/jobs.json` and `config/locations.json` from the same published site. Features include keyword search, province/city and job-category filters, work mode, employment type, education, salary and walk-in filters, HOT/MEDIUM/LOW data-quality labels, saved jobs, job details and links to original sources.
+
+### Run locally using Terminal
+
+From the repository folder, run:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000` in your browser. Keep the terminal process running while testing the page. Do not open `index.html` by double-clicking it because the browser may block local JSON fetches.
+
+### Public deployment
+
+The `.github/workflows/deploy-pages.yml` workflow validates the JavaScript and dataset, packages the website, and deploys it to GitHub Pages when Pages is enabled for this repository. If the first deployment reports that no Pages site exists, open **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**, and save once. After that, later changes to `index.html` or the scraper's dataset trigger deployment automatically.
+
+The website is a static frontend; it does not currently provide accounts, application submission, or a separate database. It sends applicants to the source/application links stored in the dataset.
