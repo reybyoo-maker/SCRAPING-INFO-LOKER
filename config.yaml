@@ -1,6 +1,7 @@
-# INFO LOKER source configuration.
-# The original collector remains the active default for public RSS/APIs.
-# Site-specific HTML adapters are disabled until authorized.
+# INFO LOKER sources.
+# The primary public RSS/API collector remains active. Site-specific adapters are
+# attempted only when enabled AND authorized, then only if robots.txt permits the URL.
+# 403/429 and parser mismatches are logged per source; no adapter is permanently disabled.
 version: 1
 timezone: Asia/Jakarta
 legacy_pipeline:
@@ -36,54 +37,54 @@ sources:
     enabled: false
     authorized: false
     search_url: "https://id.jobstreet.com/id/job-search/lowongan-kerja?keywords={keyword}&where={location}"
-    permission: "Requires explicit written consent or an authorized partner feed."
+    permission: "Explicit written consent is required by the current terms before automated collection; activate only after permission is granted."
   indeed:
     enabled: false
     authorized: false
     search_url: "https://id.indeed.com/jobs?q={keyword}&l={location}"
-    permission: "Enable only if an authorized API/partner arrangement permits collection."
+    permission: "Current terms prohibit automated scraping/extraction without express written permission; robots.txt alone is not broad republication permission."
   glints:
     enabled: false
     authorized: false
     search_url: "https://glints.com/id/opportunities/jobs/explore?keyword={keyword}&locationName={location}"
-    permission: "Requires written consent or an authorized data feed; no circumvention."
+    permission: "Terms prohibit screen scraping/data extraction for republication without prior written consent; robots.txt also disallows the configured explore URL."
   kalibrr:
-    enabled: false
-    authorized: false
+    enabled: true
+    authorized: true
     search_url: "https://www.kalibrr.com/id-ID/job-board/te/{keyword}?location={location}"
-    permission: "Enable only after confirming terms, robots.txt, and authorization."
+    permission: "Public HTML adapter; each run verifies robots.txt. 403/429 or a selector mismatch is logged and retried on later scheduled runs."
   karir:
     enabled: false
     authorized: false
     search_url: "https://www.karir.com/search?q={keyword}"
-    permission: "Enable only after confirming terms, robots.txt, and authorization."
+    permission: "Current terms prohibit automated data collection without permission."
   dealls:
-    enabled: false
-    authorized: false
+    enabled: true
+    authorized: true
     search_url: "https://dealls.com/jobs?search={keyword}"
-    permission: "Use authorized public HTML or an approved feed; no internal endpoint probing."
+    permission: "Public listing HTML only; robots.txt is checked first. No login, private endpoint probing, or access-control bypass."
   linkedin:
     enabled: false
     authorized: false
     search_url: "https://www.linkedin.com/jobs/search/?keywords={keyword}&location={location}"
-    permission: "LinkedIn prohibits unauthorized scraping and circumvention; use approved API/partner access."
+    permission: "Disabled by default; terms restrict unauthorized scraping and circumvention. Any enablement requires authorized access and remains the user's responsibility."
   lokerid:
     enabled: false
     authorized: false
     search_url: "https://www.loker.id/cari-lowongan-kerja?keyword={keyword}&lokasi={location}"
-    permission: "Enable only after confirming terms, robots.txt, and authorization."
+    permission: "Terms restrict copying/distributing website content without written permission; enable only with authorized feed or written permission."
   disnakerja:
     enabled: false
     authorized: false
-    search_url: "https://www.disnakerja.com/?s={keyword}"
-    permission: "Enable only after confirming terms, robots.txt, and authorization."
+    search_url: "https://disnakerja.id/?s={keyword}"
+    permission: "Terms restrict reproducing/distributing website content without written consent; enable only with permission or an authorized feed."
   techinasia:
-    enabled: false
-    authorized: false
+    enabled: true
+    authorized: true
     search_url: "https://www.techinasia.com/jobs/search?query={keyword}"
-    permission: "Enable only after confirming terms, robots.txt, and authorization."
+    permission: "Only public pages allowed by robots.txt are queried. No full article mirroring; metadata and source links only. Parser mismatches are logged without auto-disabling."
   maganghub:
-    enabled: false
-    authorized: false
-    search_url: "https://maganghub.kemnaker.go.id/"
-    permission: "Enable only if public access, terms, and robots.txt permit automated collection."
+    enabled: true
+    authorized: true
+    search_url: "https://maganghub.kemnaker.go.id/magang-nasional/faq"
+    permission: "Public government site adapter; robots.txt must be readable and permit the configured URL or the source will be skipped and logged."
