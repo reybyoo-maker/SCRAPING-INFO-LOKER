@@ -24,4 +24,4 @@ jobs:
         run: |
           set -euo pipefail
           gh workflow run tests.yml --repo "$GH_REPO" --ref main
-          echo "Queued tests.yml via workflow_dispatch."
+          echo "Queued tests.yml via workflow_dispatch for latest main and live Pages."
