@@ -898,15 +898,21 @@ def fetch_public_api_records() -> tuple[list[dict], dict]:
                     restrictions = value_from(item, "locationRestrictions", "location_restrictions", default=[])
                     if isinstance(restrictions, str):
                         restrictions = [restrictions]
-                    restriction_text = " ".join(clean_text(x) for x in restrictions or []).lower()
-                    if restriction_text and not any(term in restriction_text for term in ("indonesia", "idn", "worldwide", "anywhere", "global")):
+                    restriction_values = [clean_text(x).lower() for x in restrictions or []]
+                    restriction_text = " ".join(restriction_values)
+                    eligible_country = any(
+                        value in ("id", "idn", "indonesia") or
+                        any(term in value for term in ("indonesia", "worldwide", "anywhere", "global"))
+                        for value in restriction_values
+                    )
+                    if restriction_text and not eligible_country:
                         continue
                     timezone_restrictions = value_from(item, "timezoneRestrictions", "timezone_restrictions", default=[])
                     if isinstance(timezone_restrictions, str):
                         timezone_restrictions = [timezone_restrictions]
                     timezone_text = " ".join(clean_text(x) for x in timezone_restrictions or []).lower()
                     if timezone_text:
-                        indonesia_time_match = any(term in timezone_text for term in ("utc+7", "utc +7", "+07", "7:00", "asia/jakarta", "7"))
+                        indonesia_time_match = any(term in timezone_text for term in ("utc+7", "utc +7", "utc+07", "gmt+7", "+07", "7:00", "asia/jakarta"))
                         if not indonesia_time_match:
                             continue
                     eligible = True
@@ -941,6 +947,8 @@ def fetch_public_api_records() -> tuple[list[dict], dict]:
                 if isinstance(job_type, list):
                     job_type = ", ".join(clean_text(x) for x in job_type)
                 work_mode = value_from(item, "workplace_type", "workplaceType", "remote", "work_mode") or "Remote"
+                if isinstance(work_mode, bool):
+                    work_mode = "Remote" if work_mode else None
                 apply_url = value_from(item, "applicationLink", "application_link", "apply_url", "application_url")
                 # Jobicy's public url is its source listing. Himalayas requires the exact
                 # applicationLink for Apply; never rewrite or substitute that URL.
