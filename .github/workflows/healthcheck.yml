@@ -1,0 +1,78 @@
+name: INFO LOKER Health Check
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: info-loker-healthcheck
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate data freshness and minimum record count
+        run: python scripts/healthcheck.py
+
+      - name: Create or update an alert issue if health check fails
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "[Scraper Healthcheck] INFO LOKER data is missing or stale";
+            const body = [
+              "The INFO LOKER health check failed.",
+              "",
+              "Run: " + context.serverUrl + "/" + context.repo.owner + "/" + context.repo.repo + "/actions/runs/" + context.runId,
+              "",
+              "Check data/jobs.json freshness, record count, and the hourly scraper run."
+            ].join("\n");
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              labels: "scraper-broken",
+              per_page: 10
+            });
+            if (existing.data.length > 0) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.data[0].number,
+                body
+              });
+            } else {
+              try {
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: "scraper-broken",
+                  color: "B60205",
+                  description: "INFO LOKER scraper or dataset is unhealthy"
+                });
+              } catch (error) {
+                if (error.status !== 422) throw error;
+              }
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ["scraper-broken"]
+              });
+            }
