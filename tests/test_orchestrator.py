@@ -51,11 +51,17 @@ class OrchestratorSchemaTests(unittest.TestCase):
         self.assertEqual(len(SCRAPER_CLASSES), 11)
         self.assertTrue(all(issubclass(adapter, BaseScraper) for adapter in SCRAPER_CLASSES))
 
-    def test_source_adapters_are_disabled_by_default(self):
+    def test_only_robots_gated_public_html_adapters_are_enabled(self):
         config = yaml.safe_load(open("config.yaml", encoding="utf-8"))
-        self.assertEqual(len(config["sources"]), 11)
-        self.assertTrue(all(item["enabled"] is False for item in config["sources"].values()))
-        self.assertTrue(all(item["authorized"] is False for item in config["sources"].values()))
+        sources = config["sources"]
+        self.assertEqual(len(sources), 11)
+        enabled = {name for name, item in sources.items() if item.get("enabled") is True}
+        self.assertEqual(enabled, {"kalibrr", "dealls", "techinasia", "maganghub"})
+        self.assertTrue(all(sources[name]["authorized"] is True for name in enabled))
+        for name in ("jobstreet", "indeed", "glints", "karir", "linkedin", "lokerid", "disnakerja"):
+            self.assertIs(sources[name]["enabled"], False, f"{name} must remain permission-gated")
+            self.assertIs(sources[name]["authorized"], False, f"{name} must remain permission-gated")
+        self.assertIs(sources["linkedin"]["enabled"], False)
 
 
 if __name__ == "__main__":
