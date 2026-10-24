@@ -255,6 +255,12 @@ class BaseScraper:
         if not self.robots_allowed(url):
             raise SourceNotAllowed(f"{self.source_id}: robots.txt blocks the configured search URL or could not be verified")
         response = self._paced_get(self.session, url, self.timeout)
+        if response.status_code in (403, 429):
+            raise requests.HTTPError(
+                f"{self.source_id} blocked the request with HTTP {response.status_code}; "
+                "source will be logged and retried on a later scheduled run",
+                response=response,
+            )
         if response.status_code >= 400:
             raise requests.HTTPError(f"{self.source_id} returned HTTP {response.status_code}", response=response)
         final = urlparse(response.url)
