@@ -397,7 +397,7 @@ def main() -> int:
         "additional_sources": module_statuses,
         "additional_records": len(module_records),
         "company_site_records": len(company_records),
-        "company_sites": company_status,
+        "company_sites": {key: value for key, value in company_status.items() if key != "companies"},
         "records_after_deduplication": len(all_records),
         "output_schema": "common v2 plus compatibility aliases",
         "hourly_rotation_slot": int(time.time() // 3600),
