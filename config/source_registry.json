@@ -69,56 +69,56 @@
       "name": "Jobstreet",
       "type": "permission_required",
       "enabled": false,
-      "coverage": "Use only authorized API/partner feed or written permission"
+      "coverage": "Disabled by default; only activate with prior written permission or an approved partner feed."
     },
     {
       "id": "karir_com",
       "name": "Karir.com",
       "type": "permission_required",
       "enabled": false,
-      "coverage": "Use only authorized API/partner feed or written permission"
+      "coverage": "Disabled by default until official access or permission is confirmed."
     },
     {
       "id": "indeed",
       "name": "Indeed",
       "type": "permission_required",
       "enabled": false,
-      "coverage": "Do not scrape directly; use authorized API/partner channel"
+      "coverage": "Disabled by default until an approved API/partner feed is available."
     },
     {
       "id": "linkedin",
       "name": "LinkedIn",
       "type": "permission_required",
       "enabled": false,
-      "coverage": "Use authorized APIs/partner access only"
+      "coverage": "Disabled by default; use approved API/partner access only."
     },
     {
       "id": "glints",
       "name": "Glints",
       "type": "permission_required",
       "enabled": false,
-      "coverage": "Use authorized API/partner feed or written permission"
+      "coverage": "Disabled by default; requires written permission or approved feed."
     },
     {
       "id": "kalibrr",
       "name": "Kalibrr",
       "type": "permission_required",
       "enabled": false,
-      "coverage": "Use authorized API/partner feed or written permission"
+      "coverage": "Disabled by default until terms and robots.txt are reviewed."
     },
     {
       "id": "dealls",
       "name": "Dealls",
       "type": "permission_required",
       "enabled": false,
-      "coverage": "Use authorized API/partner feed or written permission"
+      "coverage": "Disabled by default; use approved access only."
     },
     {
       "id": "kitalulus",
       "name": "KitaLulus",
       "type": "permission_required",
       "enabled": false,
-      "coverage": "Use authorized API/partner feed or written permission"
+      "coverage": "Disabled by default until terms and access are reviewed."
     },
     {
       "id": "social_platforms",
@@ -126,6 +126,55 @@
       "type": "official_api_required",
       "enabled": false,
       "coverage": "Only official platform APIs and authorized accounts/pages"
+    },
+    {
+      "id": "lokerid",
+      "name": "Loker.id",
+      "type": "permission_required",
+      "enabled": false,
+      "coverage": "Adapter available but disabled until source terms, robots.txt, and authorized access are confirmed."
+    },
+    {
+      "id": "disnakerja",
+      "name": "Disnakerja",
+      "type": "permission_required",
+      "enabled": false,
+      "coverage": "Adapter available but disabled until source terms, robots.txt, and authorized access are confirmed."
+    },
+    {
+      "id": "techinasia",
+      "name": "Tech in Asia Jobs",
+      "type": "permission_required",
+      "enabled": false,
+      "coverage": "Adapter available but disabled until source terms, robots.txt, and authorized access are confirmed."
+    },
+    {
+      "id": "maganghub",
+      "name": "Maganghub",
+      "type": "permission_required",
+      "enabled": false,
+      "coverage": "Adapter available but disabled until source terms, robots.txt, and authorized access are confirmed."
     }
-  ]
+  ],
+  "notes": {
+    "active_by_default": [
+      "google_news_rss",
+      "jobicy",
+      "remoteok"
+    ],
+    "adapters_present_but_disabled": [
+      "jobstreet",
+      "indeed",
+      "glints",
+      "kalibrr",
+      "karir",
+      "dealls",
+      "linkedin",
+      "lokerid",
+      "disnakerja",
+      "techinasia",
+      "maganghub"
+    ],
+    "adapter_policy": "Adapters require enabled=true and authorized=true and check robots.txt before collection."
+  }
 }
