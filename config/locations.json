@@ -1,0 +1,326 @@
+{
+  "regions": [
+    {
+      "query": "Aceh",
+      "province": "Aceh",
+      "city": null
+    },
+    {
+      "query": "Sumatera Utara",
+      "province": "Sumatera Utara",
+      "city": null
+    },
+    {
+      "query": "Sumatera Barat",
+      "province": "Sumatera Barat",
+      "city": null
+    },
+    {
+      "query": "Riau",
+      "province": "Riau",
+      "city": null
+    },
+    {
+      "query": "Kepulauan Riau",
+      "province": "Kepulauan Riau",
+      "city": null
+    },
+    {
+      "query": "Jambi",
+      "province": "Jambi",
+      "city": null
+    },
+    {
+      "query": "Sumatera Selatan",
+      "province": "Sumatera Selatan",
+      "city": null
+    },
+    {
+      "query": "Kepulauan Bangka Belitung",
+      "province": "Kepulauan Bangka Belitung",
+      "city": null
+    },
+    {
+      "query": "Bengkulu",
+      "province": "Bengkulu",
+      "city": null
+    },
+    {
+      "query": "Lampung",
+      "province": "Lampung",
+      "city": null
+    },
+    {
+      "query": "DKI Jakarta",
+      "province": "DKI Jakarta",
+      "city": null
+    },
+    {
+      "query": "Banten",
+      "province": "Banten",
+      "city": null
+    },
+    {
+      "query": "Jawa Barat",
+      "province": "Jawa Barat",
+      "city": null
+    },
+    {
+      "query": "Jawa Tengah",
+      "province": "Jawa Tengah",
+      "city": null
+    },
+    {
+      "query": "DI Yogyakarta",
+      "province": "DI Yogyakarta",
+      "city": null
+    },
+    {
+      "query": "Jawa Timur",
+      "province": "Jawa Timur",
+      "city": null
+    },
+    {
+      "query": "Bali",
+      "province": "Bali",
+      "city": null
+    },
+    {
+      "query": "Nusa Tenggara Barat",
+      "province": "Nusa Tenggara Barat",
+      "city": null
+    },
+    {
+      "query": "Nusa Tenggara Timur",
+      "province": "Nusa Tenggara Timur",
+      "city": null
+    },
+    {
+      "query": "Kalimantan Barat",
+      "province": "Kalimantan Barat",
+      "city": null
+    },
+    {
+      "query": "Kalimantan Tengah",
+      "province": "Kalimantan Tengah",
+      "city": null
+    },
+    {
+      "query": "Kalimantan Selatan",
+      "province": "Kalimantan Selatan",
+      "city": null
+    },
+    {
+      "query": "Kalimantan Timur",
+      "province": "Kalimantan Timur",
+      "city": null
+    },
+    {
+      "query": "Kalimantan Utara",
+      "province": "Kalimantan Utara",
+      "city": null
+    },
+    {
+      "query": "Sulawesi Utara",
+      "province": "Sulawesi Utara",
+      "city": null
+    },
+    {
+      "query": "Gorontalo",
+      "province": "Gorontalo",
+      "city": null
+    },
+    {
+      "query": "Sulawesi Tengah",
+      "province": "Sulawesi Tengah",
+      "city": null
+    },
+    {
+      "query": "Sulawesi Barat",
+      "province": "Sulawesi Barat",
+      "city": null
+    },
+    {
+      "query": "Sulawesi Selatan",
+      "province": "Sulawesi Selatan",
+      "city": null
+    },
+    {
+      "query": "Sulawesi Tenggara",
+      "province": "Sulawesi Tenggara",
+      "city": null
+    },
+    {
+      "query": "Maluku",
+      "province": "Maluku",
+      "city": null
+    },
+    {
+      "query": "Maluku Utara",
+      "province": "Maluku Utara",
+      "city": null
+    },
+    {
+      "query": "Papua",
+      "province": "Papua",
+      "city": null
+    },
+    {
+      "query": "Papua Barat",
+      "province": "Papua Barat",
+      "city": null
+    },
+    {
+      "query": "Papua Selatan",
+      "province": "Papua Selatan",
+      "city": null
+    },
+    {
+      "query": "Papua Tengah",
+      "province": "Papua Tengah",
+      "city": null
+    },
+    {
+      "query": "Papua Pegunungan",
+      "province": "Papua Pegunungan",
+      "city": null
+    },
+    {
+      "query": "Papua Barat Daya",
+      "province": "Papua Barat Daya",
+      "city": null
+    }
+  ],
+  "cities": [
+    {
+      "query": "Tangerang",
+      "province": "Banten",
+      "city": "Tangerang"
+    },
+    {
+      "query": "Cilegon",
+      "province": "Banten",
+      "city": "Cilegon"
+    },
+    {
+      "query": "Tangerang Selatan",
+      "province": "Banten",
+      "city": "Tangerang Selatan"
+    },
+    {
+      "query": "Bekasi",
+      "province": "Jawa Barat",
+      "city": "Bekasi"
+    },
+    {
+      "query": "Bogor",
+      "province": "Jawa Barat",
+      "city": "Bogor"
+    },
+    {
+      "query": "Depok",
+      "province": "Jawa Barat",
+      "city": "Depok"
+    },
+    {
+      "query": "Cirebon",
+      "province": "Jawa Barat",
+      "city": "Cirebon"
+    },
+    {
+      "query": "Karawang",
+      "province": "Jawa Barat",
+      "city": "Karawang"
+    },
+    {
+      "query": "Sukabumi",
+      "province": "Jawa Barat",
+      "city": "Sukabumi"
+    },
+    {
+      "query": "Tasikmalaya",
+      "province": "Jawa Barat",
+      "city": "Tasikmalaya"
+    },
+    {
+      "query": "Purwakarta",
+      "province": "Jawa Barat",
+      "city": "Purwakarta"
+    },
+    {
+      "query": "Surakarta",
+      "province": "Jawa Tengah",
+      "city": "Surakarta"
+    },
+    {
+      "query": "Tegal",
+      "province": "Jawa Tengah",
+      "city": "Tegal"
+    },
+    {
+      "query": "Pekalongan",
+      "province": "Jawa Tengah",
+      "city": "Pekalongan"
+    },
+    {
+      "query": "Kudus",
+      "province": "Jawa Tengah",
+      "city": "Kudus"
+    },
+    {
+      "query": "Cilacap",
+      "province": "Jawa Tengah",
+      "city": "Cilacap"
+    },
+    {
+      "query": "Malang",
+      "province": "Jawa Timur",
+      "city": "Malang"
+    },
+    {
+      "query": "Sidoarjo",
+      "province": "Jawa Timur",
+      "city": "Sidoarjo"
+    },
+    {
+      "query": "Gresik",
+      "province": "Jawa Timur",
+      "city": "Gresik"
+    },
+    {
+      "query": "Kediri",
+      "province": "Jawa Timur",
+      "city": "Kediri"
+    },
+    {
+      "query": "Jember",
+      "province": "Jawa Timur",
+      "city": "Jember"
+    },
+    {
+      "query": "Banyuwangi",
+      "province": "Jawa Timur",
+      "city": "Banyuwangi"
+    },
+    {
+      "query": "Pasuruan",
+      "province": "Jawa Timur",
+      "city": "Pasuruan"
+    },
+    {
+      "query": "Balikpapan",
+      "province": "Kalimantan Timur",
+      "city": "Balikpapan"
+    },
+    {
+      "query": "Ternate",
+      "province": "Maluku Utara",
+      "city": "Ternate"
+    },
+    {
+      "query": "Sorong",
+      "province": "Papua Barat Daya",
+      "city": "Sorong"
+    }
+  ]
+}
