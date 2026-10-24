@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-24T21:21:08Z",
-  "finished_at": "2026-10-24T21:21:58Z",
+  "started_at": "2026-10-24T22:09:43Z",
+  "finished_at": "2026-10-24T22:10:40Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 508,
+      "records": 509,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,16 +42,16 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 667,
-  "records_after_deduplication": 738,
+  "records_received_this_run": 668,
+  "records_after_deduplication": 744,
   "quality_label_counts": {
     "HOT": 155,
-    "MEDIUM": 583,
+    "MEDIUM": 589,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 731,
-    "stale": 7
+    "active_unverified": 736,
+    "stale": 8
   },
   "flyer_ocr_attempted": 0,
   "configuration": {
