@@ -375,6 +375,47 @@ def clean_position(title: str) -> str:
     return title.strip(" -:|")[:180] or clean_text(title, 180)
 
 
+def infer_job_category(text: str) -> str:
+    value = clean_text(text).lower()
+    mapping = [
+        (("software engineer", "software developer", "developer", "programmer", "data analyst",
+          "data engineer", "cybersecurity", "it support", "helpdesk", "network engineer",
+          "system administrator", "devops", "cloud engineer", "machine learning", "artificial intelligence",
+          "web developer", "mobile developer"), "IT & Software"),
+        (("accounting", "accountant", "akuntansi", "finance", "keuangan", "pajak", "tax",
+          "auditor", "bookkeeper", "billing", "payroll"), "Finance & Accounting"),
+        (("sales", "marketing", "business development", "digital marketing", "social media",
+          "account executive", "telemarketing", "brand marketing", "public relations", "seo specialist"), "Sales & Marketing"),
+        (("human resources", "recruitment", "recruiter", "talent acquisition", "personalia",
+          "hr officer", "hrd", "human resource"), "HR & Recruitment"),
+        (("admin", "administrative", "data entry", "secretary", "sekretaris", "office assistant",
+          "staff kantor", "front office"), "Admin & Office"),
+        (("customer service", "customer support", "call center", "contact center",
+          "client support", "guest relations"), "Customer Service"),
+        (("warehouse", "gudang", "logistic", "logistik", "supply chain", "kurir", "delivery",
+          "driver", "sopir", "operator produksi", "operator mesin", "checker", "picker"), "Operations & Logistics"),
+        (("engineer", "engineering", "teknisi", "maintenance", "manufaktur", "production",
+          "quality control", "quality assurance", "mechanic", "mekanik", "operator pabrik"), "Engineering & Manufacturing"),
+        (("hotel", "waiter", "waitress", "barista", "cook", "chef", "housekeeping",
+          "restaurant", "restoran", "hospitality", "travel agent", "pariwisata"), "Hospitality & Tourism"),
+        (("nurse", "perawat", "dokter", "doctor", "bidan", "farmasi", "apoteker",
+          "klinik", "medical representative", "tenaga kesehatan", "radiografer"), "Healthcare"),
+        (("guru", "teacher", "tutor", "lecturer", "dosen", "pengajar", "tenaga pendidik"), "Education"),
+        (("designer", "design", "ui/ux", "graphic", "video editor", "fotografer",
+          "photographer", "illustrator", "creative", "animator", "content creator"), "Design & Creative"),
+        (("construction", "konstruksi", "sipil", "arsitek", "architect", "drafter",
+          "property", "real estate", "project engineer", "site engineer"), "Construction & Property"),
+        (("lawyer", "legal", "hukum", "compliance", "paralegal", "notaris"), "Legal & Compliance"),
+        (("procurement", "purchasing", "pengadaan", "buyer", "sourcing specialist"), "Procurement"),
+        (("security", "satpam", "cleaning service", "cleaner", "office boy", "office girl",
+          "housekeeping staff"), "Facility & Security"),
+    ]
+    for terms, label in mapping:
+        if any(term in value for term in terms):
+            return label
+    return "Other / General"
+
+
 def infer_work_mode(text: str) -> str | None:
     value = clean_text(text).lower()
     if any(term in value for term in ("hybrid", "kombinasi wfo dan wfh")):
@@ -666,6 +707,7 @@ def make_record(
         "id": make_id(url, title, company or "", city or ""),
         "title": title or "Lowongan kerja (judul perlu diverifikasi)",
         "position": clean_position(title),
+        "job_category": infer_job_category(full_text),
         "company_name": company or None,
         "listing_url": clean_url(url) or None,
         "application_url": (str(application_url).strip() if application_url and safe_public_url(str(application_url)) else None),
@@ -736,6 +778,10 @@ def query_pool() -> list[dict]:
         '"walk in interview"',
         '"loker SMA SMK"',
         '"lowongan fresh graduate"',
+        '"lowongan kerja tanpa pengalaman"',
+        '"lowongan kerja operator produksi"',
+        '"lowongan kerja driver kurir"',
+        '"lowongan kerja part time"',
     ]
     queries = []
     for item in targets:
@@ -755,6 +801,12 @@ def query_pool() -> list[dict]:
         '"lowongan kerja remote" Indonesia when:7d',
         '"lowongan kerja part time" Indonesia when:7d',
         '"lowongan kerja magang" Indonesia when:7d',
+        '"lowongan kerja operator produksi" Indonesia when:7d',
+        '"lowongan kerja driver kurir" Indonesia when:7d',
+        '"lowongan kerja hotel restoran" Indonesia when:7d',
+        '"lowongan tanpa pengalaman" Indonesia when:7d',
+        '"lowongan kerja disnaker" Indonesia when:7d',
+        '"rekrutmen BUMN" Indonesia when:7d',
         '"rekrutmen" Indonesia when:7d',
         '"penerimaan tenaga kerja" Indonesia when:7d',
     ]
@@ -862,11 +914,16 @@ def location_is_eligible(location: str, allow_missing: bool = False) -> tuple[bo
 def fetch_public_api_records() -> tuple[list[dict], dict]:
     records = []
     stats = {}
+    # Himalayas listings are disabled in the public GitHub data feed by default.
+    # Enable only for direct display on an owned site/backend with source credit,
+    # unchanged applicationLink, expiry handling, and no third-party redistribution.
+    himalayas_enabled = os.getenv("ENABLE_HIMALAYAS_API", "0").lower() in ("1", "true", "yes")
     sources = [
         ("jobicy", "https://jobicy.com/api/v2/remote-jobs", {"count": 200, "geo": "apac"}),
         ("remoteok", "https://remoteok.com/api", None),
-        ("himalayas", "https://himalayas.app/jobs/api", {"limit": 20}),
     ]
+    if himalayas_enabled:
+        sources.append(("himalayas", "https://himalayas.app/jobs/api", {"limit": 20}))
     source_labels = {
         "jobicy": "Jobicy API",
         "remoteok": "Remote OK API",
@@ -915,6 +972,13 @@ def fetch_public_api_records() -> tuple[list[dict], dict]:
                         provider_url = "https://himalayas.app" + str(guid)
                 if not title or not provider_url or not safe_public_url(str(provider_url)):
                     continue
+                source_expiry = parse_date(value_from(item, "expiryDate", "expiry_date"))
+                if source_name == "himalayas" and source_expiry:
+                    try:
+                        if datetime.fromisoformat(source_expiry.replace("Z", "+00:00")) < now_utc():
+                            continue
+                    except ValueError:
+                        pass
 
                 body = value_from(item, "description", "job_description", "jobDescription", "jobExcerpt", "excerpt", "summary", default="")
                 location = value_from(
@@ -931,7 +995,16 @@ def fetch_public_api_records() -> tuple[list[dict], dict]:
                     restrictions = value_from(item, "locationRestrictions", "location_restrictions", default=[])
                     if isinstance(restrictions, str):
                         restrictions = [restrictions]
-                    restriction_values = [clean_text(x).lower() for x in restrictions or []]
+                    restriction_values = []
+                    for restriction in restrictions or []:
+                        if isinstance(restriction, dict):
+                            restriction_values.extend(
+                                clean_text(restriction.get(key)).lower()
+                                for key in ("alpha2", "name", "slug")
+                                if restriction.get(key)
+                            )
+                        else:
+                            restriction_values.append(clean_text(restriction).lower())
                     restriction_text = " ".join(restriction_values)
                     eligible_country = any(
                         value in ("id", "idn", "indonesia") or
@@ -941,11 +1014,25 @@ def fetch_public_api_records() -> tuple[list[dict], dict]:
                     if restriction_text and not eligible_country:
                         continue
                     timezone_restrictions = value_from(item, "timezoneRestrictions", "timezone_restrictions", default=[])
-                    if isinstance(timezone_restrictions, str):
+                    if isinstance(timezone_restrictions, (str, int, float)):
                         timezone_restrictions = [timezone_restrictions]
-                    timezone_text = " ".join(clean_text(x) for x in timezone_restrictions or []).lower()
-                    if timezone_text:
-                        indonesia_time_match = any(term in timezone_text for term in ("utc+7", "utc +7", "utc+07", "gmt+7", "+07", "7:00", "asia/jakarta"))
+                    if timezone_restrictions:
+                        indonesia_time_match = False
+                        for offset_value in timezone_restrictions:
+                            if isinstance(offset_value, (int, float)):
+                                offset = float(offset_value)
+                            else:
+                                offset_text = clean_text(offset_value).lower()
+                                offset_match = re.search(r"(?:utc|gmt)?\s*([+-]?\d{1,2}(?:\.\d+)?)", offset_text)
+                                if not offset_match:
+                                    continue
+                                try:
+                                    offset = float(offset_match.group(1))
+                                except ValueError:
+                                    continue
+                            if offset in (7.0, 8.0, 9.0):
+                                indonesia_time_match = True
+                                break
                         if not indonesia_time_match:
                             continue
                     eligible = True
@@ -1009,6 +1096,15 @@ def fetch_public_api_records() -> tuple[list[dict], dict]:
                     record["location_confidence"] = "source_declared"
                     record["location_label"] = "Remote / eligibility to be verified"
                     record["quality_score"], record["quality_label"], record["quality_explanation"] = quality(record)
+                if source_name == "himalayas":
+                    record["source_expiry_at"] = source_expiry
+                    seniority = value_from(item, "seniority", "jobLevel", "job_level")
+                    if isinstance(seniority, list):
+                        seniority = ", ".join(clean_text(x) for x in seniority)
+                    record["experience_level"] = clean_text(seniority, 80) if seniority else None
+                    categories = value_from(item, "categories", "parentCategories", "jobIndustry", "job_industry")
+                    if isinstance(categories, list) and categories:
+                        record["provider_categories"] = [clean_text(x, 80) for x in categories if clean_text(x)]
                 records.append(record)
 
             stats[source_name] = {
@@ -1018,6 +1114,12 @@ def fetch_public_api_records() -> tuple[list[dict], dict]:
         except Exception as exc:
             stats[source_name] = {"status": "error", "error": str(exc)[:240]}
             log.warning("Public API source %s failed: %s", source_name, exc, exc_info=True)
+
+    if not himalayas_enabled:
+        stats["himalayas"] = {
+            "status": "skipped",
+            "reason": "disabled in the public GitHub feed; enable only for direct display on the owned website/backend with attribution and expiry checks",
+        }
 
     # Jooble is opt-in: the API key must be supplied by the repository owner.
     jooble_key = os.getenv("JOOBLE_API_KEY", "").strip()
