@@ -77,6 +77,9 @@ jobs:
           if compgen -G "data/jobs_*.json" > /dev/null; then
             cp data/jobs_*.json "$output_dir/data/"
           fi
+          for generated in data/blocked_domains.json data/company_career_registry.json data/company_scrape_state.json; do
+            if [[ -f "$generated" ]]; then cp "$generated" "$output_dir/data/"; fi
+          done
 
           for attempt in 1 2 3 4; do
             git fetch origin main
@@ -87,6 +90,10 @@ jobs:
             if compgen -G "$output_dir/data/jobs_*.json" > /dev/null; then
               cp "$output_dir"/data/jobs_*.json data/
             fi
+            for generated in data/blocked_domains.json data/company_career_registry.json data/company_scrape_state.json; do
+              basename="$(basename "$generated")"
+              if [[ -f "$output_dir/data/$basename" ]]; then cp "$output_dir/data/$basename" "$generated"; fi
+            done
             git add data/jobs.json data/run_status.json data/jobs_*.json index.html data/blocked_domains.json
             for generated in data/company_career_registry.json data/company_scrape_state.json; do
               if [[ -f "$generated" ]]; then git add "$generated"; fi
