@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "started_at": "2026-10-25T10:18:23Z",
-  "finished_at": "2026-10-25T10:19:14Z",
+  "started_at": "2026-10-25T10:21:34Z",
+  "finished_at": "2026-10-25T10:22:27Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
@@ -45,8 +45,8 @@
   "records_received_this_run": 636,
   "records_after_deduplication": 2587,
   "quality_label_counts": {
-    "HOT": 468,
-    "MEDIUM": 2119,
+    "HOT": 469,
+    "MEDIUM": 2118,
     "LOW": 0
   },
   "listing_state_counts": {
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-25T10:18:23Z",
-    "finished_at": "2026-10-25T10:19:44Z",
+    "started_at": "2026-10-25T10:21:33Z",
+    "finished_at": "2026-10-25T10:22:53Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -136,7 +136,7 @@
     "records_after_deduplication": 2587,
     "output_schema": "common v2 plus compatibility aliases",
     "hourly_rotation_slot": 498034,
-    "elapsed_seconds": 80.92
+    "elapsed_seconds": 79.52
   },
   "company_sites": {
     "status": "skipped",
