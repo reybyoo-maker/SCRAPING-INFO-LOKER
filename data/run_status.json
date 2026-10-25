@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-25T13:24:55Z",
-  "finished_at": "2026-10-25T13:25:50Z",
+  "started_at": "2026-10-25T14:18:49Z",
+  "finished_at": "2026-10-25T14:19:41Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 471,
+      "records": 458,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -19,7 +19,7 @@
     "public_apis": {
       "jobicy": {
         "status": "ok",
-        "items_received": 198,
+        "items_received": 200,
         "records_accepted": 107
       },
       "remoteok": {
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 633,
-  "records_after_deduplication": 2599,
+  "records_received_this_run": 620,
+  "records_after_deduplication": 2620,
   "quality_label_counts": {
-    "HOT": 469,
-    "MEDIUM": 2130,
+    "HOT": 484,
+    "MEDIUM": 2136,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 2554,
+    "active_unverified": 2575,
     "stale": 45
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-25T13:24:55Z",
-    "finished_at": "2026-10-25T13:26:14Z",
+    "started_at": "2026-10-25T14:18:49Z",
+    "finished_at": "2026-10-25T14:20:05Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Tegal",
-        "keyword_query": "sales"
+        "location_query": "Tual",
+        "keyword_query": "marketing"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Jawa Tengah",
-        "keyword_query": "finance"
+        "location_query": "Kalimantan Tengah",
+        "keyword_query": "programmer"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 2599,
+    "records_after_deduplication": 2621,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498037,
-    "elapsed_seconds": 79.35
+    "hourly_rotation_slot": 498038,
+    "elapsed_seconds": 76.34
   },
   "company_sites": {
     "status": "skipped",
