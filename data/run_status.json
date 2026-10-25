@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-25T09:20:32Z",
-  "finished_at": "2026-10-25T09:21:26Z",
+  "started_at": "2026-10-25T10:04:38Z",
+  "finished_at": "2026-10-25T10:05:32Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 454,
+      "records": 477,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 615,
-  "records_after_deduplication": 2794,
+  "records_received_this_run": 638,
+  "records_after_deduplication": 2799,
   "quality_label_counts": {
     "HOT": 468,
-    "MEDIUM": 2326,
+    "MEDIUM": 2331,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 2739,
+    "active_unverified": 2744,
     "stale": 55
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-25T09:20:32Z",
-    "finished_at": "2026-10-25T09:21:52Z",
+    "started_at": "2026-10-25T10:04:38Z",
+    "finished_at": "2026-10-25T10:06:01Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Sampang",
-        "keyword_query": "admin"
+        "location_query": "Singkawang",
+        "keyword_query": "customer service"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Tasikmalaya",
-        "keyword_query": "operator produksi"
+        "location_query": "Tomohon",
+        "keyword_query": "warehouse"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 2794,
+    "records_after_deduplication": 2587,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498033,
-    "elapsed_seconds": 80.14
+    "hourly_rotation_slot": 498034,
+    "elapsed_seconds": 82.93
   },
   "company_sites": {
     "status": "skipped",
