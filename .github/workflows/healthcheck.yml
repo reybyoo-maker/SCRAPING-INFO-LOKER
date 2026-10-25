@@ -7,7 +7,7 @@ on:
       - "scripts/healthcheck.py"
       - ".github/workflows/healthcheck.yml"
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 permissions:
