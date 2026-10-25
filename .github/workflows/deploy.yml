@@ -60,15 +60,30 @@ jobs:
           html = Path("index.html").read_text(encoding="utf-8")
           if "<!doctype html>" not in html.lower():
               raise SystemExit("index.html is missing a doctype")
-          scripts = re.findall(r"<script>(.*?)</script>", html, flags=re.S | re.I)
-          if len(scripts) != 1:
-              raise SystemExit(f"Expected one inline application script; found {len(scripts)}")
-          Path("/tmp/info-loker-app.js").write_text(scripts[0], encoding="utf-8")
+          scripts = []
+          for match in re.finditer(r"<script(?P<attrs>[^>]*)>(?P<body>.*?)</script>", html, flags=re.S | re.I):
+              attrs = match.group("attrs")
+              body = match.group("body").strip()
+          if not body or re.search(r"type=['\"]application/ld\+json['\"]", attrs, flags=re.I):
+                  continue
+              scripts.append(body)
+          if not scripts:
+              raise SystemExit("No executable inline JavaScript found in index.html")
+          Path("/tmp/info-loker-app.js").write_text("\n;\n".join(scripts), encoding="utf-8")
+          for asset in ("logo.svg", "favicon.svg", "og-image.svg", "site.webmanifest", "robots.txt", "sitemap.xml"):
+              if not Path(asset).is_file():
+                  raise SystemExit(f"Required website asset is missing: {asset}")
+          if "DOMAIN-KAMU.com" in html:
+              raise SystemExit("index.html still contains a placeholder domain")
+          manifest = json.loads(Path("site.webmanifest").read_text(encoding="utf-8"))
+          for icon in manifest.get("icons", []):
+              if not Path(icon.get("src", "")).is_file():
+                  raise SystemExit(f"Manifest icon is missing: {icon.get('src')}")
           data = json.loads(Path("data/jobs.json").read_text(encoding="utf-8"))
           jobs = data if isinstance(data, list) else data.get("jobs", [])
           if not isinstance(jobs, list):
               raise SystemExit("data/jobs.json does not contain a jobs list")
-          print(f"HTML valid; {len(jobs)} jobs parsed.")
+          print(f"HTML valid; {len(scripts)} JavaScript blocks checked; {len(jobs)} jobs parsed.")
           PY
           node --check /tmp/info-loker-app.js
           python -m json.tool data/run_status.json >/dev/null
@@ -80,6 +95,7 @@ jobs:
           set -euo pipefail
           mkdir -p _site/data _site/config
           cp index.html _site/index.html
+          cp logo.svg favicon.svg og-image.svg site.webmanifest robots.txt sitemap.xml _site/
           cp data/jobs.json _site/data/jobs.json
           cp data/run_status.json _site/data/run_status.json
           cp config/locations.json _site/config/locations.json
