@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-25T02:22:22Z",
-  "finished_at": "2026-10-25T02:23:21Z",
+  "started_at": "2026-10-25T03:21:02Z",
+  "finished_at": "2026-10-25T03:21:56Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 708,
+      "records": 714,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 866,
-  "records_after_deduplication": 2471,
+  "records_received_this_run": 872,
+  "records_after_deduplication": 2478,
   "quality_label_counts": {
-    "HOT": 392,
-    "MEDIUM": 2079,
+    "HOT": 394,
+    "MEDIUM": 2084,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 2419,
+    "active_unverified": 2426,
     "stale": 52
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-25T02:22:21Z",
-    "finished_at": "2026-10-25T02:23:53Z",
+    "started_at": "2026-10-25T03:21:02Z",
+    "finished_at": "2026-10-25T03:22:20Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,15 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Lebak",
-        "keyword_query": "magang"
+        "location_query": "Majalengka",
+        "keyword_query": "fresh graduate"
       },
       "dealls": {
-        "status": "no_records",
-        "records_accepted": 0,
-        "reason": "Parser returned zero records; the page may be JavaScript-rendered, the search URL may have changed, or selectors/JSON-LD may need updating. Source remains enabled for the next scheduled retry.",
-        "location_query": "Palembang",
-        "keyword_query": "walk in interview"
+        "status": "ok",
+        "records_accepted": 18,
+        "location_query": "Pariaman",
+        "keyword_query": "lowongan kerja"
       },
       "maganghub": {
         "status": "blocked",
@@ -125,7 +124,7 @@
         "retry_on_next_scheduled_run": true
       }
     },
-    "additional_records": 15,
+    "additional_records": 33,
     "company_site_records": 0,
     "company_sites": {
       "status": "skipped",
@@ -134,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 2471,
+    "records_after_deduplication": 2478,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498026,
-    "elapsed_seconds": 91.19
+    "hourly_rotation_slot": 498027,
+    "elapsed_seconds": 78.25
   },
   "company_sites": {
     "status": "skipped",
