@@ -95,7 +95,11 @@ try {
   assert.equal(await page.locator("#jobDialog").evaluate(dialog => dialog.open), false,
     "Detail dialog close button should close the dialog");
 
-  // Check that the supplied logo assets load when available in the served tree.
+  // Check that all local brand and SEO assets are served in the static bundle.
+  for (const asset of ["logo.svg", "favicon.svg", "og-image.svg", "site.webmanifest", "robots.txt", "sitemap.xml"]) {
+    const assetResponse = await page.request.get(new URL(asset, baseUrl).href);
+    assert.equal(assetResponse.status(), 200, `The ${asset} asset should load successfully`);
+  }
   const logoState = await page.locator('img[src="logo.svg"]').first().evaluate(img => ({
     complete: img.complete,
     width: img.naturalWidth

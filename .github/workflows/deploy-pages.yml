@@ -10,7 +10,7 @@ permissions:
 
 concurrency:
   group: github-pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   validate:
@@ -38,10 +38,17 @@ jobs:
           html = Path("index.html").read_text(encoding="utf-8")
           if "<!doctype html>" not in html.lower():
               raise SystemExit("index.html is missing a doctype")
-          scripts = re.findall(r"<script>(.*?)</script>", html, flags=re.S | re.I)
-          if len(scripts) != 1:
-              raise SystemExit(f"Expected exactly one inline app script, got {len(scripts)}")
-          Path("/tmp/info-loker-app.js").write_text(scripts[0], encoding="utf-8")
+          scripts = []
+          for attrs, body in re.findall(r'<script\b([^>]*)>(.*?)</script>', html, flags=re.S | re.I):
+              if re.search(r'type\s*=\s*["\']application/ld\+json["\']', attrs, re.I):
+                  continue
+              if re.search(r'\bsrc\s*=', attrs, re.I) or not body.strip():
+                  continue
+              scripts.append(body)
+          if not scripts:
+              raise SystemExit("No executable inline JavaScript scripts found")
+          for index, script in enumerate(scripts):
+              Path(f"/tmp/info-loker-app-{index}.js").write_text(script, encoding="utf-8")
           dataset = json.loads(Path("data/jobs.json").read_text(encoding="utf-8"))
           jobs = dataset if isinstance(dataset, list) else dataset.get("jobs", [])
           if not isinstance(jobs, list):
@@ -53,7 +60,7 @@ jobs:
           PY
 
       - name: Check JavaScript syntax
-        run: node --check /tmp/info-loker-app.js
+        run: for script in /tmp/info-loker-app-*.js; do node --check "$script"; done
 
   deploy:
     name: Deploy to GitHub Pages
@@ -81,6 +88,11 @@ jobs:
           cp data/jobs.json _site/data/jobs.json
           cp data/run_status.json _site/data/run_status.json
           cp config/locations.json _site/config/locations.json
+          for asset in logo.svg favicon.svg og-image.svg site.webmanifest robots.txt sitemap.xml; do
+            test -s "$asset"
+            cp "$asset" _site/
+            test -s "_site/$asset"
+          done
           touch _site/.nojekyll
           test -s _site/index.html
           test -s _site/data/jobs.json
