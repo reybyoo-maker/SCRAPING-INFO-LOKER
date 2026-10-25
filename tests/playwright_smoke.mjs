@@ -31,6 +31,34 @@ try {
   assert.match(bodyText, /Dataset siap|Dataset terhubung/i, "Dataset status should show successful loading");
   assert.equal(await page.locator("#sidebar").count(), 1,
     "A left-side workspace menu should be present");
+  assert.equal(await page.locator("#desktopSidebarToggle").count(), 1,
+    "Desktop should expose a sidebar collapse control");
+  const expandedLayout = await page.evaluate(() => ({
+    sidebarRight: document.querySelector("#sidebar").getBoundingClientRect().right,
+    mainLeft: document.querySelector("main").getBoundingClientRect().left,
+    mainRight: document.querySelector("main").getBoundingClientRect().right,
+    viewportWidth: window.innerWidth
+  }));
+  assert.ok(Math.abs(expandedLayout.mainLeft - expandedLayout.sidebarRight) <= 2,
+    `Main content should align to the sidebar edge: ${JSON.stringify(expandedLayout)}`);
+  assert.ok(expandedLayout.mainRight <= expandedLayout.viewportWidth + 1,
+    `Main content should not create horizontal overflow: ${JSON.stringify(expandedLayout)}`);
+  await page.locator("#desktopSidebarToggle").click();
+  await page.waitForTimeout(220);
+  const collapsedLayout = await page.evaluate(() => ({
+    sidebarWidth: document.querySelector("#sidebar").getBoundingClientRect().width,
+    mainLeft: document.querySelector("main").getBoundingClientRect().left
+  }));
+  assert.ok(collapsedLayout.sidebarWidth < expandedLayout.sidebarRight,
+    "Desktop sidebar should shrink when the collapse control is clicked");
+  assert.ok(Math.abs(collapsedLayout.mainLeft - collapsedLayout.sidebarWidth) <= 2,
+    "Main content should move left with the collapsed sidebar");
+  assert.equal(await page.locator("#sidebar").evaluate(sidebar => getComputedStyle(sidebar).overflowY), "auto",
+    "Sidebar should allow vertical scrolling");
+  await page.locator("#desktopSidebarToggle").click();
+  await page.waitForTimeout(220);
+  assert.ok(await page.locator("#sidebar").evaluate(sidebar => sidebar.scrollHeight >= sidebar.clientHeight),
+    "Sidebar container should support vertical scrolling when contents overflow");
   assert.equal(await page.locator("#famousCompaniesNav").count(), 1,
     "Sidebar should expose the famous companies directory");
 
@@ -55,9 +83,15 @@ try {
   await page.locator("#mobileMenuToggle").click();
   assert.equal(await page.locator("#sidebar").evaluate(sidebar => sidebar.classList.contains("is-open")), true,
     "Mobile menu button should open the responsive sidebar");
-  await page.locator("#sidebarScrim").click();
+  assert.equal(await page.locator("body").evaluate(body => body.classList.contains("sidebar-open")), true,
+    "Opening the mobile sidebar should lock background scrolling");
+  await page.locator("#sidebarScrim").click({ position: { x: 350, y: 400 } });
   assert.equal(await page.locator("#sidebar").evaluate(sidebar => sidebar.classList.contains("is-open")), false,
     "Backdrop should close the responsive sidebar");
+  assert.equal(await page.locator("body").evaluate(body => body.classList.contains("sidebar-open")), false,
+    "Closing the mobile sidebar should restore background scrolling");
+  assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1),
+    "Mobile layout should not create horizontal page overflow");
 
   assert.equal(pageErrors.length, 0, `Unexpected page errors: ${pageErrors.join("; ")}`);
 
