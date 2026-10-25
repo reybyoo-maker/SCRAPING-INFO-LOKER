@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-25T10:44:42Z",
-  "finished_at": "2026-10-25T10:45:37Z",
+  "started_at": "2026-10-25T11:18:07Z",
+  "finished_at": "2026-10-25T11:19:01Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 475,
+      "records": 476,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 636,
-  "records_after_deduplication": 2590,
+  "records_received_this_run": 637,
+  "records_after_deduplication": 2591,
   "quality_label_counts": {
     "HOT": 468,
-    "MEDIUM": 2122,
+    "MEDIUM": 2123,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 2545,
+    "active_unverified": 2546,
     "stale": 45
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-25T10:44:42Z",
-    "finished_at": "2026-10-25T10:46:03Z",
+    "started_at": "2026-10-25T11:18:07Z",
+    "finished_at": "2026-10-25T11:19:32Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Singkawang",
-        "keyword_query": "customer service"
+        "location_query": "Sumbawa",
+        "keyword_query": "operator produksi"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Tomohon",
-        "keyword_query": "warehouse"
+        "location_query": "Indonesia",
+        "keyword_query": "sales"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 2590,
+    "records_after_deduplication": 2591,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498034,
-    "elapsed_seconds": 80.95
+    "hourly_rotation_slot": 498035,
+    "elapsed_seconds": 84.85
   },
   "company_sites": {
     "status": "skipped",
