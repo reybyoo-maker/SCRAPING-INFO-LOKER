@@ -29,6 +29,36 @@ try {
     "Source filter should include Job Portal");
   const bodyText = await page.locator("body").innerText();
   assert.match(bodyText, /Dataset siap|Dataset terhubung/i, "Dataset status should show successful loading");
+  assert.equal(await page.locator("#sidebar").count(), 1,
+    "A left-side workspace menu should be present");
+  assert.equal(await page.locator("#famousCompaniesNav").count(), 1,
+    "Sidebar should expose the famous companies directory");
+
+  await page.locator("#themeToggle").click();
+  assert.equal(await page.locator("html").getAttribute("data-theme"), "dark",
+    "Theme switch should enable dark mode");
+  await page.locator("#themeToggle").click();
+  assert.equal(await page.locator("html").getAttribute("data-theme"), "light",
+    "Theme switch should return to light mode");
+
+  await page.locator("#famousCompaniesNav").click();
+  assert.equal(await page.locator("#companyDialog").evaluate(dialog => dialog.open), true,
+    "Famous companies button should open the company directory");
+  await page.locator("#companyKeyword").fill("Pertamina");
+  assert.equal(await page.locator(".company-card").count(), 1,
+    "Company directory search should filter results");
+  await page.locator('[data-company-search="Pertamina"]').click();
+  assert.equal(await page.locator("#keyword").inputValue(), "Pertamina",
+    "Company selection should populate the job search");
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.locator("#mobileMenuToggle").click();
+  assert.equal(await page.locator("#sidebar").evaluate(sidebar => sidebar.classList.contains("is-open")), true,
+    "Mobile menu button should open the responsive sidebar");
+  await page.locator("#sidebarScrim").click();
+  assert.equal(await page.locator("#sidebar").evaluate(sidebar => sidebar.classList.contains("is-open")), false,
+    "Backdrop should close the responsive sidebar");
+
   assert.equal(pageErrors.length, 0, `Unexpected page errors: ${pageErrors.join("; ")}`);
 
   await mkdir("artifacts", { recursive: true });
