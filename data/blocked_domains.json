@@ -191,12 +191,6 @@
       "reason": "HTTP 403; requests paused until manual review",
       "http_status": 403,
       "retry_policy": "manual_review_required"
-    },
-    "www.prasetiyamulya.ac.id": {
-      "blocked_at": "2026-10-25T09:12:09Z",
-      "reason": "HTTP 429; requests paused until manual review",
-      "http_status": 429,
-      "retry_policy": "manual_review_required"
     }
   }
 }
