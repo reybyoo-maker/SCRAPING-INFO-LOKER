@@ -194,6 +194,51 @@ html[data-theme="dark"] .empty{border-color:#454650}
 }
 @media(prefers-reduced-motion:reduce){.sidebar,.sidebar-scrim,.company-card{transition:none}}
 
+
+/* Layout bug fix: keep page content clear of the fixed sidebar and make it collapsible. */
+html{--sidebar-width:252px;--sidebar-collapsed-width:76px}
+html.sidebar-collapsed{--sidebar-width:76px}
+.topbar{margin-left:var(--sidebar-width);width:calc(100% - var(--sidebar-width));transition:margin-left .18s ease,width .18s ease}
+main,footer{margin-left:var(--sidebar-width);width:calc(100% - var(--sidebar-width));transition:margin-left .18s ease,width .18s ease}
+.sidebar{width:var(--sidebar-width);height:100dvh;max-height:100vh;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;scrollbar-width:thin;scrollbar-color:#ded7dd transparent;transition:width .18s ease,transform .22s ease}
+.sidebar-brand,.sidebar-label,.side-nav,.side-divider,.sidebar-bottom{flex-shrink:0}
+.side-nav{min-height:min-content}
+.desktop-sidebar-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:38px}
+.desktop-sidebar-toggle #sidebarCollapseIcon{display:inline-grid;place-items:center;width:15px;font-size:21px;line-height:1}
+.desktop-sidebar-toggle #sidebarCollapseText{font-size:11px}
+html.sidebar-collapsed .sidebar{padding-left:10px;padding-right:10px;gap:22px}
+html.sidebar-collapsed .sidebar-brand{justify-content:center;padding:0}
+html.sidebar-collapsed .sidebar-brand .brand-copy,html.sidebar-collapsed .sidebar-label{display:none}
+html.sidebar-collapsed .side-link{justify-content:center;gap:0;padding:11px 7px}
+html.sidebar-collapsed .side-link>span:not(.side-icon){display:none}
+html.sidebar-collapsed .side-icon{width:22px;height:22px}
+html.sidebar-collapsed .side-icon svg{width:20px;height:20px}
+html.sidebar-collapsed .sidebar-bottom{display:flex;justify-content:center;align-items:center;padding:10px 5px}
+html.sidebar-collapsed .sidebar-status{justify-content:center}
+html.sidebar-collapsed .sidebar-status span:last-child,html.sidebar-collapsed .sidebar-bottom p,html.sidebar-collapsed .sidebar-repo{display:none}
+body.sidebar-open{overflow:hidden}
+@media(max-width:1024px){
+  html.sidebar-collapsed{--sidebar-width:252px}
+  .topbar{margin-left:0;width:100%}
+  main,footer{margin-left:0;width:100%}
+  .sidebar{width:min(292px,86vw);max-width:86vw}
+  .desktop-sidebar-toggle{display:none}
+  html.sidebar-collapsed .sidebar{padding:16px 15px}
+  html.sidebar-collapsed .sidebar-brand{justify-content:flex-start;padding:0 8px}
+  html.sidebar-collapsed .sidebar-brand .brand-copy,html.sidebar-collapsed .sidebar-label{display:flex}
+  html.sidebar-collapsed .sidebar-label{display:block}
+  html.sidebar-collapsed .side-link{justify-content:flex-start;gap:11px;padding:10px 12px}
+  html.sidebar-collapsed .side-link>span:not(.side-icon){display:inline}
+  html.sidebar-collapsed .side-icon{width:19px;height:19px}
+  html.sidebar-collapsed .side-icon svg{width:18px;height:18px}
+  html.sidebar-collapsed .sidebar-bottom{display:block;padding:13px 12px}
+  html.sidebar-collapsed .sidebar-status{justify-content:flex-start}
+  html.sidebar-collapsed .sidebar-status span:last-child,html.sidebar-collapsed .sidebar-bottom p,html.sidebar-collapsed .sidebar-repo{display:initial}
+  html.sidebar-collapsed .sidebar-bottom p{display:block}
+  html.sidebar-collapsed .sidebar-repo{display:inline-flex}
+}
+@media(prefers-reduced-motion:reduce){.topbar,main,footer,.sidebar{transition:none}}
+
 </style>
 </head>
 <body>
@@ -221,6 +266,7 @@ html[data-theme="dark"] .empty{border-color:#454650}
 </aside>
 <header class="topbar">
   <div class="shell nav">
+    <button class="btn btn-secondary desktop-sidebar-toggle" id="desktopSidebarToggle" type="button" aria-label="Perkecil menu kiri" aria-expanded="true" title="Perkecil menu kiri"><span id="sidebarCollapseIcon" aria-hidden="true">‹</span><span id="sidebarCollapseText">Perkecil menu</span></button>
     <button class="mobile-menu" id="mobileMenuToggle" type="button" aria-label="Buka menu" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="menu-label">Menu</span></button>
     <a class="brand" href="#" aria-label="INFO LOKER by Ai">
       <span class="logo">IL</span>
@@ -352,6 +398,24 @@ function renderCompanies(filter){
   return '<article class="company-card"><div class="company-card-head"><div class="company-badge" aria-hidden="true">'+esc(initials)+'</div><div class="company-card-copy"><h3 class="company-card-name">'+esc(c.name)+'</h3><p class="company-card-category">'+esc(c.category)+'</p></div></div><div class="company-card-actions"><button class="btn btn-primary" type="button" data-company-search="'+esc(c.name)+'">Cari lowongan</button><a href="'+esc(c.url)+'" target="_blank" rel="noopener noreferrer">Situs resmi ↗</a></div></article>';
  }).join('');
 }
+
+function setSidebarCollapsed(collapsed,savePreference){
+ var desktop=window.innerWidth>1024;
+ if(!desktop)collapsed=false;
+ document.documentElement.classList.toggle('sidebar-collapsed',Boolean(collapsed));
+ var button=$('desktopSidebarToggle');
+ if(button){
+  button.setAttribute('aria-expanded',String(!collapsed));
+  button.setAttribute('aria-label',collapsed?'Perbesar menu kiri':'Perkecil menu kiri');
+  button.setAttribute('title',collapsed?'Perbesar menu kiri':'Perkecil menu kiri');
+  $('sidebarCollapseIcon').textContent=collapsed?'›':'‹';
+  $('sidebarCollapseText').textContent=collapsed?'Perbesar menu':'Perkecil menu';
+ }
+ if(savePreference!==false){
+  try{localStorage.setItem('info-loker-sidebar-collapsed',desktop&&collapsed?'1':'0')}catch(e){}
+ }
+}
+
 function closeSidebar(){
  $('sidebar').classList.remove('is-open');$('sidebarScrim').classList.remove('is-open');$('mobileMenuToggle').setAttribute('aria-expanded','false');$('mobileMenuToggle').setAttribute('aria-label','Buka menu');$('sidebarScrim').setAttribute('aria-hidden','true');document.body.classList.remove('sidebar-open');
 }
@@ -418,7 +482,20 @@ el.list.addEventListener('click',function(e){var save=e.target.closest('[data-sa
 el.dialog.addEventListener('click',function(e){if(e.target===el.dialog)el.dialog.close()});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(el.dialog.open)el.dialog.close();if($('companyDialog').open)$('companyDialog').close();closeSidebar()}});
 
+
 var savedTheme='light';try{savedTheme=localStorage.getItem('info-loker-theme')==='dark'?'dark':'light'}catch(e){}setTheme(savedTheme);
+var wasDesktop=window.innerWidth>1024;
+var preferredCollapsed=false;try{preferredCollapsed=localStorage.getItem('info-loker-sidebar-collapsed')==='1'}catch(e){}
+setSidebarCollapsed(preferredCollapsed,false);
+$('desktopSidebarToggle').addEventListener('click',function(){setSidebarCollapsed(!document.documentElement.classList.contains('sidebar-collapsed'),true)});
+window.addEventListener('resize',function(){
+ var nowDesktop=window.innerWidth>1024;
+ if(nowDesktop===wasDesktop)return;
+ wasDesktop=nowDesktop;
+ closeSidebar();
+ if(nowDesktop){var shouldCollapse=false;try{shouldCollapse=localStorage.getItem('info-loker-sidebar-collapsed')==='1'}catch(e){}setSidebarCollapsed(shouldCollapse,false)}
+ else setSidebarCollapsed(false,false);
+});
 $('themeToggle').addEventListener('click',function(){setTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark')});
 $('mobileMenuToggle').addEventListener('click',function(){var open=!$('sidebar').classList.contains('is-open');$('sidebar').classList.toggle('is-open',open);$('sidebarScrim').classList.toggle('is-open',open);$('mobileMenuToggle').setAttribute('aria-expanded',String(open));$('mobileMenuToggle').setAttribute('aria-label',open?'Tutup menu':'Buka menu');$('sidebarScrim').setAttribute('aria-hidden',String(!open));document.body.classList.toggle('sidebar-open',open)});
 $('sidebarScrim').addEventListener('click',closeSidebar);
