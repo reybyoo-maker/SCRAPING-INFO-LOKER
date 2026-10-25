@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-25T19:19:10Z",
-  "finished_at": "2026-10-25T19:20:05Z",
+  "started_at": "2026-10-25T20:13:52Z",
+  "finished_at": "2026-10-25T20:14:43Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 358,
+      "records": 332,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,7 +42,7 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 519,
+  "records_received_this_run": 493,
   "records_after_deduplication": 3291,
   "quality_label_counts": {
     "HOT": 601,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-25T19:19:10Z",
-    "finished_at": "2026-10-25T19:20:34Z",
+    "started_at": "2026-10-25T20:13:52Z",
+    "finished_at": "2026-10-25T20:15:15Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Sulawesi Tenggara",
-        "keyword_query": "fresh graduate"
+        "location_query": "Papua Pegunungan",
+        "keyword_query": "walk in interview"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Bima",
-        "keyword_query": "lowongan kerja"
+        "location_query": "Bontang",
+        "keyword_query": "loker terbaru"
       },
       "maganghub": {
         "status": "blocked",
@@ -135,8 +135,8 @@
     },
     "records_after_deduplication": 3291,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498043,
-    "elapsed_seconds": 84.92
+    "hourly_rotation_slot": 498044,
+    "elapsed_seconds": 82.93
   },
   "company_sites": {
     "status": "skipped",
