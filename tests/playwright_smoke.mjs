@@ -9,6 +9,57 @@ const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, de
 const pageErrors = [];
 page.on("pageerror", error => pageErrors.push(error.message));
 
+// Inject two visually identical records with different IDs and URLs. The UI
+// must collapse them before metrics, filtering, pagination, and rendering.
+let injectedRawRecordCount = 0;
+let duplicateFixtureInjected = false;
+await page.route("**/data/jobs.json*", async route => {
+  const response = await route.fetch();
+  if (!response.ok()) {
+    await route.fulfill({ response });
+    return;
+  }
+  let payload;
+  try {
+    payload = await response.json();
+  } catch {
+    await route.fulfill({ response });
+    return;
+  }
+  const jobs = Array.isArray(payload) ? payload : payload?.jobs;
+  if (!Array.isArray(jobs) || jobs.length === 0) {
+    await route.fulfill({ response });
+    return;
+  }
+  const baseIndex = jobs.findIndex(job => job && (job.position || job.title) && job.company_name);
+  if (baseIndex < 0) {
+    await route.fulfill({ response });
+    return;
+  }
+  const base = jobs[baseIndex];
+  const duplicates = [1, 2].map(n => ({
+    ...base,
+    id: `dedupe-smoke-${n}`,
+    collector_id: `dedupe-smoke-${n}`,
+    legacy_id: `dedupe-smoke-${n}`,
+    listing_url: `https://duplicate-fixture.invalid/jobs/${n}`,
+    application_url: `https://duplicate-fixture.invalid/apply/${n}`,
+    source_updated_at: "2099-01-01T00:00:00.000Z",
+    published_at: "2099-01-01T00:00:00.000Z"
+  }));
+  const expandedJobs = [...jobs.slice(0, baseIndex + 1), ...duplicates, ...jobs.slice(baseIndex + 1)];
+  injectedRawRecordCount = expandedJobs.length;
+  const modified = Array.isArray(payload)
+    ? expandedJobs
+    : { ...payload, jobs: expandedJobs, total: expandedJobs.length };
+  await route.fulfill({
+    status: response.status(),
+    headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" },
+    body: JSON.stringify(modified)
+  });
+  duplicateFixtureInjected = true;
+});
+
 try {
   const response = await page.goto(baseUrl, { waitUntil: "domcontentloaded", timeout: 45000 });
   assert.ok(response, "Website navigation did not return an HTTP response");
@@ -35,6 +86,30 @@ try {
   }, null, { timeout: 60000 });
 
   const total = await page.locator("#metricTotal").innerText();
+  assert.equal(duplicateFixtureInjected, true, "Smoke test must inject duplicate job records");
+  const dedupedMetricTotal = Number(total.replace(/[^0-9]/g, ""));
+  assert.ok(dedupedMetricTotal < injectedRawRecordCount,
+    "Repeated job records should be removed before totals and filters are calculated");
+  const renderedSignatures = await page.locator("#jobList .job").evaluateAll(cards => {
+    const normalize = value => {
+      const text = String(value || "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+      if (!text || /^(unknown|not known|not specified|not available|n\/?a|none|null|undefined|[-–—]|lokasi belum diketahui|bidang belum diketahui|tipe belum diketahui|sistem kerja tidak diketahui|pendidikan belum diketahui|tidak diketahui|belum diketahui|belum dicantumkan|tidak dicantumkan|gaji tidak dicantumkan|belum tersedia)$/.test(text)) return "";
+      return text.replace(/&/g, " and ").replace(/[^a-z0-9]+/g, " ").trim();
+    };
+    return cards.map(card => {
+      const get = selector => card.querySelector(selector)?.textContent || "";
+      const title = normalize(get(".jt"));
+      const company = normalize(get(".co"));
+      if (!title || !company) return null;
+      return [
+        title, company, normalize(get(".meta .mi:first-child")),
+        ...Array.from(card.querySelectorAll(".tags .tag")).map(tag => normalize(tag.textContent)).sort(),
+        normalize(get(".sdv"))
+      ].join("|");
+    }).filter(Boolean);
+  });
+  assert.equal(new Set(renderedSignatures).size, renderedSignatures.length,
+    "The visible job list must not show visually duplicated listings");
   assert.equal(await page.locator('#source option[value="__company_sites__"]').count(), 1,
     "Source filter should include Company Sites");
   assert.equal(await page.locator('#source option[value="__job_portal__"]').count(), 1,
@@ -106,6 +181,12 @@ try {
   }));
   assert.ok(logoState.complete && logoState.width > 0,
     "The provided brand logo should load successfully");
+  const smallLogoStyle = await page.locator(".top .logo").evaluate(el => ({
+    width: parseFloat(getComputedStyle(el).width),
+    transform: getComputedStyle(el.querySelector("img")).transform
+  }));
+  assert.ok(smallLogoStyle.width >= 40 && smallLogoStyle.transform !== "none",
+    "The brand logo should be enlarged enough to read clearly in the header");
 
   await page.setViewportSize({ width: 390, height: 844 });
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1),
