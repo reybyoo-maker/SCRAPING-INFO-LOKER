@@ -43,7 +43,9 @@ await page.route("**/data/jobs.json*", async route => {
     collector_id: `dedupe-smoke-${n}`,
     legacy_id: `dedupe-smoke-${n}`,
     listing_url: `https://duplicate-fixture.invalid/jobs/${n}`,
-    application_url: `https://duplicate-fixture.invalid/apply/${n}`
+    application_url: `https://duplicate-fixture.invalid/apply/${n}`,
+    source_updated_at: "2099-01-01T00:00:00.000Z",
+    published_at: "2099-01-01T00:00:00.000Z"
   }));
   const expandedJobs = [...jobs.slice(0, baseIndex + 1), ...duplicates, ...jobs.slice(baseIndex + 1)];
   injectedRawRecordCount = expandedJobs.length;
