@@ -148,6 +148,7 @@ def collect_company_sites(force: bool = False, *, targets_path: Path = TARGETS_F
     # and persisted blocked-domain registry.
     for target in targets:
         target["_company_site_client"] = CompanySiteClient(target, blocked_registry=blocked)
+    run_started = utc_now()
     records = []
     statuses = {}
     with ThreadPoolExecutor(max_workers=max_workers, thread_name_prefix="company-site") as pool:
@@ -209,7 +210,7 @@ def collect_company_sites(force: bool = False, *, targets_path: Path = TARGETS_F
     blocked.save()
     summary = {
         "status": "ok" if records else "partial",
-        "started_at": finished,
+        "started_at": run_started,
         "finished_at": finished,
         "targets_configured": len(targets),
         "targets_checked": len(statuses),
