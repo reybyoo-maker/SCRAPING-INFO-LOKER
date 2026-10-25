@@ -5,12 +5,13 @@ on:
     branches: [main]
     paths:
       - "index.html"
+      - "templates/index.html.j2"
       - "data/jobs.json"
       - "data/run_status.json"
       - "config/locations.json"
       - ".github/workflows/deploy.yml"
   workflow_run:
-    workflows: ["INFO LOKER Hourly Scraping", "Daily Job Scraper"]
+    workflows: ["INFO LOKER Hourly Scraping", "Daily Job Scraper", "Scraper Tests and Website Smoke Test"]
     types: [completed]
   workflow_dispatch:
 
@@ -21,11 +22,11 @@ permissions:
 
 concurrency:
   group: github-pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
