@@ -64,12 +64,12 @@ jobs:
           for match in re.finditer(r"<script(?P<attrs>[^>]*)>(?P<body>.*?)</script>", html, flags=re.S | re.I):
               attrs = match.group("attrs")
               body = match.group("body").strip()
-              if not body or re.search(r'type=["\\']application/ld\\+json["\\']', attrs, flags=re.I):
+          if not body or re.search(r"type=['\"]application/ld\+json['\"]", attrs, flags=re.I):
                   continue
               scripts.append(body)
           if not scripts:
               raise SystemExit("No executable inline JavaScript found in index.html")
-          Path("/tmp/info-loker-app.js").write_text("\\n;\\n".join(scripts), encoding="utf-8")
+          Path("/tmp/info-loker-app.js").write_text("\n;\n".join(scripts), encoding="utf-8")
           for asset in ("logo.svg", "favicon.svg", "og-image.svg", "site.webmanifest", "robots.txt", "sitemap.xml"):
               if not Path(asset).is_file():
                   raise SystemExit(f"Required website asset is missing: {asset}")
