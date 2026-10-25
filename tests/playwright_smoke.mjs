@@ -31,6 +31,31 @@ try {
   assert.match(bodyText, /Dataset siap|Dataset terhubung/i, "Dataset status should show successful loading");
   assert.equal(await page.locator("#sidebar").count(), 1,
     "A left-side workspace menu should be present");
+  assert.equal(await page.locator("#desktopSidebarToggle").count(), 1,
+    "Desktop should expose a sidebar collapse control");
+  const expandedLayout = await page.evaluate(() => ({
+    sidebarRight: document.querySelector("#sidebar").getBoundingClientRect().right,
+    mainLeft: document.querySelector("main").getBoundingClientRect().left,
+    mainRight: document.querySelector("main").getBoundingClientRect().right
+  }));
+  assert.ok(expandedLayout.mainLeft >= expandedLayout.sidebarRight - 1,
+    `Main content should start to the right of the sidebar: ${JSON.stringify(expandedLayout)}`);
+  assert.ok(expandedLayout.mainRight <= window.innerWidth + 1,
+    `Main content should not create horizontal overflow: ${JSON.stringify(expandedLayout)}`);
+  await page.locator("#desktopSidebarToggle").click();
+  await page.waitForTimeout(220);
+  const collapsedLayout = await page.evaluate(() => ({
+    sidebarWidth: document.querySelector("#sidebar").getBoundingClientRect().width,
+    mainLeft: document.querySelector("main").getBoundingClientRect().left
+  }));
+  assert.ok(collapsedLayout.sidebarWidth < expandedLayout.sidebarRight,
+    "Desktop sidebar should shrink when the collapse control is clicked");
+  assert.ok(collapsedLayout.mainLeft >= collapsedLayout.sidebarWidth - 1,
+    "Main content should move left with the collapsed sidebar");
+  await page.locator("#desktopSidebarToggle").click();
+  await page.waitForTimeout(220);
+  assert.ok(await page.locator("#sidebar").evaluate(sidebar => sidebar.scrollHeight >= sidebar.clientHeight),
+    "Sidebar container should support vertical scrolling when contents overflow");
   assert.equal(await page.locator("#famousCompaniesNav").count(), 1,
     "Sidebar should expose the famous companies directory");
 
