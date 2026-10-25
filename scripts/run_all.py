@@ -221,7 +221,11 @@ def deduplicate(records: list[dict]) -> list[dict]:
         if not normalized:
             continue
         canonical_url = canonical_listing_url(normalized.get("listing_url") or normalized.get("url"))
-        key = f"url:{canonical_url}" if canonical_url else f"id:{normalized['id']}"
+        # Some ATS pages reuse one landing URL for multiple job postings. Match URL
+        # plus normalized title and company so those legitimate openings stay separate.
+        title_key = slugify(str(normalized.get("title") or normalized.get("position") or ""))
+        company_key = slugify(str(normalized.get("company_name") or normalized.get("company") or ""))
+        key = f"url:{canonical_url}|{title_key}|{company_key}" if canonical_url else f"id:{normalized['id']}"
         old = merged.get(key)
         if not old:
             merged[key] = normalized
