@@ -38,8 +38,8 @@ try {
     mainLeft: document.querySelector("main").getBoundingClientRect().left,
     mainRight: document.querySelector("main").getBoundingClientRect().right
   }));
-  assert.ok(expandedLayout.mainLeft >= expandedLayout.sidebarRight - 1,
-    `Main content should start to the right of the sidebar: ${JSON.stringify(expandedLayout)}`);
+  assert.ok(Math.abs(expandedLayout.mainLeft - expandedLayout.sidebarRight) <= 2,
+    `Main content should align to the sidebar edge: ${JSON.stringify(expandedLayout)}`);
   assert.ok(expandedLayout.mainRight <= window.innerWidth + 1,
     `Main content should not create horizontal overflow: ${JSON.stringify(expandedLayout)}`);
   await page.locator("#desktopSidebarToggle").click();
@@ -50,8 +50,10 @@ try {
   }));
   assert.ok(collapsedLayout.sidebarWidth < expandedLayout.sidebarRight,
     "Desktop sidebar should shrink when the collapse control is clicked");
-  assert.ok(collapsedLayout.mainLeft >= collapsedLayout.sidebarWidth - 1,
+  assert.ok(Math.abs(collapsedLayout.mainLeft - collapsedLayout.sidebarWidth) <= 2,
     "Main content should move left with the collapsed sidebar");
+  assert.equal(await page.locator("#sidebar").evaluate(sidebar => getComputedStyle(sidebar).overflowY), "auto",
+    "Sidebar should allow vertical scrolling");
   await page.locator("#desktopSidebarToggle").click();
   await page.waitForTimeout(220);
   assert.ok(await page.locator("#sidebar").evaluate(sidebar => sidebar.scrollHeight >= sidebar.clientHeight),
