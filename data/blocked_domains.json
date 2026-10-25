@@ -1,3 +1,202 @@
 {
-  "domains": {}
+  "domains": {
+    "xendit.co": {
+      "blocked_at": "2026-10-25T01:06:23Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "kumparan.com": {
+      "blocked_at": "2026-10-25T01:11:02Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "sociolla.com": {
+      "blocked_at": "2026-10-25T01:11:57Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "grabacademyportal.grab.com": {
+      "blocked_at": "2026-10-25T01:12:18Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "koinworks.com": {
+      "blocked_at": "2026-10-25T01:12:19Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "static.mamikos.com": {
+      "blocked_at": "2026-10-25T01:12:55Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "astra.co.id": {
+      "blocked_at": "2026-10-25T01:12:59Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "mncgroup.com": {
+      "blocked_at": "2026-10-25T01:13:45Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "krakatausteel.com": {
+      "blocked_at": "2026-10-25T01:14:24Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "honda-indonesia.com": {
+      "blocked_at": "2026-10-25T01:16:02Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "vale.com": {
+      "blocked_at": "2026-10-25T01:17:53Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "sig.id": {
+      "blocked_at": "2026-10-25T01:17:58Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "japfa.com": {
+      "blocked_at": "2026-10-25T01:19:20Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "indomaret.co.id": {
+      "blocked_at": "2026-10-25T01:19:52Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "watsons.co.id": {
+      "blocked_at": "2026-10-25T01:20:20Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "ranchmarket.co.id": {
+      "blocked_at": "2026-10-25T01:21:13Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "hm.com": {
+      "blocked_at": "2026-10-25T01:21:15Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "jcodonuts.com": {
+      "blocked_at": "2026-10-25T01:21:17Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "siloamhospitals.com": {
+      "blocked_at": "2026-10-25T01:22:29Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "prodia.co.id": {
+      "blocked_at": "2026-10-25T01:22:47Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "mayapadahospital.com": {
+      "blocked_at": "2026-10-25T01:23:04Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "samudera.id": {
+      "blocked_at": "2026-10-25T01:24:57Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "paxel.co": {
+      "blocked_at": "2026-10-25T01:25:16Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "careers.ciputragroup.com": {
+      "blocked_at": "2026-10-25T01:25:25Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "poslogistics.co.id": {
+      "blocked_at": "2026-10-25T01:25:30Z",
+      "reason": "HTTP 429; requests paused until manual review",
+      "http_status": 429,
+      "retry_policy": "manual_review_required"
+    },
+    "telkomuniversity.ac.id": {
+      "blocked_at": "2026-10-25T01:27:37Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "cnbcindonesia.com": {
+      "blocked_at": "2026-10-25T01:28:38Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "samator.com": {
+      "blocked_at": "2026-10-25T01:29:23Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "pertaminapatraniaga.com": {
+      "blocked_at": "2026-10-25T01:29:30Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "banksampoerna.com": {
+      "blocked_at": "2026-10-25T01:30:18Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "idcloudhost.com": {
+      "blocked_at": "2026-10-25T01:31:25Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "mitrais.com": {
+      "blocked_at": "2026-10-25T01:31:29Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "lippomalls.com": {
+      "blocked_at": "2026-10-25T01:32:19Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    }
+  }
 }
