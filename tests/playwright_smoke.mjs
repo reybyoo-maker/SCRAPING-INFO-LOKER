@@ -36,11 +36,12 @@ try {
   const expandedLayout = await page.evaluate(() => ({
     sidebarRight: document.querySelector("#sidebar").getBoundingClientRect().right,
     mainLeft: document.querySelector("main").getBoundingClientRect().left,
-    mainRight: document.querySelector("main").getBoundingClientRect().right
+    mainRight: document.querySelector("main").getBoundingClientRect().right,
+    viewportWidth: window.innerWidth
   }));
   assert.ok(Math.abs(expandedLayout.mainLeft - expandedLayout.sidebarRight) <= 2,
     `Main content should align to the sidebar edge: ${JSON.stringify(expandedLayout)}`);
-  assert.ok(expandedLayout.mainRight <= window.innerWidth + 1,
+  assert.ok(expandedLayout.mainRight <= expandedLayout.viewportWidth + 1,
     `Main content should not create horizontal overflow: ${JSON.stringify(expandedLayout)}`);
   await page.locator("#desktopSidebarToggle").click();
   await page.waitForTimeout(220);
