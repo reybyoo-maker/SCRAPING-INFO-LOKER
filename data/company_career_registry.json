@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T01:35:45Z",
+  "generated_at": "2026-10-25T02:06:33Z",
   "targets": {
     "permatabank": {
       "company": "PermataBank",
@@ -7,17 +7,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "cimb-niaga": {
-      "company": "CIMB Niaga",
-      "domain": "cimbniaga.co.id",
-      "category": "Bank & Fintech",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -27,7 +17,17 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "cimb-niaga": {
+      "company": "CIMB Niaga",
+      "domain": "cimbniaga.co.id",
+      "category": "Bank & Fintech",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -37,7 +37,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -47,7 +47,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -57,7 +57,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -67,7 +67,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -77,7 +77,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -87,7 +87,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain xendit.co returned HTTP 403"
     },
@@ -97,7 +97,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -107,7 +107,7 @@
       "category": "Bank & Fintech",
       "career_url": "https://karir.bca.co.id/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 1,
       "reason": null
     },
@@ -117,7 +117,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -127,7 +127,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -137,7 +137,7 @@
       "category": "Bank & Fintech",
       "career_url": "https://e-recruitment.bri.co.id/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 1,
       "reason": null
     },
@@ -147,7 +147,7 @@
       "category": "Fintech",
       "career_url": "https://ovo.id/career",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 2,
       "reason": null
     },
@@ -157,7 +157,7 @@
       "category": "Bank & Fintech",
       "career_url": "https://bankmega.com/id/karir/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 1,
       "reason": null
     },
@@ -167,7 +167,7 @@
       "category": "Fintech",
       "career_url": "https://linkaja.id/promo",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 5,
       "reason": null
     },
@@ -177,7 +177,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -187,7 +187,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -197,7 +197,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -207,7 +207,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -217,7 +217,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -227,7 +227,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -237,7 +237,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -247,7 +247,7 @@
       "category": "Fintech",
       "career_url": "https://midtrans.com/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 16,
       "reason": null
     },
@@ -257,17 +257,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "uob-indonesia": {
-      "company": "UOB Indonesia",
-      "domain": "uob.co.id",
-      "category": "Bank & Fintech",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -277,7 +267,17 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "uob-indonesia": {
+      "company": "UOB Indonesia",
+      "domain": "uob.co.id",
+      "category": "Bank & Fintech",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -287,7 +287,7 @@
       "category": "Fintech",
       "career_url": "https://gopay.co.id/karier",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 8,
       "reason": null
     },
@@ -297,7 +297,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -307,19 +307,9 @@
       "category": "Fintech",
       "career_url": "https://amartha.com/karir",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 2,
       "reason": null
-    },
-    "bank-jateng": {
-      "company": "Bank Jateng",
-      "domain": "bankjateng.co.id",
-      "category": "Bank & Fintech",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "bank-sumut": {
       "company": "Bank Sumut",
@@ -327,7 +317,17 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "bank-jateng": {
+      "company": "Bank Jateng",
+      "domain": "bankjateng.co.id",
+      "category": "Bank & Fintech",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -337,7 +337,7 @@
       "category": "Bank & Fintech",
       "career_url": "https://banknagari.co.id/karir/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 3,
       "reason": null
     },
@@ -347,7 +347,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -357,7 +357,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -367,7 +367,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -377,7 +377,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -387,7 +387,7 @@
       "category": "Bank & Fintech",
       "career_url": "https://bankjatim.co.id/karir",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 6,
       "reason": null
     },
@@ -397,7 +397,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -407,7 +407,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -417,7 +417,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -427,7 +427,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -437,7 +437,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -447,7 +447,7 @@
       "category": "Bank & Fintech",
       "career_url": "https://www.banksinarmas.com/id/karir",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 23,
       "reason": null
     },
@@ -457,7 +457,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -467,7 +467,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -477,17 +477,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "bukuwarung": {
-      "company": "BukuWarung",
-      "domain": "bukuwarung.com",
-      "category": "Fintech",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -497,7 +487,17 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "bukuwarung": {
+      "company": "BukuWarung",
+      "domain": "bukuwarung.com",
+      "category": "Fintech",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -507,7 +507,7 @@
       "category": "Fintech",
       "career_url": "https://reku.id/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 9,
       "reason": null
     },
@@ -517,7 +517,7 @@
       "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -527,7 +527,7 @@
       "category": "Fintech",
       "career_url": "https://fazz.com/careers/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 8,
       "reason": null
     },
@@ -537,8 +537,18 @@
       "category": "Fintech",
       "career_url": "https://ottodigital.id/karir/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 4,
+      "reason": null
+    },
+    "aspire": {
+      "company": "Aspire",
+      "domain": "aspireapp.com",
+      "category": "Fintech",
+      "career_url": "https://aspireapp.com/en-sg/careers",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 28,
       "reason": null
     },
     "telkomsel": {
@@ -547,19 +557,9 @@
       "category": "Telecom",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "pluang": {
-      "company": "Pluang",
-      "domain": "pluang.com",
-      "category": "Fintech",
-      "career_url": "https://pluang.com/career",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 3,
-      "reason": null
     },
     "xl-axiata": {
       "company": "XL Axiata",
@@ -567,7 +567,7 @@
       "category": "Telecom",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -577,9 +577,19 @@
       "category": "Telecom",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "pluang": {
+      "company": "Pluang",
+      "domain": "pluang.com",
+      "category": "Fintech",
+      "career_url": "https://pluang.com/career",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 3,
+      "reason": null
     },
     "biznet": {
       "company": "Biznet",
@@ -587,19 +597,9 @@
       "category": "Telecom",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "aspire": {
-      "company": "Aspire",
-      "domain": "aspireapp.com",
-      "category": "Fintech",
-      "career_url": "https://aspireapp.com/en-sg/careers",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 28,
-      "reason": null
     },
     "myrepublic-indonesia": {
       "company": "MyRepublic Indonesia",
@@ -607,7 +607,7 @@
       "category": "Telecom",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -617,7 +617,7 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -627,7 +627,7 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -637,7 +637,7 @@
       "category": "Startup",
       "career_url": "https://careers.traveloka.com/jobs",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 1,
       "reason": null
     },
@@ -647,7 +647,7 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -657,7 +657,7 @@
       "category": "Corporate",
       "career_url": "https://careers.blibli.com/",
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Career page was reachable but no supported vacancy record was parsed."
     },
@@ -667,7 +667,7 @@
       "category": "Corporate",
       "career_url": "https://careers.shopee.co.id/",
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Career page was reachable but no supported vacancy record was parsed."
     },
@@ -677,7 +677,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -687,7 +687,7 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -697,7 +697,7 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -707,7 +707,7 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -717,7 +717,7 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -727,47 +727,17 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
-    "iconnet": {
-      "company": "ICONNET",
-      "domain": "iconnet.id",
-      "category": "Telecom",
+    "bank-sulselbar": {
+      "company": "Bank Sulselbar",
+      "domain": "banksulselbar.co.id",
+      "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "indosat-ooredoo-hutchison": {
-      "company": "Indosat Ooredoo Hutchison",
-      "domain": "ioh.co.id",
-      "category": "Telecom",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "jojonomic": {
-      "company": "Jojonomic",
-      "domain": "jojonomic.com",
-      "category": "Startup",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "talenta": {
-      "company": "Talenta",
-      "domain": "talenta.co",
-      "category": "Startup",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -777,9 +747,39 @@
       "category": "Startup",
       "career_url": "https://sirclo.com/career",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 6,
       "reason": null
+    },
+    "jojonomic": {
+      "company": "Jojonomic",
+      "domain": "jojonomic.com",
+      "category": "Startup",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "talenta": {
+      "company": "Talenta",
+      "domain": "talenta.co",
+      "category": "Startup",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "iconnet": {
+      "company": "ICONNET",
+      "domain": "iconnet.id",
+      "category": "Telecom",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "kalibrr": {
       "company": "Kalibrr",
@@ -787,7 +787,17 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "indosat-ooredoo-hutchison": {
+      "company": "Indosat Ooredoo Hutchison",
+      "domain": "ioh.co.id",
+      "category": "Telecom",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -797,7 +807,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain kumparan.com returned HTTP 403"
     },
@@ -807,17 +817,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "maybank-indonesia": {
-      "company": "Maybank Indonesia",
-      "domain": "maybank.co.id",
-      "category": "Bank & Fintech",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -827,17 +827,17 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
-    "btpn": {
-      "company": "BTPN",
-      "domain": "btpn.com",
+    "maybank-indonesia": {
+      "company": "Maybank Indonesia",
+      "domain": "maybank.co.id",
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -847,7 +847,17 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "btpn": {
+      "company": "BTPN",
+      "domain": "btpn.com",
+      "category": "Bank & Fintech",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -857,19 +867,9 @@
       "category": "Telecom",
       "career_url": "https://www.telkom.co.id/sites/berita/id_ID/news/telkom-siapkan-talenta-digital-melalui-program-google-career-certificate-2670",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 19,
       "reason": null
-    },
-    "bank-sulselbar": {
-      "company": "Bank Sulselbar",
-      "domain": "banksulselbar.co.id",
-      "category": "Bank & Fintech",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "mekari": {
       "company": "Mekari",
@@ -877,18 +877,18 @@
       "category": "Startup",
       "career_url": "https://mekari.com/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 94,
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 93,
       "reason": null
     },
-    "glints-indonesia": {
-      "company": "Glints Indonesia",
-      "domain": "glints.com",
+    "aruna": {
+      "company": "Aruna",
+      "domain": "aruna.id",
       "category": "Startup",
-      "career_url": "https://glints.com/companies/glints-taploker/fd0b938b-cd04-4481-b3bd-b5bbd9bf6e45",
+      "career_url": "https://aruna.id/career/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 236,
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 4,
       "reason": null
     },
     "sociolla": {
@@ -897,18 +897,18 @@
       "category": "Startup",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain sociolla.com returned HTTP 403"
     },
-    "aruna": {
-      "company": "Aruna",
-      "domain": "aruna.id",
+    "glints-indonesia": {
+      "company": "Glints Indonesia",
+      "domain": "glints.com",
       "category": "Startup",
-      "career_url": "https://aruna.id/career/",
+      "career_url": "https://glints.com/companies/glints-taploker/fd0b938b-cd04-4481-b3bd-b5bbd9bf6e45",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 4,
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 236,
       "reason": null
     },
     "kompas-com": {
@@ -917,19 +917,19 @@
       "category": "Corporate",
       "career_url": "https://www.kompas.com/tren/read/2026/10/23/163000065/tom-skerritt-tutup-usia-aktor-alien-dan-top-gun-yang-berkarier-selama-enam",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 8,
       "reason": null
     },
-    "grab-indonesia": {
-      "company": "Grab Indonesia",
-      "domain": "grab.com",
+    "efishery": {
+      "company": "eFishery",
+      "domain": "efishery.com",
       "category": "Startup",
-      "career_url": "https://www.grab.careers/en/",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 10,
-      "reason": null
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "julo": {
       "company": "JULO",
@@ -937,7 +937,7 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -947,9 +947,19 @@
       "category": "Startup",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain koinworks.com returned HTTP 403"
+    },
+    "grab-indonesia": {
+      "company": "Grab Indonesia",
+      "domain": "grab.com",
+      "category": "Startup",
+      "career_url": "https://www.grab.careers/en/",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 10,
+      "reason": null
     },
     "bank-victoria": {
       "company": "Bank Victoria",
@@ -957,27 +967,7 @@
       "category": "Bank & Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "efishery": {
-      "company": "eFishery",
-      "domain": "efishery.com",
-      "category": "Startup",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "evermos": {
-      "company": "Evermos",
-      "domain": "evermos.com",
-      "category": "Startup",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -987,177 +977,17 @@
       "category": "Startup",
       "career_url": "https://privy.id/career",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 3,
       "reason": null
     },
-    "moka": {
-      "company": "Moka",
-      "domain": "moka.tech",
+    "evermos": {
+      "company": "Evermos",
+      "domain": "evermos.com",
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "sicepat": {
-      "company": "SiCepat",
-      "domain": "sicepat.com",
-      "category": "Startup",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "mamikos": {
-      "company": "Mamikos",
-      "domain": "mamikos.com",
-      "category": "Startup",
-      "career_url": "https://mamikos.com/career",
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "Career page was reachable but no supported vacancy record was parsed."
-    },
-    "ninja-xpress": {
-      "company": "Ninja Xpress",
-      "domain": "ninjaxpress.co",
-      "category": "Startup",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "idn-media": {
-      "company": "IDN Media",
-      "domain": "idn.media",
-      "category": "Startup",
-      "career_url": "https://www.idn.media/life-at-idn",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 1,
-      "reason": null
-    },
-    "astra-international": {
-      "company": "Astra International",
-      "domain": "astra.co.id",
-      "category": "Corporate",
-      "career_url": "https://career.astra.co.id/",
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "Career page was reachable but no supported vacancy record was parsed."
-    },
-    "j-t-express": {
-      "company": "J&T Express",
-      "domain": "jet.co.id",
-      "category": "Startup",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "jne": {
-      "company": "JNE",
-      "domain": "jne.co.id",
-      "category": "Startup",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "anteraja": {
-      "company": "Anteraja",
-      "domain": "anteraja.id",
-      "category": "Startup",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "djarum": {
-      "company": "Djarum",
-      "domain": "djarum.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "mileapp": {
-      "company": "MileApp",
-      "domain": "mile.app",
-      "category": "Startup",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "ciputra-group": {
-      "company": "Ciputra Group",
-      "domain": "ciputra.com",
-      "category": "Properti",
-      "career_url": "https://www.ciputra.com/en/careers/",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 10,
-      "reason": null
-    },
-    "lippo-group": {
-      "company": "Lippo Group",
-      "domain": "lippo.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "sinar-mas": {
-      "company": "Sinar Mas",
-      "domain": "sinarmas.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "wings-group": {
-      "company": "Wings Group",
-      "domain": "wingscorp.com",
-      "category": "Corporate",
-      "career_url": "https://wingscorp.com/id/careers",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 2,
-      "reason": null
-    },
-    "nestle-indonesia": {
-      "company": "Nestlé Indonesia",
-      "domain": "nestle.co.id",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "hm-sampoerna": {
-      "company": "HM Sampoerna",
-      "domain": "sampoerna.com",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1167,9 +997,139 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "sicepat": {
+      "company": "SiCepat",
+      "domain": "sicepat.com",
+      "category": "Startup",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "moka": {
+      "company": "Moka",
+      "domain": "moka.tech",
+      "category": "Startup",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "ninja-xpress": {
+      "company": "Ninja Xpress",
+      "domain": "ninjaxpress.co",
+      "category": "Startup",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "idn-media": {
+      "company": "IDN Media",
+      "domain": "idn.media",
+      "category": "Startup",
+      "career_url": "https://www.idn.media/life-at-idn",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 1,
+      "reason": null
+    },
+    "astra-international": {
+      "company": "Astra International",
+      "domain": "astra.co.id",
+      "category": "Corporate",
+      "career_url": "https://career.astra.co.id/",
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "Career page was reachable but no supported vacancy record was parsed."
+    },
+    "mamikos": {
+      "company": "Mamikos",
+      "domain": "mamikos.com",
+      "category": "Startup",
+      "career_url": "https://mamikos.com/career",
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "Career page was reachable but no supported vacancy record was parsed."
+    },
+    "j-t-express": {
+      "company": "J&T Express",
+      "domain": "jet.co.id",
+      "category": "Startup",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "jne": {
+      "company": "JNE",
+      "domain": "jne.co.id",
+      "category": "Startup",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "ciputra-group": {
+      "company": "Ciputra Group",
+      "domain": "ciputra.com",
+      "category": "Properti",
+      "career_url": "https://www.ciputra.com/en/careers/",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 10,
+      "reason": null
+    },
+    "anteraja": {
+      "company": "Anteraja",
+      "domain": "anteraja.id",
+      "category": "Startup",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "djarum": {
+      "company": "Djarum",
+      "domain": "djarum.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "sinar-mas": {
+      "company": "Sinar Mas",
+      "domain": "sinarmas.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "wings-group": {
+      "company": "Wings Group",
+      "domain": "wingscorp.com",
+      "category": "Corporate",
+      "career_url": "https://wingscorp.com/id/careers",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 2,
+      "reason": null
     },
     "indofood": {
       "company": "Indofood",
@@ -1177,7 +1137,47 @@
       "category": "Manufaktur",
       "career_url": "https://www.indofood.com/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 1,
+      "reason": null
+    },
+    "mileapp": {
+      "company": "MileApp",
+      "domain": "mile.app",
+      "category": "Startup",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "nestle-indonesia": {
+      "company": "Nestlé Indonesia",
+      "domain": "nestle.co.id",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "hm-sampoerna": {
+      "company": "HM Sampoerna",
+      "domain": "sampoerna.com",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "mayora-indah": {
+      "company": "Mayora Indah",
+      "domain": "mayoraindah.co.id",
+      "category": "Manufaktur",
+      "career_url": "https://www.mayoraindah.co.id/",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 1,
       "reason": null
     },
@@ -1187,7 +1187,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain mncgroup.com returned HTTP 403"
     },
@@ -1197,18 +1197,8 @@
       "category": "Manufaktur",
       "career_url": "https://careers.unilever.com/en/indonesia",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 29,
-      "reason": null
-    },
-    "mayora-indah": {
-      "company": "Mayora Indah",
-      "domain": "mayoraindah.co.id",
-      "category": "Manufaktur",
-      "career_url": "https://www.mayoraindah.co.id/",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 1,
       "reason": null
     },
     "bakrie-group": {
@@ -1217,17 +1207,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "kawan-lama-group": {
-      "company": "Kawan Lama Group",
-      "domain": "kawanlamagroup.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1237,7 +1217,27 @@
       "category": "Properti",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "kawan-lama-group": {
+      "company": "Kawan Lama Group",
+      "domain": "kawanlamagroup.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "lippo-group": {
+      "company": "Lippo Group",
+      "domain": "lippo.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1247,7 +1247,7 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1257,67 +1257,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "barito-pacific": {
-      "company": "Barito Pacific",
-      "domain": "barito-pacific.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "pln": {
-      "company": "PLN",
-      "domain": "pln.co.id",
-      "category": "BUMN",
-      "career_url": "https://rekrutmen.pln.co.id/vacancy/",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 1,
-      "reason": null
-    },
-    "pertamina": {
-      "company": "Pertamina",
-      "domain": "pertamina.com",
-      "category": "BUMN",
-      "career_url": "https://pertamina.com/careers",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 1,
-      "reason": null
-    },
-    "krakatau-steel": {
-      "company": "Krakatau Steel",
-      "domain": "krakatausteel.com",
-      "category": "BUMN",
-      "career_url": null,
-      "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "Domain krakatausteel.com returned HTTP 403"
-    },
-    "bukit-asam": {
-      "company": "Bukit Asam",
-      "domain": "ptba.co.id",
-      "category": "BUMN",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "garuda-indonesia": {
-      "company": "Garuda Indonesia",
-      "domain": "garuda-indonesia.com",
-      "category": "BUMN",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1327,9 +1267,69 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "barito-pacific": {
+      "company": "Barito Pacific",
+      "domain": "barito-pacific.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "pln": {
+      "company": "PLN",
+      "domain": "pln.co.id",
+      "category": "BUMN",
+      "career_url": "https://rekrutmen.pln.co.id/vacancy/",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 1,
+      "reason": null
+    },
+    "krakatau-steel": {
+      "company": "Krakatau Steel",
+      "domain": "krakatausteel.com",
+      "category": "BUMN",
+      "career_url": null,
+      "status": "blocked",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "Domain krakatausteel.com returned HTTP 403"
+    },
+    "bukit-asam": {
+      "company": "Bukit Asam",
+      "domain": "ptba.co.id",
+      "category": "BUMN",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "garuda-indonesia": {
+      "company": "Garuda Indonesia",
+      "domain": "garuda-indonesia.com",
+      "category": "BUMN",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "pertamina": {
+      "company": "Pertamina",
+      "domain": "pertamina.com",
+      "category": "BUMN",
+      "career_url": "https://pertamina.com/careers",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 1,
+      "reason": null
     },
     "pupuk-indonesia": {
       "company": "Pupuk Indonesia",
@@ -1337,9 +1337,19 @@
       "category": "BUMN",
       "career_url": "https://pupuk-indonesia.com/contact-us",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 2,
       "reason": null
+    },
+    "antam": {
+      "company": "ANTAM",
+      "domain": "antam.com",
+      "category": "BUMN",
+      "career_url": "https://antam.com/id/career",
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "Career page was reachable but no supported vacancy record was parsed."
     },
     "emtek": {
       "company": "Emtek",
@@ -1347,7 +1357,7 @@
       "category": "Corporate",
       "career_url": "https://emtek.co.id/en/career",
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Career page was reachable but no supported vacancy record was parsed."
     },
@@ -1357,19 +1367,9 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "antam": {
-      "company": "ANTAM",
-      "domain": "antam.com",
-      "category": "BUMN",
-      "career_url": "https://antam.com/id/career",
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "Career page was reachable but no supported vacancy record was parsed."
     },
     "hutama-karya": {
       "company": "Hutama Karya",
@@ -1377,7 +1377,7 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1387,7 +1387,7 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1397,7 +1397,7 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1407,7 +1407,7 @@
       "category": "BUMN",
       "career_url": "https://www.biofarma.co.id/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 3,
       "reason": null
     },
@@ -1417,7 +1417,7 @@
       "category": "BUMN",
       "career_url": "https://kimiafarma.co.id/career",
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Career page was reachable but no supported vacancy record was parsed."
     },
@@ -1427,7 +1427,7 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1437,7 +1437,7 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1447,7 +1447,17 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "jasa-marga": {
+      "company": "Jasa Marga",
+      "domain": "jasamarga.com",
+      "category": "BUMN",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1457,7 +1467,7 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1467,19 +1477,19 @@
       "category": "Manufaktur",
       "career_url": "https://polytron.co.id/berita/tips-efektif-untuk-working-moms-menyeimbangkan-karir-dan-pekerjaan-rumah/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 5,
       "reason": null
     },
-    "jasa-marga": {
-      "company": "Jasa Marga",
-      "domain": "jasamarga.com",
-      "category": "BUMN",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    "kapal-api-global": {
+      "company": "Kapal Api Global",
+      "domain": "kapalapiglobal.com",
+      "category": "Corporate",
+      "career_url": "https://kapalapi.com/job-fair-ugm-2/",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 20,
+      "reason": null
     },
     "indofarma": {
       "company": "Indofarma",
@@ -1487,7 +1497,7 @@
       "category": "BUMN",
       "career_url": "https://indofarma.id/career/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 1,
       "reason": null
     },
@@ -1497,17 +1507,7 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "kapal-api-global": {
-      "company": "Kapal Api Global",
-      "domain": "kapalapiglobal.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1517,7 +1517,7 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1527,7 +1527,7 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1537,7 +1537,7 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1547,7 +1547,7 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1557,7 +1557,7 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1567,7 +1567,7 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain honda-indonesia.com returned HTTP 403"
     },
@@ -1577,57 +1577,7 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "toyota-astra-motor": {
-      "company": "Toyota Astra Motor",
-      "domain": "toyota.astra.co.id",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "mitsubishi-motors-indonesia": {
-      "company": "Mitsubishi Motors Indonesia",
-      "domain": "mitsubishi-motors.co.id",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "panasonic-indonesia": {
-      "company": "Panasonic Indonesia",
-      "domain": "panasonic.com",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "lg-electronics-indonesia": {
-      "company": "LG Electronics Indonesia",
-      "domain": "lg.com",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "samsung-indonesia": {
-      "company": "Samsung Indonesia",
-      "domain": "samsung.com",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1637,7 +1587,57 @@
       "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "mitsubishi-motors-indonesia": {
+      "company": "Mitsubishi Motors Indonesia",
+      "domain": "mitsubishi-motors.co.id",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "panasonic-indonesia": {
+      "company": "Panasonic Indonesia",
+      "domain": "panasonic.com",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "lg-electronics-indonesia": {
+      "company": "LG Electronics Indonesia",
+      "domain": "lg.com",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "samsung-indonesia": {
+      "company": "Samsung Indonesia",
+      "domain": "samsung.com",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "toyota-astra-motor": {
+      "company": "Toyota Astra Motor",
+      "domain": "toyota.astra.co.id",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1647,8 +1647,18 @@
       "category": "Manufaktur",
       "career_url": "https://ptfi.co.id/id/career",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 7,
+      "reason": null
+    },
+    "sharp-indonesia": {
+      "company": "Sharp Indonesia",
+      "domain": "id.sharp",
+      "category": "Manufaktur",
+      "career_url": "https://id.sharp/careers",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 2,
       "reason": null
     },
     "medcoenergi": {
@@ -1657,17 +1667,27 @@
       "category": "Manufaktur",
       "career_url": "https://medcoenergi.com/en/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 15,
       "reason": null
     },
-    "salim-group": {
-      "company": "Salim Group",
-      "domain": "salimgroup.com",
-      "category": "Corporate",
+    "suzuki-indonesia": {
+      "company": "Suzuki Indonesia",
+      "domain": "suzuki.co.id",
+      "category": "Manufaktur",
+      "career_url": "https://www.suzuki.co.id/corporate/karir",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 2,
+      "reason": null
+    },
+    "adaro": {
+      "company": "Adaro",
+      "domain": "adaro.com",
+      "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1677,39 +1697,19 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
-    "daihatsu-indonesia": {
-      "company": "Daihatsu Indonesia",
-      "domain": "daihatsu.co.id",
-      "category": "Manufaktur",
+    "salim-group": {
+      "company": "Salim Group",
+      "domain": "salimgroup.com",
+      "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "adaro": {
-      "company": "Adaro",
-      "domain": "adaro.com",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "vale-indonesia": {
-      "company": "Vale Indonesia",
-      "domain": "vale.com",
-      "category": "Manufaktur",
-      "career_url": "https://vale.com/our-people",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 6,
-      "reason": null
     },
     "indocement": {
       "company": "Indocement",
@@ -1717,7 +1717,7 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1727,19 +1727,9 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain sig.id returned HTTP 403"
-    },
-    "suzuki-indonesia": {
-      "company": "Suzuki Indonesia",
-      "domain": "suzuki.co.id",
-      "category": "Manufaktur",
-      "career_url": "https://www.suzuki.co.id/corporate/karir",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 2,
-      "reason": null
     },
     "semen-padang": {
       "company": "Semen Padang",
@@ -1747,39 +1737,9 @@
       "category": "Manufaktur",
       "career_url": "https://semenpadang.co.id/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 17,
       "reason": null
-    },
-    "krakatau-posco": {
-      "company": "Krakatau Posco",
-      "domain": "krakatauposco.co.id",
-      "category": "Manufaktur",
-      "career_url": "https://krakatauposco.co.id/careers",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 1,
-      "reason": null
-    },
-    "pt-timah": {
-      "company": "PT Timah",
-      "domain": "timah.com",
-      "category": "Manufaktur",
-      "career_url": "https://timah.com/careers",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 2,
-      "reason": null
-    },
-    "inalum": {
-      "company": "INALUM",
-      "domain": "inalum.id",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "pupuk-kaltim": {
       "company": "Pupuk Kaltim",
@@ -1787,7 +1747,7 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1797,9 +1757,49 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "daihatsu-indonesia": {
+      "company": "Daihatsu Indonesia",
+      "domain": "daihatsu.co.id",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "inalum": {
+      "company": "INALUM",
+      "domain": "inalum.id",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "krakatau-posco": {
+      "company": "Krakatau Posco",
+      "domain": "krakatauposco.co.id",
+      "category": "Manufaktur",
+      "career_url": "https://krakatauposco.co.id/careers",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 1,
+      "reason": null
+    },
+    "pt-timah": {
+      "company": "PT Timah",
+      "domain": "timah.com",
+      "category": "Manufaktur",
+      "career_url": "https://timah.com/careers",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 2,
+      "reason": null
     },
     "united-tractors": {
       "company": "United Tractors",
@@ -1807,37 +1807,7 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "injourney-airports": {
-      "company": "InJourney Airports",
-      "domain": "injourneyairports.id",
-      "category": "BUMN",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "schneider-electric-indonesia": {
-      "company": "Schneider Electric Indonesia",
-      "domain": "se.com",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "siemens-indonesia": {
-      "company": "Siemens Indonesia",
-      "domain": "siemens.com",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1847,9 +1817,29 @@
       "category": "Manufaktur",
       "career_url": "https://semenbaturaja.co.id/en/career/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 13,
       "reason": null
+    },
+    "schneider-electric-indonesia": {
+      "company": "Schneider Electric Indonesia",
+      "domain": "se.com",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "siemens-indonesia": {
+      "company": "Siemens Indonesia",
+      "domain": "siemens.com",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "pertamina-geothermal-energy": {
       "company": "Pertamina Geothermal Energy",
@@ -1857,7 +1847,7 @@
       "category": "Manufaktur",
       "career_url": "https://pge.pertamina.com/en/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 1,
       "reason": null
     },
@@ -1867,8 +1857,18 @@
       "category": "Manufaktur",
       "career_url": "https://trakindo.co.id/waspada-penipuan-lowongan-kerja",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 2,
+      "reason": null
+    },
+    "vale-indonesia": {
+      "company": "Vale Indonesia",
+      "domain": "vale.com",
+      "category": "Manufaktur",
+      "career_url": "https://vale.com/our-people",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 18,
       "reason": null
     },
     "ge-vernova": {
@@ -1877,17 +1877,17 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
-    "hitachi-indonesia": {
-      "company": "Hitachi Indonesia",
-      "domain": "hitachi.com",
-      "category": "Manufaktur",
+    "injourney-airports": {
+      "company": "InJourney Airports",
+      "domain": "injourneyairports.id",
+      "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1897,7 +1897,7 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1907,7 +1907,7 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1917,27 +1917,17 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain japfa.com returned HTTP 403"
     },
-    "wilmar-indonesia": {
-      "company": "Wilmar Indonesia",
-      "domain": "wilmar-international.com",
+    "hitachi-indonesia": {
+      "company": "Hitachi Indonesia",
+      "domain": "hitachi.com",
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "peruri": {
-      "company": "Peruri",
-      "domain": "peruri.co.id",
-      "category": "BUMN",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1947,17 +1937,17 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
-    "mitsubishi-electric-indonesia": {
-      "company": "Mitsubishi Electric Indonesia",
-      "domain": "mitsubishielectric.co.id",
+    "wilmar-indonesia": {
+      "company": "Wilmar Indonesia",
+      "domain": "wilmar-international.com",
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1967,7 +1957,17 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "mitsubishi-electric-indonesia": {
+      "company": "Mitsubishi Electric Indonesia",
+      "domain": "mitsubishielectric.co.id",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1977,7 +1977,7 @@
       "category": "Retail",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain indomaret.co.id returned HTTP 403"
     },
@@ -1987,7 +1987,17 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "peruri": {
+      "company": "Peruri",
+      "domain": "peruri.co.id",
+      "category": "BUMN",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -1997,17 +2007,7 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "alfamart": {
-      "company": "Alfamart",
-      "domain": "alfamart.co.id",
-      "category": "Retail",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2017,17 +2017,17 @@
       "category": "Retail",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain watsons.co.id returned HTTP 403"
     },
-    "sharp-indonesia": {
-      "company": "Sharp Indonesia",
-      "domain": "id.sharp",
-      "category": "Manufaktur",
+    "alfamart": {
+      "company": "Alfamart",
+      "domain": "alfamart.co.id",
+      "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2037,7 +2037,7 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2047,7 +2047,7 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2057,7 +2057,7 @@
       "category": "Retail",
       "career_url": "https://www.hypermart.co.id/karir/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 21,
       "reason": null
     },
@@ -2067,7 +2067,7 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2077,7 +2077,7 @@
       "category": "Retail",
       "career_url": "https://ramayana.co.id/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 1,
       "reason": null
     },
@@ -2087,7 +2087,7 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2097,7 +2097,7 @@
       "category": "Retail",
       "career_url": "https://erajaya.com/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 1,
       "reason": null
     },
@@ -2107,9 +2107,19 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "matahari-department-store": {
+      "company": "Matahari Department Store",
+      "domain": "matahari.com",
+      "category": "Retail",
+      "career_url": "https://matahari.com/#gbaid127602",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 1,
+      "reason": null
     },
     "super-indo": {
       "company": "Super Indo",
@@ -2117,19 +2127,9 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "ranch-market": {
-      "company": "Ranch Market",
-      "domain": "ranchmarket.co.id",
-      "category": "Retail",
-      "career_url": null,
-      "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "Domain ranchmarket.co.id returned HTTP 403"
     },
     "azko-ex-ace-hardware": {
       "company": "AZKO (ex Ace Hardware)",
@@ -2137,7 +2137,7 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2147,9 +2147,19 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "ranch-market": {
+      "company": "Ranch Market",
+      "domain": "ranchmarket.co.id",
+      "category": "Retail",
+      "career_url": null,
+      "status": "blocked",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "Domain ranchmarket.co.id returned HTTP 403"
     },
     "mr-diy-indonesia": {
       "company": "MR.DIY Indonesia",
@@ -2157,17 +2167,7 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "uniqlo-indonesia": {
-      "company": "Uniqlo Indonesia",
-      "domain": "uniqlo.com",
-      "category": "Retail",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2177,7 +2177,7 @@
       "category": "Retail",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain hm.com returned HTTP 403"
     },
@@ -2187,7 +2187,17 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "uniqlo-indonesia": {
+      "company": "Uniqlo Indonesia",
+      "domain": "uniqlo.com",
+      "category": "Retail",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2197,19 +2207,9 @@
       "category": "Retail",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain jcodonuts.com returned HTTP 403"
-    },
-    "matahari-department-store": {
-      "company": "Matahari Department Store",
-      "domain": "matahari.com",
-      "category": "Retail",
-      "career_url": "https://matahari.com/#gbaid127602",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 1,
-      "reason": null
     },
     "mcdonald-s-indonesia": {
       "company": "McDonald's Indonesia",
@@ -2217,7 +2217,7 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2227,7 +2227,7 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2237,7 +2237,7 @@
       "category": "Retail",
       "career_url": "https://kfcku.com/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 2,
       "reason": null
     },
@@ -2247,7 +2247,7 @@
       "category": "Retail",
       "career_url": "https://www.map.co.id/careers/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 33,
       "reason": null
     },
@@ -2257,7 +2257,7 @@
       "category": "Retail",
       "career_url": "https://kopikenangan.com/career",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 9,
       "reason": null
     },
@@ -2267,19 +2267,9 @@
       "category": "Retail",
       "career_url": "https://fore.coffee/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 8,
       "reason": null
-    },
-    "ismaya-group": {
-      "company": "Ismaya Group",
-      "domain": "ismayanas.com",
-      "category": "Retail",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "jiwa-group": {
       "company": "JiWa Group",
@@ -2287,7 +2277,17 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "ismaya-group": {
+      "company": "Ismaya Group",
+      "domain": "ismayanas.com",
+      "category": "Retail",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2297,17 +2297,17 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
-    "elnusa": {
-      "company": "Elnusa",
-      "domain": "elnusa.co.id",
-      "category": "Manufaktur",
+    "ikea-indonesia": {
+      "company": "IKEA Indonesia",
+      "domain": "ikea.co.id",
+      "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2317,17 +2317,17 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain siloamhospitals.com returned HTTP 403"
     },
-    "ikea-indonesia": {
-      "company": "IKEA Indonesia",
-      "domain": "ikea.co.id",
-      "category": "Retail",
+    "elnusa": {
+      "company": "Elnusa",
+      "domain": "elnusa.co.id",
+      "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2337,19 +2337,9 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "rs-pondok-indah-group": {
-      "company": "RS Pondok Indah Group",
-      "domain": "rspondokindah.co.id",
-      "category": "Healthcare",
-      "career_url": "https://rspondokindah.co.id/id/career",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 24,
-      "reason": null
     },
     "ot-group": {
       "company": "OT Group",
@@ -2357,7 +2347,7 @@
       "category": "Retail",
       "career_url": "https://ot.id/career",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 4,
       "reason": null
     },
@@ -2367,9 +2357,19 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "rs-pondok-indah-group": {
+      "company": "RS Pondok Indah Group",
+      "domain": "rspondokindah.co.id",
+      "category": "Healthcare",
+      "career_url": "https://rspondokindah.co.id/id/career",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 24,
+      "reason": null
     },
     "prodia": {
       "company": "Prodia",
@@ -2377,7 +2377,7 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain prodia.co.id returned HTTP 403"
     },
@@ -2387,7 +2387,7 @@
       "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2397,29 +2397,9 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "bundamedik": {
-      "company": "Bundamedik",
-      "domain": "bundamedik.com",
-      "category": "Healthcare",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "mayapada-hospital": {
-      "company": "Mayapada Hospital",
-      "domain": "mayapadahospital.com",
-      "category": "Healthcare",
-      "career_url": null,
-      "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "Domain mayapadahospital.com returned HTTP 403"
     },
     "hermina-hospitals": {
       "company": "Hermina Hospitals",
@@ -2427,9 +2407,29 @@
       "category": "Healthcare",
       "career_url": "https://herminahospitals.com/id/careers",
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Career page was reachable but no supported vacancy record was parsed."
+    },
+    "mayapada-hospital": {
+      "company": "Mayapada Hospital",
+      "domain": "mayapadahospital.com",
+      "category": "Healthcare",
+      "career_url": null,
+      "status": "blocked",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "Domain mayapadahospital.com returned HTTP 403"
+    },
+    "bundamedik": {
+      "company": "Bundamedik",
+      "domain": "bundamedik.com",
+      "category": "Healthcare",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "eka-hospital": {
       "company": "Eka Hospital",
@@ -2437,7 +2437,7 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2447,7 +2447,7 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2457,7 +2457,7 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2467,7 +2467,7 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2477,17 +2477,7 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "parahita-diagnostic-center": {
-      "company": "Parahita Diagnostic Center",
-      "domain": "parahita.com",
-      "category": "Healthcare",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2497,37 +2487,7 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "agung-podomoro-land": {
-      "company": "Agung Podomoro Land",
-      "domain": "agungpodomoroland.com",
-      "category": "Properti",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "sampoerna-agro": {
-      "company": "Sampoerna Agro",
-      "domain": "sampoernaagro.com",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "bumi-serpong-damai": {
-      "company": "Bumi Serpong Damai",
-      "domain": "bsdcity.com",
-      "category": "Properti",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2537,9 +2497,39 @@
       "category": "Healthcare",
       "career_url": "https://primayahospital.com/en/career/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 5,
       "reason": null
+    },
+    "sampoerna-agro": {
+      "company": "Sampoerna Agro",
+      "domain": "sampoernaagro.com",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "agung-podomoro-land": {
+      "company": "Agung Podomoro Land",
+      "domain": "agungpodomoroland.com",
+      "category": "Properti",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "bumi-serpong-damai": {
+      "company": "Bumi Serpong Damai",
+      "domain": "bsdcity.com",
+      "category": "Properti",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "rs-awal-bros": {
       "company": "RS Awal Bros",
@@ -2547,7 +2537,17 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "parahita-diagnostic-center": {
+      "company": "Parahita Diagnostic Center",
+      "domain": "parahita.com",
+      "category": "Healthcare",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2557,7 +2557,7 @@
       "category": "Properti",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2567,7 +2567,7 @@
       "category": "Properti",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2577,7 +2577,7 @@
       "category": "Properti",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2587,7 +2587,7 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2597,7 +2597,7 @@
       "category": "Properti",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2607,7 +2607,7 @@
       "category": "Properti",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2617,37 +2617,7 @@
       "category": "Properti",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "intiland": {
-      "company": "Intiland",
-      "domain": "intiland.com",
-      "category": "Properti",
-      "career_url": "https://intiland.com/id/",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 3,
-      "reason": null
-    },
-    "sinarmas-land": {
-      "company": "Sinarmas Land",
-      "domain": "sinarmasland.com",
-      "category": "Properti",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "bluebird-group": {
-      "company": "Bluebird Group",
-      "domain": "bluebirdgroup.com",
-      "category": "Transport & Logistics",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2657,9 +2627,39 @@
       "category": "Healthcare",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "sinarmas-land": {
+      "company": "Sinarmas Land",
+      "domain": "sinarmasland.com",
+      "category": "Properti",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "bluebird-group": {
+      "company": "Bluebird Group",
+      "domain": "bluebirdgroup.com",
+      "category": "Transport & Logistics",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "intiland": {
+      "company": "Intiland",
+      "domain": "intiland.com",
+      "category": "Properti",
+      "career_url": "https://intiland.com/id/",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 3,
+      "reason": null
     },
     "airasia-indonesia": {
       "company": "AirAsia Indonesia",
@@ -2667,7 +2667,7 @@
       "category": "Transport & Logistics",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2677,7 +2677,7 @@
       "category": "Transport & Logistics",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2687,7 +2687,7 @@
       "category": "Transport & Logistics",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2697,7 +2697,7 @@
       "category": "Properti",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2707,7 +2707,7 @@
       "category": "Transport & Logistics",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain samudera.id returned HTTP 403"
     },
@@ -2717,7 +2717,7 @@
       "category": "Transport & Logistics",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2727,7 +2727,7 @@
       "category": "Properti",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2737,7 +2737,7 @@
       "category": "Transport & Logistics",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2747,7 +2747,7 @@
       "category": "Transport & Logistics",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain paxel.co returned HTTP 403"
     },
@@ -2757,7 +2757,7 @@
       "category": "Transport & Logistics",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2767,7 +2767,7 @@
       "category": "Properti",
       "career_url": "https://ciputradevelopment.com/careers/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 4,
       "reason": null
     },
@@ -2777,17 +2777,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "medion": {
-      "company": "MEDION",
-      "domain": "medion.co.id",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2797,17 +2787,17 @@
       "category": "Transport & Logistics",
       "career_url": "https://poslogistics.co.id/karir/",
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain poslogistics.co.id returned HTTP 429"
     },
-    "tiki": {
-      "company": "TIKI",
-      "domain": "tiki.id",
-      "category": "Transport & Logistics",
+    "circle-k-indonesia": {
+      "company": "Circle K Indonesia",
+      "domain": "circlekindonesia.com",
+      "category": "Retail",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2817,7 +2807,17 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "tiki": {
+      "company": "TIKI",
+      "domain": "tiki.id",
+      "category": "Transport & Logistics",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2827,17 +2827,17 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
-    "circle-k-indonesia": {
-      "company": "Circle K Indonesia",
-      "domain": "circlekindonesia.com",
-      "category": "Retail",
+    "medion": {
+      "company": "MEDION",
+      "domain": "medion.co.id",
+      "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2847,7 +2847,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2857,7 +2857,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2867,47 +2867,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "paragon-technology-and-innovation": {
-      "company": "Paragon Technology and Innovation",
-      "domain": "paragon-innovation.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "astra-otoparts": {
-      "company": "Astra Otoparts",
-      "domain": "astra-otoparts.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "pnm": {
-      "company": "PNM",
-      "domain": "pnm.co.id",
-      "category": "Corporate",
-      "career_url": "https://pnm.co.id/karir",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 2,
-      "reason": null
-    },
-    "jaccs-mpm-finance": {
-      "company": "JACCS MPM Finance",
-      "domain": "mpm-finance.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2917,8 +2877,48 @@
       "category": "Corporate",
       "career_url": "https://bcafinance.co.id/karir",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 74,
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 28,
+      "reason": null
+    },
+    "paragon-technology-and-innovation": {
+      "company": "Paragon Technology and Innovation",
+      "domain": "paragon-innovation.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "astra-otoparts": {
+      "company": "Astra Otoparts",
+      "domain": "astra-otoparts.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "jaccs-mpm-finance": {
+      "company": "JACCS MPM Finance",
+      "domain": "mpm-finance.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "pnm": {
+      "company": "PNM",
+      "domain": "pnm.co.id",
+      "category": "Corporate",
+      "career_url": "https://pnm.co.id/karir",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 2,
       "reason": null
     },
     "pupuk-kujang": {
@@ -2927,19 +2927,19 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
-    "pegadaian": {
-      "company": "Pegadaian",
-      "domain": "pegadaian.co.id",
+    "fifgroup": {
+      "company": "FIFGROUP",
+      "domain": "fifgroup.co.id",
       "category": "Corporate",
-      "career_url": "https://pegadaian.co.id/career",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 1,
-      "reason": null
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "pupuk-sriwidjaja-palembang": {
       "company": "Pupuk Sriwidjaja Palembang",
@@ -2947,7 +2947,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2957,7 +2957,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -2967,19 +2967,19 @@
       "category": "Corporate",
       "career_url": "https://itdc.co.id/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 5,
       "reason": null
     },
-    "fifgroup": {
-      "company": "FIFGROUP",
-      "domain": "fifgroup.co.id",
+    "pegadaian": {
+      "company": "Pegadaian",
+      "domain": "pegadaian.co.id",
       "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+      "career_url": "https://pegadaian.co.id/career",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 1,
+      "reason": null
     },
     "jasa-tirta-ii": {
       "company": "Jasa Tirta II",
@@ -2987,7 +2987,7 @@
       "category": "Corporate",
       "career_url": "https://jasatirta2.co.id/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 3,
       "reason": null
     },
@@ -2997,7 +2997,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3007,29 +3007,9 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "jasamarga-related-business": {
-      "company": "Jasamarga Related Business",
-      "domain": "jmr.id",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "jasa-tirta-i": {
-      "company": "Jasa Tirta I",
-      "domain": "jasatirta1.co.id",
-      "category": "Corporate",
-      "career_url": "https://jasatirta1.co.id/karier/",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 2,
-      "reason": null
     },
     "binus-university": {
       "company": "BINUS University",
@@ -3037,9 +3017,19 @@
       "category": "Education",
       "career_url": "https://binus.ac.id/2015/06/karir-atau-wirausaha-bersama-mmsi-binus-university-pasti-bisa/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 13,
       "reason": null
+    },
+    "jasamarga-related-business": {
+      "company": "Jasamarga Related Business",
+      "domain": "jmr.id",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "telkom-university": {
       "company": "Telkom University",
@@ -3047,18 +3037,28 @@
       "category": "Education",
       "career_url": "https://telkomuniversity.ac.id/en/career-day-menjadi-jembatan-para-lulusan-perguruan-tinggi/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 2,
       "reason": null
     },
-    "universitas-indonesia": {
-      "company": "Universitas Indonesia",
-      "domain": "ui.ac.id",
+    "institut-teknologi-bandung": {
+      "company": "Institut Teknologi Bandung",
+      "domain": "itb.ac.id",
       "category": "Education",
-      "career_url": "https://www.ui.ac.id/",
+      "career_url": "https://itb.ac.id/career",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 5,
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 1,
+      "reason": null
+    },
+    "jasa-tirta-i": {
+      "company": "Jasa Tirta I",
+      "domain": "jasatirta1.co.id",
+      "category": "Corporate",
+      "career_url": "https://jasatirta1.co.id/karier/",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 2,
       "reason": null
     },
     "universitas-brawijaya": {
@@ -3067,19 +3067,9 @@
       "category": "Education",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "institut-teknologi-bandung": {
-      "company": "Institut Teknologi Bandung",
-      "domain": "itb.ac.id",
-      "category": "Education",
-      "career_url": "https://itb.ac.id/career",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 1,
-      "reason": null
     },
     "perum-perumnas": {
       "company": "Perum Perumnas",
@@ -3087,17 +3077,17 @@
       "category": "Corporate",
       "career_url": "https://perumnas.co.id/perusahaan-bumn-perum-perummakin-mudah-pt-kai-akan-tambah-stasiun-krl-ini-lokasinyanas-buka-lowongan-kerja-banyak-penempatan-ada-di-sumsel/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 9,
       "reason": null
     },
-    "perum-bulog": {
-      "company": "Perum Bulog",
-      "domain": "bulog.co.id",
-      "category": "BUMN",
+    "universitas-airlangga": {
+      "company": "Universitas Airlangga",
+      "domain": "unair.ac.id",
+      "category": "Education",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3107,19 +3097,29 @@
       "category": "Education",
       "career_url": "https://www.prasetiyamulya.ac.id/karir/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 19,
       "reason": null
     },
-    "universitas-airlangga": {
-      "company": "Universitas Airlangga",
-      "domain": "unair.ac.id",
+    "universitas-atma-jaya-jakarta": {
+      "company": "Universitas Atma Jaya Jakarta",
+      "domain": "atmajaya.ac.id",
       "category": "Education",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "universitas-gadjah-mada": {
+      "company": "Universitas Gadjah Mada",
+      "domain": "ugm.ac.id",
+      "category": "Education",
+      "career_url": "https://ugm.ac.id/id/berita/career-center-fakultas-psikologi-ugm-adakan-pembekalan-wisuda/",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 28,
+      "reason": null
     },
     "cikal": {
       "company": "Cikal",
@@ -3127,7 +3127,7 @@
       "category": "Education",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3137,57 +3137,27 @@
       "category": "Education",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
-    "universitas-atma-jaya-jakarta": {
-      "company": "Universitas Atma Jaya Jakarta",
-      "domain": "atmajaya.ac.id",
+    "president-university": {
+      "company": "President University",
+      "domain": "president.ac.id",
       "category": "Education",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
-    "kompas-gramedia": {
-      "company": "Kompas Gramedia",
-      "domain": "kompasgramedia.com",
-      "category": "Media",
+    "perum-bulog": {
+      "company": "Perum Bulog",
+      "domain": "bulog.co.id",
+      "category": "BUMN",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "metro-tv": {
-      "company": "Metro TV",
-      "domain": "metrotvnews.com",
-      "category": "Media",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "trans-tv": {
-      "company": "Trans TV",
-      "domain": "transtv.co.id",
-      "category": "Media",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "tempo": {
-      "company": "Tempo",
-      "domain": "tempo.co",
-      "category": "Media",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3197,17 +3167,47 @@
       "category": "Education",
       "career_url": "https://sph.edu/career",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 5,
       "reason": null
     },
-    "president-university": {
-      "company": "President University",
-      "domain": "president.ac.id",
-      "category": "Education",
+    "metro-tv": {
+      "company": "Metro TV",
+      "domain": "metrotvnews.com",
+      "category": "Media",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "trans-tv": {
+      "company": "Trans TV",
+      "domain": "transtv.co.id",
+      "category": "Media",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "tempo": {
+      "company": "Tempo",
+      "domain": "tempo.co",
+      "category": "Media",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "kompas-gramedia": {
+      "company": "Kompas Gramedia",
+      "domain": "kompasgramedia.com",
+      "category": "Media",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3217,7 +3217,7 @@
       "category": "Media",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3227,7 +3227,7 @@
       "category": "Media",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3237,19 +3237,19 @@
       "category": "Media",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain cnbcindonesia.com returned HTTP 403"
     },
-    "universitas-gadjah-mada": {
-      "company": "Universitas Gadjah Mada",
-      "domain": "ugm.ac.id",
-      "category": "Education",
-      "career_url": "https://ugm.ac.id/id/berita/career-center-fakultas-psikologi-ugm-adakan-pembekalan-wisuda/",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 28,
-      "reason": null
+    "pp-properti": {
+      "company": "PP Properti",
+      "domain": "pp-properti.com",
+      "category": "Properti",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "sido-muncul": {
       "company": "Sido Muncul",
@@ -3257,7 +3257,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3267,7 +3267,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3277,7 +3277,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3287,7 +3287,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3297,7 +3297,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3307,7 +3307,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3317,7 +3317,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3327,7 +3327,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3337,57 +3337,7 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "katadata": {
-      "company": "Katadata",
-      "domain": "katadata.co.id",
-      "category": "Media",
-      "career_url": "https://katadata.co.id/karier",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 13,
-      "reason": null
-    },
-    "narasi": {
-      "company": "Narasi",
-      "domain": "narasi.tv",
-      "category": "Media",
-      "career_url": "https://narasi.tv/careers",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 5,
-      "reason": null
-    },
-    "indah-kiat-pulp-paper": {
-      "company": "Indah Kiat Pulp & Paper",
-      "domain": "asiapulppaper.com",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "gajah-tunggal": {
-      "company": "Gajah Tunggal",
-      "domain": "gt-tires.com",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "maersk-indonesia": {
-      "company": "Maersk Indonesia",
-      "domain": "maersk.com",
-      "category": "Transport & Logistics",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3397,8 +3347,58 @@
       "category": "Education",
       "career_url": "https://www.uph.edu/career-at-uph/position-type/academic/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 30,
+      "reason": null
+    },
+    "maersk-indonesia": {
+      "company": "Maersk Indonesia",
+      "domain": "maersk.com",
+      "category": "Transport & Logistics",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "katadata": {
+      "company": "Katadata",
+      "domain": "katadata.co.id",
+      "category": "Media",
+      "career_url": "https://katadata.co.id/karier",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 13,
+      "reason": null
+    },
+    "indah-kiat-pulp-paper": {
+      "company": "Indah Kiat Pulp & Paper",
+      "domain": "asiapulppaper.com",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "gajah-tunggal": {
+      "company": "Gajah Tunggal",
+      "domain": "gt-tires.com",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "narasi": {
+      "company": "Narasi",
+      "domain": "narasi.tv",
+      "category": "Media",
+      "career_url": "https://narasi.tv/careers",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 5,
       "reason": null
     },
     "aneka-gas-industri": {
@@ -3407,7 +3407,7 @@
       "category": "Manufaktur",
       "career_url": "https://samatorgas.com/career",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 9,
       "reason": null
     },
@@ -3417,7 +3417,7 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain samator.com returned HTTP 403"
     },
@@ -3427,7 +3427,7 @@
       "category": "Manufaktur",
       "career_url": "https://kpi.pertamina.com/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 1,
       "reason": null
     },
@@ -3437,19 +3437,9 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain pertaminapatraniaga.com returned HTTP 403"
-    },
-    "idn-times": {
-      "company": "IDN Times",
-      "domain": "idntimes.com",
-      "category": "Media",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "kmi-wire-and-cable": {
       "company": "KMI Wire and Cable",
@@ -3457,7 +3447,7 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3467,19 +3457,9 @@
       "category": "Manufaktur",
       "career_url": "https://bumainternational.com/career",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 2,
       "reason": null
-    },
-    "pp-properti": {
-      "company": "PP Properti",
-      "domain": "pp-properti.com",
-      "category": "Properti",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "mulia-industrindo": {
       "company": "Mulia Industrindo",
@@ -3487,9 +3467,19 @@
       "category": "Manufaktur",
       "career_url": "https://muliaindustrindo.com/id/site/career",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 3,
       "reason": null
+    },
+    "pertamina-hulu-energi": {
+      "company": "Pertamina Hulu Energi",
+      "domain": "phe.pertamina.com",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "wall-street-english-indonesia": {
       "company": "Wall Street English Indonesia",
@@ -3497,8 +3487,18 @@
       "category": "Education",
       "career_url": "https://wallstreetenglish.co.id/category/business-and-career/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 53,
+      "reason": null
+    },
+    "idn-times": {
+      "company": "IDN Times",
+      "domain": "idntimes.com",
+      "category": "Media",
+      "career_url": "https://www.idntimes.com/business/economy/quiz-pilih-karakter-upin-ipin-tebak-potensi-kariermu-q9t01-quiz-00-s5qpm-cwpyg8",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 63,
       "reason": null
     },
     "supreme-cable-manufacturing-commerce": {
@@ -3507,37 +3507,7 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "pertamina-hulu-energi": {
-      "company": "Pertamina Hulu Energi",
-      "domain": "phe.pertamina.com",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "amar-bank": {
-      "company": "Amar Bank",
-      "domain": "amarbank.co.id",
-      "category": "Fintech",
-      "career_url": "https://amarbank.co.id/404",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 16,
-      "reason": null
-    },
-    "bnc-digital-bank": {
-      "company": "BNC Digital Bank",
-      "domain": "bankneo.co.id",
-      "category": "Fintech",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3547,19 +3517,49 @@
       "category": "Manufaktur",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
-    "modalku": {
-      "company": "Modalku",
-      "domain": "modalku.co.id",
-      "category": "Fintech",
-      "career_url": "https://modalku.co.id/career",
+    "pam-mineral": {
+      "company": "PAM Mineral",
+      "domain": "pammineral.co.id",
+      "category": "Manufaktur",
+      "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
-      "reason": "Career page was reachable but no supported vacancy record was parsed."
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "universitas-indonesia": {
+      "company": "Universitas Indonesia",
+      "domain": "ui.ac.id",
+      "category": "Education",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "bnc-digital-bank": {
+      "company": "BNC Digital Bank",
+      "domain": "bankneo.co.id",
+      "category": "Fintech",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "semen-merah-putih": {
+      "company": "Semen Merah Putih",
+      "domain": "semenmerahputih.com",
+      "category": "Manufaktur",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "sahabat-sampoerna": {
       "company": "Sahabat Sampoerna",
@@ -3567,18 +3567,18 @@
       "category": "Fintech",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
-      "reason": "Domain banksampoerna.com returned HTTP 403"
+      "reason": "Domain banksampoerna.com returned HTTP 429"
     },
-    "bpr-lestari-group": {
-      "company": "BPR Lestari Group",
-      "domain": "bprlestari.com",
-      "category": "Fintech",
-      "career_url": "https://bprlestari.com/careers",
+    "petrosea": {
+      "company": "Petrosea",
+      "domain": "petrosea.com",
+      "category": "Manufaktur",
+      "career_url": "https://career.petrosea.com/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 5,
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 1,
       "reason": null
     },
     "qoala": {
@@ -3587,9 +3587,29 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "bpr-lestari-group": {
+      "company": "BPR Lestari Group",
+      "domain": "bprlestari.com",
+      "category": "Fintech",
+      "career_url": "https://bprlestari.com/careers",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 5,
+      "reason": null
+    },
+    "modalku": {
+      "company": "Modalku",
+      "domain": "modalku.co.id",
+      "category": "Fintech",
+      "career_url": "https://modalku.co.id/career",
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "Career page was reachable but no supported vacancy record was parsed."
     },
     "bank-raya": {
       "company": "Bank Raya",
@@ -3597,19 +3617,19 @@
       "category": "Fintech",
       "career_url": "https://bankraya.co.id/404",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 6,
       "reason": null
     },
-    "pam-mineral": {
-      "company": "PAM Mineral",
-      "domain": "pammineral.co.id",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    "amar-bank": {
+      "company": "Amar Bank",
+      "domain": "amarbank.co.id",
+      "category": "Fintech",
+      "career_url": "https://amarbank.co.id/404",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 16,
+      "reason": null
     },
     "thiess-indonesia": {
       "company": "Thiess Indonesia",
@@ -3617,39 +3637,19 @@
       "category": "Manufaktur",
       "career_url": "https://thiess.com/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 42,
       "reason": null
     },
-    "semen-merah-putih": {
-      "company": "Semen Merah Putih",
-      "domain": "semenmerahputih.com",
+    "nusantara-infrastructure": {
+      "company": "Nusantara Infrastructure",
+      "domain": "nusantarainfrastructure.com",
       "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "petrosea": {
-      "company": "Petrosea",
-      "domain": "petrosea.com",
-      "category": "Manufaktur",
-      "career_url": "https://career.petrosea.com/",
+      "career_url": "https://nusantarainfrastructure.com/about-us/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 1,
       "reason": null
-    },
-    "bpr-kencana": {
-      "company": "BPR Kencana",
-      "domain": "bprkencana.com",
-      "category": "Fintech",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "deliveree": {
       "company": "Deliveree",
@@ -3657,17 +3657,17 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
-    "lummo": {
-      "company": "Lummo",
-      "domain": "lummo.com",
-      "category": "Startup",
+    "bpr-kencana": {
+      "company": "BPR Kencana",
+      "domain": "bprkencana.com",
+      "category": "Fintech",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3677,9 +3677,19 @@
       "category": "Startup",
       "career_url": "https://shipper.id/",
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Career page was reachable but no supported vacancy record was parsed."
+    },
+    "lummo": {
+      "company": "Lummo",
+      "domain": "lummo.com",
+      "category": "Startup",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "waresix": {
       "company": "Waresix",
@@ -3687,19 +3697,9 @@
       "category": "Startup",
       "career_url": "https://waresix.com/careers/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 20,
       "reason": null
-    },
-    "nusantara-infrastructure": {
-      "company": "Nusantara Infrastructure",
-      "domain": "nusantarainfrastructure.com",
-      "category": "Manufaktur",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "kargo-technologies": {
       "company": "Kargo Technologies",
@@ -3707,18 +3707,18 @@
       "category": "Startup",
       "career_url": "https://www.kargo.tech/karier",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 5,
       "reason": null
     },
-    "majoo": {
-      "company": "Majoo",
-      "domain": "majoo.id",
+    "cakap": {
+      "company": "Cakap",
+      "domain": "cakap.com",
       "category": "Startup",
-      "career_url": "https://majoo.id/karir",
+      "career_url": "https://career.cakap.com/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 17,
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 21,
       "reason": null
     },
     "kitalulus": {
@@ -3727,29 +3727,29 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
-    "jubelio": {
-      "company": "Jubelio",
-      "domain": "jubelio.com",
+    "majoo": {
+      "company": "Majoo",
+      "domain": "majoo.id",
       "category": "Startup",
-      "career_url": "https://jubelio.com/wp-content/uploads/2023/09/influencer-marketing-job-concept.jpg",
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "Career page was reachable but no supported vacancy record was parsed."
-    },
-    "cakap": {
-      "company": "Cakap",
-      "domain": "cakap.com",
-      "category": "Startup",
-      "career_url": "https://career.cakap.com/",
+      "career_url": "https://majoo.id/karir",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 21,
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 17,
       "reason": null
+    },
+    "harukaedu": {
+      "company": "HarukaEdu",
+      "domain": "harukaedu.com",
+      "category": "Startup",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "dewaweb": {
       "company": "Dewaweb",
@@ -3757,7 +3757,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3767,7 +3767,27 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "jubelio": {
+      "company": "Jubelio",
+      "domain": "jubelio.com",
+      "category": "Startup",
+      "career_url": "https://jubelio.com/wp-content/uploads/2023/09/influencer-marketing-job-concept.jpg",
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "Career page was reachable but no supported vacancy record was parsed."
+    },
+    "biznet-gio": {
+      "company": "Biznet Gio",
+      "domain": "biznetgio.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3777,19 +3797,9 @@
       "category": "Corporate",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain idcloudhost.com returned HTTP 403"
-    },
-    "biznet-gio": {
-      "company": "Biznet Gio",
-      "domain": "biznetgio.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "lintasarta": {
       "company": "Lintasarta",
@@ -3797,7 +3807,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3807,19 +3817,9 @@
       "category": "Corporate",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain mitrais.com returned HTTP 403"
-    },
-    "harukaedu": {
-      "company": "HarukaEdu",
-      "domain": "harukaedu.com",
-      "category": "Startup",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
     "multipolar-technology": {
       "company": "Multipolar Technology",
@@ -3827,167 +3827,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "solusi-sinergi-digital": {
-      "company": "Solusi Sinergi Digital",
-      "domain": "surge.co.id",
-      "category": "Corporate",
-      "career_url": "https://surge.co.id/career",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 1,
-      "reason": null
-    },
-    "jatis-mobile": {
-      "company": "Jatis Mobile",
-      "domain": "jatis.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "telkomsigma": {
-      "company": "Telkomsigma",
-      "domain": "telkomsigma.co.id",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "indocyber-global-teknologi": {
-      "company": "Indocyber Global Teknologi",
-      "domain": "indocyber.co.id",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "samsung-sds-indonesia": {
-      "company": "Samsung SDS Indonesia",
-      "domain": "samsungsds.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "accenture-indonesia": {
-      "company": "Accenture Indonesia",
-      "domain": "accenture.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "qwords": {
-      "company": "Qwords",
-      "domain": "qwords.com",
-      "category": "Corporate",
-      "career_url": "https://www.qwords.com/karir/",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 2,
-      "reason": null
-    },
-    "deloitte-indonesia": {
-      "company": "Deloitte Indonesia",
-      "domain": "deloitte.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "pwc-indonesia": {
-      "company": "PwC Indonesia",
-      "domain": "pwc.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "ey-indonesia": {
-      "company": "EY Indonesia",
-      "domain": "ey.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "bcg-indonesia": {
-      "company": "BCG Indonesia",
-      "domain": "bcg.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "mckinsey-indonesia": {
-      "company": "McKinsey Indonesia",
-      "domain": "mckinsey.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "bain-company-indonesia": {
-      "company": "Bain & Company Indonesia",
-      "domain": "bain.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "ibm-indonesia": {
-      "company": "IBM Indonesia",
-      "domain": "ibm.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "microsoft-indonesia": {
-      "company": "Microsoft Indonesia",
-      "domain": "microsoft.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 0,
-      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
-    },
-    "google-indonesia": {
-      "company": "Google Indonesia",
-      "domain": "google.com",
-      "category": "Corporate",
-      "career_url": null,
-      "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -3997,9 +3837,169 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "jatis-mobile": {
+      "company": "Jatis Mobile",
+      "domain": "jatis.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "solusi-sinergi-digital": {
+      "company": "Solusi Sinergi Digital",
+      "domain": "surge.co.id",
+      "category": "Corporate",
+      "career_url": "https://surge.co.id/career",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 1,
+      "reason": null
+    },
+    "telkomsigma": {
+      "company": "Telkomsigma",
+      "domain": "telkomsigma.co.id",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "indocyber-global-teknologi": {
+      "company": "Indocyber Global Teknologi",
+      "domain": "indocyber.co.id",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "accenture-indonesia": {
+      "company": "Accenture Indonesia",
+      "domain": "accenture.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "deloitte-indonesia": {
+      "company": "Deloitte Indonesia",
+      "domain": "deloitte.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "pwc-indonesia": {
+      "company": "PwC Indonesia",
+      "domain": "pwc.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "ey-indonesia": {
+      "company": "EY Indonesia",
+      "domain": "ey.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "samsung-sds-indonesia": {
+      "company": "Samsung SDS Indonesia",
+      "domain": "samsungsds.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "bcg-indonesia": {
+      "company": "BCG Indonesia",
+      "domain": "bcg.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "mckinsey-indonesia": {
+      "company": "McKinsey Indonesia",
+      "domain": "mckinsey.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "bain-company-indonesia": {
+      "company": "Bain & Company Indonesia",
+      "domain": "bain.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "ibm-indonesia": {
+      "company": "IBM Indonesia",
+      "domain": "ibm.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "microsoft-indonesia": {
+      "company": "Microsoft Indonesia",
+      "domain": "microsoft.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "google-indonesia": {
+      "company": "Google Indonesia",
+      "domain": "google.com",
+      "category": "Corporate",
+      "career_url": null,
+      "status": "no-career-page",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 0,
+      "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "qwords": {
+      "company": "Qwords",
+      "domain": "qwords.com",
+      "category": "Corporate",
+      "career_url": "https://www.qwords.com/karir/",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 2,
+      "reason": null
     },
     "oracle-indonesia": {
       "company": "Oracle Indonesia",
@@ -4007,7 +4007,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -4017,7 +4017,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -4027,7 +4027,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -4037,7 +4037,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -4047,7 +4047,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -4057,7 +4057,7 @@
       "category": "Corporate",
       "career_url": "https://www.amazon.jobs/en/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 10,
       "reason": null
     },
@@ -4067,18 +4067,8 @@
       "category": "Startup",
       "career_url": "https://pahamify.com/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 34,
-      "reason": null
-    },
-    "dealls": {
-      "company": "Dealls",
-      "domain": "dealls.com",
-      "category": "Startup",
-      "career_url": "https://dealls.com/karir",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 33,
       "reason": null
     },
     "colearn": {
@@ -4087,7 +4077,7 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     },
@@ -4097,9 +4087,19 @@
       "category": "Startup",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "dealls": {
+      "company": "Dealls",
+      "domain": "dealls.com",
+      "category": "Startup",
+      "career_url": "https://dealls.com/karir",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 33,
+      "reason": null
     },
     "lippo-malls-indonesia": {
       "company": "Lippo Malls Indonesia",
@@ -4107,7 +4107,7 @@
       "category": "Properti",
       "career_url": null,
       "status": "blocked",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "Domain lippomalls.com returned HTTP 403"
     },
@@ -4117,7 +4117,7 @@
       "category": "Properti",
       "career_url": "https://jayaproperty.com/career",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 3,
       "reason": null
     },
@@ -4127,7 +4127,7 @@
       "category": "Properti",
       "career_url": "https://www.grand-indonesia.com/careers",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 1,
       "reason": null
     },
@@ -4137,7 +4137,7 @@
       "category": "Corporate",
       "career_url": "https://kpmg.com/xx/en/careers.html",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 27,
       "reason": null
     },
@@ -4147,18 +4147,8 @@
       "category": "Corporate",
       "career_url": "https://careers.marriott.com/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 45,
-      "reason": null
-    },
-    "accor-indonesia": {
-      "company": "Accor Indonesia",
-      "domain": "careers.accor.com",
-      "category": "Corporate",
-      "career_url": "https://careers.accor.com/jobs",
-      "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
-      "records_accepted": 218,
       "reason": null
     },
     "plaza-indonesia": {
@@ -4167,9 +4157,19 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
+    },
+    "accor-indonesia": {
+      "company": "Accor Indonesia",
+      "domain": "careers.accor.com",
+      "category": "Corporate",
+      "career_url": "https://careers.accor.com/jobs",
+      "status": "ok",
+      "checked_at": "2026-10-25T02:06:33Z",
+      "records_accepted": 218,
+      "reason": null
     },
     "hilton-indonesia": {
       "company": "Hilton Indonesia",
@@ -4177,7 +4177,7 @@
       "category": "Corporate",
       "career_url": "https://jobs.hilton.com/",
       "status": "ok",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 31,
       "reason": null
     },
@@ -4187,7 +4187,7 @@
       "category": "Corporate",
       "career_url": null,
       "status": "no-career-page",
-      "checked_at": "2026-10-25T01:35:45Z",
+      "checked_at": "2026-10-25T02:06:33Z",
       "records_accepted": 0,
       "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords."
     }
