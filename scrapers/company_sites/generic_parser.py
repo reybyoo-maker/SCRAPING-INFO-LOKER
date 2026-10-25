@@ -111,13 +111,12 @@ class GenericCompanyParser:
                 else:
                     location = clean(address)
                 url = urljoin(page_url, str(value.get("url") or value.get("sameAs") or page_url))
-                old_company = self.company
-                if company: self.company = clean(company, 200)
+                # The curated target name is authoritative for the company field.
+                # The structured-data hiringOrganization may be a subsidiary or ATS vendor.
                 record = self._record(
                     value.get("title") or value.get("name"), location, url,
                     value.get("datePosted"), value.get("baseSalary"), value.get("employmentType"), value.get("description")
                 )
-                self.company = old_company
                 if record: records.append(record)
             for key in ("@graph", "mainEntity", "itemListElement", "mainEntityOfPage"):
                 if key in value: walk(value[key])
