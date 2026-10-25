@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/sitemap.xml

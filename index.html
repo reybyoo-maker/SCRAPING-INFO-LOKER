@@ -1,468 +1,406 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" data-theme="dark">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#ffffff">
-<meta name="description" content="Cari lowongan kerja Indonesia dengan filter lokasi, bidang pekerjaan, gaji, pendidikan, dan tipe kerja.">
-<title>INFO LOKER by Ai — Job Search</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>INFO LOKER — Lowongan Kerja Indonesia Terbaru | by Reynaldi</title>
+<meta name="description" content="INFO LOKER by Reynaldi: cari lowongan kerja Indonesia terbaru dengan filter provinsi, kota, bidang, gaji, pendidikan, remote, hybrid, dan walk-in. Data dari job portal dan situs karier resmi.">
+<meta name="keywords" content="info loker, lowongan kerja, loker terbaru, lowongan kerja Indonesia, loker remote, loker walk in, lowongan BUMN, loker fresh graduate, cari kerja, job search Indonesia, Reynaldi, reybyoo_">
+<meta name="author" content="Reynaldi (@reybyoo_)">
+<meta name="creator" content="Reynaldi">
+<meta name="publisher" content="Reynaldi">
+<meta name="copyright" content="Reynaldi (@reybyoo_)">
+<meta name="application-name" content="INFO LOKER by Reynaldi">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="googlebot" content="index,follow,max-image-preview:large">
+<meta name="language" content="Indonesian">
+<meta name="geo.region" content="ID">
+<meta name="geo.placename" content="Indonesia">
+<meta name="format-detection" content="telephone=no">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#060608">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="INFO LOKER">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="canonical" href="https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/">
+<link rel="alternate" hreflang="id" href="https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/">
+<link rel="alternate" hreflang="x-default" href="https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="manifest" href="site.webmanifest">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INFO LOKER by Reynaldi">
+<meta property="og:locale" content="id_ID">
+<meta property="og:title" content="INFO LOKER — Lowongan Kerja Indonesia Terbaru | by Reynaldi">
+<meta property="og:description" content="Cari, bandingkan, dan filter lowongan kerja Indonesia: lokasi, bidang, gaji, pendidikan, remote, hybrid, dan walk-in dalam satu tempat.">
+<meta property="og:url" content="https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/">
+<meta property="og:image" content="https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo INFO LOKER by Reynaldi">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="INFO LOKER — Lowongan Kerja Indonesia Terbaru | by Reynaldi">
+<meta name="twitter:description" content="Cari dan filter lowongan kerja Indonesia: lokasi, bidang, gaji, pendidikan, remote, hybrid, dan walk-in.">
+<meta name="twitter:image" content="https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/og-image.svg">
+<meta name="twitter:image:alt" content="Logo INFO LOKER by Reynaldi">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="logo.svg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/#website","url":"https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/","name":"INFO LOKER by Reynaldi","alternateName":["INFO LOKER","Info Loker by Ai"],"description":"Pencarian lowongan kerja Indonesia dengan filter lokasi, bidang pekerjaan, gaji, pendidikan, dan tipe kerja.","inLanguage":"id-ID","publisher":{"@id":"https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/#person"}},
+{"@type":"WebPage","@id":"https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/#webpage","url":"https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/","name":"INFO LOKER — Lowongan Kerja Indonesia Terbaru","isPartOf":{"@id":"https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/#website"},"about":{"@type":"Thing","name":"Lowongan kerja Indonesia"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/og-image.svg","width":1200,"height":630},"inLanguage":"id-ID"},
+{"@type":"Person","@id":"https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/#person","name":"Reynaldi","alternateName":"reybyoo_","url":"https://www.instagram.com/reybyoo_/","sameAs":["https://www.instagram.com/reybyoo_/"],"image":"https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/logo.svg"},
+{"@type":"Organization","@id":"https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/#org","name":"INFO LOKER by Reynaldi","url":"https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/","logo":{"@type":"ImageObject","url":"https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/icon-512.png","width":512,"height":512},"founder":{"@id":"https://reybyoo-maker.github.io/SCRAPING-INFO-LOKER/#person"},"sameAs":["https://www.instagram.com/reybyoo_/"]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Apa itu INFO LOKER by Reynaldi?","acceptedAnswer":{"@type":"Answer","text":"INFO LOKER adalah website pencarian lowongan kerja Indonesia milik Reynaldi (@reybyoo_). Lowongan dikumpulkan dari job portal, feed atau API publik, dan halaman karier resmi perusahaan, lalu ditampilkan dengan filter yang lengkap."}},
+{"@type":"Question","name":"Apa arti label HOT, MEDIUM, dan LOW?","acceptedAnswer":{"@type":"Answer","text":"Label mengukur kelengkapan informasi sebuah lowongan, bukan jaminan perusahaan tepercaya. HOT berarti informasinya relatif lengkap, MEDIUM sebagian lengkap, dan LOW terbatas."}},
+{"@type":"Question","name":"Bagaimana cara memfilter lowongan berdasarkan gaji atau remote?","acceptedAnswer":{"@type":"Answer","text":"Gunakan chip filter cepat seperti Remote, Gaji tersedia, Walk-in, atau 7 hari terakhir. Untuk kontrol lebih detail buka Filter lainnya: kota, sistem kerja, tipe pekerjaan, pendidikan minimum, sumber, dan gaji minimum."}},
+{"@type":"Question","name":"Apakah INFO LOKER gratis?","acceptedAnswer":{"@type":"Answer","text":"Ya, mencari dan menyimpan lowongan di INFO LOKER tidak dipungut biaya. Lowongan yang disimpan tersimpan di browser kamu."}},
+{"@type":"Question","name":"Bagaimana menghindari lowongan penipuan?","acceptedAnswer":{"@type":"Answer","text":"Selalu verifikasi detail, tenggat, dan proses lamaran lewat penerbit asli, dan jangan membayar biaya rekrutmen yang mencurigakan."}}
+]}
+]}
+</script>
 <style>
-:root{color-scheme:light;--bg:#f6f8fa;--surface:#fff;--ink:#182230;--muted:#6b7787;--line:#e5eaf0;--green:#16734b;--green-dark:#105b3b;--green-soft:#e9f7ef;--navy:#132238;--amber:#94610c;--amber-soft:#fff5dd;--red:#ab4545;--red-soft:#fff0f0;--shadow:0 1px 2px rgba(18,32,50,.035),0 7px 22px rgba(18,32,50,.035);--radius:14px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;line-height:1.5}button,input,select{font:inherit}button,a,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #76c49b;outline-offset:2px}.shell{width:min(1240px,calc(100% - 40px));margin:0 auto}
-.topbar{height:66px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none}.logo{height:37px;width:37px;border-radius:11px;background:var(--green);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:900;letter-spacing:-.05em}.brand-copy{display:flex;flex-direction:column;line-height:1.1}.brand-name{font-size:15px;font-weight:850;letter-spacing:-.04em}.brand-sub{font-size:10px;color:var(--muted);margin-top:5px;letter-spacing:.08em}.navlinks{display:flex;align-items:center;gap:22px;margin-left:auto;margin-right:8px}.navlinks a{font-size:12px;font-weight:650;color:#526071;text-decoration:none}.navlinks a:hover{color:var(--green)}.navbuttons{display:flex;gap:8px;align-items:center}.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid transparent;border-radius:9px;padding:10px 13px;font-size:12px;line-height:1.2;font-weight:750;text-decoration:none;white-space:nowrap;transition:background .15s,border-color .15s,transform .15s}.btn:hover{transform:translateY(-1px)}.btn-primary{background:var(--green);color:#fff}.btn-primary:hover{background:var(--green-dark)}.btn-secondary{background:#fff;border-color:#dce3ea;color:#293647}.btn-secondary:hover{background:#f7f9fb;border-color:#c5d0dc}.btn-quiet{color:var(--muted);background:transparent;border-color:transparent}.btn-quiet:hover{background:#f2f5f7}.btn-small{padding:8px 10px;font-size:11px}.btn svg,.ico{width:16px;height:16px;flex:none}
-main{padding:31px 0 58px}.pagehead{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:22px}.eyebrow{color:var(--green);text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:850}.pagehead h1{font-size:clamp(26px,3vw,34px);letter-spacing:-.06em;line-height:1.16;margin:7px 0 7px}.pagehead p{margin:0;color:var(--muted);font-size:13px;max-width:620px;line-height:1.7}.updated{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 11px;color:var(--muted);font-size:11px;margin-top:5px;white-space:nowrap}.dot{width:7px;height:7px;border-radius:50%;background:#28a56a;box-shadow:0 0 0 3px #28a56a1c}.dot.error{background:#d75858;box-shadow:0 0 0 3px #d758581c}
-.search-panel{padding:15px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:16px}.search-grid{display:grid;grid-template-columns:minmax(190px,1.5fr) minmax(145px,.9fr) minmax(150px,1fr) auto;gap:9px;align-items:center}.field{display:flex;align-items:center;gap:9px;min-width:0;border:1px solid #e0e6ed;border-radius:9px;padding:0 11px;background:#fff;height:43px}.field:focus-within{border-color:#83c6a1;box-shadow:0 0 0 3px #16824d12}.field svg{width:16px;height:16px;color:#778493;flex:none}.field input,.field select{width:100%;min-width:0;height:100%;border:0;outline:none!important;background:transparent;color:var(--ink);font-size:12px}.field input::placeholder{color:#9aa4b1}.field select{appearance:auto;cursor:pointer}.search-submit{height:43px;padding:0 18px}
-.search-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;padding-top:12px;border-top:1px solid #eff2f5}.quickfilters{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid #e0e6ed;border-radius:8px;background:#fff;color:#576476;padding:7px 10px;font-size:11px;font-weight:700;line-height:1.2}.chip:hover{border-color:#b4d9c3;background:#f8fcf9}.chip.active{background:var(--green-soft);border-color:#bfe5cd;color:var(--green-dark)}.chip .chip-count{display:inline-grid;place-items:center;min-width:17px;height:17px;border-radius:5px;background:#eff2f5;color:#566273;font-size:9px;padding:0 4px}.chip.active .chip-count{background:#d2efdc;color:var(--green-dark)}.filtertoggle{flex:none}
-.advanced{border-top:1px solid #eff2f5;margin-top:13px;padding-top:12px}.advanced[hidden]{display:none}.advanced-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:11px}.advanced-head strong{font-size:12px}.advanced-head span{font-size:10px;color:var(--muted)}.advanced-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}.filter-field label{display:block;font-size:10px;font-weight:750;color:#526071;margin-bottom:6px}.control{width:100%;height:38px;padding:0 10px;border:1px solid #dfe5eb;border-radius:8px;background:#fff;color:#334155;font-size:11px;min-width:0}.control:focus{border-color:#83c6a1;outline:none;box-shadow:0 0 0 3px #16824d12}.checkrow{display:flex;flex-wrap:wrap;gap:17px;margin-top:12px;padding-top:10px;border-top:1px solid #eff2f5}.check{display:inline-flex;align-items:center;gap:7px;font-size:11px;color:#566273;cursor:pointer}.check input{accent-color:var(--green);margin:0}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 24px}.stat{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 15px;min-width:0}.stat-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:#edf7f1;color:var(--green);flex:none}.stat-icon svg{width:18px;height:18px}.stat-value{font-size:20px;line-height:1.1;font-weight:850;letter-spacing:-.05em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.stat-label{font-size:10px;color:var(--muted);margin-top:5px;line-height:1.3}
-.results-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}.results-title{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}.results-title h2{font-size:17px;letter-spacing:-.035em;margin:0}.result-count{font-size:11px;color:var(--muted)}.result-actions{display:flex;align-items:center;gap:8px}.sort-label{font-size:10px;color:var(--muted);white-space:nowrap}.sort-select{height:35px;padding:0 9px;border:1px solid #dfe5eb;border-radius:8px;background:#fff;color:#465365;font-size:11px}.list{display:flex;flex-direction:column;gap:9px}.job{display:grid;grid-template-columns:44px minmax(0,1fr) minmax(145px,.42fr) auto;gap:15px;align-items:center;padding:16px;background:#fff;border:1px solid var(--line);border-radius:12px;transition:border-color .15s,box-shadow .15s}.job:hover{border-color:#c3ddcc;box-shadow:var(--shadow)}.job-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:11px;background:#eff7f1;color:#2d7850;font-size:13px;font-weight:900;letter-spacing:-.04em;flex:none}.job-main{min-width:0}.job-title{margin:0 0 4px;font-size:14px;line-height:1.4;font-weight:800;letter-spacing:-.025em;overflow-wrap:anywhere}.company{margin:0;color:#627082;font-size:11px;font-weight:600;overflow-wrap:anywhere}.job-meta{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:8px;color:#788494;font-size:10px}.meta-item{display:inline-flex;align-items:center;gap:4px}.meta-item svg{width:12px;height:12px}.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:9px}.tag{border:1px solid #e7ebf0;background:#f8fafc;color:#596677;border-radius:6px;padding:4px 6px;font-size:9px;line-height:1.2}.tag.remote{background:#edf5ff;color:#3267a2;border-color:#dceaff}.tag.walkin{background:#fff5e7;color:#915a12;border-color:#f6e2c0}.job-side{min-width:0;align-self:center}.salary-label{font-size:9px;color:#8a95a2;margin-bottom:3px}.salary-value{font-size:12px;font-weight:800;color:#243344;overflow-wrap:anywhere}.salary-value.unknown{font-weight:600;color:#8994a1}.updated-label{font-size:9px;color:#8994a1;margin-top:7px}.job-actions{display:flex;flex-direction:column;gap:6px;align-items:stretch;min-width:106px}.action-row{display:flex;align-items:center;justify-content:flex-end;gap:6px}.quality{display:inline-flex;align-items:center;gap:5px;border-radius:6px;padding:5px 7px;font-size:9px;font-weight:850;letter-spacing:.015em;white-space:nowrap}.quality:before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}.quality.hot{color:#237347;background:#e8f7ed}.quality.medium{color:#90600c;background:var(--amber-soft)}.quality.low{color:#a34d4d;background:var(--red-soft)}.save{width:30px;height:28px;display:grid;place-items:center;border:1px solid #e1e7ed;border-radius:7px;background:#fff;color:#657181}.save svg{width:14px;height:14px}.save.saved{border-color:#c0e4cc;background:#ebf8ef;color:var(--green)}.job-actions .btn{width:100%;padding:8px 10px;font-size:10px}.empty{border:1px dashed #d4dde6;border-radius:13px;background:#fff;padding:44px 20px;text-align:center}.empty-icon{margin:0 auto 12px;width:44px;height:44px;background:#edf7f1;color:var(--green);display:grid;place-items:center;border-radius:13px}.empty-icon svg{width:21px;height:21px}.empty h3{font-size:14px;margin:0 0 6px}.empty p{max-width:390px;margin:0 auto 15px;color:var(--muted);font-size:11px;line-height:1.7}.loading{padding:36px 15px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:12px}.spinner{width:22px;height:22px;border:2px solid #dcebe1;border-top-color:var(--green);border-radius:50%;margin:0 auto 12px;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.pagination{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px;font-size:10px;color:var(--muted)}.pages{display:flex;align-items:center;gap:5px;flex-wrap:wrap}.page{min-width:30px;height:30px;padding:0 8px;border:1px solid #dfe5eb;border-radius:7px;background:#fff;color:#5d6876;font-size:10px;font-weight:750}.page.current{background:var(--green);border-color:var(--green);color:#fff}.page:disabled{opacity:.4;cursor:not-allowed}
-.trustnote{display:flex;align-items:flex-start;gap:11px;padding:15px 16px;background:#f0f6f2;border:1px solid #dfece3;border-radius:11px;margin-top:25px}.trustnote svg{width:17px;height:17px;color:var(--green);flex:none;margin-top:1px}.trustnote strong{display:block;font-size:11px;margin-bottom:4px}.trustnote p{font-size:10px;color:#657468;line-height:1.7;margin:0}
-footer{border-top:1px solid var(--line);background:#fff;padding:20px 0;margin-top:0}.foot{display:flex;align-items:center;justify-content:space-between;gap:20px}.footcopy{font-size:10px;color:#778392;line-height:1.7;text-align:right;max-width:650px}.footcopy a{color:var(--green);text-decoration:none;font-weight:700}
-dialog{border:0;border-radius:16px;padding:0;width:min(650px,calc(100% - 24px));max-height:88vh;overflow:auto;box-shadow:0 25px 100px #0b16294d;color:var(--ink)}dialog::backdrop{background:#15223588;backdrop-filter:blur(3px)}.modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;padding:21px 22px 18px;border-bottom:1px solid var(--line);background:#fff}.modal-title{font-size:20px;font-weight:850;line-height:1.3;letter-spacing:-.045em;margin:12px 0 6px;overflow-wrap:anywhere}.modal-sub{font-size:11px;color:var(--muted)}.close{height:31px;width:31px;border:1px solid var(--line);background:#fff;border-radius:8px;display:grid;place-items:center;flex:none}.close svg{width:15px;height:15px}.modal-body{padding:19px 22px 22px}.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:18px}.detail{border:1px solid #e8edf2;border-radius:9px;background:#fafbfc;padding:10px}.detail span{display:block;color:#85909d;font-size:9px;margin-bottom:4px}.detail strong{font-size:11px;overflow-wrap:anywhere}.detail-section{margin:18px 0}.detail-section h3{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#788595;margin:0 0 7px}.detail-section p{font-size:11px;line-height:1.85;color:#465365;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}.warning{padding:11px 12px;border:1px solid #f2e2bf;background:#fffaeb;color:#795c24;font-size:10px;line-height:1.7;border-radius:8px;margin:16px 0}.modal-actions{display:flex;gap:8px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:15px}.modal-actions .btn{flex:0 0 auto}
-@media(max-width:980px){.search-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) auto}.category-field{grid-column:1/3}.advanced-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.job{grid-template-columns:42px minmax(0,1fr) minmax(120px,.45fr) auto;gap:11px}.job-actions{min-width:94px}.navlinks{gap:14px}}
-@media(max-width:720px){.shell{width:calc(100% - 28px)}.topbar{height:61px}.navlinks{display:none}.brand-name{font-size:14px}.brand-sub{font-size:9px}.navbuttons .btn{padding:8px 9px;font-size:10px}.navbuttons .saved-label{display:none}main{padding:23px 0 42px}.pagehead{flex-direction:column;gap:12px;margin-bottom:17px}.pagehead h1{font-size:28px}.pagehead p{font-size:12px}.updated{margin:0}.search-panel{padding:11px;margin-bottom:12px}.search-grid{grid-template-columns:1fr 1fr}.keyword-field{grid-column:1/3}.category-field{grid-column:1/3}.search-submit{grid-column:1/3;width:100%}.field{height:40px}.search-tools{align-items:flex-start;flex-direction:column}.quickfilters{width:100%}.chip{padding:7px 8px;font-size:10px}.filtertoggle{align-self:flex-end}.advanced-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:21px}.stat{padding:11px;gap:9px}.stat-icon{width:32px;height:32px}.stat-value{font-size:18px}.stat-label{font-size:9px}.results-head{align-items:flex-start;flex-direction:column;gap:10px}.result-actions{width:100%;justify-content:space-between}.job{grid-template-columns:37px minmax(0,1fr) auto;gap:10px;padding:13px}.job-icon{width:36px;height:36px;border-radius:9px;font-size:11px;grid-column:1;grid-row:1}.job-main{grid-column:2/4;grid-row:1;align-self:center}.job-title{font-size:13px}.job-meta{font-size:9px;gap:7px}.tags{margin-top:7px}.job-side{grid-column:1/3;grid-row:2;align-self:start;margin-left:1px}.salary-label{display:inline;margin-right:6px}.salary-value{display:inline;font-size:11px}.updated-label{margin-top:3px}.job-actions{grid-column:3;grid-row:2;min-width:90px;flex-direction:row;align-items:center;justify-content:flex-end;flex-wrap:wrap}.job-actions .btn{width:auto;flex:1;padding:8px 9px}.action-row{width:100%}.quality{font-size:8px}.save{height:26px;width:28px}.pagination{align-items:flex-start;flex-direction:column}.foot{align-items:flex-start;flex-direction:column}.footcopy{text-align:left}.detail-grid{gap:7px}.modal-head,.modal-body{padding:16px}.modal-title{font-size:18px}}
-@media(max-width:390px){.shell{width:calc(100% - 22px)}.search-grid{grid-template-columns:1fr}.keyword-field,.category-field,.search-submit{grid-column:1}.advanced-grid{grid-template-columns:1fr 1fr}.stats{gap:6px}.stat{padding:9px}.stat-icon{width:29px;height:29px}.stat-value{font-size:16px}.job{gap:8px;padding:11px}.job-actions{min-width:80px}.job-actions .btn{font-size:9px;padding:7px}.chip{font-size:9px}.navbuttons .btn-secondary{display:none}.detail-grid{grid-template-columns:1fr 1fr}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@property --ang{syntax:'<angle>';inherits:false;initial-value:0deg}
+:root{color-scheme:light;
+--bg:#f5f5f8;--bg2:#ececf1;--card:#fff;--card2:#fafafc;--ink:#0a0a0d;--ink2:#34343d;--muted:#6b6b78;--line:#e4e4ea;--line2:#d4d4dc;--soft:#f0f0f4;--grid:rgba(10,10,13,.045);
+--g1:#ffa91f;--g2:#ff6a10;--g3:#ff2e93;--grad:linear-gradient(115deg,var(--g1),var(--g2) 48%,var(--g3));--tint:linear-gradient(115deg,#fff2dc,#ffe6f1);--accent:#e5471f;
+--ok:#c2410c;--okbg:#fff0dd;--mid:#92600e;--midbg:#fff6df;--lowc:#8a4a4a;--lowbg:#f6eeee;
+--sh:0 1px 2px rgba(10,10,13,.04),0 10px 30px -12px rgba(10,10,13,.1);
+--r:10px;--r2:8px;--r3:6px;--ease:cubic-bezier(.22,.8,.24,1);
+--fd:'Plus Jakarta Sans','Inter',system-ui,sans-serif;--fb:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;--fm:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;--orb:.35}
+html[data-theme=dark]{color-scheme:dark;
+--bg:#060608;--bg2:#0a0a0d;--card:#0d0d11;--card2:#111116;--ink:#f6f6f8;--ink2:#cfcfd8;--muted:#8d8d9a;--line:#1c1c23;--line2:#2b2b35;--soft:#16161c;--grid:rgba(255,255,255,.035);
+--tint:linear-gradient(115deg,#2b1a0a,#2d1020);--accent:#ff8f4d;--ok:#ffb08a;--okbg:#2e1d17;--mid:#f1cd82;--midbg:#2e2616;--lowc:#e6a9a9;--lowbg:#2a1c1f;--sh:0 10px 40px -16px rgba(0,0,0,.7);--orb:.55}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 14px/1.6 var(--fb);-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .35s var(--ease),color .35s var(--ease)}
+button,input,select{font:inherit;color:inherit}button{cursor:pointer}a{color:inherit}
+:focus-visible{outline:2px solid var(--g2);outline-offset:3px}
+.wrap{width:min(1200px,calc(100% - 48px));margin:0 auto}
+h1,h2,h3{font-family:var(--fd);margin:0}
+.gt{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%;animation:gshift 6s ease-in-out infinite alternate}
+@keyframes gshift{to{background-position:100% 0}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
-/* SaaS workspace refresh: left navigation, warm gradient accents, responsive drawer */
-:root{--accent-orange:#ff783f;--accent-pink:#ef4c91;--accent-gradient:linear-gradient(115deg,#ff8a3d 0%,#ff6b69 52%,#e94f9a 100%);--sidebar-width:252px}
-html{scroll-padding-top:84px}
-body{background:#f8f8fa}
-.topbar{margin-left:var(--sidebar-width);width:calc(100% - var(--sidebar-width));background:rgba(255,255,255,.9);backdrop-filter:blur(16px);border-bottom:1px solid #eeedf1}
-.topbar .brand,.topbar .navlinks{display:none}
-.nav{justify-content:flex-end}
-.navbuttons{gap:9px}
-.topbar .navbuttons>a.btn-primary{display:none}
-.btn-primary{background:var(--accent-gradient);border-color:transparent;color:#fff;box-shadow:0 5px 14px rgba(239,94,103,.12)}
-.btn-primary:hover{background:linear-gradient(115deg,#f26a2d 0%,#ed5a78 55%,#d93f88 100%);box-shadow:0 8px 20px rgba(239,94,103,.2)}
-.btn-secondary{border-color:#e5e2e8;color:#25232a}
-.btn-secondary:hover{background:#fff7f5;border-color:#fac2ad}
-.logo{background:var(--accent-gradient);box-shadow:0 5px 12px rgba(239,94,103,.2)}
-.eyebrow{color:#e45d55}
-.pagehead h1{letter-spacing:-.055em}
-.pagehead h1:selection{background:#ffd7ce}
-.stat-icon{background:linear-gradient(135deg,#fff1e8,#ffe8f1);color:#e65e4d}
-.field:focus-within,.control:focus{border-color:#f6a17e;box-shadow:0 0 0 3px rgba(255,120,63,.12)}
-.chip.active{background:linear-gradient(110deg,#fff0e6,#ffedf4);border-color:#ffcbbd;color:#b94b42}
-.chip.active .chip-count{background:#ffd9cc;color:#a6403d}
-.chip:hover{border-color:#f7c6b4;background:#fff9f6}
-.check input{accent-color:#f16b4b}
-.job:hover{border-color:#f3c7b7}
-.job-icon{background:linear-gradient(135deg,#fff0e4,#ffeaf3);color:#b94b57}
-.quality.hot{color:#a74b31;background:#fff0e8}
-.quality.medium{color:#966011;background:#fff6df}
-.quality.low{color:#a34d4d;background:#fff0f0}
-.save.saved{border-color:#f4b6a2;background:#fff0e9;color:#d95b43}
-.page.current{background:var(--accent-gradient);border-color:transparent}
-.spinner{border-color:#ffe4d7;border-top-color:#f16b4b}
-.empty-icon{background:linear-gradient(135deg,#fff0e4,#ffeaf3);color:#e45d55}
-.trustnote{background:linear-gradient(120deg,#fff6f0,#fff5f9);border-color:#f4e1dd}
-.trustnote svg{color:#e45d55}
-.footcopy a{color:#df5b59}
-.sidebar{position:fixed;inset:0 auto 0 0;width:var(--sidebar-width);z-index:45;display:flex;flex-direction:column;gap:24px;padding:22px 15px 16px;background:#fff;border-right:1px solid #eeedf1;overflow-y:auto;overscroll-behavior:contain}
-.sidebar-brand{padding:0 8px}
-.sidebar-brand .logo{width:40px;height:40px;border-radius:13px;font-size:13px}
-.sidebar-brand .brand-name{font-size:15px}
-.sidebar-brand .brand-sub{font-size:9px;letter-spacing:.09em}
-.sidebar-label{padding:0 12px;color:#a0a0ab;font-size:9px;font-weight:850;letter-spacing:.14em}
-.side-nav{display:flex;flex-direction:column;gap:5px}
-.side-link{position:relative;display:flex;align-items:center;gap:11px;min-height:43px;width:100%;padding:10px 12px;border:1px solid transparent;border-radius:10px;background:transparent;color:#686875;text-align:left;text-decoration:none;font:inherit;font-size:12px;font-weight:680;cursor:pointer;transition:background .16s,color .16s,border-color .16s}
-.side-link:hover{background:#faf3f1;color:#27232a}
-.side-link.is-active{color:#bc4e40;background:linear-gradient(110deg,#fff0e6,#fff0f5);border-color:#ffe0d6}
-.side-link.is-active:before{content:"";position:absolute;left:-1px;top:9px;bottom:9px;width:3px;border-radius:0 4px 4px 0;background:var(--accent-gradient)}
-.side-icon{display:inline-grid;place-items:center;flex:none;width:19px;height:19px;color:currentColor}
-.side-icon svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.side-divider{height:1px;background:#f0edf1;margin:0 8px}
-.sidebar-bottom{margin-top:auto;padding:13px 12px;border:1px solid #f0edf1;border-radius:12px;background:linear-gradient(145deg,#fffaf6,#fff7fa)}
-.sidebar-status{display:flex;align-items:center;gap:7px;min-width:0;color:#686875;font-size:10px;font-weight:700}
-.sidebar-status span:last-child{overflow-wrap:anywhere}
-.sidebar-indicator{display:inline-block;width:7px;height:7px;border-radius:50%;background:#35a76a;box-shadow:0 0 0 3px #35a76a1a;flex:none}
-.sidebar-indicator.error{background:#d75858;box-shadow:0 0 0 3px #d758581c}
-.sidebar-bottom p{font-size:10px;line-height:1.65;color:#92909a;margin:9px 0 0}
-.sidebar-repo{display:inline-flex;margin-top:10px;color:#d95b59;font-size:10px;font-weight:800;text-decoration:none}
-.sidebar-repo:hover{text-decoration:underline}
-.mobile-menu{display:none;align-items:center;justify-content:center;gap:7px;min-height:38px;padding:8px 10px;border:1px solid #e9e5ea;border-radius:9px;background:#fff;color:#28252c;font-size:11px;font-weight:800}
-.mobile-menu svg{width:17px;height:17px}
-.theme-toggle{min-width:40px;min-height:38px}
-.theme-toggle #themeIcon{font-size:15px;line-height:1}
-.sidebar-scrim{display:none}
-#overview,#search,#lowongan,#tentang-data{scroll-margin-top:86px}
-.company-dialog{width:min(820px,calc(100% - 24px));max-height:min(88vh,900px)}
-.company-dialog .modal-head{align-items:center}
-.company-dialog .modal-title{margin:0 0 5px}
-.company-intro{margin:0 0 14px;color:var(--muted);font-size:12px;line-height:1.7}
-.company-search{margin-bottom:14px}
-.company-search .field{width:100%}
-.company-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.company-card{display:flex;flex-direction:column;min-width:0;padding:13px;border:1px solid var(--line);border-radius:12px;background:#fff;transition:border-color .15s,transform .15s,box-shadow .15s}
-.company-card:hover{border-color:#f4b39d;transform:translateY(-1px);box-shadow:0 7px 20px rgba(28,20,30,.05)}
-.company-card-head{display:flex;align-items:center;gap:10px;min-width:0}
-.company-badge{display:grid;place-items:center;width:38px;height:38px;flex:none;border:1px solid #ffe1d5;border-radius:11px;background:linear-gradient(135deg,#fff0e5,#ffebf3);color:#be5147;font-size:11px;font-weight:900}
-.company-card-copy{min-width:0}
-.company-card-name{margin:0;font-size:12px;line-height:1.4;font-weight:850;overflow-wrap:anywhere}
-.company-card-category{margin:4px 0 0;color:var(--muted);font-size:10px}
-.company-card-actions{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:7px;margin-top:12px;padding-top:10px;border-top:1px solid #f0edf1}
-.company-card-actions .btn{padding:7px 9px;font-size:10px}
-.company-card-actions a{font-size:10px;font-weight:750;color:#d95b59;text-decoration:none}
-.company-card-actions a:hover{text-decoration:underline}
-.company-empty{grid-column:1/-1;padding:24px;text-align:center;border:1px dashed var(--line);border-radius:10px;color:var(--muted);font-size:12px}
-html[data-theme="dark"]{color-scheme:dark;--bg:#101115;--surface:#191a20;--ink:#f6f5f8;--muted:#a6a5b2;--line:#30313a;--green:#ff8053;--green-dark:#ff936b;--green-soft:#39251f;--amber-soft:#392f1d;--red-soft:#3a2227;--shadow:0 8px 25px rgba(0,0,0,.18)}
-html[data-theme="dark"] body{background:var(--bg);color:var(--ink)}
-html[data-theme="dark"] .topbar,html[data-theme="dark"] .sidebar,html[data-theme="dark"] footer,html[data-theme="dark"] .search-panel,html[data-theme="dark"] .stat,html[data-theme="dark"] .job,html[data-theme="dark"] .empty,html[data-theme="dark"] .loading,html[data-theme="dark"] .updated,html[data-theme="dark"] dialog,html[data-theme="dark"] .modal-head,html[data-theme="dark"] .field,html[data-theme="dark"] .control,html[data-theme="dark"] .sort-select,html[data-theme="dark"] .chip,html[data-theme="dark"] .save,html[data-theme="dark"] .page,html[data-theme="dark"] .detail,html[data-theme="dark"] .close,html[data-theme="dark"] .company-card{background:#191a20;color:var(--ink);border-color:var(--line)}
-html[data-theme="dark"] .nav{color:var(--ink)}
-html[data-theme="dark"] .side-link{color:#b9b7c4}
-html[data-theme="dark"] .side-link:hover{background:#24242c;color:#fff}
-html[data-theme="dark"] .side-link.is-active{color:#ffab8c;background:linear-gradient(110deg,#34251f,#34212c);border-color:#51312e}
-html[data-theme="dark"] .sidebar-bottom{background:#1f1d23;border-color:var(--line)}
-html[data-theme="dark"] .sidebar-status{color:#e0dce5}
-html[data-theme="dark"] .side-divider,html[data-theme="dark"] .company-card-actions{border-color:var(--line);background:transparent}
-html[data-theme="dark"] .btn-secondary,html[data-theme="dark"] .mobile-menu{background:#202127;color:var(--ink);border-color:#393a44}
-html[data-theme="dark"] .btn-secondary:hover,html[data-theme="dark"] .mobile-menu:hover{background:#2a2b33}
-html[data-theme="dark"] .brand-sub,html[data-theme="dark"] .company,html[data-theme="dark"] .job-meta,html[data-theme="dark"] .updated-label,html[data-theme="dark"] .salary-label,html[data-theme="dark"] .result-count,html[data-theme="dark"] .sort-label,html[data-theme="dark"] .modal-sub,html[data-theme="dark"] .stat-label{color:#a6a5b2}
-html[data-theme="dark"] .field input,html[data-theme="dark"] .field select,html[data-theme="dark"] .control,html[data-theme="dark"] .sort-select{color:var(--ink);background-color:transparent}
-html[data-theme="dark"] .field input::placeholder{color:#8b8997}
-html[data-theme="dark"] .quickfilters .chip{color:#d4d1db}
-html[data-theme="dark"] .chip.active{background:#3a2527;border-color:#654044;color:#ffaf96}
-html[data-theme="dark"] .chip .chip-count{background:#30313a;color:#d1ced8}
-html[data-theme="dark"] .stat-icon,html[data-theme="dark"] .job-icon,html[data-theme="dark"] .empty-icon,html[data-theme="dark"] .company-badge{background:linear-gradient(135deg,#39251f,#39212e);color:#ff9a7a;border-color:#51312e}
-html[data-theme="dark"] .tag{background:#272830;color:#d4d2dc;border-color:#393a44}
-html[data-theme="dark"] .tag.remote{background:#1f2d40;color:#9ec8ff;border-color:#2e435f}
-html[data-theme="dark"] .tag.walkin{background:#382e1e;color:#f3cb85;border-color:#514128}
-html[data-theme="dark"] .quality.hot{color:#ffb196;background:#3a2520}
-html[data-theme="dark"] .quality.medium{color:#f1cd82;background:#392f1d}
-html[data-theme="dark"] .quality.low{color:#ffb0b0;background:#3a2227}
-html[data-theme="dark"] .save.saved{color:#ff9a7a;background:#39251f;border-color:#654044}
-html[data-theme="dark"] .page.current{background:var(--accent-gradient);color:#fff;border-color:transparent}
-html[data-theme="dark"] .trustnote{background:linear-gradient(120deg,#211c1a,#241b22);border-color:#39313a}
-html[data-theme="dark"] .trustnote p{color:#c0bdc8}
-html[data-theme="dark"] .footcopy{color:#a6a5b2}
-html[data-theme="dark"] .detail-section p{color:#d2cfda}
-html[data-theme="dark"] .detail span,html[data-theme="dark"] .detail-section h3{color:#aaa7b4}
-html[data-theme="dark"] .warning{background:#382e1e;border-color:#5c4c2e;color:#f4d9a1}
-html[data-theme="dark"] .company-card-actions{border-top-color:var(--line)}
-html[data-theme="dark"] .company-card-actions a,html[data-theme="dark"] .sidebar-repo{color:#ff9b83}
-html[data-theme="dark"] .pagehead p{color:#b7b5c0}
-html[data-theme="dark"] .btn-primary{color:#fff}
-html[data-theme="dark"] .search-tools,html[data-theme="dark"] .advanced,html[data-theme="dark"] .checkrow{border-color:var(--line)}
-html[data-theme="dark"] .filter-field label,html[data-theme="dark"] .check{color:#c3c0cb}
-html[data-theme="dark"] .detail-grid .detail{background:#202127}
-html[data-theme="dark"] .empty{border-color:#454650}
-@media(max-width:1024px){
-  .sidebar{width:min(292px,86vw);transform:translateX(-105%);transition:transform .22s ease;box-shadow:16px 0 50px rgba(20,16,25,.12)}
-  .sidebar.is-open{transform:translateX(0)}
-  .sidebar-scrim{display:block;position:fixed;inset:0;z-index:44;background:rgba(13,13,18,.45);backdrop-filter:blur(2px);opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s}
-  .sidebar-scrim.is-open{opacity:1;visibility:visible}
-  .topbar{margin-left:0;width:100%}
-  main,footer{margin-left:0}
-  .topbar .brand{display:flex}
-  .nav{justify-content:space-between;width:calc(100% - 32px)}
-  .mobile-menu{display:inline-flex;flex:none}
-  .navbuttons{margin-left:auto}
-}
-@media(max-width:720px){
-  .topbar{height:62px}
-  .topbar .nav{gap:9px;width:calc(100% - 22px)}
-  .topbar .brand{gap:7px;margin-right:auto;min-width:0}
-  .topbar .brand .logo{width:32px;height:32px;border-radius:9px}
-  .topbar .brand-name{font-size:12px}
-  .topbar .brand-sub{font-size:8px;margin-top:4px}
-  .mobile-menu{width:38px;height:38px;padding:8px}
-  .mobile-menu .menu-label{display:none}
-  .navbuttons{gap:6px}
-  .theme-toggle{min-width:38px;width:38px;padding:7px}
-  .theme-toggle #themeText{display:none}
-  .navbuttons #savedNav{padding:7px 9px;min-width:38px;min-height:38px}
-  .navbuttons #savedNav .saved-label{display:none}
-  .shell{width:calc(100% - 28px)}
-  .company-grid{grid-template-columns:1fr}
-  .company-card{padding:12px}
-  .company-dialog .modal-head{padding:15px}
-  .company-dialog .modal-body{padding:14px}
-  .company-dialog .modal-title{font-size:18px}
-  .company-card-actions{align-items:center}
-  .field input,.field select,.control,.sort-select{font-size:16px}
-  main{padding-top:21px}
-  .trustnote{margin-top:19px;padding:13px}
-  .sidebar{padding-top:16px}
-}
-@media(max-width:390px){
-  .topbar .brand-sub{display:none}
-  .topbar .brand-name{font-size:11px}
-  .navbuttons #savedNav{display:inline-flex}
-  .navbuttons #themeToggle{display:inline-flex}
-  .search-tools{gap:9px}
-}
-@media(prefers-reduced-motion:reduce){.sidebar,.sidebar-scrim,.company-card{transition:none}}
+/* ===== background layers ===== */
+.bg-grid{position:fixed;inset:0 0 auto;height:720px;z-index:-2;pointer-events:none;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse 85% 70% at 50% 0,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 85% 70% at 50% 0,#000 20%,transparent 75%);animation:gridpan 24s linear infinite}
+@keyframes gridpan{to{background-position:56px 56px,56px 56px}}
+.orb{position:fixed;z-index:-1;border-radius:50%;filter:blur(90px);pointer-events:none;opacity:var(--orb)}
+.o1{width:520px;height:520px;top:-180px;right:-120px;background:radial-gradient(circle,#ff6a10,transparent 70%);animation:float1 16s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;top:60px;left:-160px;background:radial-gradient(circle,#ff2e93,transparent 70%);animation:float2 19s ease-in-out infinite alternate}
+@keyframes float1{to{transform:translate(-80px,70px) scale(1.12)}}
+@keyframes float2{to{transform:translate(90px,50px) scale(1.1)}}
+.progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:60;background:var(--grad);transform:scaleX(0);transform-origin:0 50%;pointer-events:none}
 
+/* ===== buttons ===== */
+.btn{position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--line2);border-radius:var(--r2);background:var(--card);color:var(--ink);font:600 12.5px/1 var(--fb);text-decoration:none;white-space:nowrap;transition:transform .25s var(--ease),border-color .25s,background .25s,box-shadow .25s,color .25s}
+.btn:hover{transform:translateY(-2px);border-color:#ff9a4d;box-shadow:0 10px 22px -12px rgba(255,96,40,.6)}
+.btn:active{transform:translateY(0) scale(.97)}
+.btn svg{width:16px;height:16px;flex:none}
+.btn-small{min-height:34px;padding:0 12px;font-size:11.5px;border-radius:var(--r3)}
+.btn-quiet{border-color:transparent;background:transparent;color:var(--muted)}
+.btn-quiet:hover{color:var(--ink);box-shadow:none}
+.btn-primary{overflow:hidden;border:0;color:#fff;background:var(--grad);background-size:180% 100%;background-position:0 0;transition:transform .25s var(--ease),background-position .6s var(--ease),box-shadow .3s}
+.btn-primary::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.5) 50%,transparent 70%);transform:translateX(-120%);pointer-events:none}
+.btn-primary:hover{background-position:100% 0;box-shadow:0 14px 30px -12px rgba(255,80,60,.8)}
+.btn-primary:hover::after{transform:translateX(120%);transition:transform .8s var(--ease)}
+.btn.on{background:var(--tint);border-color:#ffb77c;color:var(--accent)}
+.badge{display:inline-grid;place-items:center;min-width:20px;height:20px;padding:0 6px;border-radius:5px;background:var(--soft);font:600 10.5px var(--fm);color:var(--ink2)}
 
-/* Layout bug fix: keep page content clear of the fixed sidebar and make it collapsible. */
-html{--sidebar-width:252px;--sidebar-collapsed-width:76px}
-html.sidebar-collapsed{--sidebar-width:76px}
-.topbar{margin-left:var(--sidebar-width);width:calc(100% - var(--sidebar-width));transition:margin-left .18s ease,width .18s ease}
-main,footer{margin-left:var(--sidebar-width);width:calc(100% - var(--sidebar-width));transition:margin-left .18s ease,width .18s ease}
-.sidebar{width:var(--sidebar-width);height:100dvh;max-height:100vh;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;scrollbar-width:thin;scrollbar-color:#ded7dd transparent;transition:width .18s ease,transform .22s ease}
-.sidebar-brand,.sidebar-label,.side-nav,.side-divider,.sidebar-bottom{flex-shrink:0}
-.side-nav{min-height:min-content}
-.desktop-sidebar-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:38px}
-.desktop-sidebar-toggle #sidebarCollapseIcon{display:inline-grid;place-items:center;width:15px;font-size:21px;line-height:1}
-.desktop-sidebar-toggle #sidebarCollapseText{font-size:11px}
-html.sidebar-collapsed .sidebar{padding-left:10px;padding-right:10px;gap:22px}
-html.sidebar-collapsed .sidebar-brand{justify-content:center;padding:0}
-html.sidebar-collapsed .sidebar-brand .brand-copy,html.sidebar-collapsed .sidebar-label{display:none}
-html.sidebar-collapsed .side-link{justify-content:center;gap:0;padding:11px 7px}
-html.sidebar-collapsed .side-link>span:not(.side-icon){display:none}
-html.sidebar-collapsed .side-icon{width:22px;height:22px}
-html.sidebar-collapsed .side-icon svg{width:20px;height:20px}
-html.sidebar-collapsed .sidebar-bottom{display:flex;justify-content:center;align-items:center;padding:10px 5px}
-html.sidebar-collapsed .sidebar-status{justify-content:center}
-html.sidebar-collapsed .sidebar-status span:last-child,html.sidebar-collapsed .sidebar-bottom p,html.sidebar-collapsed .sidebar-repo{display:none}
-body.sidebar-open{overflow:hidden}
-@media(max-width:1024px){
-  html.sidebar-collapsed{--sidebar-width:252px}
-  .topbar{margin-left:0;width:100%}
-  main,footer{margin-left:0;width:100%}
-  .sidebar{width:min(292px,86vw);max-width:86vw}
-  .desktop-sidebar-toggle{display:none}
-  html.sidebar-collapsed .sidebar{padding:16px 15px}
-  html.sidebar-collapsed .sidebar-brand{justify-content:flex-start;padding:0 8px}
-  html.sidebar-collapsed .sidebar-brand .brand-copy,html.sidebar-collapsed .sidebar-label{display:flex}
-  html.sidebar-collapsed .sidebar-label{display:block}
-  html.sidebar-collapsed .side-link{justify-content:flex-start;gap:11px;padding:10px 12px}
-  html.sidebar-collapsed .side-link>span:not(.side-icon){display:inline}
-  html.sidebar-collapsed .side-icon{width:19px;height:19px}
-  html.sidebar-collapsed .side-icon svg{width:18px;height:18px}
-  html.sidebar-collapsed .sidebar-bottom{display:block;padding:13px 12px}
-  html.sidebar-collapsed .sidebar-status{justify-content:flex-start}
-  html.sidebar-collapsed .sidebar-status span:last-child,html.sidebar-collapsed .sidebar-bottom p,html.sidebar-collapsed .sidebar-repo{display:initial}
-  html.sidebar-collapsed .sidebar-bottom p{display:block}
-  html.sidebar-collapsed .sidebar-repo{display:inline-flex}
-}
-@media(prefers-reduced-motion:reduce){.topbar,main,footer,.sidebar{transition:none}}
+/* ===== header ===== */
+.top{position:sticky;top:0;z-index:30;padding-top:env(safe-area-inset-top);background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:saturate(1.6) blur(16px);-webkit-backdrop-filter:saturate(1.6) blur(16px);border-bottom:1px solid var(--line)}
+.nav{height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo{width:38px;height:38px;border-radius:var(--r2);overflow:hidden;flex:none;background:#000;box-shadow:0 0 0 1px rgba(255,140,40,.35),0 0 20px -2px rgba(255,90,40,.55);transition:transform .4s var(--ease),box-shadow .4s}
+.logo img{display:block;width:100%;height:100%;object-fit:cover}
+.brand:hover .logo{transform:rotate(-6deg) scale(1.06);box-shadow:0 0 0 1px rgba(255,140,40,.6),0 0 28px 0 rgba(255,46,147,.6)}
+.bn{display:block;font:800 15px/1.1 var(--fd);letter-spacing:-.03em}
+.bs{display:block;margin-top:4px;font:600 9.5px/1 var(--fm);letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+.nlinks{display:flex;gap:4px}
+.nlinks a{padding:8px 12px;border-radius:var(--r3);font-size:12.5px;font-weight:600;color:var(--muted);text-decoration:none;transition:color .2s,background .2s}
+.nlinks a:hover{color:var(--ink);background:var(--soft)}
+.actions{display:flex;gap:8px;align-items:center}
+.ibtn{width:40px;padding:0}
+.ig:hover{background:var(--grad);color:#fff;border-color:transparent}
 
+/* ===== hero ===== */
+.hero{padding:64px 0 34px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:40px;align-items:center}
+.hero-copy>*{animation:up .8s var(--ease) both}
+.hero-copy>*:nth-child(2){animation-delay:.08s}.hero-copy>*:nth-child(3){animation-delay:.16s}.hero-copy>*:nth-child(4){animation-delay:.24s}.hero-copy>*:nth-child(5){animation-delay:.32s}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font:600 10.5px/1 var(--fm);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:"";width:18px;height:2px;background:var(--grad)}
+.hero h1{font-size:clamp(34px,5vw,60px);line-height:1.04;letter-spacing:-.05em;margin:16px 0 16px;font-weight:800}
+.hero p{margin:0;max-width:540px;color:var(--muted);font-size:15px;line-height:1.75}
+.status{display:flex;width:fit-content;align-items:center;gap:9px;margin-bottom:18px;padding:8px 12px;border:1px solid var(--line2);border-radius:var(--r3);background:var(--card);font:500 11.5px var(--fm);color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:#2fb872;box-shadow:0 0 0 4px rgba(47,184,114,.16);animation:pulse 2.4s infinite}.dot.error{background:#e25555;box-shadow:0 0 0 4px rgba(226,85,85,.16)}
+@keyframes pulse{50%{box-shadow:0 0 0 7px rgba(47,184,114,0)}}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.cta .btn{min-height:46px;padding:0 22px;font-size:13px}
+.hero-by{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:22px;font-size:12px;color:var(--muted)}
+.hero-by a{color:var(--ink);font-weight:700;text-decoration:none;border-bottom:1px solid var(--line2);transition:border-color .2s,color .2s}.hero-by a:hover{color:var(--accent);border-color:var(--accent)}
+.hero-art{position:relative;display:grid;place-items:center;min-height:300px;animation:up 1s .2s var(--ease) both}
+.frame{position:relative;width:min(300px,100%);aspect-ratio:1;border-radius:22px;background:#000;padding:2px;animation:bob 6s ease-in-out infinite;box-shadow:0 30px 80px -20px rgba(255,70,50,.55),0 0 80px -10px rgba(255,46,147,.4)}
+.frame::before{content:"";position:absolute;inset:-2px;border-radius:inherit;padding:2px;background:conic-gradient(from var(--ang),transparent 0 55%,var(--g1),var(--g3) 78%,transparent);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:angle 5s linear infinite}
+.frame img{display:block;width:100%;height:100%;object-fit:cover;border-radius:20px}
+@keyframes angle{to{--ang:360deg}}
+@keyframes bob{50%{transform:translateY(-12px)}}
+.fchip{position:absolute;display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid var(--line2);border-radius:var(--r2);background:color-mix(in srgb,var(--card) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font:600 11px var(--fm);box-shadow:var(--sh);white-space:nowrap}
+.fchip i{width:7px;height:7px;border-radius:50%;background:var(--g2)}
+.c1{top:6%;left:-2%;animation:bob 5s ease-in-out infinite}.c2{bottom:12%;left:-6%;animation:bob 7s -2s ease-in-out infinite}.c3{top:34%;right:-4%;animation:bob 6s -1s ease-in-out infinite}
+.c2 i{background:#2fb872}.c3 i{background:var(--g3)}
 
-/* Premium visual refresh adapted from the provided Claude result.
-   Design-only overrides: existing markup, IDs, responsive layout, and JavaScript remain intact. */
-:root{
-  --bg:#fafafa;--surface:#fff;--ink:#0b0b0d;--muted:#6f6f7b;--line:#ececf0;
-  --green:#d9475f;--green-dark:#c43e66;--green-soft:#fff1e8;
-  --navy:#111116;--amber:#92600e;--amber-soft:#fff6df;--red:#8a4a4a;--red-soft:#f6eeee;
-  --shadow:0 1px 2px rgba(11,11,13,.04),0 8px 28px rgba(11,11,13,.05);--radius:16px;
-  --accent-orange:#ff8a3d;--accent-pink:#e94f9a;
-  --accent-gradient:linear-gradient(115deg,#ff8a3d 0%,#ff5f6d 55%,#e94f9a 100%);
-  --tint:linear-gradient(115deg,#fff1e6,#ffeaf2);
-}
-html[data-theme="dark"]{
-  color-scheme:dark;--bg:#09090b;--surface:#121215;--ink:#f6f6f8;--muted:#9a9aa6;--line:#25252b;
-  --green:#ff8f9f;--green-dark:#ffb08a;--green-soft:#2a1b22;--navy:#f6f6f8;
-  --amber:#f1cd82;--amber-soft:#2e2616;--red:#e6a9a9;--red-soft:#2a1c1f;
-  --shadow:0 8px 30px rgba(0,0,0,.35);--tint:linear-gradient(115deg,#2a1b17,#2a1822);
-}
-body{background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
-.topbar{background:rgba(255,255,255,.86);backdrop-filter:saturate(1.5) blur(18px);-webkit-backdrop-filter:saturate(1.5) blur(18px);border-color:var(--line)}
-.brand .logo{background:var(--accent-gradient);box-shadow:0 8px 18px -8px rgba(255,95,109,.55)}
-.sidebar{background:var(--surface);border-right-color:var(--line)}
-.sidebar-brand .logo{background:var(--accent-gradient);box-shadow:0 8px 18px -8px rgba(255,95,109,.55)}
-.side-link{border-radius:11px;transition:background .22s ease,border-color .22s ease,color .22s ease,transform .22s ease}
-.side-link:hover{background:var(--green-soft);border-color:transparent;color:var(--green-dark)}
-.side-link.is-active{background:linear-gradient(115deg,#fff1e6,#ffeaf2);border-color:#ffd6c7;color:#c43e66}
-.sidebar-bottom{border-color:var(--line);background:linear-gradient(145deg,#fffaf6,#fff7fa)}
-.btn{position:relative;border-radius:12px;font-weight:650;transition:transform .25s cubic-bezier(.22,.8,.24,1),border-color .25s,background .25s,box-shadow .25s}
-.btn:hover{transform:translateY(-2px)}
-.btn:active{transform:translateY(0) scale(.985)}
-.btn-primary{background:var(--accent-gradient);background-size:180% 100%;background-position:0 0;border-color:transparent;color:#fff;box-shadow:0 7px 18px -11px rgba(233,79,154,.75)}
-.btn-primary:hover{background:var(--accent-gradient);background-size:180% 100%;background-position:100% 0;border-color:transparent;box-shadow:0 9px 22px -11px rgba(233,79,154,.8)}
-.btn-secondary{background:var(--surface);border-color:var(--line);color:var(--ink2,var(--ink))}
-.btn-secondary:hover{background:var(--surface);border-color:#ffb39a}
-.btn-quiet:hover{background:var(--green-soft);color:var(--green-dark)}
-.pagehead h1{font-weight:800;letter-spacing:-.045em}
-.pagehead .eyebrow{color:var(--green-dark);letter-spacing:.14em}
-.pagehead p{color:var(--muted)}
-.updated{background:var(--surface);border-color:var(--line);border-radius:999px;box-shadow:0 4px 15px rgba(11,11,13,.025)}
-.search-panel{background:var(--surface);border-color:var(--line);border-radius:18px;box-shadow:var(--shadow)}
-.field{background:var(--bg);border-color:var(--line);border-radius:12px;transition:border-color .25s,box-shadow .25s,background .25s}
-.field:focus-within{background:var(--surface);border-color:#ff9a7a;box-shadow:0 0 0 4px rgba(255,111,97,.13)}
-.field input,.field select{color:var(--ink)}
-.control,.sort-select{background:var(--surface);border-color:var(--line);border-radius:10px;color:var(--ink)}
-.control:focus{border-color:#ff9a7a;box-shadow:0 0 0 4px rgba(255,111,97,.12)}
-.search-tools,.advanced,.checkrow{border-color:var(--line)}
-.chip{border-color:var(--line);border-radius:10px;background:var(--surface);transition:transform .25s cubic-bezier(.22,.8,.24,1),border-color .25s,background .25s,color .25s}
-.chip:hover{border-color:#ffb39a;transform:translateY(-1px)}
-.chip.active{background:var(--tint);border-color:#ffb9a3;color:var(--green-dark)}
-.chip.active .chip-count{background:rgba(255,111,97,.13);color:var(--green-dark)}
-.stat{background:var(--surface);border-color:var(--line);border-radius:14px;box-shadow:0 5px 20px rgba(11,11,13,.025)}
-.stat-icon,.job-icon,.empty-icon,.company-badge{background:var(--tint);color:var(--green-dark);border-color:#ffe0d5}
-.stat-value{font-weight:800;letter-spacing:-.045em}
-.results-title h2{font-weight:800;letter-spacing:-.035em}
-.list{gap:12px}
-.job{background:var(--surface);border-color:var(--line);border-radius:16px;box-shadow:0 2px 8px rgba(11,11,13,.018);transition:transform .3s cubic-bezier(.22,.8,.24,1),box-shadow .3s,border-color .3s}
-.job:hover{transform:translateY(-2px);border-color:#ffb9a3;box-shadow:0 14px 34px -16px rgba(255,95,109,.35)}
-.job-icon{border-radius:13px;font-weight:800}
-.job-title{font-weight:750;letter-spacing:-.025em}
-.company{color:var(--ink2,var(--muted))}
-.tag{border-radius:8px;background:var(--bg);border-color:var(--line);color:var(--ink2,var(--muted))}
-.tag.remote{background:#e8f1ff;color:#2f62a8;border-color:#dceaff}
-.tag.walkin{background:#fff1dc;color:#99600f;border-color:#f6e2c0}
-.quality{border-radius:8px}
-.quality.hot{color:#c2410c;background:#fff1e8}
-.quality.medium{color:#92600e;background:#fff6df}
-.quality.low{color:#8a4a4a;background:#f6eeee}
-.save{border-color:var(--line);border-radius:9px;background:var(--surface);transition:transform .25s,border-color .25s,color .25s,background .25s}
-.save:hover{color:var(--green-dark);border-color:#ffb9a3}
-.save.saved{background:var(--tint);color:var(--green-dark);border-color:#ffb9a3}
-.empty,.loading{background:var(--surface);border-color:var(--line);border-radius:16px}
-.empty-icon{border-radius:14px}
-.pagination{color:var(--muted)}
-.page{border-color:var(--line);border-radius:10px;background:var(--surface);transition:transform .25s,border-color .25s,background .25s}
-.page:hover:not(:disabled){border-color:#ffb39a;transform:translateY(-1px)}
-.page.current{background:var(--accent-gradient);border-color:transparent;color:#fff}
-.trustnote{background:var(--tint);border-color:#f5dedf;border-radius:14px}
-.trustnote svg{color:var(--green-dark)}
-.trustnote p{color:var(--ink2,var(--muted))}
-footer{background:var(--surface);border-color:var(--line)}
-.footcopy a,.company-card-actions a{color:var(--green-dark)}
-.company-card{background:var(--surface);border-color:var(--line);border-radius:14px}
-.company-card:hover{border-color:#ffb9a3;box-shadow:var(--shadow)}
-.company-card-actions{border-top-color:var(--line)}
-.company-badge{border-radius:12px}
-dialog{background:var(--surface);color:var(--ink);border-radius:20px;box-shadow:0 30px 100px rgba(0,0,0,.3)}
-.modal-head{background:var(--surface);border-color:var(--line)}
-.modal-title{font-weight:800;letter-spacing:-.035em}
-.modal-body{color:var(--ink)}
-.detail{background:var(--bg);border-color:var(--line);border-radius:12px}
-.detail-section p{color:var(--ink2,var(--muted))}
-.close{background:var(--surface);border-color:var(--line);border-radius:10px;transition:transform .25s,border-color .25s}
-.close:hover{border-color:#ffb39a;transform:rotate(4deg)}
-.warning{border:1px solid #f2e2bf;background:#fff6df;color:#795c24;border-radius:12px}
-html[data-theme="dark"] .topbar,html[data-theme="dark"] .sidebar,html[data-theme="dark"] footer,html[data-theme="dark"] .search-panel,html[data-theme="dark"] .stat,html[data-theme="dark"] .job,html[data-theme="dark"] .empty,html[data-theme="dark"] .loading,html[data-theme="dark"] .updated,html[data-theme="dark"] dialog,html[data-theme="dark"] .modal-head,html[data-theme="dark"] .field,html[data-theme="dark"] .control,html[data-theme="dark"] .sort-select,html[data-theme="dark"] .chip,html[data-theme="dark"] .save,html[data-theme="dark"] .page,html[data-theme="dark"] .detail,html[data-theme="dark"] .close,html[data-theme="dark"] .company-card{background:var(--surface);color:var(--ink);border-color:var(--line)}
-html[data-theme="dark"] .side-link.is-active{color:#ffaf96;background:linear-gradient(110deg,#34251f,#34212c);border-color:#51312e}
-html[data-theme="dark"] .sidebar-bottom{background:#1f1d23;border-color:var(--line)}
-html[data-theme="dark"] .stat-icon,html[data-theme="dark"] .job-icon,html[data-theme="dark"] .empty-icon,html[data-theme="dark"] .company-badge{background:var(--tint);color:#ff9a7a;border-color:#51312e}
-html[data-theme="dark"] .quality.hot{color:#ffb196;background:#3a2520}
-html[data-theme="dark"] .quality.medium{color:#f1cd82;background:#392f1d}
-html[data-theme="dark"] .quality.low{color:#ffb0b0;background:#3a2227}
-html[data-theme="dark"] .tag.remote{background:#1c2b40;color:#9ec8ff;border-color:#2e435f}
-html[data-theme="dark"] .tag.walkin{background:#35291a;color:#f3cb85;border-color:#514128}
-html[data-theme="dark"] .save.saved{color:#ff9a7a;background:var(--tint);border-color:#654044}
-html[data-theme="dark"] .page.current{background:var(--accent-gradient);color:#fff;border-color:transparent}
-html[data-theme="dark"] .trustnote{background:linear-gradient(120deg,#211c1a,#241b22);border-color:#39313a}
-html[data-theme="dark"] .trustnote p{color:#c0bdc8}
-html[data-theme="dark"] .company-card-actions{border-color:var(--line)}
-html[data-theme="dark"] .footcopy,html[data-theme="dark"] .detail-section p{color:#d2cfda}
-html[data-theme="dark"] .warning{background:#382e1e;border-color:#5c4c2e;color:#f4d9a1}
-@media(prefers-reduced-motion:reduce){
-  .btn,.chip,.job,.save,.page,.close,.side-link{transition:none!important;transform:none!important}
-}
+/* ===== marquee ===== */
+.marquee{overflow:hidden;border-block:1px solid var(--line);margin:8px 0 30px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.mtrack{display:flex;gap:40px;width:max-content;padding:14px 0;animation:marq 38s linear infinite}
+.marquee:hover .mtrack{animation-play-state:paused}
+.mtrack span{display:inline-flex;align-items:center;gap:40px;font:600 11px var(--fm);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.mtrack span::after{content:"";width:6px;height:6px;background:var(--grad);transform:rotate(45deg)}
+@keyframes marq{to{transform:translateX(-50%)}}
 
+/* ===== search panel ===== */
+.panel{position:relative;padding:18px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh)}
+.panel::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:conic-gradient(from var(--ang),transparent 0 62%,var(--g1),var(--g3) 82%,transparent);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:angle 7s linear infinite;pointer-events:none;opacity:.9}
+.sgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr auto;gap:10px}
+.field{display:flex;align-items:center;gap:10px;height:48px;padding:0 14px;border:1px solid var(--line2);border-radius:var(--r2);background:var(--bg2);transition:border-color .25s,box-shadow .25s,background .25s;min-width:0}
+.field:focus-within{border-color:#ff9a4d;background:var(--card);box-shadow:0 0 0 4px rgba(255,122,26,.15)}
+.field svg{width:17px;height:17px;color:var(--muted);flex:none;transition:color .25s}.field:focus-within svg{color:var(--g2)}
+.field input,.field select{width:100%;min-width:0;height:100%;border:0;outline:0!important;background:transparent;font-size:13px}
+.field select{cursor:pointer}.field option,.control option{background:var(--card);color:var(--ink)}
+.sbtn{height:48px;padding:0 26px;font-size:13px}
+.tools{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:7px;height:34px;padding:0 13px;border:1px solid var(--line2);border-radius:var(--r3);background:transparent;color:var(--ink2);font-size:12px;font-weight:600;transition:all .25s var(--ease)}
+.chip:hover{border-color:#ffad6b;transform:translateY(-2px)}
+.chip.active{background:var(--tint);border-color:#ffb77c;color:var(--accent);box-shadow:0 0 18px -6px rgba(255,100,40,.55)}
+.adv{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);animation:rise .35s var(--ease)}.adv[hidden]{display:none}
+.advh{display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin-bottom:12px}.advh strong{font:700 13px var(--fd)}.advh span{font-size:11px;color:var(--muted)}
+.agrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ff label{display:block;margin-bottom:6px;font:600 10.5px var(--fm);letter-spacing:.04em;color:var(--muted);text-transform:uppercase}
+.control{width:100%;height:40px;padding:0 10px;border:1px solid var(--line2);border-radius:var(--r3);background:var(--bg2);font-size:12px;transition:border-color .25s,box-shadow .25s}
+.control:focus{outline:0;border-color:#ff9a4d;box-shadow:0 0 0 4px rgba(255,122,26,.15)}
+.checks{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.check{display:inline-flex;gap:8px;align-items:center;font-size:12px;color:var(--ink2);cursor:pointer}.check input{accent-color:#ff5f6d;width:15px;height:15px;margin:0}
+
+/* ===== stats ===== */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:14px 0 40px}
+.stat{position:relative;overflow:hidden;padding:20px;display:flex;flex-direction:column;gap:6px;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:var(--r);transition:transform .3s var(--ease),border-color .3s}
+.stat::before{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--grad);transform:scaleX(.22);transform-origin:0 50%;transition:transform .6s var(--ease)}
+.stat:hover{transform:translateY(-3px);border-color:#ffb77c}.stat:hover::before{transform:scaleX(1)}
+.sv{font:800 30px/1.1 var(--fd);letter-spacing:-.04em;font-variant-numeric:tabular-nums}.sl{font:500 11px var(--fm);color:var(--muted);letter-spacing:.02em}
+
+/* ===== results ===== */
+.rh{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:16px}
+.rt{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.rt h2{font-size:22px;letter-spacing:-.035em}.rc{font:500 12px var(--fm);color:var(--muted)}
+.ra{display:flex;align-items:center;gap:8px}.sl2{font:500 11px var(--fm);color:var(--muted)}
+.sort{height:34px;padding:0 10px;border:1px solid var(--line2);border-radius:var(--r3);background:var(--card);font-size:12px}
+.list{display:flex;flex-direction:column;gap:12px}
+.job{position:relative;display:grid;grid-template-columns:48px minmax(0,1fr) minmax(150px,.4fr) 150px;gap:18px;align-items:center;padding:18px 18px 18px 22px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);transition:transform .3s var(--ease),box-shadow .3s,border-color .3s;animation:rise .55s var(--ease) both}
+.job::before{content:"";position:absolute;left:-1px;top:14px;bottom:14px;width:3px;border-radius:0 3px 3px 0;background:var(--grad);transform:scaleY(0);transition:transform .35s var(--ease)}
+.job::after,.stat::after,.cc::after,.feat::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(255,110,40,.1),transparent 70%);opacity:0;transition:opacity .3s;pointer-events:none}
+.job:hover::after,.stat:hover::after,.cc:hover::after,.feat:hover::after{opacity:1}
+.job:nth-child(2){animation-delay:.04s}.job:nth-child(3){animation-delay:.08s}.job:nth-child(4){animation-delay:.12s}.job:nth-child(5){animation-delay:.16s}.job:nth-child(n+6){animation-delay:.2s}
+.job:hover{transform:translateY(-3px);border-color:#ffb77c;box-shadow:0 0 0 1px rgba(255,110,40,.25),0 18px 40px -20px rgba(255,46,147,.45)}
+.job:hover::before{transform:scaleY(1)}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.ji{width:46px;height:46px;border-radius:var(--r2);display:grid;place-items:center;background:var(--tint);color:var(--accent);font:800 14px var(--fd);transition:transform .35s var(--ease)}
+.job:hover .ji{transform:scale(1.08) rotate(-4deg)}
+.jm{min-width:0}.jt{font-size:15px;line-height:1.4;font-weight:700;letter-spacing:-.02em;overflow-wrap:anywhere}.co{margin:3px 0 0;font-size:12.5px;color:var(--ink2);font-weight:500;overflow-wrap:anywhere}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:9px;font-size:11.5px;color:var(--muted)}.mi{display:inline-flex;gap:5px;align-items:center}.mi svg{width:13px;height:13px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.tag{padding:4px 9px;border-radius:var(--r3);background:var(--soft);color:var(--ink2);font-size:10.5px;font-weight:600}
+.tag.remote{background:#e8f1ff;color:#2f62a8}.tag.walkin{background:#fff1dc;color:#99600f}
+html[data-theme=dark] .tag.remote{background:#1c2b40;color:#9ec8ff}html[data-theme=dark] .tag.walkin{background:#35291a;color:#f3cb85}
+.sd{min-width:0}.sdl{font:500 10px var(--fm);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:3px}.sdv{font-size:13px;font-weight:700;overflow-wrap:anywhere}.sdv.unknown{font-weight:500;color:var(--muted)}.src{margin-top:8px;font-size:10.5px;color:var(--muted)}
+.ja{display:flex;flex-direction:column;gap:8px}.ar{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.q{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:var(--r3);font:700 10px var(--fm);white-space:nowrap}.q::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.q.hot{color:var(--ok);background:var(--okbg)}.q.medium{color:var(--mid);background:var(--midbg)}.q.low{color:var(--lowc);background:var(--lowbg)}
+.save{width:34px;height:32px;display:grid;place-items:center;border:1px solid var(--line2);border-radius:var(--r3);background:transparent;color:var(--muted);transition:all .25s var(--ease)}.save:hover{color:var(--accent);border-color:#ffb77c;transform:scale(1.08)}.save svg{width:15px;height:15px}.save.saved{background:var(--tint);color:var(--accent);border-color:#ffb77c}
+.ja .btn{width:100%;min-height:36px;font-size:11.5px}
+.empty,.loading{padding:60px 20px;text-align:center;background:var(--card);border:1px dashed var(--line2);border-radius:var(--r)}
+.ei{margin:0 auto 14px;width:48px;height:48px;border-radius:var(--r2);display:grid;place-items:center;background:var(--tint);color:var(--accent)}.ei svg{width:22px;height:22px}
+.empty h3{font-size:15px;margin-bottom:6px}.empty p{max-width:400px;margin:0 auto 16px;font-size:12px;color:var(--muted)}.empty a{color:var(--accent);font-weight:600;font-size:12px}.loading{color:var(--muted);font-size:12.5px}
+.spin{width:24px;height:24px;margin:0 auto 12px;border:2px solid var(--line2);border-top-color:var(--g2);border-radius:50%;animation:sp .8s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}
+.pg{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:18px;font:500 12px var(--fm);color:var(--muted)}.pgs{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.page{min-width:36px;height:36px;padding:0 10px;border:1px solid var(--line2);border-radius:var(--r3);background:var(--card);font:600 12px var(--fm);transition:all .25s var(--ease)}.page:hover:not(:disabled){border-color:#ffad6b;transform:translateY(-2px)}.page.current{background:var(--grad);border-color:transparent;color:#fff;box-shadow:0 0 16px -2px rgba(255,80,80,.6)}.page:disabled{opacity:.4;cursor:not-allowed}
+
+/* ===== features + faq ===== */
+.sec{margin-top:88px}
+.sech{max-width:620px;margin-bottom:28px}.sech h2{font-size:clamp(24px,3.2vw,34px);letter-spacing:-.04em;line-height:1.15;margin-top:12px}.sech p{margin:10px 0 0;color:var(--muted);font-size:14px}
+.fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.feat{position:relative;overflow:hidden;padding:24px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);transition:transform .3s var(--ease),border-color .3s}
+.feat:hover{transform:translateY(-4px);border-color:#ffb77c}
+.feat .fi{width:42px;height:42px;display:grid;place-items:center;border-radius:var(--r2);background:var(--tint);color:var(--accent);margin-bottom:16px;transition:transform .4s var(--ease)}.feat:hover .fi{transform:rotate(-8deg) scale(1.1)}
+.feat .fi svg{width:20px;height:20px}
+.feat h3{font-size:16px;letter-spacing:-.025em;margin-bottom:8px}.feat p{margin:0;font-size:12.5px;color:var(--muted);line-height:1.75}
+.faq{display:grid;gap:10px;max-width:860px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:var(--r);transition:border-color .3s}
+.faq details[open]{border-color:#ffb77c}
+.faq summary{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 20px;cursor:pointer;list-style:none;font:700 14px var(--fd);letter-spacing:-.02em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:26px;height:26px;display:grid;place-items:center;border:1px solid var(--line2);border-radius:var(--r3);font:500 16px var(--fm);color:var(--muted);transition:transform .35s var(--ease),background .3s,color .3s}
+.faq details[open] summary::after{transform:rotate(45deg);background:var(--grad);color:#fff;border-color:transparent}
+.faq .fa{padding:0 20px 18px;color:var(--muted);font-size:13px;line-height:1.8;animation:rise .4s var(--ease)}
+
+/* ===== footer ===== */
+footer{margin-top:88px;border-top:1px solid var(--line);background:var(--card);padding:40px 0 calc(24px + env(safe-area-inset-bottom))}
+.fg{display:grid;grid-template-columns:1fr 1.3fr;gap:40px;align-items:start}
+.note{display:flex;gap:12px;padding:18px;border-radius:var(--r);background:var(--tint);border:1px solid var(--line)}.note svg{width:20px;height:20px;color:var(--accent);flex:none}.note strong{display:block;font-size:12.5px;margin-bottom:4px}.note p{margin:0;font-size:11.5px;color:var(--ink2);line-height:1.7}
+.fc{font-size:12px;color:var(--muted);margin:14px 0 0;line-height:1.8;max-width:420px}.fc a{color:var(--accent);font-weight:600;text-decoration:none}
+.owner{display:inline-flex;align-items:center;gap:10px;margin-top:16px;padding:10px 14px 10px 10px;border:1px solid var(--line2);border-radius:var(--r2);text-decoration:none;background:var(--bg2);transition:all .3s var(--ease)}
+.owner:hover{transform:translateY(-3px);border-color:#ff9a4d;box-shadow:0 14px 30px -14px rgba(255,80,60,.6)}
+.owner .oi{width:34px;height:34px;display:grid;place-items:center;border-radius:var(--r3);background:var(--grad);color:#fff}.owner .oi svg{width:18px;height:18px}
+.owner b{display:block;font:700 13px var(--fd);letter-spacing:-.02em}.owner small{display:block;font:500 10.5px var(--fm);color:var(--muted)}
+.copy{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:32px;padding-top:18px;border-top:1px solid var(--line);font:500 11px var(--fm);color:var(--muted)}.copy a{color:var(--ink2);text-decoration:none;font-weight:600}.copy a:hover{color:var(--accent)}
+
+/* ===== dialogs ===== */
+dialog{border:1px solid var(--line2);padding:0;width:min(700px,calc(100% - 24px));max-height:88vh;overflow:auto;border-radius:12px;background:var(--card);color:var(--ink);box-shadow:0 40px 120px rgba(0,0,0,.5)}
+dialog[open]{animation:pop .35s var(--ease)}@keyframes pop{from{opacity:0;transform:translateY(18px) scale(.97)}}
+dialog::backdrop{background:rgba(4,4,8,.62);backdrop-filter:blur(6px);animation:fade .3s}@keyframes fade{from{opacity:0}}
+.mh{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;padding:22px 24px 18px;border-bottom:1px solid var(--line)}
+.mt{font-size:21px;line-height:1.3;letter-spacing:-.035em;margin:12px 0 6px;overflow-wrap:anywhere}.ms{font-size:12px;color:var(--muted)}
+.close{width:36px;height:36px;display:grid;place-items:center;flex:none;border:1px solid var(--line2);border-radius:var(--r2);background:transparent;transition:all .25s}.close:hover{border-color:#ffad6b;transform:rotate(90deg)}.close svg{width:16px;height:16px}
+.mb{padding:20px 24px 24px}
+.dg{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:18px}.dt{padding:12px;border:1px solid var(--line);border-radius:var(--r2);background:var(--bg2)}.dt span{display:block;font:500 10px var(--fm);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:4px}.dt strong{font-size:12.5px;overflow-wrap:anywhere}
+.ds{margin:18px 0}.ds h3{font:600 10.5px var(--fm);text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:8px}.ds p{margin:0;font-size:12.5px;line-height:1.85;color:var(--ink2);white-space:pre-wrap;overflow-wrap:anywhere}
+.warn{padding:12px 14px;border-radius:var(--r2);background:var(--midbg);color:var(--mid);font-size:11.5px;line-height:1.7;margin:16px 0}
+.ma{display:flex;gap:8px;flex-wrap:wrap;padding-top:16px;border-top:1px solid var(--line)}
+.cg{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.cc{position:relative;overflow:hidden;padding:14px;border:1px solid var(--line);border-radius:var(--r);background:var(--card2);transition:all .3s var(--ease)}.cc:hover{transform:translateY(-2px);border-color:#ffb77c;box-shadow:var(--sh)}
+.cch{display:flex;gap:11px;align-items:center}.cb{width:40px;height:40px;flex:none;border-radius:var(--r2);display:grid;place-items:center;background:var(--tint);color:var(--accent);font:800 12px var(--fd)}
+.cn{margin:0;font-size:13px;font-weight:700;overflow-wrap:anywhere}.ck{margin:2px 0 0;font-size:11px;color:var(--muted)}
+.ca{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}.ca a:not(.btn){font-size:11px;font-weight:600;color:var(--accent);text-decoration:none}
+.ci{margin:0 0 14px;font-size:12.5px;color:var(--muted)}.cs{margin-bottom:14px}
+.ce{grid-column:1/-1;padding:28px;text-align:center;border:1px dashed var(--line2);border-radius:var(--r2);color:var(--muted);font-size:12px}
+
+/* ===== scroll reveal ===== */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+.js .fgrid .reveal:nth-child(2){transition-delay:.08s}.js .fgrid .reveal:nth-child(3){transition-delay:.16s}
+
+/* ===== responsive ===== */
+@media(max-width:1024px){.wrap{width:min(100% - 36px,1200px)}.nlinks{display:none}.agrid{grid-template-columns:repeat(3,1fr)}.hero{grid-template-columns:1fr}.hero-art{display:none}.job{grid-template-columns:48px minmax(0,1fr) 140px;grid-template-areas:"i m a" "i s a"}.ji{grid-area:i}.jm{grid-area:m}.sd{grid-area:s}.ja{grid-area:a;align-self:center}.fg{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.wrap{width:calc(100% - 28px)}.nav{height:60px}.bs{font-size:9px}.lbl{display:none}.actions{gap:6px}.actions .btn{padding:0;width:40px}.actions .btn .badge{position:absolute;top:-6px;right:-6px;min-width:18px;height:18px}.hero{padding:34px 0 22px}.sgrid{grid-template-columns:1fr 1fr}.kw,.prov,.cat,.sbtn{grid-column:1/3}.sbtn{width:100%}.field input,.field select,.control,.sort{font-size:16px}.tools{flex-direction:column;align-items:stretch}.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -4px;padding:2px 4px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chip{flex:none}.filtertoggle{width:100%}.agrid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.stat{padding:16px}.sv{font-size:24px}.rh{flex-direction:column;align-items:stretch}.ra{justify-content:space-between}.job{grid-template-columns:42px minmax(0,1fr);grid-template-areas:"i m" "s s" "a a";gap:12px 14px;padding:15px}.ji{width:42px;height:42px}.ja{flex-direction:row;flex-wrap:wrap;align-items:center}.ja .ar{width:100%}.ja .btn{width:auto;flex:1}.pg{flex-direction:column;align-items:flex-start}.dg,.cg,.fgrid{grid-template-columns:1fr}.mh,.mb{padding:16px}.mt{font-size:18px}.sec{margin-top:64px}.cta .btn{flex:1}}
+@media(max-width:380px){.sgrid{grid-template-columns:1fr}.kw,.prov,.cat,.sbtn{grid-column:1}.agrid{grid-template-columns:1fr}.logo{width:34px;height:34px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}}
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<div class="sidebar-scrim" id="sidebarScrim" aria-hidden="true"></div>
-<aside class="sidebar" id="sidebar" aria-label="Menu utama">
-  <a class="brand sidebar-brand" href="#" aria-label="INFO LOKER by Ai">
-    <span class="logo">IL</span>
-    <span class="brand-copy"><span class="brand-name">INFO LOKER</span><span class="brand-sub">BY Ai · Indonesia</span></span>
-  </a>
-  <div class="sidebar-label">WORKSPACE</div>
-  <nav class="side-nav" aria-label="Menu panel">
-    <a class="side-link is-active" href="#overview" data-side-nav><span class="side-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="8" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="11" width="7" height="10" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg></span><span>Ringkasan</span></a>
-    <a class="side-link" href="#search" data-side-nav><span class="side-icon"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg></span><span>Cari lowongan</span></a>
-    <a class="side-link" href="#lowongan" data-side-nav><span class="side-icon"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg></span><span>Semua lowongan</span></a>
-    <button class="side-link" id="famousCompaniesNav" type="button"><span class="side-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 10h1m4 0h1M9 14h1m4 0h1M10 21v-4h4v4"/></svg></span><span>Perusahaan terkenal</span></button>
-    <button class="side-link" id="sidebarSavedNav" type="button"><span class="side-icon"><svg viewBox="0 0 24 24"><path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-4-6 4z"/></svg></span><span>Lowongan tersimpan</span></button>
-    <a class="side-link" href="#tentang-data" data-side-nav><span class="side-icon"><svg viewBox="0 0 24 24"><path d="M12 3 20 7v5c0 4.5-3.5 7.5-8 9-4.5-1.5-8-4.5-8-9V7z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></span><span>Info & sumber data</span></a>
-  </nav>
-  <div class="side-divider"></div>
-  <div class="sidebar-bottom">
-    <div class="sidebar-status"><span class="sidebar-indicator" id="sidebarStatusDot"></span><span id="sidebarDataStatus">Menyiapkan dataset…</span></div>
-    <p>Lowongan dari berbagai sumber, dalam satu tempat pencarian.</p>
-    <a class="sidebar-repo" href="https://github.com/reybyoo-maker/SCRAPING-INFO-LOKER" target="_blank" rel="noopener noreferrer">Buka repository ↗</a>
-  </div>
-</aside>
-<header class="topbar">
-  <div class="shell nav">
-    <button class="btn btn-secondary desktop-sidebar-toggle" id="desktopSidebarToggle" type="button" aria-label="Perkecil menu kiri" aria-expanded="true" title="Perkecil menu kiri"><span id="sidebarCollapseIcon" aria-hidden="true">‹</span><span id="sidebarCollapseText">Perkecil menu</span></button>
-    <button class="mobile-menu" id="mobileMenuToggle" type="button" aria-label="Buka menu" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="menu-label">Menu</span></button>
-    <a class="brand" href="#" aria-label="INFO LOKER by Ai">
-      <span class="logo">IL</span>
-      <span class="brand-copy"><span class="brand-name">INFO LOKER</span><span class="brand-sub">BY Ai · Indonesia</span></span>
-    </a>
-    <nav class="navlinks" aria-label="Navigasi">
-      <a href="#lowongan">Cari lowongan</a>
-      <a href="#tentang-data">Tentang data</a>
-      <a href="https://github.com/reybyoo-maker/SCRAPING-INFO-LOKER" target="_blank" rel="noopener noreferrer">Repository ↗</a>
-    </nav>
-    <div class="navbuttons">
-      <button class="btn btn-secondary theme-toggle" id="themeToggle" type="button" aria-label="Aktifkan dark mode" title="Ubah tema"><span id="themeIcon" aria-hidden="true">◐</span><span id="themeText">Mode gelap</span></button>
-      <button class="btn btn-secondary" id="savedNav" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-4-6 4z"/></svg><span class="saved-label">Tersimpan</span><span id="savedCount">0</span></button>
-      <a class="btn btn-primary" href="#lowongan">Cari kerja <span aria-hidden="true">↗</span></a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="bg-grid" aria-hidden="true"></div><div class="orb o1" aria-hidden="true"></div><div class="orb o2" aria-hidden="true"></div>
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#overview" aria-label="INFO LOKER by Reynaldi"><span class="logo"><img src="logo.svg" width="38" height="38" alt="Logo INFO LOKER by Reynaldi"></span><span><span class="bn">INFO LOKER</span><span class="bs">by Reynaldi</span></span></a>
+    <nav class="nlinks" aria-label="Navigasi utama"><a href="#lowongan">Lowongan</a><a href="#fitur">Fitur</a><a href="#faq">FAQ</a><a href="#tentang-data">Tentang</a></nav>
+    <div class="actions">
+      <button class="btn" id="famousCompaniesNav" type="button" aria-label="Perusahaan terkenal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 10h1m4 0h1M9 14h1m4 0h1M10 21v-4h4v4"/></svg><span class="lbl">Perusahaan</span></button>
+      <button class="btn" id="savedNav" type="button" aria-label="Lowongan tersimpan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-4-6 4z"/></svg><span class="lbl">Tersimpan</span><span class="badge" id="savedCount">0</span></button>
+      <a class="btn ibtn ig" href="https://www.instagram.com/reybyoo_/" target="_blank" rel="noopener noreferrer me" aria-label="Instagram @reybyoo_" title="Instagram @reybyoo_"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></a>
+      <button class="btn ibtn" id="themeToggle" type="button" aria-label="Aktifkan dark mode"><span id="themeIcon" aria-hidden="true">◐</span><span id="themeText" hidden>Mode gelap</span></button>
     </div>
   </div>
 </header>
-<main>
-  <div class="shell">
-    <section class="pagehead" id="overview">
-      <div><div class="eyebrow">Job search workspace</div><h1>Temukan peluang kerja yang tepat.</h1><p>Cari, bandingkan, dan filter lowongan dari berbagai sumber. Detail yang tersedia ditampilkan apa adanya, tanpa mengarang informasi yang kosong.</p></div>
-      <div class="updated"><span class="dot" id="statusDot"></span><span id="dataStatus">Menghubungkan dataset…</span></div>
-    </section>
-    <section class="search-panel" id="search" aria-label="Pencarian dan filter lowongan">
-      <form id="searchForm">
-        <div class="search-grid">
-          <label class="field keyword-field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="keyword" type="search" placeholder="Posisi, perusahaan, atau kata kunci…" aria-label="Kata kunci"></label>
-          <label class="field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><select id="province" aria-label="Provinsi"><option value="">Semua provinsi</option></select></label>
-          <label class="field category-field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg><select id="category" aria-label="Bidang pekerjaan"><option value="">Semua bidang pekerjaan</option></select></label>
-          <button class="btn btn-primary search-submit" type="submit">Cari lowongan <span aria-hidden="true">→</span></button>
-        </div>
-      </form>
-      <div class="search-tools">
-        <div class="quickfilters" aria-label="Filter cepat">
-          <button class="chip active" data-quick="all" type="button">Semua</button>
-          <button class="chip" data-quick="hot" type="button">HOT <span class="chip-count" id="hotCount">—</span></button>
-          <button class="chip" data-quick="remote" type="button">Remote</button>
-          <button class="chip" data-quick="salary" type="button">Gaji tersedia</button>
-          <button class="chip" data-quick="walkin" type="button">Walk-in</button>
-          <button class="chip" data-quick="fresh" type="button">Diperbarui 7 hari</button>
-        </div>
-        <button class="btn btn-secondary btn-small filtertoggle" id="toggleFilters" type="button" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M7 12h10m-7 5h4"/></svg>Filter lainnya <span id="filterCount"></span></button>
+<main class="wrap" id="overview">
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-copy">
+      <div class="status" role="status"><span class="dot" id="statusDot"></span><span id="dataStatus">Menghubungkan dataset…</span></div>
+      <div class="eyebrow">Job search workspace</div>
+      <h1 id="heroTitle">Temukan lowongan kerja Indonesia <span class="gt">yang tepat.</span></h1>
+      <p>Cari, bandingkan, dan filter lowongan dari berbagai sumber. Detail ditampilkan apa adanya, tanpa mengarang informasi yang kosong.</p>
+      <div class="cta"><a class="btn btn-primary" href="#search">Mulai cari lowongan <span aria-hidden="true">→</span></a><a class="btn" href="https://www.instagram.com/reybyoo_/" target="_blank" rel="noopener noreferrer me">Ikuti @reybyoo_ ↗</a></div>
+      <div class="hero-by">Dibuat &amp; dimiliki oleh <a href="https://www.instagram.com/reybyoo_/" target="_blank" rel="noopener noreferrer me">Reynaldi</a> · @reybyoo_</div>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="frame"><img src="logo.svg" width="512" height="512" alt="" fetchpriority="high"></div><span class="fchip c1"><i></i>HOT · relatif lengkap</span><span class="fchip c2"><i></i>Remote / Hybrid</span><span class="fchip c3"><i></i>Gaji tersedia</span></div>
+  </section>
+  <div class="marquee" aria-hidden="true"><div class="mtrack"><span>Job Portal</span><span>Company Sites</span><span>BUMN</span><span>Startup</span><span>Corporate</span><span>Manufaktur</span><span>Fintech</span><span>Healthcare</span><span>Remote</span><span>Walk-in</span><span>Job Portal</span><span>Company Sites</span><span>BUMN</span><span>Startup</span><span>Corporate</span><span>Manufaktur</span><span>Fintech</span><span>Healthcare</span><span>Remote</span><span>Walk-in</span></div></div>
+  <section class="panel" id="search" aria-label="Pencarian dan filter lowongan">
+    <form id="searchForm" role="search">
+      <div class="sgrid">
+        <label class="field kw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="keyword" type="search" placeholder="Posisi, perusahaan, atau kata kunci…" aria-label="Kata kunci"></label>
+        <label class="field prov"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><select id="province" aria-label="Provinsi"><option value="">Semua provinsi</option></select></label>
+        <label class="field cat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg><select id="category" aria-label="Bidang pekerjaan"><option value="">Semua bidang</option></select></label>
+        <button class="btn btn-primary sbtn" type="submit">Cari lowongan <span aria-hidden="true">→</span></button>
       </div>
-      <div class="advanced" id="advancedFilters" hidden>
-        <div class="advanced-head"><strong>Filter lanjutan</strong><span>Pilih yang diperlukan; hasil akan diperbarui otomatis.</span></div>
-        <div class="advanced-grid">
-          <div class="filter-field"><label for="city">Kota / Kabupaten</label><select class="control" id="city"><option value="">Semua kota</option></select></div>
-          <div class="filter-field"><label for="workMode">Sistem kerja</label><select class="control" id="workMode"><option value="">Semua sistem</option><option value="onsite">Onsite</option><option value="remote">Remote / WFH</option><option value="hybrid">Hybrid</option></select></div>
-          <div class="filter-field"><label for="employment">Tipe pekerjaan</label><select class="control" id="employment"><option value="">Semua tipe</option></select></div>
-          <div class="filter-field"><label for="education">Pendidikan minimum</label><select class="control" id="education"><option value="">Semua pendidikan</option></select></div>
-          <div class="filter-field"><label for="quality">Kelengkapan informasi</label><select class="control" id="quality"><option value="">Semua label</option><option value="HOT">HOT · relatif lengkap</option><option value="MEDIUM">MEDIUM · sebagian lengkap</option><option value="LOW">LOW · terbatas</option></select></div>
-          <div class="filter-field"><label for="source">Sumber lowongan</label><select class="control" id="source"><option value="">Semua sumber</option></select></div>
-          <div class="filter-field"><label for="minSalary">Gaji minimum (Rp/bulan)</label><select class="control" id="minSalary"><option value="">Tidak ditentukan</option><option value="2000000">Rp2 juta</option><option value="3000000">Rp3 juta</option><option value="4000000">Rp4 juta</option><option value="5000000">Rp5 juta</option><option value="7000000">Rp7 juta</option><option value="10000000">Rp10 juta</option></select></div>
-        </div>
-        <div class="checkrow">
-          <label class="check"><input id="salaryOnly" type="checkbox"> Hanya yang mencantumkan gaji</label>
-          <label class="check"><input id="walkinOnly" type="checkbox"> Walk-in interview</label>
-          <label class="check"><input id="includeStale" type="checkbox"> Sertakan lowongan lama</label>
-          <button class="btn btn-quiet btn-small" id="resetFilters" type="button">Reset semua filter</button>
-        </div>
+    </form>
+    <div class="tools">
+      <div class="chips" aria-label="Filter cepat">
+        <button class="chip active" data-quick="all" type="button">Semua</button>
+        <button class="chip" data-quick="hot" type="button">HOT <span class="badge" id="hotCount">—</span></button>
+        <button class="chip" data-quick="remote" type="button">Remote</button>
+        <button class="chip" data-quick="salary" type="button">Gaji tersedia</button>
+        <button class="chip" data-quick="walkin" type="button">Walk-in</button>
+        <button class="chip" data-quick="fresh" type="button">7 hari terakhir</button>
       </div>
-    </section>
-    <section class="stats" aria-label="Ringkasan lowongan">
-      <div class="stat"><span class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg></span><div><div class="stat-value" id="metricTotal">—</div><div class="stat-label">Total lowongan di dataset</div></div></div>
-      <div class="stat"><span class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 14.8 8.7 21 9.6l-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/></svg></span><div><div class="stat-value" id="metricHot">—</div><div class="stat-label">Informasi relatif lengkap</div></div></div>
-      <div class="stat"><span class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s8-4 8-11V5l-8-3-8 3v5c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg></span><div><div class="stat-value" id="metricAreas">—</div><div class="stat-label">Provinsi terdeteksi</div></div></div>
-      <div class="stat"><span class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 19v2m8-2v2M7 9h10M7 13h4"/></svg></span><div><div class="stat-value" id="metricRemote">—</div><div class="stat-label">Remote / hybrid</div></div></div>
-    </section>
-    <section id="lowongan">
-      <div class="results-head">
-        <div class="results-title"><h2 id="resultsTitle">Semua lowongan</h2><span class="result-count" id="resultCount" aria-live="polite">Memuat data…</span></div>
-        <div class="result-actions"><button class="btn btn-secondary btn-small" id="refreshBtn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.5 9A7 7 0 0 1 17 5l3 2M4 17l3 2a7 7 0 0 0 11.5-4"/></svg>Perbarui</button><label class="sort-label" for="sortBy">Urutkan</label><select class="sort-select" id="sortBy"><option value="latest">Terbaru</option><option value="quality">Informasi lengkap</option><option value="salary">Gaji tertinggi</option></select></div>
+      <button class="btn btn-small filtertoggle" id="toggleFilters" type="button" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M7 12h10m-7 5h4"/></svg>Filter lainnya <span id="filterCount"></span></button>
+    </div>
+    <div class="adv" id="advancedFilters" hidden>
+      <div class="advh"><strong>Filter lanjutan</strong><span>Hasil diperbarui otomatis.</span></div>
+      <div class="agrid">
+        <div class="ff"><label for="city">Kota / Kabupaten</label><select class="control" id="city"><option value="">Semua kota</option></select></div>
+        <div class="ff"><label for="workMode">Sistem kerja</label><select class="control" id="workMode"><option value="">Semua sistem</option><option value="onsite">Onsite</option><option value="remote">Remote / WFH</option><option value="hybrid">Hybrid</option></select></div>
+        <div class="ff"><label for="employment">Tipe pekerjaan</label><select class="control" id="employment"><option value="">Semua tipe</option></select></div>
+        <div class="ff"><label for="education">Pendidikan minimum</label><select class="control" id="education"><option value="">Semua pendidikan</option></select></div>
+        <div class="ff"><label for="quality">Kelengkapan informasi</label><select class="control" id="quality"><option value="">Semua label</option><option value="HOT">HOT · relatif lengkap</option><option value="MEDIUM">MEDIUM · sebagian lengkap</option><option value="LOW">LOW · terbatas</option></select></div>
+        <div class="ff"><label for="source">Sumber lowongan</label><select class="control" id="source"><option value="">Semua sumber</option></select></div>
+        <div class="ff"><label for="minSalary">Gaji minimum (Rp/bulan)</label><select class="control" id="minSalary"><option value="">Tidak ditentukan</option><option value="2000000">Rp2 juta</option><option value="3000000">Rp3 juta</option><option value="4000000">Rp4 juta</option><option value="5000000">Rp5 juta</option><option value="7000000">Rp7 juta</option><option value="10000000">Rp10 juta</option></select></div>
       </div>
-      <div class="list" id="jobList"><div class="loading"><div class="spinner"></div>Mengambil data lowongan dari repository…</div></div>
-      <div class="pagination" id="pagination" hidden><span id="pageSummary"></span><div class="pages"><button class="page" id="prevPage" type="button">← Prev</button><span id="pageNumbers" class="pages"></span><button class="page" id="nextPage" type="button">Next →</button></div></div>
-    </section>
-    <section class="trustnote" id="tentang-data"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 20 7v5c0 4.5-3.5 7.5-8 9-4.5-1.5-8-4.5-8-9V7z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg><div><strong>Periksa sumber sebelum melamar</strong><p>INFO LOKER mengagregasi informasi lowongan dari job portal, feed/API publik, dan halaman karier resmi perusahaan yang diizinkan untuk diakses. Label HOT / MEDIUM / LOW mengukur kelengkapan sinyal data, bukan jaminan perusahaan tepercaya. Verifikasi detail, tenggat, dan proses lamaran melalui penerbit asli. Jangan membayar biaya rekrutmen yang mencurigakan.</p></div></section>
-  </div>
+      <div class="checks">
+        <label class="check"><input id="salaryOnly" type="checkbox"> Hanya yang mencantumkan gaji</label>
+        <label class="check"><input id="walkinOnly" type="checkbox"> Walk-in interview</label>
+        <label class="check"><input id="includeStale" type="checkbox"> Sertakan lowongan lama</label>
+        <button class="btn btn-quiet btn-small" id="resetFilters" type="button">Reset semua filter</button>
+      </div>
+    </div>
+  </section>
+  <section class="stats" aria-label="Ringkasan lowongan">
+    <div class="stat reveal"><div class="sv" id="metricTotal">—</div><div class="sl">Total lowongan</div></div>
+    <div class="stat reveal"><div class="sv" id="metricHot">—</div><div class="sl">Informasi relatif lengkap</div></div>
+    <div class="stat reveal"><div class="sv" id="metricAreas">—</div><div class="sl">Provinsi terdeteksi</div></div>
+    <div class="stat reveal"><div class="sv" id="metricRemote">—</div><div class="sl">Remote / hybrid</div></div>
+  </section>
+  <section id="lowongan" aria-labelledby="resultsTitle">
+    <div class="rh">
+      <div class="rt"><h2 id="resultsTitle">Semua lowongan</h2><span class="rc" id="resultCount" aria-live="polite">Memuat data…</span></div>
+      <div class="ra"><button class="btn btn-small" id="refreshBtn" type="button">Perbarui</button><label class="sl2" for="sortBy">Urutkan</label><select class="sort" id="sortBy"><option value="latest">Terbaru</option><option value="quality">Informasi lengkap</option><option value="salary">Gaji tertinggi</option></select></div>
+    </div>
+    <div class="list" id="jobList"><div class="loading"><div class="spin"></div>Mengambil data lowongan dari repository…</div></div>
+    <div class="pg" id="pagination" hidden><span id="pageSummary"></span><div class="pgs"><button class="page" id="prevPage" type="button">← Prev</button><span id="pageNumbers" class="pgs"></span><button class="page" id="nextPage" type="button">Next →</button></div></div>
+    <noscript><p>Aktifkan JavaScript untuk melihat daftar lowongan kerja Indonesia terbaru di INFO LOKER by Reynaldi.</p></noscript>
+  </section>
+
+  <section class="sec" id="fitur" aria-labelledby="fiturTitle">
+    <div class="sech reveal"><div class="eyebrow">Kenapa INFO LOKER</div><h2 id="fiturTitle">Cari kerja lebih cepat, lebih jelas, dan transparan.</h2><p>Semua lowongan dikumpulkan di satu tempat dengan filter yang benar-benar kamu butuhkan.</p></div>
+    <div class="fgrid">
+      <article class="feat reveal"><div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M7 12h10m-7 5h4"/></svg></div><h3>Filter lengkap</h3><p>Saring berdasarkan provinsi, kota, bidang pekerjaan, gaji minimum, pendidikan, tipe kerja, remote, hybrid, dan walk-in interview.</p></article>
+      <article class="feat reveal"><div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 7v5c0 4.5-3.5 7.5-8 9-4.5-1.5-8-4.5-8-9V7z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></div><h3>Label kualitas data</h3><p>Label HOT, MEDIUM, dan LOW menunjukkan kelengkapan informasi lowongan, sehingga kamu tahu mana yang detailnya paling jelas.</p></article>
+      <article class="feat reveal"><div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-4-6 4z"/></svg></div><h3>Simpan &amp; bandingkan</h3><p>Simpan lowongan favoritmu, lalu buka lagi kapan saja. Informasi yang kosong tidak dikarang, ditampilkan apa adanya.</p></article>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" aria-labelledby="faqTitle">
+    <div class="sech reveal"><div class="eyebrow">FAQ</div><h2 id="faqTitle">Pertanyaan yang sering ditanyakan</h2></div>
+    <div class="faq reveal">
+      <details><summary>Apa itu INFO LOKER by Reynaldi?</summary><div class="fa">INFO LOKER adalah website pencarian lowongan kerja Indonesia milik Reynaldi (@reybyoo_). Lowongan dikumpulkan dari job portal, feed atau API publik, dan halaman karier resmi perusahaan, lalu ditampilkan dengan filter yang lengkap.</div></details>
+      <details><summary>Apa arti label HOT, MEDIUM, dan LOW?</summary><div class="fa">Label mengukur kelengkapan informasi sebuah lowongan, bukan jaminan perusahaan tepercaya. HOT berarti informasinya relatif lengkap, MEDIUM sebagian lengkap, dan LOW terbatas.</div></details>
+      <details><summary>Bagaimana cara memfilter lowongan berdasarkan gaji atau remote?</summary><div class="fa">Gunakan chip filter cepat seperti Remote, Gaji tersedia, Walk-in, atau 7 hari terakhir. Untuk kontrol lebih detail buka Filter lainnya: kota, sistem kerja, tipe pekerjaan, pendidikan minimum, sumber, dan gaji minimum.</div></details>
+      <details><summary>Apakah INFO LOKER gratis?</summary><div class="fa">Ya, mencari dan menyimpan lowongan di INFO LOKER tidak dipungut biaya. Lowongan yang disimpan tersimpan di browser kamu.</div></details>
+      <details><summary>Bagaimana menghindari lowongan penipuan?</summary><div class="fa">Selalu verifikasi detail, tenggat, dan proses lamaran lewat penerbit asli, dan jangan membayar biaya rekrutmen yang mencurigakan.</div></details>
+    </div>
+  </section>
 </main>
-<footer><div class="shell foot"><a class="brand" href="#"><span class="logo">IL</span><span class="brand-copy"><span class="brand-name">INFO LOKER</span><span class="brand-sub">BY Ai · Indonesia</span></span></a><div class="footcopy">Dibangun untuk memudahkan pencarian peluang kerja. Dataset dan proses pengumpulan tersedia di <a href="https://github.com/reybyoo-maker/SCRAPING-INFO-LOKER" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</div></div></footer>
+<footer id="tentang-data"><div class="wrap">
+  <div class="fg">
+    <div><a class="brand" href="#overview" aria-label="Kembali ke atas"><span class="logo"><img src="logo.svg" width="38" height="38" alt="Logo INFO LOKER" loading="lazy"></span><span><span class="bn">INFO LOKER</span><span class="bs">by Reynaldi</span></span></a><p class="fc">Dibangun untuk memudahkan pencarian peluang kerja di Indonesia. Dataset dan proses pengumpulan tersedia di <a href="https://github.com/reybyoo-maker/SCRAPING-INFO-LOKER" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></p>
+    <a class="owner" href="https://www.instagram.com/reybyoo_/" target="_blank" rel="noopener noreferrer me"><span class="oi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></span><span><b>by Reynaldi</b><small>@reybyoo_ · Instagram</small></span></a></div>
+    <div class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 7v5c0 4.5-3.5 7.5-8 9-4.5-1.5-8-4.5-8-9V7z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg><div><strong>Periksa sumber sebelum melamar</strong><p>INFO LOKER mengagregasi informasi lowongan dari job portal, feed/API publik, dan halaman karier resmi perusahaan yang diizinkan untuk diakses. Label HOT / MEDIUM / LOW mengukur kelengkapan sinyal data, bukan jaminan perusahaan tepercaya. Verifikasi detail, tenggat, dan proses lamaran melalui penerbit asli. Jangan membayar biaya rekrutmen yang mencurigakan.</p></div></div>
+  </div>
+  <div class="copy"><span>© 2026 INFO LOKER by Reynaldi · Seluruh hak milik <a href="https://www.instagram.com/reybyoo_/" target="_blank" rel="noopener noreferrer me">@reybyoo_</a></span><span>Made in Indonesia</span></div>
+</div></footer>
 <dialog id="jobDialog"><div id="dialogContent"></div></dialog>
-<dialog id="companyDialog" class="company-dialog" aria-labelledby="companyDialogTitle"><div class="modal-head"><div><div class="eyebrow">Employer directory</div><h2 class="modal-title" id="companyDialogTitle">Perusahaan terkenal</h2><div class="modal-sub">Cari lowongan berdasarkan nama perusahaan atau buka situs resminya.</div></div><button class="close" id="closeCompanyDialog" type="button" aria-label="Tutup daftar perusahaan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div class="modal-body"><p class="company-intro">Daftar pilihan perusahaan dari berbagai sektor. Tombol “Cari lowongan” akan mencari di dataset INFO LOKER yang tersedia; hasilnya bergantung pada data yang berhasil dikumpulkan.</p><label class="company-search field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="companyKeyword" type="search" placeholder="Cari nama perusahaan atau sektor…" aria-label="Cari daftar perusahaan"></label><div class="company-grid" id="companyGrid"></div></div></dialog>
+<dialog id="companyDialog" aria-labelledby="companyDialogTitle"><div class="mh"><div><div class="eyebrow">Employer directory</div><h2 class="mt" id="companyDialogTitle">Perusahaan terkenal</h2><div class="ms">Cari lowongan berdasarkan nama perusahaan atau buka situs resminya.</div></div><button class="close" id="closeCompanyDialog" type="button" aria-label="Tutup"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div class="mb"><p class="ci">Tombol “Cari lowongan” mencari di dataset INFO LOKER; hasilnya bergantung pada data yang berhasil dikumpulkan.</p><label class="field cs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="companyKeyword" type="search" placeholder="Cari nama perusahaan atau sektor…" aria-label="Cari daftar perusahaan"></label><div class="cg" id="companyGrid"></div></div></dialog>
 <script>
 (function(){
 'use strict';
@@ -495,9 +433,8 @@ var FEATURED_COMPANIES=[
 {name:'Freeport Indonesia',category:'Pertambangan',url:'https://ptfi.co.id/'},
 {name:'Mayora',category:'FMCG · Manufaktur',url:'https://www.mayoraindah.co.id/'}
 ];
-
 var PAGE_SIZE=12;
-var state={all:[],filtered:[],page:1,showSaved:false,quick:'all',saved:new Set(),locations:null,status:null,loadedAt:null};
+var state={all:[],filtered:[],page:1,showSaved:false,quick:'all',saved:new Set(),locations:null,status:null};
 var $=function(id){return document.getElementById(id)};
 var el={keyword:$('keyword'),province:$('province'),city:$('city'),category:$('category'),workMode:$('workMode'),employment:$('employment'),education:$('education'),quality:$('quality'),source:$('source'),minSalary:$('minSalary'),salaryOnly:$('salaryOnly'),walkinOnly:$('walkinOnly'),includeStale:$('includeStale'),sortBy:$('sortBy'),list:$('jobList'),pagination:$('pagination'),dialog:$('jobDialog'),dialogContent:$('dialogContent'),advanced:$('advancedFilters')};
 try{state.saved=new Set(JSON.parse(localStorage.getItem('info-loker-saved-v2')||'[]'))}catch(e){state.saved=new Set()}
@@ -506,49 +443,25 @@ function renderCompanies(filter){
  var grid=$('companyGrid');if(!grid)return;
  var q=String(filter||'').trim().toLocaleLowerCase('id');
  var matches=FEATURED_COMPANIES.filter(function(c){return !q||(c.name+' '+c.category).toLocaleLowerCase('id').includes(q)});
- if(!matches.length){grid.innerHTML='<div class="company-empty">Tidak ada nama perusahaan yang cocok. Coba kata kunci lain.</div>';return}
+ if(!matches.length){grid.innerHTML='<div class="ce">Tidak ada nama perusahaan yang cocok. Coba kata kunci lain.</div>';return}
  grid.innerHTML=matches.map(function(c){
-  var initials=c.name.split(/\s+/).slice(0,2).map(function(part){return part.charAt(0)}).join('').toUpperCase();
-  return '<article class="company-card"><div class="company-card-head"><div class="company-badge" aria-hidden="true">'+esc(initials)+'</div><div class="company-card-copy"><h3 class="company-card-name">'+esc(c.name)+'</h3><p class="company-card-category">'+esc(c.category)+'</p></div></div><div class="company-card-actions"><button class="btn btn-primary" type="button" data-company-search="'+esc(c.name)+'">Cari lowongan</button><a href="'+esc(c.url)+'" target="_blank" rel="noopener noreferrer">Situs resmi ↗</a></div></article>';
+  var initials=c.name.split(/\s+/).slice(0,2).map(function(p){return p.charAt(0)}).join('').toUpperCase();
+  return '<article class="cc"><div class="cch"><div class="cb" aria-hidden="true">'+esc(initials)+'</div><div><h3 class="cn">'+esc(c.name)+'</h3><p class="ck">'+esc(c.category)+'</p></div></div><div class="ca"><button class="btn btn-primary btn-small" type="button" data-company-search="'+esc(c.name)+'">Cari lowongan</button><a href="'+esc(c.url)+'" target="_blank" rel="noopener noreferrer">Situs resmi ↗</a></div></article>';
  }).join('');
-}
-
-function setSidebarCollapsed(collapsed,savePreference){
- var desktop=window.innerWidth>1024;
- if(!desktop)collapsed=false;
- document.documentElement.classList.toggle('sidebar-collapsed',Boolean(collapsed));
- var button=$('desktopSidebarToggle');
- if(button){
-  button.setAttribute('aria-expanded',String(!collapsed));
-  button.setAttribute('aria-label',collapsed?'Perbesar menu kiri':'Perkecil menu kiri');
-  button.setAttribute('title',collapsed?'Perbesar menu kiri':'Perkecil menu kiri');
-  $('sidebarCollapseIcon').textContent=collapsed?'›':'‹';
-  $('sidebarCollapseText').textContent=collapsed?'Perbesar menu':'Perkecil menu';
- }
- if(savePreference!==false){
-  try{localStorage.setItem('info-loker-sidebar-collapsed',desktop&&collapsed?'1':'0')}catch(e){}
- }
-}
-
-function closeSidebar(){
- $('sidebar').classList.remove('is-open');$('sidebarScrim').classList.remove('is-open');$('mobileMenuToggle').setAttribute('aria-expanded','false');$('mobileMenuToggle').setAttribute('aria-label','Buka menu');$('sidebarScrim').setAttribute('aria-hidden','true');document.body.classList.remove('sidebar-open');
 }
 function setTheme(theme){
  var dark=theme==='dark';document.documentElement.setAttribute('data-theme',dark?'dark':'light');
+ var m=document.querySelector('meta[name=theme-color]');if(m)m.content=dark?'#09090b':'#ffffff';
  $('themeText').textContent=dark?'Mode terang':'Mode gelap';$('themeIcon').textContent=dark?'☼':'◐';$('themeToggle').setAttribute('aria-label',dark?'Aktifkan light mode':'Aktifkan dark mode');$('themeToggle').setAttribute('title',dark?'Beralih ke light mode':'Beralih ke dark mode');
  try{localStorage.setItem('info-loker-theme',dark?'dark':'light')}catch(e){}
 }
-function activateSideLink(link){
- document.querySelectorAll('[data-side-nav]').forEach(function(item){item.classList.toggle('is-active',item===link)});
-}
-
 function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function plain(v,fb){var s=String(v==null?'':v).trim();return s||fb||''}
 function safeUrl(v){if(!v)return '';try{var u=new URL(String(v));return u.protocol==='https:'||u.protocol==='http:'?u.href:''}catch(e){return ''}}
-function ico(n){var p={search:'<circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/>',pin:'<path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>',bookmark:'<path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-4-6 4z"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',external:'<path d="M14 3h7v7M21 3l-9 9"/><path d="M18 13v5a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h5"/>',briefcase:'<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/>',close:'<path d="m6 6 12 12M18 6 6 18"/>'};return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(p[n]||p.briefcase)+'</svg>'}
+function ico(n){var p={search:'<circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/>',pin:'<path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>',bookmark:'<path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-4-6 4z"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',briefcase:'<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/>',close:'<path d="m6 6 12 12M18 6 6 18"/>'};return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(p[n]||p.briefcase)+'</svg>'}
 function jobKey(j){return String(j.id||j.listing_url||j.title||'')}
 function dateTime(j){var v=j.source_updated_at||j.published_at||j.last_seen_at||j.first_seen_at||j.last_checked_at;var t=v?Date.parse(v):NaN;return Number.isFinite(t)?t:0}
-function dateLabel(j){var t=dateTime(j);if(!t)return 'Tanggal tidak tersedia';var days=Math.floor((Date.now()-t)/86400000);if(days<0)return 'Terbaru';if(days===0)return 'Hari ini';if(days===1)return 'Kemarin';if(days<7)return days+' hari lalu';return new Intl.DateTimeFormat('id-ID',{day:'numeric',month:'short',year:t<new Date().getFullYear()-1?'numeric':undefined}).format(new Date(t))}
+function dateLabel(j){var t=dateTime(j);if(!t)return 'Tanggal tidak tersedia';var days=Math.floor((Date.now()-t)/86400000);if(days<0)return 'Terbaru';if(days===0)return 'Hari ini';if(days===1)return 'Kemarin';if(days<7)return days+' hari lalu';return new Intl.DateTimeFormat('id-ID',{day:'numeric',month:'short',year:new Date(t).getFullYear()<new Date().getFullYear()?'numeric':undefined}).format(new Date(t))}
 function fmtDate(v){if(!v)return 'Tidak dicantumkan';var t=Date.parse(v);return Number.isFinite(t)?new Intl.DateTimeFormat('id-ID',{day:'numeric',month:'long',year:'numeric'}).format(new Date(t)):'Tidak dicantumkan'}
 function rp(v){var n=Number(v);return Number.isFinite(n)&&n>0?'Rp'+new Intl.NumberFormat('id-ID',{maximumFractionDigits:0}).format(n):''}
 function salary(j){if(plain(j.salary_text,''))return plain(j.salary_text);var lo=rp(j.salary_min_idr),hi=rp(j.salary_max_idr);if(lo&&hi)return lo+' – '+hi;if(lo)return 'Mulai '+lo;if(hi)return 'Hingga '+hi;return 'Gaji tidak dicantumkan'}
@@ -559,7 +472,7 @@ function stale(j){return String(j.listing_state||'').toLowerCase()==='stale'}
 function qLabel(v){var q=String(v||'LOW').toUpperCase();return q==='HOT'?'HOT':q==='MEDIUM'?'MEDIUM':'LOW'}
 function qClass(v){var q=qLabel(v);return q==='HOT'?'hot':q==='MEDIUM'?'medium':'low'}
 function workLabel(v){var s=String(v||'').toLowerCase();if(s.includes('remote')||s.includes('wfh')||s.includes('work from home'))return 'Remote';if(s.includes('hybrid'))return 'Hybrid';if(s.includes('onsite')||s.includes('on-site')||s.includes('office'))return 'Onsite';return plain(v,'Sistem kerja tidak diketahui')}
-function setStatus(s,err){$('dataStatus').textContent=s;$('statusDot').classList.toggle('error',Boolean(err));if($('sidebarDataStatus'))$('sidebarDataStatus').textContent=s;if($('sidebarStatusDot'))$('sidebarStatusDot').classList.toggle('error',Boolean(err))}
+function setStatus(s,err){$('dataStatus').textContent=s;$('statusDot').classList.toggle('error',Boolean(err))}
 function persist(){try{localStorage.setItem('info-loker-saved-v2',JSON.stringify(Array.from(state.saved)))}catch(e){}$('savedCount').textContent=String(state.saved.size)}
 function unique(arr){return Array.from(new Set(arr.map(function(v){return String(v||'').trim()}).filter(Boolean))).sort(function(a,b){return a.localeCompare(b,'id')})}
 function setOptions(select,values,label,keep){var old=keep!==undefined?keep:select.value;select.innerHTML='<option value="">'+esc(label)+'</option>'+values.map(function(v){return '<option value="'+esc(v)+'">'+esc(v)+'</option>'}).join('');if(values.indexOf(old)>=0)select.value=old}
@@ -567,62 +480,71 @@ function sourceGroup(j){var s=String(j.source||'');return j.source_group==='Comp
 function setSourceOptions(){var old=el.source.value;var options=[['__job_portal__','Job Portal'],['__company_sites__','Company Sites'],['BUMN','BUMN'],['Startup','Startup'],['Corporate','Corporate'],['Manufaktur','Manufaktur'],['Fintech','Fintech'],['Healthcare','Healthcare']];var present=new Set(options.map(function(x){return x[0]}));unique(state.all.map(function(j){return j.category})).forEach(function(category){if(!present.has(category)){options.push([category,category]);present.add(category)}});el.source.innerHTML='<option value="">Semua sumber</option>'+options.map(function(x){return '<option value="'+esc(x[0])+'">'+esc(x[1])+'</option>'}).join('');if(present.has(old))el.source.value=old}
 function sourceMatches(j,value){if(!value)return true;if(value==='__job_portal__')return sourceGroup(j)==='Job Portal';if(value==='__company_sites__')return sourceGroup(j)==='Company Sites';if(value==='Fintech')return String(j.category||'')==='Fintech'||String(j.category||'')==='Bank & Fintech';return String(j.category||'')===value}
 async function getJson(path){var urls=[new URL(path,document.baseURI).href,'https://raw.githubusercontent.com/'+REPO+'/main/'+path];var last=null;for(var i=0;i<urls.length;i++){try{var r=await fetch(urls[i]+(urls[i].indexOf('?')>=0?'&':'?')+'v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);return await r.json()}catch(e){last=e}}throw last||new Error('Dataset tidak dapat dimuat')}
-function options(){var loc=state.locations||{};setOptions(el.province,unique((loc.regions||[]).map(function(x){return x.province||x.query}).concat(state.all.map(function(j){return j.province}))),'Semua provinsi');setOptions(el.city,unique((loc.cities||[]).map(function(x){return x.city||x.query}).concat(state.all.map(function(j){return j.city}))),'Semua kota');setOptions(el.category,unique(state.all.map(function(j){return j.job_category})),'Semua bidang pekerjaan');setOptions(el.employment,unique(state.all.map(function(j){return j.employment_type})),'Semua tipe');setOptions(el.education,unique(state.all.map(function(j){return j.education_minimum})),'Semua pendidikan');setSourceOptions()}
-function updateStats(){var a=state.all,hot=a.filter(function(j){return qLabel(j.quality_label)==='HOT'}).length,provinces=new Set(a.filter(function(j){return !stale(j)}).map(function(j){return plain(j.province,'')}).filter(Boolean)),rem=a.filter(function(j){return !stale(j)&&remote(j)}).length;$('metricTotal').textContent=new Intl.NumberFormat('id-ID').format(a.length);$('metricHot').textContent=new Intl.NumberFormat('id-ID').format(hot);$('metricAreas').textContent=new Intl.NumberFormat('id-ID').format(provinces.size);$('metricRemote').textContent=new Intl.NumberFormat('id-ID').format(rem);$('hotCount').textContent=new Intl.NumberFormat('id-ID').format(hot)}
+function options(){var loc=state.locations||{};setOptions(el.province,unique((loc.regions||[]).map(function(x){return x.province||x.query}).concat(state.all.map(function(j){return j.province}))),'Semua provinsi');setOptions(el.city,unique((loc.cities||[]).map(function(x){return x.city||x.query}).concat(state.all.map(function(j){return j.city}))),'Semua kota');setOptions(el.category,unique(state.all.map(function(j){return j.job_category})),'Semua bidang');setOptions(el.employment,unique(state.all.map(function(j){return j.employment_type})),'Semua tipe');setOptions(el.education,unique(state.all.map(function(j){return j.education_minimum})),'Semua pendidikan');setSourceOptions()}
+function updateStats(){var a=state.all,hot=a.filter(function(j){return qLabel(j.quality_label)==='HOT'}).length,provinces=new Set(a.filter(function(j){return !stale(j)}).map(function(j){return plain(j.province,'')}).filter(Boolean)),rem=a.filter(function(j){return !stale(j)&&remote(j)}).length,f=function(n){return new Intl.NumberFormat('id-ID').format(n)};$('metricTotal').textContent=f(a.length);$('metricHot').textContent=f(hot);$('metricAreas').textContent=f(provinces.size);$('metricRemote').textContent=f(rem);$('hotCount').textContent=f(hot)}
 function queryMatch(j,q){if(!q)return true;var hay=[j.title,j.position,j.company_name,j.description_excerpt,j.requirements,j.city,j.province,j.location_label,j.job_category,j.education_minimum,j.employment_type,j.work_mode,j.salary_text,j.source_name].join(' ').toLocaleLowerCase('id');return hay.includes(q.toLocaleLowerCase('id'))}
 function workMatch(j,v){if(!v)return true;var w=String(j.work_mode||'').toLowerCase();if(v==='remote')return w.includes('remote')||w.includes('wfh')||w.includes('work from home');if(v==='hybrid')return w.includes('hybrid');if(v==='onsite')return w.includes('onsite')||w.includes('on-site')||w.includes('office')||w.includes('di lokasi')||(!remote(j)&&Boolean(w));return true}
 function activeFilterCount(){var count=0;[el.province,el.city,el.category,el.workMode,el.employment,el.education,el.quality,el.source,el.minSalary].forEach(function(c){if(c&&c.value)count++});[el.salaryOnly,el.walkinOnly,el.includeStale].forEach(function(c){if(c&&c.checked)count++});return count}
 function apply(){var q=plain(el.keyword.value,'');var result=state.all.filter(function(j){if(!el.includeStale.checked&&stale(j))return false;if(state.showSaved&&!state.saved.has(jobKey(j)))return false;if(!queryMatch(j,q))return false;if(el.province.value&&String(j.province||'')!==el.province.value)return false;if(el.city.value&&String(j.city||'')!==el.city.value)return false;if(el.category.value&&String(j.job_category||'')!==el.category.value)return false;if(!workMatch(j,el.workMode.value))return false;if(el.employment.value&&String(j.employment_type||'')!==el.employment.value)return false;if(el.education.value&&String(j.education_minimum||'')!==el.education.value)return false;if(el.quality.value&&qLabel(j.quality_label)!==el.quality.value)return false;if(el.source.value&&!sourceMatches(j,el.source.value))return false;if(el.minSalary.value&&Number(j.salary_max_idr||j.salary_min_idr||0)<Number(el.minSalary.value))return false;if(el.salaryOnly.checked&&!salaryKnown(j))return false;if(el.walkinOnly.checked&&!j.walk_in)return false;if(state.quick==='hot'&&qLabel(j.quality_label)!=='HOT')return false;if(state.quick==='fresh'&&(!dateTime(j)||Date.now()-dateTime(j)>7*86400000))return false;if(state.quick==='remote'&&!remote(j))return false;if(state.quick==='salary'&&!salaryKnown(j))return false;if(state.quick==='walkin'&&!j.walk_in)return false;return true});if(el.sortBy.value==='quality')result.sort(function(a,b){return Number(b.quality_score||0)-Number(a.quality_score||0)||dateTime(b)-dateTime(a)});else if(el.sortBy.value==='salary')result.sort(function(a,b){return Number(b.salary_max_idr||b.salary_min_idr||0)-Number(a.salary_max_idr||a.salary_min_idr||0)||dateTime(b)-dateTime(a)});else result.sort(function(a,b){return dateTime(b)-dateTime(a)});state.filtered=result;state.page=1;updateFilterCount();render()}
 function updateFilterCount(){var n=activeFilterCount();$('filterCount').textContent=n?'('+n+')':''}
-function emptyHtml(title,body){return '<div class="empty"><div class="empty-icon">'+ico('search')+'</div><h3>'+esc(title)+'</h3><p>'+esc(body)+'</p><button class="btn btn-secondary btn-small" id="emptyReset" type="button">Reset filter</button></div>'}
-function card(j){var id=esc(jobKey(j)),title=esc(plain(j.position||j.title,'Lowongan tersedia')),company=esc(plain(j.company_name,'Perusahaan belum dicantumkan')),loc=esc(location(j)),cat=plain(j.job_category,'Bidang belum diketahui'),mode=workLabel(j.work_mode),type=plain(j.employment_type,'Tipe belum diketahui'),label=qLabel(j.quality_label),score=Number(j.quality_score||0),isSave=state.saved.has(jobKey(j)),out=safeUrl(j.application_url)||safeUrl(j.listing_url),source=safeUrl(j.listing_url);var initial=plain(j.company_name||j.source_name||j.title,'IL').trim().split(/\s+/).slice(0,2).map(function(s){return s.charAt(0)}).join('').toUpperCase();if(!initial)initial='IL';return '<article class="job" data-job="'+id+'"><div class="job-icon" aria-hidden="true">'+esc(initial.substring(0,2))+'</div><div class="job-main"><h3 class="job-title">'+title+'</h3><p class="company">'+company+'</p><div class="job-meta"><span class="meta-item">'+ico('pin')+loc+'</span><span class="meta-item">'+ico('clock')+esc(dateLabel(j))+'</span></div><div class="tags"><span class="tag">'+esc(cat)+'</span><span class="tag '+(remote(j)?'remote':'')+'">'+esc(mode)+'</span><span class="tag">'+esc(type)+'</span>'+(j.walk_in?'<span class="tag walkin">Walk-in</span>':'')+'</div></div><div class="job-side"><div class="salary-label">Informasi gaji</div><div class="salary-value '+(salaryKnown(j)?'':'unknown')+'">'+esc(salary(j))+'</div><div class="updated-label">Sumber: '+esc(plain(j.source_name,'Tidak diketahui'))+'</div></div><div class="job-actions"><div class="action-row"><span class="quality '+qClass(label)+'">'+label+(score?' · '+score:'')+'</span><button class="save '+(isSave?'saved':'')+'" type="button" data-save="'+id+'" title="'+(isSave?'Hapus tersimpan':'Simpan lowongan')+'" aria-label="'+(isSave?'Hapus tersimpan':'Simpan lowongan')+'">'+ico('bookmark')+'</button></div><button class="btn btn-secondary" type="button" data-detail="'+id+'">Detail lowongan</button>'+(out?'<a class="btn btn-primary" href="'+esc(out)+'" target="_blank" rel="noopener noreferrer">Lihat sumber ↗</a>':'')+'</div></article>'}
+function emptyHtml(title,body){return '<div class="empty"><div class="ei">'+ico('search')+'</div><h3>'+esc(title)+'</h3><p>'+esc(body)+'</p><button class="btn btn-small" id="emptyReset" type="button">Reset filter</button></div>'}
+function card(j){var id=esc(jobKey(j)),title=esc(plain(j.position||j.title,'Lowongan tersedia')),company=esc(plain(j.company_name,'Perusahaan belum dicantumkan')),loc=esc(location(j)),cat=plain(j.job_category,'Bidang belum diketahui'),mode=workLabel(j.work_mode),type=plain(j.employment_type,'Tipe belum diketahui'),label=qLabel(j.quality_label),score=Number(j.quality_score||0),isSave=state.saved.has(jobKey(j)),out=safeUrl(j.application_url)||safeUrl(j.listing_url);var initial=plain(j.company_name||j.source_name||j.title,'IL').trim().split(/\s+/).slice(0,2).map(function(s){return s.charAt(0)}).join('').toUpperCase();if(!initial)initial='IL';return '<article class="job" data-job="'+id+'"><div class="ji" aria-hidden="true">'+esc(initial.substring(0,2))+'</div><div class="jm"><h3 class="jt">'+title+'</h3><p class="co">'+company+'</p><div class="meta"><span class="mi">'+ico('pin')+loc+'</span><span class="mi">'+ico('clock')+esc(dateLabel(j))+'</span></div><div class="tags"><span class="tag">'+esc(cat)+'</span><span class="tag '+(remote(j)?'remote':'')+'">'+esc(mode)+'</span><span class="tag">'+esc(type)+'</span>'+(j.walk_in?'<span class="tag walkin">Walk-in</span>':'')+'</div></div><div class="sd"><div class="sdl">Informasi gaji</div><div class="sdv '+(salaryKnown(j)?'':'unknown')+'">'+esc(salary(j))+'</div><div class="src">Sumber: '+esc(plain(j.source_name,'Tidak diketahui'))+'</div></div><div class="ja"><div class="ar"><span class="q '+qClass(label)+'">'+label+(score?' · '+score:'')+'</span><button class="save '+(isSave?'saved':'')+'" type="button" data-save="'+id+'" title="'+(isSave?'Hapus tersimpan':'Simpan lowongan')+'" aria-label="'+(isSave?'Hapus tersimpan':'Simpan lowongan')+'">'+ico('bookmark')+'</button></div><button class="btn" type="button" data-detail="'+id+'">Detail</button>'+(out?'<a class="btn btn-primary" href="'+esc(out)+'" target="_blank" rel="noopener noreferrer">Lihat sumber ↗</a>':'')+'</div></article>'}
 function render(){var total=state.filtered.length,pages=Math.max(1,Math.ceil(total/PAGE_SIZE));if(state.page>pages)state.page=pages;var start=(state.page-1)*PAGE_SIZE,items=state.filtered.slice(start,start+PAGE_SIZE);$('resultCount').textContent=new Intl.NumberFormat('id-ID').format(total)+' lowongan';$('resultsTitle').textContent=state.showSaved?'Lowongan tersimpan':state.quick!=='all'?'Hasil filter':'Semua lowongan';if(!total){el.list.innerHTML=emptyHtml(state.showSaved?'Belum ada lowongan tersimpan':'Tidak ada hasil yang cocok',state.showSaved?'Simpan lowongan dengan ikon penanda agar bisa ditemukan di sini.':'Ubah kata kunci atau reset beberapa filter untuk melihat lebih banyak hasil.');$('pagination').hidden=true;var b=$('emptyReset');if(b)b.addEventListener('click',reset);return}el.list.innerHTML=items.map(card).join('');el.pagination.hidden=total<=PAGE_SIZE;$('pageSummary').textContent='Menampilkan '+(start+1)+'–'+Math.min(start+PAGE_SIZE,total)+' dari '+new Intl.NumberFormat('id-ID').format(total);$('prevPage').disabled=state.page<=1;$('nextPage').disabled=state.page>=pages;var nums='',from=Math.max(1,state.page-2),to=Math.min(pages,from+4);for(var n=from;n<=to;n++)nums+='<button class="page '+(n===state.page?'current':'')+'" data-page="'+n+'" type="button" '+(n===state.page?'aria-current="page"':'')+'>'+n+'</button>';$('pageNumbers').innerHTML=nums}
 function toggleSave(id){var key=String(id);if(state.saved.has(key))state.saved.delete(key);else state.saved.add(key);persist();apply()}
 function findJob(id){return state.all.find(function(j){return jobKey(j)===String(id)})}
-function detail(id){var j=findJob(id);if(!j)return;var title=esc(plain(j.position||j.title,'Lowongan tersedia')),company=esc(plain(j.company_name,'Perusahaan belum dicantumkan')),sourceName=esc(plain(j.source_name,'Sumber tidak diketahui')),lab=qLabel(j.quality_label),listing=safeUrl(j.listing_url),app=safeUrl(j.application_url);var rows=[['Lokasi',location(j)],['Bidang pekerjaan',plain(j.job_category,'Belum diketahui')],['Sistem kerja',workLabel(j.work_mode)],['Tipe pekerjaan',plain(j.employment_type,'Belum diketahui')],['Pendidikan minimum',plain(j.education_minimum,'Tidak dicantumkan')],['Gaji',salary(j)],['Tanggal lowongan',fmtDate(j.published_at||j.source_updated_at)],['Batas lamaran',fmtDate(j.application_deadline)],['Sumber',plain(j.source_name,'Tidak diketahui')],['Status verifikasi',plain(j.verification_status,'Belum terverifikasi')]];var h='<div class="modal-head"><div><span class="quality '+qClass(lab)+'">'+lab+' · skor '+Number(j.quality_score||0)+'/100</span><h2 class="modal-title" id="dialogTitle">'+title+'</h2><div class="modal-sub">'+company+' · '+sourceName+'</div></div><button class="close" id="closeDialog" type="button" aria-label="Tutup">'+ico('close')+'</button></div><div class="modal-body"><div class="detail-grid">'+rows.map(function(r){return '<div class="detail"><span>'+esc(r[0])+'</span><strong>'+esc(r[1])+'</strong></div>'}).join('')+'</div>';var desc=plain(j.description_excerpt,''),req=plain(j.requirements,''),flyer=plain(j.flyer_ocr_text,'');if(desc)h+='<section class="detail-section"><h3>Ringkasan lowongan</h3><p>'+esc(desc)+'</p></section>';if(req)h+='<section class="detail-section"><h3>Persyaratan</h3><p>'+esc(req)+'</p></section>';if(j.walk_in)h+='<section class="detail-section"><h3>Walk-in interview</h3><p>'+esc(fmtDate(j.walk_in_date)+' · '+plain(j.walk_in_location,'Lokasi belum dicantumkan'))+'</p></section>';if(flyer)h+='<section class="detail-section"><h3>Informasi dari poster</h3><p>'+esc(flyer)+'</p></section>';if(Array.isArray(j.risk_flags)&&j.risk_flags.length)h+='<section class="detail-section"><h3>Hal yang perlu diperiksa</h3><p>'+esc(j.risk_flags.join(' · '))+'</p></section>';if(Array.isArray(j.quality_explanation)&&j.quality_explanation.length)h+='<section class="detail-section"><h3>Catatan kualitas data</h3><p>'+esc(j.quality_explanation.join('\n'))+'</p></section>';h+='<div class="warning">Label kualitas bukan verifikasi resmi perusahaan. Periksa sumber asli, detail lowongan, dan proses lamaran sebelum mengirim data pribadi.</div><div class="modal-actions"><button class="btn btn-secondary" id="detailSave" type="button">'+ico('bookmark')+(state.saved.has(jobKey(j))?'Hapus tersimpan':'Simpan lowongan')+'</button>'+(listing?'<a class="btn btn-secondary" href="'+esc(listing)+'" target="_blank" rel="noopener noreferrer">Sumber asli ↗</a>':'')+(app?'<a class="btn btn-primary" href="'+esc(app)+'" target="_blank" rel="noopener noreferrer">Buka halaman lamaran ↗</a>':'')+'</div></div>';el.dialogContent.innerHTML=h;el.dialog.showModal();$('closeDialog').addEventListener('click',function(){el.dialog.close()});$('detailSave').addEventListener('click',function(){toggleSave(jobKey(j));detail(jobKey(j))})}
-function reset(){el.keyword.value='';el.province.value='';el.city.value='';el.category.value='';el.workMode.value='';el.employment.value='';el.education.value='';el.quality.value='';el.source.value='';el.minSalary.value='';el.salaryOnly.checked=false;el.walkinOnly.checked=false;el.includeStale.checked=false;el.sortBy.value='latest';state.showSaved=false;state.quick='all';quickUi();$('savedNav').classList.remove('btn-primary');$('savedNav').classList.add('btn-secondary');apply()}
+function detail(id){var j=findJob(id);if(!j)return;var title=esc(plain(j.position||j.title,'Lowongan tersedia')),company=esc(plain(j.company_name,'Perusahaan belum dicantumkan')),sourceName=esc(plain(j.source_name,'Sumber tidak diketahui')),lab=qLabel(j.quality_label),listing=safeUrl(j.listing_url),app=safeUrl(j.application_url);var rows=[['Lokasi',location(j)],['Bidang pekerjaan',plain(j.job_category,'Belum diketahui')],['Sistem kerja',workLabel(j.work_mode)],['Tipe pekerjaan',plain(j.employment_type,'Belum diketahui')],['Pendidikan minimum',plain(j.education_minimum,'Tidak dicantumkan')],['Gaji',salary(j)],['Tanggal lowongan',fmtDate(j.published_at||j.source_updated_at)],['Batas lamaran',fmtDate(j.application_deadline)],['Sumber',plain(j.source_name,'Tidak diketahui')],['Status verifikasi',plain(j.verification_status,'Belum terverifikasi')]];var h='<div class="mh"><div><span class="q '+qClass(lab)+'">'+lab+' · skor '+Number(j.quality_score||0)+'/100</span><h2 class="mt" id="dialogTitle">'+title+'</h2><div class="ms">'+company+' · '+sourceName+'</div></div><button class="close" id="closeDialog" type="button" aria-label="Tutup">'+ico('close')+'</button></div><div class="mb"><div class="dg">'+rows.map(function(r){return '<div class="dt"><span>'+esc(r[0])+'</span><strong>'+esc(r[1])+'</strong></div>'}).join('')+'</div>';var desc=plain(j.description_excerpt,''),req=plain(j.requirements,''),flyer=plain(j.flyer_ocr_text,'');if(desc)h+='<section class="ds"><h3>Ringkasan lowongan</h3><p>'+esc(desc)+'</p></section>';if(req)h+='<section class="ds"><h3>Persyaratan</h3><p>'+esc(req)+'</p></section>';if(j.walk_in)h+='<section class="ds"><h3>Walk-in interview</h3><p>'+esc(fmtDate(j.walk_in_date)+' · '+plain(j.walk_in_location,'Lokasi belum dicantumkan'))+'</p></section>';if(flyer)h+='<section class="ds"><h3>Informasi dari poster</h3><p>'+esc(flyer)+'</p></section>';if(Array.isArray(j.risk_flags)&&j.risk_flags.length)h+='<section class="ds"><h3>Hal yang perlu diperiksa</h3><p>'+esc(j.risk_flags.join(' · '))+'</p></section>';if(Array.isArray(j.quality_explanation)&&j.quality_explanation.length)h+='<section class="ds"><h3>Catatan kualitas data</h3><p>'+esc(j.quality_explanation.join('\n'))+'</p></section>';h+='<div class="warn">Label kualitas bukan verifikasi resmi perusahaan. Periksa sumber asli, detail lowongan, dan proses lamaran sebelum mengirim data pribadi.</div><div class="ma"><button class="btn" id="detailSave" type="button">'+ico('bookmark')+(state.saved.has(jobKey(j))?'Hapus tersimpan':'Simpan lowongan')+'</button>'+(listing?'<a class="btn" href="'+esc(listing)+'" target="_blank" rel="noopener noreferrer">Sumber asli ↗</a>':'')+(app?'<a class="btn btn-primary" href="'+esc(app)+'" target="_blank" rel="noopener noreferrer">Buka halaman lamaran ↗</a>':'')+'</div></div>';el.dialogContent.innerHTML=h;el.dialog.showModal();$('closeDialog').addEventListener('click',function(){el.dialog.close()});$('detailSave').addEventListener('click',function(){toggleSave(jobKey(j));detail(jobKey(j))})}
+function savedUi(){$('savedNav').classList.toggle('on',state.showSaved)}
+function reset(){el.keyword.value='';el.province.value='';el.city.value='';el.category.value='';el.workMode.value='';el.employment.value='';el.education.value='';el.quality.value='';el.source.value='';el.minSalary.value='';el.salaryOnly.checked=false;el.walkinOnly.checked=false;el.includeStale.checked=false;el.sortBy.value='latest';state.showSaved=false;state.quick='all';quickUi();savedUi();apply()}
 function quickUi(){document.querySelectorAll('[data-quick]').forEach(function(b){b.classList.toggle('active',b.dataset.quick===state.quick)})}
-function setQuick(v){state.quick=v;state.showSaved=false;quickUi();$('savedNav').classList.remove('btn-primary');$('savedNav').classList.add('btn-secondary');apply()}
-async function load(){var refresh=$('refreshBtn');refresh.disabled=true;refresh.textContent='Memuat…';setStatus('Menghubungkan dataset…',false);try{var payload=await getJson('data/jobs.json');var jobs=Array.isArray(payload)?payload:(payload&&Array.isArray(payload.jobs)?payload.jobs:[]);if(!Array.isArray(jobs))throw new Error('Format dataset tidak didukung');state.all=jobs.filter(function(j){return j&&typeof j==='object'});try{state.status=await getJson('data/run_status.json')}catch(e){state.status=null}try{state.locations=await getJson('config/locations.json')}catch(e){state.locations=null}options();updateStats();persist();var stamp=payload.generated_at||(state.status&&state.status.finished_at);setStatus(stamp?'Dataset siap · '+fmtDate(stamp):'Dataset terhubung',false);if(!state.all.length){el.list.innerHTML=emptyHtml('Belum ada data lowongan','Dataset terbaca tetapi belum memiliki rekaman lowongan.');return}apply()}catch(e){console.error(e);setStatus('Dataset belum dapat dimuat',true);el.list.innerHTML='<div class="empty"><div class="empty-icon">'+ico('search')+'</div><h3>Data belum bisa dimuat</h3><p>Periksa koneksi dan coba perbarui data. Website memerlukan akses ke file JSON dataset dari repository INFO LOKER.</p><button class="btn btn-primary btn-small" id="retryLoad" type="button">Coba lagi</button><p style="margin-top:12px"><a href="https://github.com/'+REPO+'/blob/main/data/jobs.json" target="_blank" rel="noopener noreferrer">Buka dataset di GitHub ↗</a></p></div>';$('retryLoad').addEventListener('click',load)}finally{refresh.disabled=false;refresh.innerHTML=ico('clock')+'Perbarui'}}
-$('searchForm').addEventListener('submit',function(e){e.preventDefault();state.showSaved=false;apply();$('lowongan').scrollIntoView({behavior:'smooth',block:'start'})});
+function setQuick(v){state.quick=v;state.showSaved=false;quickUi();savedUi();apply()}
+function goList(){$('lowongan').scrollIntoView({behavior:'smooth',block:'start'})}
+async function load(){var refresh=$('refreshBtn');refresh.disabled=true;refresh.textContent='Memuat…';setStatus('Menghubungkan dataset…',false);try{var payload=await getJson('data/jobs.json');var jobs=Array.isArray(payload)?payload:(payload&&Array.isArray(payload.jobs)?payload.jobs:[]);state.all=jobs.filter(function(j){return j&&typeof j==='object'});try{state.status=await getJson('data/run_status.json')}catch(e){state.status=null}try{state.locations=await getJson('config/locations.json')}catch(e){state.locations=null}options();updateStats();persist();var stamp=payload.generated_at||(state.status&&state.status.finished_at);setStatus(stamp?'Dataset siap · '+fmtDate(stamp):'Dataset terhubung',false);if(!state.all.length){el.list.innerHTML=emptyHtml('Belum ada data lowongan','Dataset terbaca tetapi belum memiliki rekaman lowongan.');return}apply()}catch(e){console.error(e);setStatus('Dataset belum dapat dimuat',true);el.list.innerHTML='<div class="empty"><div class="ei">'+ico('search')+'</div><h3>Data belum bisa dimuat</h3><p>Periksa koneksi dan coba perbarui data. Website memerlukan akses ke file JSON dataset dari repository INFO LOKER.</p><button class="btn btn-primary btn-small" id="retryLoad" type="button">Coba lagi</button><p style="margin-top:14px"><a href="https://github.com/'+REPO+'/blob/main/data/jobs.json" target="_blank" rel="noopener noreferrer">Buka dataset di GitHub ↗</a></p></div>';$('retryLoad').addEventListener('click',load)}finally{refresh.disabled=false;refresh.textContent='Perbarui'}}
+$('searchForm').addEventListener('submit',function(e){e.preventDefault();state.showSaved=false;savedUi();apply();goList()});
 document.querySelectorAll('[data-quick]').forEach(function(b){b.addEventListener('click',function(){setQuick(b.dataset.quick)})});
-$('toggleFilters').addEventListener('click',function(){var open=el.advanced.hidden;el.advanced.hidden=!open;$('toggleFilters').setAttribute('aria-expanded',String(open));$('toggleFilters').innerHTML=(open?ico('close'):ico('search'))+'Filter lainnya <span id="filterCount">'+(activeFilterCount()?'('+activeFilterCount()+')':'')+'</span>'});
+$('toggleFilters').addEventListener('click',function(){var open=el.advanced.hidden;el.advanced.hidden=!open;$('toggleFilters').setAttribute('aria-expanded',String(open))});
 [el.keyword,el.province,el.city,el.category,el.workMode,el.employment,el.education,el.quality,el.source,el.minSalary,el.salaryOnly,el.walkinOnly,el.includeStale,el.sortBy].forEach(function(c){c.addEventListener('input',function(){if(c===el.province){var cfg=state.locations||{};var vals=(cfg.cities||[]).filter(function(x){return !el.province.value||x.province===el.province.value}).map(function(x){return x.city||x.query});vals=unique(vals.concat(state.all.filter(function(j){return !el.province.value||j.province===el.province.value}).map(function(j){return j.city})));setOptions(el.city,vals,'Semua kota')}state.quick='all';quickUi();apply()})});
 $('resetFilters').addEventListener('click',reset);$('refreshBtn').addEventListener('click',load);
-$('savedNav').addEventListener('click',function(){state.showSaved=!state.showSaved;state.quick='all';quickUi();$('savedNav').classList.toggle('btn-primary',state.showSaved);$('savedNav').classList.toggle('btn-secondary',!state.showSaved);apply();$('lowongan').scrollIntoView({behavior:'smooth',block:'start'})});
-$('prevPage').addEventListener('click',function(){if(state.page>1){state.page--;render();$('lowongan').scrollIntoView({behavior:'smooth',block:'start'})}});$('nextPage').addEventListener('click',function(){if(state.page<Math.ceil(state.filtered.length/PAGE_SIZE)){state.page++;render();$('lowongan').scrollIntoView({behavior:'smooth',block:'start'})}});
-$('pageNumbers').addEventListener('click',function(e){var b=e.target.closest('[data-page]');if(b){state.page=Number(b.dataset.page);render();$('lowongan').scrollIntoView({behavior:'smooth',block:'start'});}});
+$('savedNav').addEventListener('click',function(){state.showSaved=!state.showSaved;state.quick='all';quickUi();savedUi();apply();goList()});
+$('prevPage').addEventListener('click',function(){if(state.page>1){state.page--;render();goList()}});$('nextPage').addEventListener('click',function(){if(state.page<Math.ceil(state.filtered.length/PAGE_SIZE)){state.page++;render();goList()}});
+$('pageNumbers').addEventListener('click',function(e){var b=e.target.closest('[data-page]');if(b){state.page=Number(b.dataset.page);render();goList()}});
 el.list.addEventListener('click',function(e){var save=e.target.closest('[data-save]');if(save){e.stopPropagation();toggleSave(save.dataset.save);return}var det=e.target.closest('[data-detail]');if(det){detail(det.dataset.detail);return}var job=e.target.closest('[data-job]');if(job&&!e.target.closest('a,button'))detail(job.dataset.job)});
 el.dialog.addEventListener('click',function(e){if(e.target===el.dialog)el.dialog.close()});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(el.dialog.open)el.dialog.close();if($('companyDialog').open)$('companyDialog').close();closeSidebar()}});
-
-
-var savedTheme='light';try{savedTheme=localStorage.getItem('info-loker-theme')==='dark'?'dark':'light'}catch(e){}setTheme(savedTheme);
-var wasDesktop=window.innerWidth>1024;
-var preferredCollapsed=false;try{preferredCollapsed=localStorage.getItem('info-loker-sidebar-collapsed')==='1'}catch(e){}
-setSidebarCollapsed(preferredCollapsed,false);
-$('desktopSidebarToggle').addEventListener('click',function(){setSidebarCollapsed(!document.documentElement.classList.contains('sidebar-collapsed'),true)});
-window.addEventListener('resize',function(){
- var nowDesktop=window.innerWidth>1024;
- if(nowDesktop===wasDesktop)return;
- wasDesktop=nowDesktop;
- closeSidebar();
- if(nowDesktop){var shouldCollapse=false;try{shouldCollapse=localStorage.getItem('info-loker-sidebar-collapsed')==='1'}catch(e){}setSidebarCollapsed(shouldCollapse,false)}
- else setSidebarCollapsed(false,false);
-});
+var savedTheme='dark';try{savedTheme=localStorage.getItem('info-loker-theme')==='light'?'light':'dark'}catch(e){}setTheme(savedTheme);
 $('themeToggle').addEventListener('click',function(){setTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark')});
-$('mobileMenuToggle').addEventListener('click',function(){var open=!$('sidebar').classList.contains('is-open');$('sidebar').classList.toggle('is-open',open);$('sidebarScrim').classList.toggle('is-open',open);$('mobileMenuToggle').setAttribute('aria-expanded',String(open));$('mobileMenuToggle').setAttribute('aria-label',open?'Tutup menu':'Buka menu');$('sidebarScrim').setAttribute('aria-hidden',String(!open));document.body.classList.toggle('sidebar-open',open)});
-$('sidebarScrim').addEventListener('click',closeSidebar);
-document.querySelectorAll('[data-side-nav]').forEach(function(link){link.addEventListener('click',function(){activateSideLink(link);closeSidebar()})});
-$('sidebarSavedNav').addEventListener('click',function(){closeSidebar();$('savedNav').click();document.querySelectorAll('[data-side-nav]').forEach(function(item){item.classList.remove('is-active')})});
-$('famousCompaniesNav').addEventListener('click',function(){closeSidebar();renderCompanies($('companyKeyword').value);$('companyDialog').showModal();$('companyKeyword').focus({preventScroll:true})});
+$('famousCompaniesNav').addEventListener('click',function(){renderCompanies($('companyKeyword').value);$('companyDialog').showModal()});
 $('closeCompanyDialog').addEventListener('click',function(){$('companyDialog').close()});
 $('companyKeyword').addEventListener('input',function(){renderCompanies(this.value)});
-$('companyGrid').addEventListener('click',function(e){var b=e.target.closest('[data-company-search]');if(!b)return;var name=b.getAttribute('data-company-search')||'';$('companyDialog').close();el.keyword.value=name;state.showSaved=false;state.quick='all';quickUi();$('savedNav').classList.remove('btn-primary');$('savedNav').classList.add('btn-secondary');apply();$('lowongan').scrollIntoView({behavior:'smooth',block:'start'})});
+$('companyGrid').addEventListener('click',function(e){var b=e.target.closest('[data-company-search]');if(!b)return;$('companyDialog').close();el.keyword.value=b.getAttribute('data-company-search')||'';state.showSaved=false;state.quick='all';quickUi();savedUi();apply();goList()});
 $('companyDialog').addEventListener('click',function(e){if(e.target===$('companyDialog'))$('companyDialog').close()});
-
-renderCompanies('');
-persist();load();
+renderCompanies('');persist();load();
+})();
+</script>
+<script>
+/* UI-only enhancements (tidak menyentuh logika data) */
+(function(){
+'use strict';
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* scroll progress */
+var bar=document.getElementById('progress');
+function onScroll(){var h=document.documentElement.scrollHeight-window.innerHeight;bar.style.transform='scaleX('+(h>0?Math.min(1,window.scrollY/h):0)+')'}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+/* reveal on scroll */
+var rev=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});rev.forEach(function(n){io.observe(n)})}else{rev.forEach(function(n){n.classList.add('in')})}
+/* spotlight di kartu */
+document.addEventListener('pointermove',function(e){var c=e.target.closest&&e.target.closest('.job,.stat,.cc,.feat');if(!c)return;var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')},{passive:true});
+/* count-up angka statistik */
+function fmt(n){return new Intl.NumberFormat('id-ID').format(n)}
+['metricTotal','metricHot','metricAreas','metricRemote'].forEach(function(id){
+ var node=document.getElementById(id);if(!node)return;var shown=node.textContent;
+ new MutationObserver(function(){
+  var t=node.textContent;if(t===shown)return;
+  var target=parseInt(String(t).replace(/\./g,''),10);
+  if(!isFinite(target)||reduce){shown=t;return}
+  var t0=performance.now(),dur=900;
+  (function step(now){var p=Math.min(1,(now-t0)/dur),v=Math.round(target*(1-Math.pow(1-p,3)));shown=fmt(v);node.textContent=shown;if(p<1)requestAnimationFrame(step)})(t0);
+ }).observe(node,{childList:true,characterData:true,subtree:true});
+});
 })();
 </script>
 </body>

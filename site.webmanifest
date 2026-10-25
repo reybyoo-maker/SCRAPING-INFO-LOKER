@@ -1,0 +1,19 @@
+{
+  "name": "INFO LOKER by Reynaldi",
+  "short_name": "INFO LOKER",
+  "description": "Cari lowongan kerja Indonesia terbaru dengan filter lokasi, bidang, gaji, dan tipe kerja.",
+  "lang": "id",
+  "start_url": "/SCRAPING-INFO-LOKER/",
+  "scope": "/SCRAPING-INFO-LOKER/",
+  "display": "standalone",
+  "background_color": "#060608",
+  "theme_color": "#060608",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
