@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb51b"/><stop offset=".48" stop-color="#ff6821"/><stop offset="1" stop-color="#ff168f"/></linearGradient><filter id="n" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="64" height="64" rx="13" fill="#050507"/>
+<g fill="none" stroke="url(#g)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#n)"><path d="M8 38 18 25Q21 21 24 25L31 35Q33 38 36 35L44 25Q47 21 50 26L56 37"/><path d="M8 47 17 42H24M35 18 43 11H48M45 19 54 22"/></g>
+<text x="32" y="40" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="19" font-weight="900" font-style="italic" fill="url(#g)" stroke="#050507" stroke-width=".5">AGA</text>
+<g fill="#ff168f"><circle cx="7" cy="48" r="4"/><circle cx="49" cy="10" r="4"/><circle cx="56" cy="22" r="4"/></g>
+</svg>
