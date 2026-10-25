@@ -31,7 +31,17 @@ await page.route("**/data/jobs.json*", async route => {
     await route.fulfill({ response });
     return;
   }
-  const baseIndex = jobs.findIndex(job => job && (job.position || job.title) && job.company_name);
+  const noiseTitles = new Set([
+    "english", "apply", "apply now", "apply here", "sign up", "sign in",
+    "see more", "see all", "view all", "read more", "learn more",
+    "lamar sekarang", "pendaftaran", "academics", "lompat ke konten utama"
+  ]);
+  const baseIndex = jobs.findIndex(job => {
+    if (!job || !(job.position || job.title) || !job.company_name) return false;
+    const title = String(job.position || job.title).normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+    return !noiseTitles.has(title);
+  });
   if (baseIndex < 0) {
     await route.fulfill({ response });
     return;
@@ -47,7 +57,43 @@ await page.route("**/data/jobs.json*", async route => {
     source_updated_at: "2099-01-01T00:00:00.000Z",
     published_at: "2099-01-01T00:00:00.000Z"
   }));
-  const expandedJobs = [...jobs.slice(0, baseIndex + 1), ...duplicates, ...jobs.slice(baseIndex + 1)];
+  const noiseFixtures = [
+    "English", "Apply", "Sign up", "See More", "Lamar sekarang",
+    "Lompat ke konten utama", "Academics", "Pendaftaran"
+  ].map((title, index) => ({
+    ...base,
+    id: `noise-fixture-${index}`,
+    collector_id: `noise-fixture-${index}`,
+    legacy_id: `noise-fixture-${index}`,
+    position: title,
+    title,
+    company_name: `Navigation Fixture ${index}`,
+    listing_url: `https://noise-fixture.invalid/jobs/${index}`,
+    application_url: `https://noise-fixture.invalid/apply/${index}`,
+    source_updated_at: "2099-01-01T00:00:00.000Z",
+    published_at: "2099-01-01T00:00:00.000Z",
+    last_seen_at: "2099-01-01T00:00:00.000Z"
+  }));
+  const sharedLandingUrl = "https://careers-fixture.invalid/careers";
+  const samePageFixtures = [
+    { title: "Network Engineer", position: "Network Engineer", id: "shared-page-role-a" },
+    { title: "Network Analyst", position: "Network Analyst", id: "shared-page-role-b" }
+  ].map((job, index) => ({
+    ...base,
+    ...job,
+    collector_id: job.id,
+    legacy_id: job.id,
+    company_name: "Shared Page Company",
+    listing_url: sharedLandingUrl,
+    application_url: sharedLandingUrl,
+    source_updated_at: "2099-01-01T00:00:00.000Z",
+    published_at: "2099-01-01T00:00:00.000Z",
+    last_seen_at: "2099-01-01T00:00:00.000Z"
+  }));
+  const expandedJobs = [
+    ...jobs.slice(0, baseIndex + 1), ...duplicates, ...samePageFixtures,
+    ...noiseFixtures, ...jobs.slice(baseIndex + 1)
+  ];
   injectedRawRecordCount = expandedJobs.length;
   const modified = Array.isArray(payload)
     ? expandedJobs
@@ -110,6 +156,23 @@ try {
   });
   assert.equal(new Set(renderedSignatures).size, renderedSignatures.length,
     "The visible job list must not show visually duplicated listings");
+  const visibleTitles = await page.locator("#jobList .jt").allTextContents();
+  const rejectedNavigationTitles = new Set([
+    "english", "apply", "sign up", "see more", "lamar sekarang",
+    "lompat ke konten utama", "academics", "pendaftaran"
+  ]);
+  assert.equal(
+    visibleTitles.some(title => rejectedNavigationTitles.has(
+      title.normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()
+    )),
+    false,
+    "Navigation and CTA text must never appear as job titles"
+  );
+  assert.ok(visibleTitles.includes("Network Engineer"),
+    "A valid role should remain visible even when its URL is a shared career landing page");
+  assert.ok(visibleTitles.includes("Network Analyst"),
+    "A second valid role on the same career landing URL must not be merged into the first");
   assert.equal(await page.locator('#source option[value="__company_sites__"]').count(), 1,
     "Source filter should include Company Sites");
   assert.equal(await page.locator('#source option[value="__job_portal__"]').count(), 1,
@@ -183,10 +246,16 @@ try {
     "The provided brand logo should load successfully");
   const smallLogoStyle = await page.locator(".top .logo").evaluate(el => ({
     width: parseFloat(getComputedStyle(el).width),
+    objectFit: getComputedStyle(el.querySelector("img")).objectFit,
     transform: getComputedStyle(el.querySelector("img")).transform
   }));
-  assert.ok(smallLogoStyle.width >= 40 && smallLogoStyle.transform !== "none",
-    "The brand logo should be enlarged enough to read clearly in the header");
+  assert.ok(smallLogoStyle.width >= 44 && smallLogoStyle.objectFit === "contain",
+    "The official AGA logo should be enlarged and fully visible without cropping");
+  assert.equal(smallLogoStyle.transform, "none",
+    "The logo artwork should not be stretched with a transform");
+  const logoSvg = await (await page.request.get(new URL("logo.svg", baseUrl).href)).text();
+  assert.match(logoSvg, /viewBox="48 63 320 234"/,
+    "The logo asset should use the close-cropped official AGA artwork");
 
   await page.setViewportSize({ width: 390, height: 844 });
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1),

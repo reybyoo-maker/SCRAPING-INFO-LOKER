@@ -114,10 +114,10 @@ h1,h2,h3{font-family:var(--fd);margin:0}
 .top{position:sticky;top:0;z-index:30;padding-top:env(safe-area-inset-top);background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:saturate(1.6) blur(16px);-webkit-backdrop-filter:saturate(1.6) blur(16px);border-bottom:1px solid var(--line)}
 .nav{height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none}
-.logo{width:38px;height:38px;border-radius:var(--r2);overflow:hidden;flex:none;background:#000;box-shadow:0 0 0 1px rgba(255,140,40,.35),0 0 20px -2px rgba(255,90,40,.55);transition:transform .4s var(--ease),box-shadow .4s}
-.logo img{display:block;width:100%;height:100%;object-fit:cover}
-.top .logo,footer .logo{width:42px;height:42px;border-radius:10px}
-.top .logo img,footer .logo img{transform:scale(1.18);transform-origin:center}
+.logo{width:52px;height:38px;border-radius:8px;overflow:hidden;flex:none;background:#000;box-shadow:0 0 0 1px rgba(255,140,40,.4),0 0 22px -2px rgba(255,90,40,.6);transition:transform .4s var(--ease),box-shadow .4s}
+.logo img{display:block;width:100%;height:100%;object-fit:contain}
+.top .logo,footer .logo{width:52px;height:38px;border-radius:8px}
+.top .logo img,footer .logo img{transform:none}
 
 .brand:hover .logo{transform:rotate(-6deg) scale(1.06);box-shadow:0 0 0 1px rgba(255,140,40,.6),0 0 28px 0 rgba(255,46,147,.6)}
 .bn{display:block;font:800 15px/1.1 var(--fd);letter-spacing:-.03em}
@@ -148,7 +148,7 @@ h1,h2,h3{font-family:var(--fd);margin:0}
 .hero-art{position:relative;display:grid;place-items:center;min-height:300px;animation:up 1s .2s var(--ease) both}
 .frame{position:relative;width:min(300px,100%);aspect-ratio:1;border-radius:22px;background:#000;padding:2px;animation:bob 6s ease-in-out infinite;box-shadow:0 30px 80px -20px rgba(255,70,50,.55),0 0 80px -10px rgba(255,46,147,.4)}
 .frame::before{content:"";position:absolute;inset:-2px;border-radius:inherit;padding:2px;background:conic-gradient(from var(--ang),transparent 0 55%,var(--g1),var(--g3) 78%,transparent);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:angle 5s linear infinite}
-.frame img{display:block;width:100%;height:100%;object-fit:cover;border-radius:20px}
+.frame img{display:block;width:100%;height:100%;object-fit:contain;border-radius:20px}
 @keyframes angle{to{--ang:360deg}}
 @keyframes bob{50%{transform:translateY(-12px)}}
 .fchip{position:absolute;display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid var(--line2);border-radius:var(--r2);background:color-mix(in srgb,var(--card) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font:600 11px var(--fm);box-shadow:var(--sh);white-space:nowrap}
@@ -286,7 +286,7 @@ dialog::backdrop{background:rgba(4,4,8,.62);backdrop-filter:blur(6px);animation:
 /* ===== responsive ===== */
 @media(max-width:1024px){.wrap{width:min(100% - 36px,1200px)}.nlinks{display:none}.agrid{grid-template-columns:repeat(3,1fr)}.hero{grid-template-columns:1fr}.hero-art{display:none}.job{grid-template-columns:48px minmax(0,1fr) 140px;grid-template-areas:"i m a" "i s a"}.ji{grid-area:i}.jm{grid-area:m}.sd{grid-area:s}.ja{grid-area:a;align-self:center}.fg{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.wrap{width:calc(100% - 28px)}.nav{height:60px}.bs{font-size:9px}.lbl{display:none}.actions{gap:6px}.actions .btn{padding:0;width:40px}.actions .btn .badge{position:absolute;top:-6px;right:-6px;min-width:18px;height:18px}.hero{padding:34px 0 22px}.sgrid{grid-template-columns:1fr 1fr}.kw,.prov,.cat,.sbtn{grid-column:1/3}.sbtn{width:100%}.field input,.field select,.control,.sort{font-size:16px}.tools{flex-direction:column;align-items:stretch}.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -4px;padding:2px 4px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chip{flex:none}.filtertoggle{width:100%}.agrid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.stat{padding:16px}.sv{font-size:24px}.rh{flex-direction:column;align-items:stretch}.ra{justify-content:space-between}.job{grid-template-columns:42px minmax(0,1fr);grid-template-areas:"i m" "s s" "a a";gap:12px 14px;padding:15px}.ji{width:42px;height:42px}.ja{flex-direction:row;flex-wrap:wrap;align-items:center}.ja .ar{width:100%}.ja .btn{width:auto;flex:1}.pg{flex-direction:column;align-items:flex-start}.dg,.cg,.fgrid{grid-template-columns:1fr}.mh,.mb{padding:16px}.mt{font-size:18px}.sec{margin-top:64px}.cta .btn{flex:1}}
-@media(max-width:380px){.sgrid{grid-template-columns:1fr}.kw,.prov,.cat,.sbtn{grid-column:1}.agrid{grid-template-columns:1fr}.logo{width:34px;height:34px}}
+@media(max-width:380px){.sgrid{grid-template-columns:1fr}.kw,.prov,.cat,.sbtn{grid-column:1}.agrid{grid-template-columns:1fr}.logo{width:44px;height:32px}.top .logo,footer .logo{width:44px;height:32px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}}
 </style>
 <script>document.documentElement.classList.add('js')</script>
@@ -463,6 +463,12 @@ function plain(v,fb){var s=String(v==null?'':v).trim();return s||fb||''}
 function safeUrl(v){if(!v)return '';try{var u=new URL(String(v));return u.protocol==='https:'||u.protocol==='http:'?u.href:''}catch(e){return ''}}
 function ico(n){var p={search:'<circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/>',pin:'<path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>',bookmark:'<path d="M6 4.8A1.8 1.8 0 0 1 7.8 3h8.4A1.8 1.8 0 0 1 18 4.8V21l-6-4-6 4z"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',briefcase:'<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/>',close:'<path d="m6 6 12 12M18 6 6 18"/>'};return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(p[n]||p.briefcase)+'</svg>'}
 function jobKey(j){return String(j.id||j.listing_url||j.title||'')}
+var NOISE_JOB_TITLES=new Set(["english","english us","indonesian","bahasa","bahasa indonesia","select language","apply","apply now","apply here","apply online","apply for this job","quick apply","sign up","sign in","sign up now","login","log in","log out","logout","register","register now","create account","see more","see all","view more","view all","show more","read more","learn more","more","details","home","about","about us","contact","contact us","privacy policy","terms and conditions","cookie policy","search","search jobs","career","careers","job","jobs","job search","job openings","join us","join our team","job alerts","corporate","academics","faculty","faculties","admission","admissions","student","students","program","programs","programmes","research","news","blog","overview","pendaftaran","daftar","masuk","lamar","lamar sekarang","lihat lowongan","lihat selengkapnya","baca selengkapnya","selengkapnya","lompat ke konten utama","skip to main content","jump to main content"]);
+ function isNoiseJobTitle(value){
+  var text=String(value==null?'':value).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('id');
+  text=text.replace(/[^a-z0-9]+/g,' ').trim();
+  return NOISE_JOB_TITLES.has(text);
+ }
 function dedupeText(v){
  var s=String(v==null?'':v).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('id').trim();
  if(!s||/^(?:unknown|not known|not specified|not available|n\/?a|none|null|undefined|[-–—]|lokasi belum diketahui|bidang belum diketahui|tipe belum diketahui|sistem kerja tidak diketahui|pendidikan belum diketahui|tidak diketahui|belum diketahui|belum dicantumkan|tidak dicantumkan|gaji tidak dicantumkan|belum tersedia)$/.test(s))return '';
@@ -513,7 +519,9 @@ function dedupeJobs(rows){
   var id=dedupeText(job.id||job.collector_id||job.legacy_id);
   var title=dedupeText(job.position||job.title),company=dedupeText(job.company_name);
   var groupKey=title&&company?title+'|'+company:'';
-  var index=url&&urls.has(url)?urls.get(url):(id&&ids.has(id)?ids.get(id):-1);
+  /* A shared ATS/career landing URL may contain multiple legitimate roles. */
+  var urlKey=url&&title?url+'|'+title+'|'+company:'';
+  var index=urlKey&&urls.has(urlKey)?urls.get(urlKey):(id&&ids.has(id)?ids.get(id):-1);
   if(index<0&&groupKey){
    var candidates=groups.get(groupKey)||[];
    for(var k=0;k<candidates.length;k++){
@@ -535,7 +543,7 @@ function dedupeJobs(rows){
    output[index]=chosen;
    if(groupKey){var known=groups.get(groupKey)||[];if(known.indexOf(index)<0){known.push(index);groups.set(groupKey,known)}}
   }
-  if(url)urls.set(url,index);
+  if(urlKey)urls.set(urlKey,index);
   if(id)ids.set(id,index);
  });
  return output;
@@ -578,7 +586,7 @@ function reset(){el.keyword.value='';el.province.value='';el.city.value='';el.ca
 function quickUi(){document.querySelectorAll('[data-quick]').forEach(function(b){b.classList.toggle('active',b.dataset.quick===state.quick)})}
 function setQuick(v){state.quick=v;state.showSaved=false;quickUi();savedUi();apply()}
 function goList(){$('lowongan').scrollIntoView({behavior:'smooth',block:'start'})}
-async function load(){var refresh=$('refreshBtn');refresh.disabled=true;refresh.textContent='Memuat…';setStatus('Menghubungkan dataset…',false);try{var payload=await getJson('data/jobs.json');var jobs=Array.isArray(payload)?payload:(payload&&Array.isArray(payload.jobs)?payload.jobs:[]);state.all=dedupeJobs(jobs.filter(function(j){return j&&typeof j==='object'}));try{state.status=await getJson('data/run_status.json')}catch(e){state.status=null}try{state.locations=await getJson('config/locations.json')}catch(e){state.locations=null}options();updateStats();persist();var stamp=payload.generated_at||(state.status&&state.status.finished_at);setStatus(stamp?'Dataset siap · '+fmtDate(stamp):'Dataset terhubung',false);if(!state.all.length){el.list.innerHTML=emptyHtml('Belum ada data lowongan','Dataset terbaca tetapi belum memiliki rekaman lowongan.');return}apply()}catch(e){console.error(e);setStatus('Dataset belum dapat dimuat',true);el.list.innerHTML='<div class="empty"><div class="ei">'+ico('search')+'</div><h3>Data belum bisa dimuat</h3><p>Periksa koneksi dan coba perbarui data. Website memerlukan akses ke file JSON dataset dari repository INFO LOKER.</p><button class="btn btn-primary btn-small" id="retryLoad" type="button">Coba lagi</button><p style="margin-top:14px"><a href="https://github.com/'+REPO+'/blob/main/data/jobs.json" target="_blank" rel="noopener noreferrer">Buka dataset di GitHub ↗</a></p></div>';$('retryLoad').addEventListener('click',load)}finally{refresh.disabled=false;refresh.textContent='Perbarui'}}
+async function load(){var refresh=$('refreshBtn');refresh.disabled=true;refresh.textContent='Memuat…';setStatus('Menghubungkan dataset…',false);try{var payload=await getJson('data/jobs.json');var jobs=Array.isArray(payload)?payload:(payload&&Array.isArray(payload.jobs)?payload.jobs:[]);state.all=dedupeJobs(jobs.filter(function(j){return j&&typeof j==='object'&&!isNoiseJobTitle(j.position||j.title)}));try{state.status=await getJson('data/run_status.json')}catch(e){state.status=null}try{state.locations=await getJson('config/locations.json')}catch(e){state.locations=null}options();updateStats();persist();var stamp=payload.generated_at||(state.status&&state.status.finished_at);setStatus(stamp?'Dataset siap · '+fmtDate(stamp):'Dataset terhubung',false);if(!state.all.length){el.list.innerHTML=emptyHtml('Belum ada data lowongan','Dataset terbaca tetapi belum memiliki rekaman lowongan.');return}apply()}catch(e){console.error(e);setStatus('Dataset belum dapat dimuat',true);el.list.innerHTML='<div class="empty"><div class="ei">'+ico('search')+'</div><h3>Data belum bisa dimuat</h3><p>Periksa koneksi dan coba perbarui data. Website memerlukan akses ke file JSON dataset dari repository INFO LOKER.</p><button class="btn btn-primary btn-small" id="retryLoad" type="button">Coba lagi</button><p style="margin-top:14px"><a href="https://github.com/'+REPO+'/blob/main/data/jobs.json" target="_blank" rel="noopener noreferrer">Buka dataset di GitHub ↗</a></p></div>';$('retryLoad').addEventListener('click',load)}finally{refresh.disabled=false;refresh.textContent='Perbarui'}}
 $('searchForm').addEventListener('submit',function(e){e.preventDefault();state.showSaved=false;savedUi();apply();goList()});
 document.querySelectorAll('[data-quick]').forEach(function(b){b.addEventListener('click',function(){setQuick(b.dataset.quick)})});
 $('toggleFilters').addEventListener('click',function(){var open=el.advanced.hidden;el.advanced.hidden=!open;$('toggleFilters').setAttribute('aria-expanded',String(open))});

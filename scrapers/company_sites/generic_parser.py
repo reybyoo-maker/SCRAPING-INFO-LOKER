@@ -9,7 +9,7 @@ from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
-from ..base import clean, parse_iso, canonical_job_type
+from ..base import clean, parse_iso, canonical_job_type, is_noise_job_title
 
 logger = logging.getLogger("info-loker.company-sites.parser")
 JOB_PATH_RE = re.compile(r"(?:career|careers|karir|karier|jobs?|lowongan|loker|vacan(?:cy|cies)?|hiring|opportunit|opening|position|requisition|job[-_/])", re.I)
@@ -39,9 +39,7 @@ class GenericCompanyParser:
         title = clean(title, 250)
         url = str(url or "").strip()
         parsed = urlparse(url)
-        if not title or len(title) < 5 or parsed.scheme != "https" or not parsed.hostname:
-            return None
-        if not JOB_TEXT_RE.search(title) and title.lower() in {"careers", "career", "jobs", "job openings", "join us", "join our team"}:
+        if not title or len(title) < 5 or is_noise_job_title(title) or parsed.scheme != "https" or not parsed.hostname:
             return None
         identity = hashlib.sha256((url + "|" + title + "|" + self.company).encode("utf-8")).hexdigest()[:16]
         posted = parse_iso(posted_at)
@@ -151,6 +149,12 @@ class GenericCompanyParser:
                 text_all = clean(node.get_text(" ", strip=True), 1600)
                 for anchor in anchors[:6]:
                     title_node = anchor.select_one("h1,h2,h3,h4,[class*='title'],[data-testid*='title'],[data-job-title]")
+                    if not title_node:
+                        parent_title_nodes = node.select("h1,h2,h3,h4,[class*='title'],[data-testid*='title'],[data-job-title]")
+                        # Job cards often keep the title as a sibling of the Apply link.
+                        # Use the parent title only when that node contains one unambiguous title.
+                        if len(parent_title_nodes) == 1:
+                            title_node = parent_title_nodes[0]
                     title = clean(title_node.get_text(" ", strip=True) if title_node else anchor.get_text(" ", strip=True), 250)
                     url = urljoin(page_url, str(anchor.get("href", "")).strip())
                     if url in seen or not title or len(title) < 5:

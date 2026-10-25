@@ -12,6 +12,7 @@ import logging
 import os
 import random
 import threading
+import unicodedata
 import time
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -50,6 +51,34 @@ def clean(value, limit: int | None = None) -> str:
     if limit is not None:
         text = text[:limit].rstrip()
     return text
+
+
+# Exact navigation/CTA labels that career-site scrapers must never publish as job titles.
+# Keep this list conservative so real roles such as "English Teacher" remain valid.
+_NOISE_JOB_TITLES = frozenset({
+    "english", "english us", "indonesian", "bahasa", "bahasa indonesia", "select language",
+    "apply", "apply now", "apply here", "apply online", "apply for this job", "quick apply",
+    "sign up", "sign in", "sign up now", "login", "log in", "log out", "logout",
+    "register", "register now", "create account",
+    "see more", "see all", "view more", "view all", "show more", "read more", "learn more",
+    "more", "details", "home", "about", "about us", "contact", "contact us",
+    "privacy policy", "terms and conditions", "cookie policy", "search", "search jobs",
+    "career", "careers", "job", "jobs", "job search", "job openings", "join us",
+    "join our team", "job alerts", "corporate", "academics", "faculty", "faculties",
+    "admission", "admissions", "student", "students", "program", "programs", "programmes",
+    "research", "news", "blog", "overview",
+    "pendaftaran", "daftar", "masuk", "lamar", "lamar sekarang", "lihat lowongan",
+    "lihat selengkapnya", "baca selengkapnya", "selengkapnya", "lompat ke konten utama",
+    "skip to main content", "jump to main content",
+})
+
+
+def is_noise_job_title(value) -> bool:
+    """Return True for exact navigation/CTA labels misread as job titles."""
+    text = unicodedata.normalize("NFKD", clean(value)).lower()
+    text = "".join(char for char in text if not unicodedata.combining(char))
+    text = " ".join("".join(char if char.isalnum() else " " for char in text).split())
+    return text in _NOISE_JOB_TITLES
 
 
 def parse_iso(value) -> str | None:

@@ -12,6 +12,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 import yaml
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
@@ -19,6 +20,8 @@ from jinja2 import Environment, FileSystemLoader, StrictUndefined
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
+
+from scrapers.base import is_noise_job_title
 
 DATA_DIR = ROOT / "data"
 JOBS_FILE = DATA_DIR / "jobs.json"
@@ -113,7 +116,7 @@ def normalize_record(original: dict, source_hint: str = "unknown") -> dict | Non
     row = dict(original)
     title = str(row.get("title") or row.get("position") or "").strip()
     url = str(row.get("url") or row.get("listing_url") or row.get("source_url") or "").strip()
-    if not title or not url:
+    if not title or is_noise_job_title(title) or not url:
         return None
 
     company = str(row.get("company") or row.get("company_name") or row.get("employer") or "").strip()
@@ -181,7 +184,35 @@ def normalize_record(original: dict, source_hint: str = "unknown") -> dict | Non
     return row
 
 
+def canonical_listing_url(value: str | None) -> str:
+    """Normalize tracking fragments/parameters without dropping job-specific query IDs."""
+    try:
+        parsed = urlsplit(str(value or "").strip())
+        if parsed.scheme.lower() not in {"http", "https"} or not parsed.hostname:
+            return ""
+        host = parsed.hostname.lower()
+        if host.startswith("www."):
+            host = host[4:]
+        try:
+            port = parsed.port
+        except ValueError:
+            return ""
+        if port and not (parsed.scheme.lower() == "https" and port == 443) and not (parsed.scheme.lower() == "http" and port == 80):
+            host = f"{host}:{port}"
+        tracking = {"fbclid", "gclid", "dclid", "mc_cid", "mc_eid", "ref_src", "source", "campaign", "trk", "tracking_id"}
+        query = [
+            (key, val)
+            for key, val in parse_qsl(parsed.query, keep_blank_values=True)
+            if not key.lower().startswith("utm_") and key.lower() not in tracking
+        ]
+        path = parsed.path.rstrip("/") or "/"
+        return urlunsplit((parsed.scheme.lower(), host, path, urlencode(sorted(query), doseq=True), ""))
+    except (TypeError, ValueError):
+        return ""
+
+
 def deduplicate(records: list[dict]) -> list[dict]:
+    """Filter navigation text and merge repeated records that resolve to the same listing URL."""
     merged = {}
     for record in records:
         if not isinstance(record, dict):
@@ -189,18 +220,27 @@ def deduplicate(records: list[dict]) -> list[dict]:
         normalized = normalize_record(record)
         if not normalized:
             continue
-        key = normalized["id"]
+        canonical_url = canonical_listing_url(normalized.get("listing_url") or normalized.get("url"))
+        # Some ATS pages reuse one landing URL for multiple job postings. Match URL
+        # plus normalized title and company so those legitimate openings stay separate.
+        title_key = slugify(str(normalized.get("title") or normalized.get("position") or ""))
+        company_key = slugify(str(normalized.get("company_name") or normalized.get("company") or ""))
+        key = f"url:{canonical_url}|{title_key}|{company_key}" if canonical_url else f"id:{normalized['id']}"
         old = merged.get(key)
         if not old:
             merged[key] = normalized
             continue
         combined = dict(old)
         for field, value in normalized.items():
+            if field in {"id", "collector_id", "legacy_id", "first_seen_at"}:
+                continue
             if value not in (None, "", []):
                 combined[field] = value
-        # Keep the earliest first-seen timestamp and the stable legacy collector key.
+        # Keep stable IDs/bookmarks and the original first-seen timestamp across refreshes.
+        combined["id"] = old.get("id") or normalized["id"]
+        combined["collector_id"] = old.get("collector_id") or normalized.get("collector_id") or combined["id"]
+        combined["legacy_id"] = old.get("legacy_id") or normalized.get("legacy_id")
         combined["first_seen_at"] = old.get("first_seen_at") or normalized.get("first_seen_at")
-        combined["collector_id"] = old.get("collector_id") or normalized.get("collector_id") or key
         merged[key] = combined
     output = list(merged.values())
     output.sort(key=lambda item: (item.get("posted_at") is not None, item.get("posted_at") or "", item.get("scraped_at") or ""), reverse=True)

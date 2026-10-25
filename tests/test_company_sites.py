@@ -71,6 +71,51 @@ class CompanyTargetConfigTests(unittest.TestCase):
         self.assertEqual(normalized["category"], "Fintech")
         self.assertEqual(normalized["source_group"], "Company Sites")
 
+    def test_generic_parser_rejects_navigation_labels_and_uses_card_title_for_apply_link(self):
+        target = {
+            "id": "example",
+            "name": "Example Indonesia",
+            "domain": "example.co.id",
+            "category": "Corporate",
+        }
+        parser = GenericCompanyParser(target)
+        for title in ("English", "Apply", "Sign up", "See More", "Lamar sekarang",
+                      "Lompat ke konten utama", "Academics", "Pendaftaran"):
+            self.assertIsNone(
+                parser._record(title, "Jakarta", "https://example.co.id/careers/jobs/cta"),
+                f"Navigation label should not become a job: {title}",
+            )
+
+        html = """
+        <html><body><main>
+          <article class="job-card">
+            <h3 class="job-title">Senior Data Engineer</h3>
+            <p>Build and maintain the company's data platform.</p>
+            <a href="/careers/jobs/senior-data-engineer">Apply</a>
+          </article>
+        </main></body></html>
+        """
+        rows = parser.parse(html, "https://example.co.id/careers")
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["title"], "Senior Data Engineer")
+
+    def test_normalizer_rejects_navigation_labels_but_keeps_real_roles(self):
+        for title in ("English", "Apply", "Sign up", "See more", "Lamar sekarang",
+                      "Lompat ke konten utama", "Academics", "Pendaftaran"):
+            self.assertIsNone(normalize_record({
+                "title": title,
+                "company_name": "Example Indonesia",
+                "listing_url": f"https://example.co.id/careers/jobs/{title.lower().replace(' ', '-')}",
+            }), f"Navigation label should be filtered: {title}")
+
+        real_role = normalize_record({
+            "title": "English Language Instructor",
+            "company_name": "Example Indonesia",
+            "listing_url": "https://example.co.id/careers/jobs/english-language-instructor",
+        })
+        self.assertIsNotNone(real_role)
+        self.assertEqual(real_role["title"], "English Language Instructor")
+
     def test_persisted_blocklist_prevents_domain_retries(self):
         with tempfile.TemporaryDirectory() as temp:
             path = Path(temp) / "blocked_domains.json"
