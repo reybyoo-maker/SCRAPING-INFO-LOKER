@@ -5,6 +5,12 @@ on:
     branches: [main]
     paths:
       - "index.html"
+      - "logo.svg"
+      - "favicon.svg"
+      - "og-image.svg"
+      - "site.webmanifest"
+      - "robots.txt"
+      - "sitemap.xml"
       - "templates/index.html.j2"
       - "data/jobs.json"
       - "data/run_status.json"
