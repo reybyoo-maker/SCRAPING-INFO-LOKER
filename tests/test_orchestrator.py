@@ -47,6 +47,45 @@ class OrchestratorSchemaTests(unittest.TestCase):
         self.assertEqual(len(result), 1)
         self.assertEqual(result[0]["salary"], "Rp5.000.000")
 
+    def test_filters_navigation_cta_titles_without_rejecting_real_job_titles(self):
+        for title in ("English", "Apply", "Sign up", "See More", "Lamar sekarang",
+                      "Lompat ke konten utama", "Academics", "Pendaftaran"):
+            self.assertIsNone(normalize_record({
+                "title": title,
+                "company_name": "Example Indonesia",
+                "listing_url": f"https://example.com/careers/jobs/{title.lower().replace(' ', '-')}",
+            }), f"CTA should not be treated as a vacancy: {title}")
+
+        self.assertIsNotNone(normalize_record({
+            "title": "Crew Outlet (PaintPro)",
+            "company_name": "Brik",
+            "listing_url": "https://example.com/careers/jobs/crew-outlet",
+        }))
+
+    def test_deduplicates_canonical_url_tracking_variants_and_preserves_source_key(self):
+        first = {
+            "id": "legacy-record-1",
+            "title": "Staff Support",
+            "company_name": "Example Indonesia",
+            "source_name": "Example Careers",
+            "listing_url": "https://www.example.com/jobs/abc?utm_source=feed#apply",
+            "last_seen_at": "2026-10-25T00:00:00Z",
+        }
+        second = {
+            "id": "legacy-record-2",
+            "title": "Staff Support",
+            "company_name": "Example Indonesia",
+            "source_name": "Example Careers",
+            "listing_url": "https://example.com/jobs/abc",
+            "salary_text": "Rp5.000.000",
+            "last_seen_at": "2026-10-25T01:00:00Z",
+        }
+        result = deduplicate([first, second])
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]["collector_id"], "legacy-record-1")
+        self.assertEqual(result[0]["salary"], "Rp5.000.000")
+        self.assertEqual(result[0]["title"], "Staff Support")
+
     def test_all_eleven_adapters_inherit_base_scraper(self):
         self.assertEqual(len(SCRAPER_CLASSES), 11)
         self.assertTrue(all(issubclass(adapter, BaseScraper) for adapter in SCRAPER_CLASSES))
