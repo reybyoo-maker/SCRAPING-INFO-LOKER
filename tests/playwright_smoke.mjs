@@ -82,9 +82,15 @@ try {
   await page.locator("#mobileMenuToggle").click();
   assert.equal(await page.locator("#sidebar").evaluate(sidebar => sidebar.classList.contains("is-open")), true,
     "Mobile menu button should open the responsive sidebar");
-  await page.locator("#sidebarScrim").click();
+  assert.equal(await page.locator("body").evaluate(body => body.classList.contains("sidebar-open")), true,
+    "Opening the mobile sidebar should lock background scrolling");
+  await page.locator("#sidebarScrim").click({ position: { x: 350, y: 400 } });
   assert.equal(await page.locator("#sidebar").evaluate(sidebar => sidebar.classList.contains("is-open")), false,
     "Backdrop should close the responsive sidebar");
+  assert.equal(await page.locator("body").evaluate(body => body.classList.contains("sidebar-open")), false,
+    "Closing the mobile sidebar should restore background scrolling");
+  assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1),
+    "Mobile layout should not create horizontal page overflow");
 
   assert.equal(pageErrors.length, 0, `Unexpected page errors: ${pageErrors.join("; ")}`);
 
