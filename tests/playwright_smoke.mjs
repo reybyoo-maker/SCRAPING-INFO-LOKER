@@ -238,7 +238,7 @@ try {
     const assetResponse = await page.request.get(new URL(asset, baseUrl).href);
     assert.equal(assetResponse.status(), 200, `The ${asset} asset should load successfully`);
   }
-  const logoState = await page.locator('img[src="logo.svg"]').first().evaluate(img => ({
+  const logoState = await page.locator('img[src^="logo.svg"]').first().evaluate(img => ({
     complete: img.complete,
     width: img.naturalWidth
   }));
@@ -254,8 +254,8 @@ try {
   assert.equal(smallLogoStyle.transform, "none",
     "The logo artwork should not be stretched with a transform");
   const logoSvg = await (await page.request.get(new URL("logo.svg", baseUrl).href)).text();
-  assert.match(logoSvg, /viewBox="48 63 320 234"/,
-    "The logo asset should use the close-cropped official AGA artwork");
+  assert.match(logoSvg, /viewBox="0 0 384 384"/,
+    "The logo asset should show the full-square official AGA artwork without cropping");
 
   await page.setViewportSize({ width: 390, height: 844 });
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1),
