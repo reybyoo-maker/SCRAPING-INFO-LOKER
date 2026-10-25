@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-25T04:22:56Z",
-  "finished_at": "2026-10-25T04:23:56Z",
+  "started_at": "2026-10-25T05:21:28Z",
+  "finished_at": "2026-10-25T05:22:26Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 713,
+      "records": 718,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 870,
-  "records_after_deduplication": 2484,
+  "records_received_this_run": 875,
+  "records_after_deduplication": 2488,
   "quality_label_counts": {
-    "HOT": 394,
-    "MEDIUM": 2090,
+    "HOT": 396,
+    "MEDIUM": 2092,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 2432,
+    "active_unverified": 2436,
     "stale": 52
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-25T04:22:56Z",
-    "finished_at": "2026-10-25T04:24:21Z",
+    "started_at": "2026-10-25T05:21:28Z",
+    "finished_at": "2026-10-25T05:22:53Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,15 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Maumere",
-        "keyword_query": "walk in interview"
+        "location_query": "Nabire",
+        "keyword_query": "lowongan kerja"
       },
       "dealls": {
-        "status": "no_records",
-        "records_accepted": 0,
-        "reason": "Parser returned zero records; the page may be JavaScript-rendered, the search URL may have changed, or selectors/JSON-LD may need updating. Source remains enabled for the next scheduled retry.",
-        "location_query": "Pontianak",
-        "keyword_query": "loker terbaru"
+        "status": "ok",
+        "records_accepted": 18,
+        "location_query": "Salatiga",
+        "keyword_query": "rekrutmen"
       },
       "maganghub": {
         "status": "blocked",
@@ -125,7 +124,7 @@
         "retry_on_next_scheduled_run": true
       }
     },
-    "additional_records": 15,
+    "additional_records": 33,
     "company_site_records": 0,
     "company_sites": {
       "status": "skipped",
@@ -134,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 2484,
+    "records_after_deduplication": 2488,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498028,
-    "elapsed_seconds": 84.99
+    "hourly_rotation_slot": 498029,
+    "elapsed_seconds": 85.23
   },
   "company_sites": {
     "status": "skipped",
