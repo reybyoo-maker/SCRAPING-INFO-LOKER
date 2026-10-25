@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-25T11:18:07Z",
-  "finished_at": "2026-10-25T11:19:01Z",
+  "started_at": "2026-10-25T12:20:34Z",
+  "finished_at": "2026-10-25T12:21:28Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 476,
+      "records": 486,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -19,7 +19,7 @@
     "public_apis": {
       "jobicy": {
         "status": "ok",
-        "items_received": 196,
+        "items_received": 197,
         "records_accepted": 106
       },
       "remoteok": {
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 637,
-  "records_after_deduplication": 2591,
+  "records_received_this_run": 647,
+  "records_after_deduplication": 2594,
   "quality_label_counts": {
     "HOT": 468,
-    "MEDIUM": 2123,
+    "MEDIUM": 2126,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 2546,
+    "active_unverified": 2549,
     "stale": 45
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-25T11:18:07Z",
-    "finished_at": "2026-10-25T11:19:32Z",
+    "started_at": "2026-10-25T12:20:34Z",
+    "finished_at": "2026-10-25T12:21:53Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Sumbawa",
-        "keyword_query": "operator produksi"
+        "location_query": "Tanjung Balai",
+        "keyword_query": "warehouse"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Indonesia",
-        "keyword_query": "sales"
+        "location_query": "Sumatera Selatan",
+        "keyword_query": "marketing"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 2591,
+    "records_after_deduplication": 2594,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498035,
-    "elapsed_seconds": 84.85
+    "hourly_rotation_slot": 498036,
+    "elapsed_seconds": 79.57
   },
   "company_sites": {
     "status": "skipped",
