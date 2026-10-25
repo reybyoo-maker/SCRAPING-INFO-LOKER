@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-10-24T23:14:28Z",
-  "finished_at": "2026-10-24T23:15:23Z",
+  "started_at": "2026-10-25T00:17:43Z",
+  "finished_at": "2026-10-25T00:18:37Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 472,
+      "records": 709,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 2,
-      "batch_start": 1125
+      "run_slot": 0,
+      "batch_start": 1182
     },
     "public_apis": {
       "jobicy": {
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 631,
-  "records_after_deduplication": 789,
+  "records_received_this_run": 868,
+  "records_after_deduplication": 994,
   "quality_label_counts": {
-    "HOT": 200,
-    "MEDIUM": 589,
+    "HOT": 209,
+    "MEDIUM": 785,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 781,
+    "active_unverified": 986,
     "stale": 8
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-24T23:14:27Z",
-    "finished_at": "2026-10-24T23:15:43Z",
+    "started_at": "2026-10-25T00:17:43Z",
+    "finished_at": "2026-10-25T00:18:59Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,15 +108,15 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Gianyar",
-        "keyword_query": "finance"
+        "location_query": "Karawang",
+        "keyword_query": "programmer"
       },
       "dealls": {
         "status": "no_records",
         "records_accepted": 0,
         "reason": "Parser returned zero records; the page may be JavaScript-rendered, the search URL may have changed, or selectors/JSON-LD may need updating. Source remains enabled for the next scheduled retry.",
-        "location_query": "Madiun",
-        "keyword_query": "data analyst"
+        "location_query": "Manokwari",
+        "keyword_query": "magang"
       },
       "maganghub": {
         "status": "blocked",
@@ -126,9 +126,9 @@
       }
     },
     "additional_records": 15,
-    "records_after_deduplication": 789,
+    "records_after_deduplication": 994,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498023,
-    "elapsed_seconds": 75.38
+    "hourly_rotation_slot": 498024,
+    "elapsed_seconds": 76.26
   }
 }
