@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-25T12:20:34Z",
-  "finished_at": "2026-10-25T12:21:28Z",
+  "started_at": "2026-10-25T13:24:55Z",
+  "finished_at": "2026-10-25T13:25:50Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 486,
+      "records": 471,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -19,8 +19,8 @@
     "public_apis": {
       "jobicy": {
         "status": "ok",
-        "items_received": 197,
-        "records_accepted": 106
+        "items_received": 198,
+        "records_accepted": 107
       },
       "remoteok": {
         "status": "ok",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 647,
-  "records_after_deduplication": 2594,
+  "records_received_this_run": 633,
+  "records_after_deduplication": 2599,
   "quality_label_counts": {
-    "HOT": 468,
-    "MEDIUM": 2126,
+    "HOT": 469,
+    "MEDIUM": 2130,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 2549,
+    "active_unverified": 2554,
     "stale": 45
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-25T12:20:34Z",
-    "finished_at": "2026-10-25T12:21:53Z",
+    "started_at": "2026-10-25T13:24:55Z",
+    "finished_at": "2026-10-25T13:26:14Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Tanjung Balai",
-        "keyword_query": "warehouse"
+        "location_query": "Tegal",
+        "keyword_query": "sales"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Sumatera Selatan",
-        "keyword_query": "marketing"
+        "location_query": "Jawa Tengah",
+        "keyword_query": "finance"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 2594,
+    "records_after_deduplication": 2599,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498036,
-    "elapsed_seconds": 79.57
+    "hourly_rotation_slot": 498037,
+    "elapsed_seconds": 79.35
   },
   "company_sites": {
     "status": "skipped",
