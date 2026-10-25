@@ -13,6 +13,7 @@ page.on("pageerror", error => pageErrors.push(error.message));
 // must collapse them before metrics, filtering, pagination, and rendering.
 let injectedRawRecordCount = 0;
 let duplicateFixtureInjected = false;
+const crossCompanyTitle = "Cross-company duplicate fixture";
 await page.route("**/data/jobs.json*", async route => {
   const response = await route.fetch();
   if (!response.ok()) {
@@ -90,9 +91,37 @@ await page.route("**/data/jobs.json*", async route => {
     published_at: "2099-01-01T00:00:00.000Z",
     last_seen_at: "2099-01-01T00:00:00.000Z"
   }));
+
+  // A feed can repeat a role with inconsistent company names. Identical source,
+  // location, pay, and role metadata should still collapse into one visible card.
+  const crossCompanyFixtures = ["Fixture Company A", "Fixture Company B"].map((company_name, index) => ({
+    ...base,
+    id: `cross-company-dedupe-${index}`,
+    collector_id: `cross-company-dedupe-${index}`,
+    legacy_id: `cross-company-dedupe-${index}`,
+    title: crossCompanyTitle,
+    position: crossCompanyTitle,
+    company_name,
+    source_name: "Dealls",
+    source: "Dealls",
+    listing_url: `https://cross-company-fixture.invalid/jobs/${index}`,
+    application_url: `https://cross-company-fixture.invalid/apply/${index}`,
+    city: "Tangerang",
+    province: "Banten",
+    location_label: "Tangerang, Banten",
+    job_category: "Retail",
+    employment_type: "intern",
+    work_mode: "onsite",
+    salary_text: "Rp2.500.000 – 3.000.000",
+    salary_min_idr: 2500000,
+    salary_max_idr: 3000000,
+    source_updated_at: "2099-01-01T00:00:00.000Z",
+    published_at: "2099-01-01T00:00:00.000Z",
+    last_seen_at: "2099-01-01T00:00:00.000Z"
+  }));
   const expandedJobs = [
     ...jobs.slice(0, baseIndex + 1), ...duplicates, ...samePageFixtures,
-    ...noiseFixtures, ...jobs.slice(baseIndex + 1)
+    ...crossCompanyFixtures, ...noiseFixtures, ...jobs.slice(baseIndex + 1)
   ];
   injectedRawRecordCount = expandedJobs.length;
   const modified = Array.isArray(payload)
@@ -157,6 +186,8 @@ try {
   assert.equal(new Set(renderedSignatures).size, renderedSignatures.length,
     "The visible job list must not show visually duplicated listings");
   const visibleTitles = await page.locator("#jobList .jt").allTextContents();
+  assert.equal(visibleTitles.filter(title => title === crossCompanyTitle).length, 1,
+    "Near-duplicate roles with the same source, location, and salary must render only once even if employer text changes");
   const rejectedNavigationTitles = new Set([
     "english", "apply", "sign up", "see more", "lamar sekarang",
     "lompat ke konten utama", "academics", "pendaftaran"
@@ -254,8 +285,8 @@ try {
   assert.equal(smallLogoStyle.transform, "none",
     "The logo artwork should not be stretched with a transform");
   const logoSvg = await (await page.request.get(new URL("logo.svg", baseUrl).href)).text();
-  assert.match(logoSvg, /viewBox="0 0 384 384"/,
-    "The logo asset should show the full-square official AGA artwork without cropping");
+  assert.match(logoSvg, /width="512" height="380" viewBox="12 55 360 275"/,
+    "The logo SVG should crop excess black padding so the official AGA artwork is legible in the navbar");
 
   await page.setViewportSize({ width: 390, height: 844 });
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1),

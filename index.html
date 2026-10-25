@@ -495,16 +495,31 @@ function dedupeSalary(j){
 }
 function sameVisibleListing(a,b){
  var titleA=dedupeText(a.position||a.title),titleB=dedupeText(b.position||b.title);
+ if(!titleA||titleA!==titleB)return false;
  var companyA=dedupeText(a.company_name),companyB=dedupeText(b.company_name);
- if(!titleA||!companyA||titleA!==titleB||companyA!==companyB)return false;
- var pairs=[
-  [dedupeLocation(a),dedupeLocation(b)],
-  [dedupeText(a.job_category),dedupeText(b.job_category)],
-  [dedupeText(a.employment_type),dedupeText(b.employment_type)],
-  [dedupeText(a.work_mode),dedupeText(b.work_mode)],
-  [dedupeSalary(a),dedupeSalary(b)]
+ var locA=dedupeLocation(a),locB=dedupeLocation(b);
+ var salaryA=dedupeSalary(a),salaryB=dedupeSalary(b);
+ var categoryA=dedupeText(a.job_category),categoryB=dedupeText(b.job_category);
+ var employmentA=dedupeText(a.employment_type),employmentB=dedupeText(b.employment_type);
+ var modeA=dedupeText(a.work_mode),modeB=dedupeText(b.work_mode);
+ var detailPairs=[
+  [locA,locB],
+  [categoryA,categoryB],
+  [employmentA,employmentB],
+  [modeA,modeB],
+  [salaryA,salaryB]
  ];
- return pairs.every(function(pair){return !pair[0]||!pair[1]||pair[0]===pair[1]});
+ var detailsCompatible=detailPairs.every(function(pair){return !pair[0]||!pair[1]||pair[0]===pair[1]});
+ if(companyA&&companyA===companyB&&detailsCompatible)return true;
+ /* Some feed rows repeat the same role/location/pay but carry inconsistent company names.
+    Collapse those only when source, known location, and known salary all match. */
+ var sourceA=dedupeText(a.source_name||a.source),sourceB=dedupeText(b.source_name||b.source);
+ if(!sourceA||sourceA!==sourceB||!locA||locA!==locB||!salaryA||salaryA!==salaryB)return false;
+ return [
+  [categoryA,categoryB],
+  [employmentA,employmentB],
+  [modeA,modeB]
+ ].every(function(pair){return !pair[0]||!pair[1]||pair[0]===pair[1]});
 }
 function jobCompleteness(j){
  var fields=['listing_url','application_url','city','province','location_label','job_category','employment_type','education_minimum','work_mode','salary_text','salary_min_idr','salary_max_idr','description_excerpt','requirements','published_at','application_deadline','verification_status','company_name'];
@@ -518,7 +533,7 @@ function dedupeJobs(rows){
   var url=canonicalJobUrl(job.listing_url)||canonicalJobUrl(job.application_url);
   var id=dedupeText(job.id||job.collector_id||job.legacy_id);
   var title=dedupeText(job.position||job.title),company=dedupeText(job.company_name);
-  var groupKey=title&&company?title+'|'+company:'';
+  var groupKey=title||'';
   /* A shared ATS/career landing URL may contain multiple legitimate roles. */
   var urlKey=url&&title?url+'|'+title+'|'+company:'';
   var index=urlKey&&urls.has(urlKey)?urls.get(urlKey):(id&&ids.has(id)?ids.get(id):-1);
