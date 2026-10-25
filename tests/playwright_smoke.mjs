@@ -74,9 +74,25 @@ await page.route("**/data/jobs.json*", async route => {
     published_at: "2099-01-01T00:00:00.000Z",
     last_seen_at: "2099-01-01T00:00:00.000Z"
   }));
+  const sharedLandingUrl = "https://careers-fixture.invalid/careers";
+  const samePageFixtures = [
+    { title: "Network Engineer", position: "Network Engineer", id: "shared-page-role-a" },
+    { title: "Network Analyst", position: "Network Analyst", id: "shared-page-role-b" }
+  ].map((job, index) => ({
+    ...base,
+    ...job,
+    collector_id: job.id,
+    legacy_id: job.id,
+    company_name: "Shared Page Company",
+    listing_url: sharedLandingUrl,
+    application_url: sharedLandingUrl,
+    source_updated_at: "2099-01-01T00:00:00.000Z",
+    published_at: "2099-01-01T00:00:00.000Z",
+    last_seen_at: "2099-01-01T00:00:00.000Z"
+  }));
   const expandedJobs = [
-    ...jobs.slice(0, baseIndex + 1), ...duplicates, ...noiseFixtures,
-    ...jobs.slice(baseIndex + 1)
+    ...jobs.slice(0, baseIndex + 1), ...duplicates, ...samePageFixtures,
+    ...noiseFixtures, ...jobs.slice(baseIndex + 1)
   ];
   injectedRawRecordCount = expandedJobs.length;
   const modified = Array.isArray(payload)
@@ -153,6 +169,10 @@ try {
     false,
     "Navigation and CTA text must never appear as job titles"
   );
+  assert.ok(visibleTitles.includes("Network Engineer"),
+    "A valid role should remain visible even when its URL is a shared career landing page");
+  assert.ok(visibleTitles.includes("Network Analyst"),
+    "A second valid role on the same career landing URL must not be merged into the first");
   assert.equal(await page.locator('#source option[value="__company_sites__"]').count(), 1,
     "Source filter should include Company Sites");
   assert.equal(await page.locator('#source option[value="__job_portal__"]').count(), 1,
