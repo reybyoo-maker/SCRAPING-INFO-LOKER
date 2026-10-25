@@ -96,7 +96,7 @@ try {
     "Detail dialog close button should close the dialog");
 
   // Check that the supplied logo assets load when available in the served tree.
-  const logoState = await page.locator('img[src="logo.jpg"]').first().evaluate(img => ({
+  const logoState = await page.locator('img[src="logo.svg"]').first().evaluate(img => ({
     complete: img.complete,
     width: img.naturalWidth
   }));
