@@ -519,7 +519,9 @@ function dedupeJobs(rows){
   var id=dedupeText(job.id||job.collector_id||job.legacy_id);
   var title=dedupeText(job.position||job.title),company=dedupeText(job.company_name);
   var groupKey=title&&company?title+'|'+company:'';
-  var index=url&&urls.has(url)?urls.get(url):(id&&ids.has(id)?ids.get(id):-1);
+  /* A shared ATS/career landing URL may contain multiple legitimate roles. */
+  var urlKey=url&&title?url+'|'+title+'|'+company:'';
+  var index=urlKey&&urls.has(urlKey)?urls.get(urlKey):(id&&ids.has(id)?ids.get(id):-1);
   if(index<0&&groupKey){
    var candidates=groups.get(groupKey)||[];
    for(var k=0;k<candidates.length;k++){
@@ -541,7 +543,7 @@ function dedupeJobs(rows){
    output[index]=chosen;
    if(groupKey){var known=groups.get(groupKey)||[];if(known.indexOf(index)<0){known.push(index);groups.set(groupKey,known)}}
   }
-  if(url)urls.set(url,index);
+  if(urlKey)urls.set(urlKey,index);
   if(id)ids.set(id,index);
  });
  return output;
