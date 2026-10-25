@@ -1,0 +1,3494 @@
+# Curated Indonesian employers. career_url is the first candidate; discovery validates it against robots.txt and live HTTP content.
+# career_url_verified=true marks a publicly identified official careers page; false means the official site is scanned for supported career routes.
+version: 1
+run_every_hours: 6
+max_workers: 8
+max_requests_per_domain_per_run: 50
+min_seconds_between_requests_per_domain: 2
+max_sitemap_jobs_per_target: 20
+user_agent: "InfoLokerBot/1.0 (+https://github.com/reybyoo-maker/SCRAPING-INFO-LOKER)"
+targets:
+  - id: "bca"
+    name: "BCA"
+    domain: "bca.co.id"
+    website: "https://bca.co.id/"
+    career_url: "https://karir.bca.co.id/"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+    specific_parser: "bca"
+  - id: "bank-mandiri"
+    name: "Bank Mandiri"
+    domain: "bankmandiri.co.id"
+    website: "https://bankmandiri.co.id/"
+    career_url: "https://www.bankmandiri.co.id/karir"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+    specific_parser: "mandiri"
+  - id: "bni"
+    name: "BNI"
+    domain: "bni.co.id"
+    website: "https://bni.co.id/"
+    career_url: "https://recruitment.bni.co.id/"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+    specific_parser: "bni"
+  - id: "bri"
+    name: "BRI"
+    domain: "bri.co.id"
+    website: "https://bri.co.id/"
+    career_url: "https://e-recruitment.bri.co.id/"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+    specific_parser: "bri"
+  - id: "cimb-niaga"
+    name: "CIMB Niaga"
+    domain: "cimbniaga.co.id"
+    website: "https://cimbniaga.co.id/"
+    career_url: "https://cimbniaga.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "permatabank"
+    name: "PermataBank"
+    domain: "permatabank.com"
+    website: "https://permatabank.com/"
+    career_url: "https://permatabank.com/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-danamon"
+    name: "Bank Danamon"
+    domain: "danamon.co.id"
+    website: "https://danamon.co.id/"
+    career_url: "https://danamon.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "btn"
+    name: "BTN"
+    domain: "btn.co.id"
+    website: "https://btn.co.id/"
+    career_url: "https://btn.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-mega"
+    name: "Bank Mega"
+    domain: "bankmega.com"
+    website: "https://bankmega.com/"
+    career_url: "https://bankmega.com/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-syariah-indonesia"
+    name: "Bank Syariah Indonesia"
+    domain: "bankbsi.co.id"
+    website: "https://bankbsi.co.id/"
+    career_url: "https://bankbsi.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-jago"
+    name: "Bank Jago"
+    domain: "jago.com"
+    website: "https://jago.com/"
+    career_url: "https://jago.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "seabank-indonesia"
+    name: "SeaBank Indonesia"
+    domain: "seabank.co.id"
+    website: "https://seabank.co.id/"
+    career_url: "https://seabank.co.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "allo-bank"
+    name: "Allo Bank"
+    domain: "allobank.com"
+    website: "https://allobank.com/"
+    career_url: "https://allobank.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "kredivo"
+    name: "Kredivo"
+    domain: "kredivo.com"
+    website: "https://kredivo.com/"
+    career_url: "https://kredivo.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "akulaku"
+    name: "Akulaku"
+    domain: "akulaku.com"
+    website: "https://akulaku.com/"
+    career_url: "https://akulaku.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "xendit"
+    name: "Xendit"
+    domain: "xendit.co"
+    website: "https://xendit.co/"
+    career_url: "https://xendit.co/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "midtrans"
+    name: "Midtrans"
+    domain: "midtrans.com"
+    website: "https://midtrans.com/"
+    career_url: "https://midtrans.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "flip"
+    name: "Flip"
+    domain: "flip.id"
+    website: "https://flip.id/"
+    career_url: "https://flip.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "ovo"
+    name: "OVO"
+    domain: "ovo.id"
+    website: "https://ovo.id/"
+    career_url: "https://ovo.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "dana"
+    name: "DANA"
+    domain: "dana.id"
+    website: "https://dana.id/"
+    career_url: "https://dana.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "gopay"
+    name: "GoPay"
+    domain: "gopay.co.id"
+    website: "https://gopay.co.id/"
+    career_url: "https://gopay.co.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "linkaja"
+    name: "LinkAja"
+    domain: "linkaja.id"
+    website: "https://linkaja.id/"
+    career_url: "https://linkaja.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "amartha"
+    name: "Amartha"
+    domain: "amartha.com"
+    website: "https://amartha.com/"
+    career_url: "https://amartha.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "investree"
+    name: "Investree"
+    domain: "investree.id"
+    website: "https://investree.id/"
+    career_url: "https://investree.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "ocbc-indonesia"
+    name: "OCBC Indonesia"
+    domain: "ocbc.id"
+    website: "https://ocbc.id/"
+    career_url: "https://ocbc.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "maybank-indonesia"
+    name: "Maybank Indonesia"
+    domain: "maybank.co.id"
+    website: "https://maybank.co.id/"
+    career_url: "https://maybank.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "uob-indonesia"
+    name: "UOB Indonesia"
+    domain: "uob.co.id"
+    website: "https://uob.co.id/"
+    career_url: "https://uob.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "hsbc-indonesia"
+    name: "HSBC Indonesia"
+    domain: "hsbc.co.id"
+    website: "https://hsbc.co.id/"
+    career_url: "https://hsbc.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "dbs-indonesia"
+    name: "DBS Indonesia"
+    domain: "dbs.com"
+    website: "https://dbs.com/"
+    career_url: "https://dbs.com/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "standard-chartered-indonesia"
+    name: "Standard Chartered Indonesia"
+    domain: "sc.com"
+    website: "https://sc.com/"
+    career_url: "https://sc.com/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "paninbank"
+    name: "PaninBank"
+    domain: "panin.co.id"
+    website: "https://panin.co.id/"
+    career_url: "https://panin.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "btpn"
+    name: "BTPN"
+    domain: "btpn.com"
+    website: "https://btpn.com/"
+    career_url: "https://btpn.com/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "blu-by-bca-digital"
+    name: "blu by BCA Digital"
+    domain: "blubybcadigital.id"
+    website: "https://blubybcadigital.id/"
+    career_url: "https://blubybcadigital.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "bank-muamalat"
+    name: "Bank Muamalat"
+    domain: "bankmuamalat.co.id"
+    website: "https://bankmuamalat.co.id/"
+    career_url: "https://bankmuamalat.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-mandiri-taspen"
+    name: "Bank Mandiri Taspen"
+    domain: "bankmantap.co.id"
+    website: "https://bankmantap.co.id/"
+    career_url: "https://bankmantap.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-bjb"
+    name: "Bank BJB"
+    domain: "bankbjb.co.id"
+    website: "https://bankbjb.co.id/"
+    career_url: "https://bankbjb.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-jatim"
+    name: "Bank Jatim"
+    domain: "bankjatim.co.id"
+    website: "https://bankjatim.co.id/"
+    career_url: "https://bankjatim.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-jateng"
+    name: "Bank Jateng"
+    domain: "bankjateng.co.id"
+    website: "https://bankjateng.co.id/"
+    career_url: "https://bankjateng.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-sumut"
+    name: "Bank Sumut"
+    domain: "banksumut.co.id"
+    website: "https://banksumut.co.id/"
+    career_url: "https://banksumut.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-nagari"
+    name: "Bank Nagari"
+    domain: "banknagari.co.id"
+    website: "https://banknagari.co.id/"
+    career_url: "https://banknagari.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-sulselbar"
+    name: "Bank Sulselbar"
+    domain: "banksulselbar.co.id"
+    website: "https://banksulselbar.co.id/"
+    career_url: "https://banksulselbar.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-ntb-syariah"
+    name: "Bank NTB Syariah"
+    domain: "bankntbsyariah.co.id"
+    website: "https://bankntbsyariah.co.id/"
+    career_url: "https://bankntbsyariah.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "j-trust-bank-indonesia"
+    name: "J Trust Bank Indonesia"
+    domain: "jtbank.co.id"
+    website: "https://jtbank.co.id/"
+    career_url: "https://jtbank.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-sinarmas"
+    name: "Bank Sinarmas"
+    domain: "banksinarmas.com"
+    website: "https://banksinarmas.com/"
+    career_url: "https://banksinarmas.com/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-victoria"
+    name: "Bank Victoria"
+    domain: "bankvictoria.co.id"
+    website: "https://bankvictoria.co.id/"
+    career_url: "https://bankvictoria.co.id/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "bank-mayapada"
+    name: "Bank Mayapada"
+    domain: "bankmayapada.com"
+    website: "https://bankmayapada.com/"
+    career_url: "https://bankmayapada.com/careers"
+    career_url_verified: false
+    category: "Bank & Fintech"
+    enabled: true
+  - id: "ajaib"
+    name: "Ajaib"
+    domain: "ajaib.co.id"
+    website: "https://ajaib.co.id/"
+    career_url: "https://ajaib.co.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "bibit"
+    name: "Bibit"
+    domain: "bibit.id"
+    website: "https://bibit.id/"
+    career_url: "https://bibit.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "bareksa"
+    name: "Bareksa"
+    domain: "bareksa.com"
+    website: "https://bareksa.com/"
+    career_url: "https://bareksa.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "pintu"
+    name: "Pintu"
+    domain: "pintu.co.id"
+    website: "https://pintu.co.id/"
+    career_url: "https://pintu.co.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "indodax"
+    name: "Indodax"
+    domain: "indodax.com"
+    website: "https://indodax.com/"
+    career_url: "https://indodax.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "reku"
+    name: "Reku"
+    domain: "reku.id"
+    website: "https://reku.id/"
+    career_url: "https://reku.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "pluang"
+    name: "Pluang"
+    domain: "pluang.com"
+    website: "https://pluang.com/"
+    career_url: "https://pluang.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "doku"
+    name: "DOKU"
+    domain: "doku.com"
+    website: "https://doku.com/"
+    career_url: "https://doku.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "paper-id"
+    name: "Paper.id"
+    domain: "paper.id"
+    website: "https://paper.id/"
+    career_url: "https://paper.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "bukuwarung"
+    name: "BukuWarung"
+    domain: "bukuwarung.com"
+    website: "https://bukuwarung.com/"
+    career_url: "https://bukuwarung.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "fazz"
+    name: "Fazz"
+    domain: "fazz.com"
+    website: "https://fazz.com/"
+    career_url: "https://fazz.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "aspire"
+    name: "Aspire"
+    domain: "aspireapp.com"
+    website: "https://aspireapp.com/"
+    career_url: "https://aspireapp.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "nium"
+    name: "Nium"
+    domain: "nium.com"
+    website: "https://nium.com/"
+    career_url: "https://nium.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "ottodigital"
+    name: "OttoDigital"
+    domain: "ottodigital.id"
+    website: "https://ottodigital.id/"
+    career_url: "https://ottodigital.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "telkom-indonesia"
+    name: "Telkom Indonesia"
+    domain: "telkom.co.id"
+    website: "https://telkom.co.id/"
+    career_url: "https://careers.telkom.co.id/"
+    career_url_verified: false
+    category: "Telecom"
+    enabled: true
+    specific_parser: "telkom"
+  - id: "telkomsel"
+    name: "Telkomsel"
+    domain: "telkomsel.com"
+    website: "https://telkomsel.com/"
+    career_url: "https://www.telkomsel.com/about-us/career"
+    career_url_verified: false
+    category: "Telecom"
+    enabled: true
+    specific_parser: "telkomsel"
+  - id: "indosat-ooredoo-hutchison"
+    name: "Indosat Ooredoo Hutchison"
+    domain: "ioh.co.id"
+    website: "https://ioh.co.id/"
+    career_url: "https://ioh.co.id/careers"
+    career_url_verified: false
+    category: "Telecom"
+    enabled: true
+  - id: "xl-axiata"
+    name: "XL Axiata"
+    domain: "xl.co.id"
+    website: "https://xl.co.id/"
+    career_url: "https://xl.co.id/careers"
+    career_url_verified: false
+    category: "Telecom"
+    enabled: true
+  - id: "smartfren"
+    name: "Smartfren"
+    domain: "smartfren.com"
+    website: "https://smartfren.com/"
+    career_url: "https://smartfren.com/careers"
+    career_url_verified: false
+    category: "Telecom"
+    enabled: true
+  - id: "biznet"
+    name: "Biznet"
+    domain: "biznetnetworks.com"
+    website: "https://biznetnetworks.com/"
+    career_url: "https://biznetnetworks.com/careers"
+    career_url_verified: false
+    category: "Telecom"
+    enabled: true
+  - id: "iconnet"
+    name: "ICONNET"
+    domain: "iconnet.id"
+    website: "https://iconnet.id/"
+    career_url: "https://iconnet.id/careers"
+    career_url_verified: false
+    category: "Telecom"
+    enabled: true
+  - id: "myrepublic-indonesia"
+    name: "MyRepublic Indonesia"
+    domain: "myrepublic.co.id"
+    website: "https://myrepublic.co.id/"
+    career_url: "https://myrepublic.co.id/careers"
+    career_url_verified: false
+    category: "Telecom"
+    enabled: true
+  - id: "gojek"
+    name: "Gojek"
+    domain: "gojek.com"
+    website: "https://gojek.com/"
+    career_url: "https://www.gojek.com/careers/"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+    specific_parser: "gojek"
+  - id: "tokopedia"
+    name: "Tokopedia"
+    domain: "tokopedia.com"
+    website: "https://tokopedia.com/"
+    career_url: "https://careers.tokopedia.com/"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+    specific_parser: "tokopedia"
+  - id: "traveloka"
+    name: "Traveloka"
+    domain: "traveloka.com"
+    website: "https://traveloka.com/"
+    career_url: "https://careers.traveloka.com/jobs"
+    career_url_verified: true
+    category: "Startup"
+    enabled: true
+    specific_parser: "traveloka"
+  - id: "bukalapak"
+    name: "Bukalapak"
+    domain: "bukalapak.com"
+    website: "https://bukalapak.com/"
+    career_url: "https://careers.bukalapak.com/"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+    specific_parser: "bukalapak"
+  - id: "blibli"
+    name: "Blibli"
+    domain: "blibli.com"
+    website: "https://blibli.com/"
+    career_url: "https://careers.blibli.com/"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+    specific_parser: "blibli"
+  - id: "shopee-indonesia"
+    name: "Shopee Indonesia"
+    domain: "shopee.co.id"
+    website: "https://shopee.co.id/"
+    career_url: "https://careers.shopee.co.id/"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+    specific_parser: "shopee"
+  - id: "lazada-indonesia"
+    name: "Lazada Indonesia"
+    domain: "lazada.co.id"
+    website: "https://lazada.co.id/"
+    career_url: "https://lazada.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "tiket-com"
+    name: "Tiket.com"
+    domain: "tiket.com"
+    website: "https://tiket.com/"
+    career_url: "https://tiket.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "halodoc"
+    name: "Halodoc"
+    domain: "halodoc.com"
+    website: "https://halodoc.com/"
+    career_url: "https://halodoc.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "alodokter"
+    name: "Alodokter"
+    domain: "alodokter.com"
+    website: "https://alodokter.com/"
+    career_url: "https://alodokter.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "ruangguru"
+    name: "Ruangguru"
+    domain: "ruangguru.com"
+    website: "https://ruangguru.com/"
+    career_url: "https://ruangguru.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "zenius"
+    name: "Zenius"
+    domain: "zenius.net"
+    website: "https://zenius.net/"
+    career_url: "https://zenius.net/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "sirclo"
+    name: "SIRCLO"
+    domain: "sirclo.com"
+    website: "https://sirclo.com/"
+    career_url: "https://sirclo.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "mekari"
+    name: "Mekari"
+    domain: "mekari.com"
+    website: "https://mekari.com/"
+    career_url: "https://mekari.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "jojonomic"
+    name: "Jojonomic"
+    domain: "jojonomic.com"
+    website: "https://jojonomic.com/"
+    career_url: "https://jojonomic.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "talenta"
+    name: "Talenta"
+    domain: "talenta.co"
+    website: "https://talenta.co/"
+    career_url: "https://talenta.co/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "glints-indonesia"
+    name: "Glints Indonesia"
+    domain: "glints.com"
+    website: "https://glints.com/"
+    career_url: "https://glints.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "kalibrr"
+    name: "Kalibrr"
+    domain: "kalibrr.com"
+    website: "https://kalibrr.com/"
+    career_url: "https://kalibrr.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "kumparan"
+    name: "Kumparan"
+    domain: "kumparan.com"
+    website: "https://kumparan.com/"
+    career_url: "https://kumparan.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "detik-com"
+    name: "Detik.com"
+    domain: "detik.com"
+    website: "https://detik.com/"
+    career_url: "https://detik.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "kompas-com"
+    name: "Kompas.com"
+    domain: "kompas.com"
+    website: "https://kompas.com/"
+    career_url: "https://kompas.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "kaskus"
+    name: "KASKUS"
+    domain: "kaskus.co.id"
+    website: "https://kaskus.co.id/"
+    career_url: "https://kaskus.co.id/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "tanihub"
+    name: "TaniHub"
+    domain: "tanihub.com"
+    website: "https://tanihub.com/"
+    career_url: "https://tanihub.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "sayurbox"
+    name: "Sayurbox"
+    domain: "sayurbox.com"
+    website: "https://sayurbox.com/"
+    career_url: "https://sayurbox.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "aruna"
+    name: "Aruna"
+    domain: "aruna.id"
+    website: "https://aruna.id/"
+    career_url: "https://aruna.id/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "fishlog"
+    name: "FishLog"
+    domain: "fishlog.co.id"
+    website: "https://fishlog.co.id/"
+    career_url: "https://fishlog.co.id/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "efishery"
+    name: "eFishery"
+    domain: "efishery.com"
+    website: "https://efishery.com/"
+    career_url: "https://efishery.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "grab-indonesia"
+    name: "Grab Indonesia"
+    domain: "grab.com"
+    website: "https://grab.com/"
+    career_url: "https://grab.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "sociolla"
+    name: "Sociolla"
+    domain: "sociolla.com"
+    website: "https://sociolla.com/"
+    career_url: "https://sociolla.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "idn-media"
+    name: "IDN Media"
+    domain: "idn.media"
+    website: "https://idn.media/"
+    career_url: "https://idn.media/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "mamikos"
+    name: "Mamikos"
+    domain: "mamikos.com"
+    website: "https://mamikos.com/"
+    career_url: "https://mamikos.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "evermos"
+    name: "Evermos"
+    domain: "evermos.com"
+    website: "https://evermos.com/"
+    career_url: "https://evermos.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "julo"
+    name: "JULO"
+    domain: "julo.co.id"
+    website: "https://julo.co.id/"
+    career_url: "https://julo.co.id/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "koinworks"
+    name: "KoinWorks"
+    domain: "koinworks.com"
+    website: "https://koinworks.com/"
+    career_url: "https://koinworks.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "privy"
+    name: "Privy"
+    domain: "privy.id"
+    website: "https://privy.id/"
+    career_url: "https://privy.id/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "moka"
+    name: "Moka"
+    domain: "moka.tech"
+    website: "https://moka.tech/"
+    career_url: "https://moka.tech/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "mileapp"
+    name: "MileApp"
+    domain: "mile.app"
+    website: "https://mile.app/"
+    career_url: "https://mile.app/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "j-t-express"
+    name: "J&T Express"
+    domain: "jet.co.id"
+    website: "https://jet.co.id/"
+    career_url: "https://jet.co.id/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "jne"
+    name: "JNE"
+    domain: "jne.co.id"
+    website: "https://jne.co.id/"
+    career_url: "https://jne.co.id/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "sicepat"
+    name: "SiCepat"
+    domain: "sicepat.com"
+    website: "https://sicepat.com/"
+    career_url: "https://sicepat.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "anteraja"
+    name: "Anteraja"
+    domain: "anteraja.id"
+    website: "https://anteraja.id/"
+    career_url: "https://anteraja.id/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "ninja-xpress"
+    name: "Ninja Xpress"
+    domain: "ninjaxpress.co"
+    website: "https://ninjaxpress.co/"
+    career_url: "https://ninjaxpress.co/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "astra-international"
+    name: "Astra International"
+    domain: "astra.co.id"
+    website: "https://astra.co.id/"
+    career_url: "https://career.astra.co.id/"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+    specific_parser: "astra"
+  - id: "salim-group"
+    name: "Salim Group"
+    domain: "salimgroup.com"
+    website: "https://salimgroup.com/"
+    career_url: "https://salimgroup.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "djarum"
+    name: "Djarum"
+    domain: "djarum.com"
+    website: "https://djarum.com/"
+    career_url: "https://djarum.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "sinar-mas"
+    name: "Sinar Mas"
+    domain: "sinarmas.com"
+    website: "https://sinarmas.com/"
+    career_url: "https://sinarmas.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "lippo-group"
+    name: "Lippo Group"
+    domain: "lippo.com"
+    website: "https://lippo.com/"
+    career_url: "https://lippo.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "ciputra-group"
+    name: "Ciputra Group"
+    domain: "ciputra.com"
+    website: "https://ciputra.com/"
+    career_url: "https://ciputra.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "agung-sedayu-group"
+    name: "Agung Sedayu Group"
+    domain: "agungsedayu.com"
+    website: "https://agungsedayu.com/"
+    career_url: "https://agungsedayu.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "wings-group"
+    name: "Wings Group"
+    domain: "wingscorp.com"
+    website: "https://wingscorp.com/"
+    career_url: "https://wingscorp.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "mayora-indah"
+    name: "Mayora Indah"
+    domain: "mayoraindah.co.id"
+    website: "https://mayoraindah.co.id/"
+    career_url: "https://www.mayoraindah.co.id/"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+    specific_parser: "mayora"
+  - id: "indofood"
+    name: "Indofood"
+    domain: "indofood.com"
+    website: "https://indofood.com/"
+    career_url: "https://www.indofood.com/"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+    specific_parser: "indofood"
+  - id: "unilever-indonesia"
+    name: "Unilever Indonesia"
+    domain: "unilever.co.id"
+    website: "https://unilever.co.id/"
+    career_url: "https://careers.unilever.com/indonesia"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+    specific_parser: "unilever"
+  - id: "nestle-indonesia"
+    name: "Nestlé Indonesia"
+    domain: "nestle.co.id"
+    website: "https://nestle.co.id/"
+    career_url: "https://nestle.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "hm-sampoerna"
+    name: "HM Sampoerna"
+    domain: "sampoerna.com"
+    website: "https://sampoerna.com/"
+    career_url: "https://sampoerna.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "gudang-garam"
+    name: "Gudang Garam"
+    domain: "gudanggaramtbk.com"
+    website: "https://gudanggaramtbk.com/"
+    career_url: "https://gudanggaramtbk.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "ct-corp"
+    name: "CT Corp"
+    domain: "ctcorpora.com"
+    website: "https://ctcorpora.com/"
+    career_url: "https://ctcorpora.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "mnc-group"
+    name: "MNC Group"
+    domain: "mncgroup.com"
+    website: "https://mncgroup.com/"
+    career_url: "https://mncgroup.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "emtek"
+    name: "Emtek"
+    domain: "emtek.co.id"
+    website: "https://emtek.co.id/"
+    career_url: "https://emtek.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "bakrie-group"
+    name: "Bakrie Group"
+    domain: "bakrieglobal.com"
+    website: "https://bakrieglobal.com/"
+    career_url: "https://bakrieglobal.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "barito-pacific"
+    name: "Barito Pacific"
+    domain: "barito-pacific.com"
+    website: "https://barito-pacific.com/"
+    career_url: "https://barito-pacific.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "kawan-lama-group"
+    name: "Kawan Lama Group"
+    domain: "kawanlamagroup.com"
+    website: "https://kawanlamagroup.com/"
+    career_url: "https://kawanlamagroup.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "kapal-api-global"
+    name: "Kapal Api Global"
+    domain: "kapalapiglobal.com"
+    website: "https://kapalapiglobal.com/"
+    career_url: "https://kapalapiglobal.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "polytron"
+    name: "Polytron"
+    domain: "polytron.co.id"
+    website: "https://polytron.co.id/"
+    career_url: "https://polytron.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "pertamina"
+    name: "Pertamina"
+    domain: "pertamina.com"
+    website: "https://pertamina.com/"
+    career_url: "https://recruitment.pertamina.com/"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+    specific_parser: "pertamina"
+  - id: "pln"
+    name: "PLN"
+    domain: "pln.co.id"
+    website: "https://pln.co.id/"
+    career_url: "https://rekrutmen.pln.co.id/vacancy/"
+    career_url_verified: true
+    category: "BUMN"
+    enabled: true
+    specific_parser: "pln"
+  - id: "pupuk-indonesia"
+    name: "Pupuk Indonesia"
+    domain: "pupuk-indonesia.com"
+    website: "https://pupuk-indonesia.com/"
+    career_url: "https://pupuk-indonesia.com/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "krakatau-steel"
+    name: "Krakatau Steel"
+    domain: "krakatausteel.com"
+    website: "https://krakatausteel.com/"
+    career_url: "https://krakatausteel.com/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "antam"
+    name: "ANTAM"
+    domain: "antam.com"
+    website: "https://antam.com/"
+    career_url: "https://antam.com/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "bukit-asam"
+    name: "Bukit Asam"
+    domain: "ptba.co.id"
+    website: "https://ptba.co.id/"
+    career_url: "https://ptba.co.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "garuda-indonesia"
+    name: "Garuda Indonesia"
+    domain: "garuda-indonesia.com"
+    website: "https://garuda-indonesia.com/"
+    career_url: "https://garuda-indonesia.com/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "injourney-airports"
+    name: "InJourney Airports"
+    domain: "injourneyairports.id"
+    website: "https://injourneyairports.id/"
+    career_url: "https://injourneyairports.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "pelindo"
+    name: "Pelindo"
+    domain: "pelindo.co.id"
+    website: "https://pelindo.co.id/"
+    career_url: "https://pelindo.co.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "jasa-marga"
+    name: "Jasa Marga"
+    domain: "jasamarga.com"
+    website: "https://jasamarga.com/"
+    career_url: "https://jasamarga.com/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "waskita-karya"
+    name: "Waskita Karya"
+    domain: "waskita.co.id"
+    website: "https://waskita.co.id/"
+    career_url: "https://waskita.co.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "wijaya-karya"
+    name: "Wijaya Karya"
+    domain: "wika.co.id"
+    website: "https://wika.co.id/"
+    career_url: "https://wika.co.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "hutama-karya"
+    name: "Hutama Karya"
+    domain: "hutamakarya.com"
+    website: "https://hutamakarya.com/"
+    career_url: "https://hutamakarya.com/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "pp-persero"
+    name: "PP (Persero)"
+    domain: "ptpp.co.id"
+    website: "https://ptpp.co.id/"
+    career_url: "https://ptpp.co.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "brantas-abipraya"
+    name: "Brantas Abipraya"
+    domain: "brantas-abipraya.co.id"
+    website: "https://brantas-abipraya.co.id/"
+    career_url: "https://brantas-abipraya.co.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "bio-farma"
+    name: "Bio Farma"
+    domain: "biofarma.co.id"
+    website: "https://biofarma.co.id/"
+    career_url: "https://biofarma.co.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "kimia-farma"
+    name: "Kimia Farma"
+    domain: "kimiafarma.co.id"
+    website: "https://kimiafarma.co.id/"
+    career_url: "https://kimiafarma.co.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "indofarma"
+    name: "Indofarma"
+    domain: "indofarma.id"
+    website: "https://indofarma.id/"
+    career_url: "https://indofarma.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "kai"
+    name: "KAI"
+    domain: "kai.id"
+    website: "https://kai.id/"
+    career_url: "https://kai.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "kai-commuter"
+    name: "KAI Commuter"
+    domain: "commuterline.id"
+    website: "https://commuterline.id/"
+    career_url: "https://commuterline.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "pos-indonesia"
+    name: "Pos Indonesia"
+    domain: "posindonesia.co.id"
+    website: "https://posindonesia.co.id/"
+    career_url: "https://posindonesia.co.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "peruri"
+    name: "Peruri"
+    domain: "peruri.co.id"
+    website: "https://peruri.co.id/"
+    career_url: "https://peruri.co.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "perum-bulog"
+    name: "Perum Bulog"
+    domain: "bulog.co.id"
+    website: "https://bulog.co.id/"
+    career_url: "https://bulog.co.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "asdp-indonesia-ferry"
+    name: "ASDP Indonesia Ferry"
+    domain: "asdp.id"
+    website: "https://asdp.id/"
+    career_url: "https://asdp.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "damri"
+    name: "DAMRI"
+    domain: "damri.co.id"
+    website: "https://damri.co.id/"
+    career_url: "https://damri.co.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "jasa-raharja"
+    name: "Jasa Raharja"
+    domain: "jasaraharja.co.id"
+    website: "https://jasaraharja.co.id/"
+    career_url: "https://jasaraharja.co.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "indonesia-financial-group"
+    name: "Indonesia Financial Group"
+    domain: "ifg.id"
+    website: "https://ifg.id/"
+    career_url: "https://ifg.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "bank-indonesia"
+    name: "Bank Indonesia"
+    domain: "bi.go.id"
+    website: "https://bi.go.id/"
+    career_url: "https://bi.go.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "bpjs-ketenagakerjaan"
+    name: "BPJS Ketenagakerjaan"
+    domain: "bpjsketenagakerjaan.go.id"
+    website: "https://bpjsketenagakerjaan.go.id/"
+    career_url: "https://bpjsketenagakerjaan.go.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "bpjs-kesehatan"
+    name: "BPJS Kesehatan"
+    domain: "bpjs-kesehatan.go.id"
+    website: "https://bpjs-kesehatan.go.id/"
+    career_url: "https://bpjs-kesehatan.go.id/careers"
+    career_url_verified: false
+    category: "BUMN"
+    enabled: true
+  - id: "toyota-astra-motor"
+    name: "Toyota Astra Motor"
+    domain: "toyota.astra.co.id"
+    website: "https://toyota.astra.co.id/"
+    career_url: "https://toyota.astra.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "honda-indonesia"
+    name: "Honda Indonesia"
+    domain: "honda-indonesia.com"
+    website: "https://honda-indonesia.com/"
+    career_url: "https://honda-indonesia.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "daihatsu-indonesia"
+    name: "Daihatsu Indonesia"
+    domain: "daihatsu.co.id"
+    website: "https://daihatsu.co.id/"
+    career_url: "https://daihatsu.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "suzuki-indonesia"
+    name: "Suzuki Indonesia"
+    domain: "suzuki.co.id"
+    website: "https://suzuki.co.id/"
+    career_url: "https://suzuki.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "mitsubishi-motors-indonesia"
+    name: "Mitsubishi Motors Indonesia"
+    domain: "mitsubishi-motors.co.id"
+    website: "https://mitsubishi-motors.co.id/"
+    career_url: "https://mitsubishi-motors.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "panasonic-indonesia"
+    name: "Panasonic Indonesia"
+    domain: "panasonic.com"
+    website: "https://panasonic.com/"
+    career_url: "https://panasonic.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "lg-electronics-indonesia"
+    name: "LG Electronics Indonesia"
+    domain: "lg.com"
+    website: "https://lg.com/"
+    career_url: "https://lg.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "samsung-indonesia"
+    name: "Samsung Indonesia"
+    domain: "samsung.com"
+    website: "https://samsung.com/"
+    career_url: "https://samsung.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "sharp-indonesia"
+    name: "Sharp Indonesia"
+    domain: "id.sharp"
+    website: "https://id.sharp/"
+    career_url: "https://id.sharp/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "freeport-indonesia"
+    name: "Freeport Indonesia"
+    domain: "fcx.com"
+    website: "https://fcx.com/"
+    career_url: "https://ptfi.co.id/id/career"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+    specific_parser: "freeport"
+  - id: "medcoenergi"
+    name: "MedcoEnergi"
+    domain: "medcoenergi.com"
+    website: "https://medcoenergi.com/"
+    career_url: "https://medcoenergi.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "adaro"
+    name: "Adaro"
+    domain: "adaro.com"
+    website: "https://adaro.com/"
+    career_url: "https://adaro.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "bayan-resources"
+    name: "Bayan Resources"
+    domain: "bayan.com.sg"
+    website: "https://bayan.com.sg/"
+    career_url: "https://bayan.com.sg/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "vale-indonesia"
+    name: "Vale Indonesia"
+    domain: "vale.com"
+    website: "https://vale.com/"
+    career_url: "https://vale.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "pupuk-kaltim"
+    name: "Pupuk Kaltim"
+    domain: "pupukkaltim.com"
+    website: "https://pupukkaltim.com/"
+    career_url: "https://pupukkaltim.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "chandra-asri-pacific"
+    name: "Chandra Asri Pacific"
+    domain: "chandra-asri.com"
+    website: "https://chandra-asri.com/"
+    career_url: "https://chandra-asri.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "indocement"
+    name: "Indocement"
+    domain: "indocement.co.id"
+    website: "https://indocement.co.id/"
+    career_url: "https://indocement.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "semen-indonesia-group"
+    name: "Semen Indonesia Group"
+    domain: "sig.id"
+    website: "https://sig.id/"
+    career_url: "https://sig.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "semen-padang"
+    name: "Semen Padang"
+    domain: "semenpadang.co.id"
+    website: "https://semenpadang.co.id/"
+    career_url: "https://semenpadang.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "semen-baturaja"
+    name: "Semen Baturaja"
+    domain: "semenbaturaja.co.id"
+    website: "https://semenbaturaja.co.id/"
+    career_url: "https://semenbaturaja.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "krakatau-posco"
+    name: "Krakatau Posco"
+    domain: "krakatauposco.co.id"
+    website: "https://krakatauposco.co.id/"
+    career_url: "https://krakatauposco.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "pt-timah"
+    name: "PT Timah"
+    domain: "timah.com"
+    website: "https://timah.com/"
+    career_url: "https://timah.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "inalum"
+    name: "INALUM"
+    domain: "inalum.id"
+    website: "https://inalum.id/"
+    career_url: "https://inalum.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "elnusa"
+    name: "Elnusa"
+    domain: "elnusa.co.id"
+    website: "https://elnusa.co.id/"
+    career_url: "https://elnusa.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "pertamina-geothermal-energy"
+    name: "Pertamina Geothermal Energy"
+    domain: "pge.pertamina.com"
+    website: "https://pge.pertamina.com/"
+    career_url: "https://pge.pertamina.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "united-tractors"
+    name: "United Tractors"
+    domain: "unitedtractors.com"
+    website: "https://unitedtractors.com/"
+    career_url: "https://unitedtractors.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "trakindo"
+    name: "Trakindo"
+    domain: "trakindo.co.id"
+    website: "https://trakindo.co.id/"
+    career_url: "https://trakindo.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "schneider-electric-indonesia"
+    name: "Schneider Electric Indonesia"
+    domain: "se.com"
+    website: "https://se.com/"
+    career_url: "https://se.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "siemens-indonesia"
+    name: "Siemens Indonesia"
+    domain: "siemens.com"
+    website: "https://siemens.com/"
+    career_url: "https://siemens.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "abb-indonesia"
+    name: "ABB Indonesia"
+    domain: "global.abb"
+    website: "https://global.abb/"
+    career_url: "https://global.abb/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "mitsubishi-electric-indonesia"
+    name: "Mitsubishi Electric Indonesia"
+    domain: "mitsubishielectric.co.id"
+    website: "https://mitsubishielectric.co.id/"
+    career_url: "https://mitsubishielectric.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "hitachi-indonesia"
+    name: "Hitachi Indonesia"
+    domain: "hitachi.com"
+    website: "https://hitachi.com/"
+    career_url: "https://hitachi.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "ge-vernova"
+    name: "GE Vernova"
+    domain: "gevernova.com"
+    website: "https://gevernova.com/"
+    career_url: "https://gevernova.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "wilmar-indonesia"
+    name: "Wilmar Indonesia"
+    domain: "wilmar-international.com"
+    website: "https://wilmar-international.com/"
+    career_url: "https://wilmar-international.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "musim-mas"
+    name: "Musim Mas"
+    domain: "musimmas.com"
+    website: "https://musimmas.com/"
+    career_url: "https://musimmas.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "smart-tbk"
+    name: "SMART Tbk"
+    domain: "smart-tbk.com"
+    website: "https://smart-tbk.com/"
+    career_url: "https://smart-tbk.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "japfa"
+    name: "Japfa"
+    domain: "japfa.com"
+    website: "https://japfa.com/"
+    career_url: "https://japfa.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "charoen-pokphand-indonesia"
+    name: "Charoen Pokphand Indonesia"
+    domain: "cp.co.id"
+    website: "https://cp.co.id/"
+    career_url: "https://cp.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "great-giant-foods"
+    name: "Great Giant Foods"
+    domain: "greatgiantfoods.com"
+    website: "https://greatgiantfoods.com/"
+    career_url: "https://greatgiantfoods.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "sampoerna-agro"
+    name: "Sampoerna Agro"
+    domain: "sampoernaagro.com"
+    website: "https://sampoernaagro.com/"
+    career_url: "https://sampoernaagro.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "london-sumatra"
+    name: "London Sumatra"
+    domain: "lonsum.com"
+    website: "https://lonsum.com/"
+    career_url: "https://lonsum.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "alfamart"
+    name: "Alfamart"
+    domain: "alfamart.co.id"
+    website: "https://alfamart.co.id/"
+    career_url: "https://alfamart.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "indomaret"
+    name: "Indomaret"
+    domain: "indomaret.co.id"
+    website: "https://indomaret.co.id/"
+    career_url: "https://indomaret.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "transmart"
+    name: "Transmart"
+    domain: "transmart.co.id"
+    website: "https://transmart.co.id/"
+    career_url: "https://transmart.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "hypermart"
+    name: "Hypermart"
+    domain: "hypermart.co.id"
+    website: "https://hypermart.co.id/"
+    career_url: "https://hypermart.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "guardian-indonesia"
+    name: "Guardian Indonesia"
+    domain: "guardianindonesia.co.id"
+    website: "https://guardianindonesia.co.id/"
+    career_url: "https://guardianindonesia.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "watsons-indonesia"
+    name: "Watsons Indonesia"
+    domain: "watsons.co.id"
+    website: "https://watsons.co.id/"
+    career_url: "https://watsons.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "azko-ex-ace-hardware"
+    name: "AZKO (ex Ace Hardware)"
+    domain: "azko.id"
+    website: "https://azko.id/"
+    career_url: "https://azko.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "informa"
+    name: "Informa"
+    domain: "informa.co.id"
+    website: "https://informa.co.id/"
+    career_url: "https://informa.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "erafone"
+    name: "Erafone"
+    domain: "erafone.com"
+    website: "https://erafone.com/"
+    career_url: "https://erafone.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "electronic-city"
+    name: "Electronic City"
+    domain: "electronic-city.com"
+    website: "https://electronic-city.com/"
+    career_url: "https://electronic-city.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "matahari-department-store"
+    name: "Matahari Department Store"
+    domain: "matahari.com"
+    website: "https://matahari.com/"
+    career_url: "https://matahari.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "ramayana"
+    name: "Ramayana"
+    domain: "ramayana.co.id"
+    website: "https://ramayana.co.id/"
+    career_url: "https://ramayana.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "mitra-adiperkasa"
+    name: "Mitra Adiperkasa"
+    domain: "map.co.id"
+    website: "https://map.co.id/"
+    career_url: "https://map.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "erajaya-group"
+    name: "Erajaya Group"
+    domain: "erajaya.com"
+    website: "https://erajaya.com/"
+    career_url: "https://erajaya.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "circle-k-indonesia"
+    name: "Circle K Indonesia"
+    domain: "circlekindonesia.com"
+    website: "https://circlekindonesia.com/"
+    career_url: "https://circlekindonesia.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "super-indo"
+    name: "Super Indo"
+    domain: "superindo.co.id"
+    website: "https://superindo.co.id/"
+    career_url: "https://superindo.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "ranch-market"
+    name: "Ranch Market"
+    domain: "ranchmarket.co.id"
+    website: "https://ranchmarket.co.id/"
+    career_url: "https://ranchmarket.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "lotte-mart-indonesia"
+    name: "LOTTE Mart Indonesia"
+    domain: "lottemart.co.id"
+    website: "https://lottemart.co.id/"
+    career_url: "https://lottemart.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "ikea-indonesia"
+    name: "IKEA Indonesia"
+    domain: "ikea.co.id"
+    website: "https://ikea.co.id/"
+    career_url: "https://ikea.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "mr-diy-indonesia"
+    name: "MR.DIY Indonesia"
+    domain: "mrdiy.com"
+    website: "https://mrdiy.com/"
+    career_url: "https://mrdiy.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "uniqlo-indonesia"
+    name: "Uniqlo Indonesia"
+    domain: "uniqlo.com"
+    website: "https://uniqlo.com/"
+    career_url: "https://uniqlo.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "h-m-indonesia"
+    name: "H&M Indonesia"
+    domain: "hm.com"
+    website: "https://hm.com/"
+    career_url: "https://hm.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "decathlon-indonesia"
+    name: "Decathlon Indonesia"
+    domain: "decathlon.co.id"
+    website: "https://decathlon.co.id/"
+    career_url: "https://decathlon.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "j-co-donuts"
+    name: "J.CO Donuts"
+    domain: "jcodonuts.com"
+    website: "https://jcodonuts.com/"
+    career_url: "https://jcodonuts.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "kfc-indonesia"
+    name: "KFC Indonesia"
+    domain: "kfcku.com"
+    website: "https://kfcku.com/"
+    career_url: "https://kfcku.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "mcdonald-s-indonesia"
+    name: "McDonald's Indonesia"
+    domain: "mcdonalds.co.id"
+    website: "https://mcdonalds.co.id/"
+    career_url: "https://mcdonalds.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "pizza-hut-indonesia"
+    name: "Pizza Hut Indonesia"
+    domain: "pizzahut.co.id"
+    website: "https://pizzahut.co.id/"
+    career_url: "https://pizzahut.co.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "kopi-kenangan"
+    name: "Kopi Kenangan"
+    domain: "kopikenangan.com"
+    website: "https://kopikenangan.com/"
+    career_url: "https://kopikenangan.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "fore-coffee"
+    name: "Fore Coffee"
+    domain: "fore.coffee"
+    website: "https://fore.coffee/"
+    career_url: "https://fore.coffee/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "jiwa-group"
+    name: "JiWa Group"
+    domain: "jiwagroup.com"
+    website: "https://jiwagroup.com/"
+    career_url: "https://jiwagroup.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "ismaya-group"
+    name: "Ismaya Group"
+    domain: "ismayanas.com"
+    website: "https://ismayanas.com/"
+    career_url: "https://ismayanas.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "boga-group"
+    name: "Boga Group"
+    domain: "bogagroup.id"
+    website: "https://bogagroup.id/"
+    career_url: "https://bogagroup.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "map-boga-adiperkasa"
+    name: "MAP Boga Adiperkasa"
+    domain: "mapbogagroup.com"
+    website: "https://mapbogagroup.com/"
+    career_url: "https://mapbogagroup.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "garudafood"
+    name: "Garudafood"
+    domain: "garudafood.com"
+    website: "https://garudafood.com/"
+    career_url: "https://garudafood.com/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "ot-group"
+    name: "OT Group"
+    domain: "ot.id"
+    website: "https://ot.id/"
+    career_url: "https://ot.id/careers"
+    career_url_verified: false
+    category: "Retail"
+    enabled: true
+  - id: "siloam-hospitals"
+    name: "Siloam Hospitals"
+    domain: "siloamhospitals.com"
+    website: "https://siloamhospitals.com/"
+    career_url: "https://siloamhospitals.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "rs-pondok-indah-group"
+    name: "RS Pondok Indah Group"
+    domain: "rspondokindah.co.id"
+    website: "https://rspondokindah.co.id/"
+    career_url: "https://rspondokindah.co.id/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "bundamedik"
+    name: "Bundamedik"
+    domain: "bundamedik.com"
+    website: "https://bundamedik.com/"
+    career_url: "https://bundamedik.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "kalbe-farma"
+    name: "Kalbe Farma"
+    domain: "kalbe.co.id"
+    website: "https://kalbe.co.id/"
+    career_url: "https://www.kalbe.co.id/career"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+    specific_parser: "kalbe"
+  - id: "tempo-scan-group"
+    name: "Tempo Scan Group"
+    domain: "temposcangroup.com"
+    website: "https://temposcangroup.com/"
+    career_url: "https://temposcangroup.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "dexa-group"
+    name: "Dexa Group"
+    domain: "dexagroup.com"
+    website: "https://dexagroup.com/"
+    career_url: "https://dexagroup.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "prodia"
+    name: "Prodia"
+    domain: "prodia.co.id"
+    website: "https://prodia.co.id/"
+    career_url: "https://prodia.co.id/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "kimia-farma-diagnostika"
+    name: "Kimia Farma Diagnostika"
+    domain: "kimiafarmadiagnostika.co.id"
+    website: "https://kimiafarmadiagnostika.co.id/"
+    career_url: "https://kimiafarmadiagnostika.co.id/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "mitra-keluarga"
+    name: "Mitra Keluarga"
+    domain: "mitrakeluarga.com"
+    website: "https://mitrakeluarga.com/"
+    career_url: "https://mitrakeluarga.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "hermina-hospitals"
+    name: "Hermina Hospitals"
+    domain: "herminahospitals.com"
+    website: "https://herminahospitals.com/"
+    career_url: "https://herminahospitals.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "mayapada-hospital"
+    name: "Mayapada Hospital"
+    domain: "mayapadahospital.com"
+    website: "https://mayapadahospital.com/"
+    career_url: "https://mayapadahospital.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "primaya-hospital"
+    name: "Primaya Hospital"
+    domain: "primayahospital.com"
+    website: "https://primayahospital.com/"
+    career_url: "https://primayahospital.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "eka-hospital"
+    name: "Eka Hospital"
+    domain: "ekahospital.com"
+    website: "https://ekahospital.com/"
+    career_url: "https://ekahospital.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "emc-healthcare"
+    name: "EMC Healthcare"
+    domain: "emc.id"
+    website: "https://emc.id/"
+    career_url: "https://emc.id/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "parahita-diagnostic-center"
+    name: "Parahita Diagnostic Center"
+    domain: "parahita.com"
+    website: "https://parahita.com/"
+    career_url: "https://parahita.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "pharos-indonesia"
+    name: "Pharos Indonesia"
+    domain: "pharos.co.id"
+    website: "https://pharos.co.id/"
+    career_url: "https://pharos.co.id/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "soho-global-health"
+    name: "SOHO Global Health"
+    domain: "sohoglobalhealth.com"
+    website: "https://sohoglobalhealth.com/"
+    career_url: "https://sohoglobalhealth.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "prodia-widyahusada"
+    name: "Prodia Widyahusada"
+    domain: "prodia.co.id"
+    website: "https://prodia.co.id/"
+    career_url: "https://prodia.co.id/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "rs-awal-bros"
+    name: "RS Awal Bros"
+    domain: "awalbros.com"
+    website: "https://awalbros.com/"
+    career_url: "https://awalbros.com/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "rsup-nasional-dr-cipto-mangunkusumo"
+    name: "RSUP Nasional Dr Cipto Mangunkusumo"
+    domain: "rscm.co.id"
+    website: "https://rscm.co.id/"
+    career_url: "https://rscm.co.id/careers"
+    career_url_verified: false
+    category: "Healthcare"
+    enabled: true
+  - id: "agung-podomoro-land"
+    name: "Agung Podomoro Land"
+    domain: "agungpodomoroland.com"
+    website: "https://agungpodomoroland.com/"
+    career_url: "https://agungpodomoroland.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "summarecon"
+    name: "Summarecon"
+    domain: "summarecon.com"
+    website: "https://summarecon.com/"
+    career_url: "https://summarecon.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "bumi-serpong-damai"
+    name: "Bumi Serpong Damai"
+    domain: "bsdcity.com"
+    website: "https://bsdcity.com/"
+    career_url: "https://bsdcity.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "pakuwon-jati"
+    name: "Pakuwon Jati"
+    domain: "pakuwonjati.com"
+    website: "https://pakuwonjati.com/"
+    career_url: "https://pakuwonjati.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "alam-sutera-realty"
+    name: "Alam Sutera Realty"
+    domain: "alam-sutera.com"
+    website: "https://alam-sutera.com/"
+    career_url: "https://alam-sutera.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "modernland-realty"
+    name: "Modernland Realty"
+    domain: "modernland.co.id"
+    website: "https://modernland.co.id/"
+    career_url: "https://modernland.co.id/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "intiland"
+    name: "Intiland"
+    domain: "intiland.com"
+    website: "https://intiland.com/"
+    career_url: "https://intiland.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "jababeka"
+    name: "Jababeka"
+    domain: "jababeka.com"
+    website: "https://jababeka.com/"
+    career_url: "https://jababeka.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "pp-properti"
+    name: "PP Properti"
+    domain: "pp-properti.com"
+    website: "https://pp-properti.com/"
+    career_url: "https://pp-properti.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "metropolitan-land"
+    name: "Metropolitan Land"
+    domain: "metland.co.id"
+    website: "https://metland.co.id/"
+    career_url: "https://metland.co.id/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "lippo-karawaci"
+    name: "Lippo Karawaci"
+    domain: "lippokarawaci.co.id"
+    website: "https://lippokarawaci.co.id/"
+    career_url: "https://lippokarawaci.co.id/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "paramount-land"
+    name: "Paramount Land"
+    domain: "paramount-land.com"
+    website: "https://paramount-land.com/"
+    career_url: "https://paramount-land.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "ciputra-development"
+    name: "Ciputra Development"
+    domain: "ciputradevelopment.com"
+    website: "https://ciputradevelopment.com/"
+    career_url: "https://ciputradevelopment.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "sinarmas-land"
+    name: "Sinarmas Land"
+    domain: "sinarmasland.com"
+    website: "https://sinarmasland.com/"
+    career_url: "https://sinarmasland.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "bluebird-group"
+    name: "Bluebird Group"
+    domain: "bluebirdgroup.com"
+    website: "https://bluebirdgroup.com/"
+    career_url: "https://bluebirdgroup.com/careers"
+    career_url_verified: false
+    category: "Transport & Logistics"
+    enabled: true
+  - id: "lion-air-group"
+    name: "Lion Air Group"
+    domain: "lionair.co.id"
+    website: "https://lionair.co.id/"
+    career_url: "https://lionair.co.id/careers"
+    career_url_verified: false
+    category: "Transport & Logistics"
+    enabled: true
+  - id: "airasia-indonesia"
+    name: "AirAsia Indonesia"
+    domain: "airasia.com"
+    website: "https://airasia.com/"
+    career_url: "https://airasia.com/careers"
+    career_url_verified: false
+    category: "Transport & Logistics"
+    enabled: true
+  - id: "dhl-indonesia"
+    name: "DHL Indonesia"
+    domain: "dhl.com"
+    website: "https://dhl.com/"
+    career_url: "https://dhl.com/careers"
+    career_url_verified: false
+    category: "Transport & Logistics"
+    enabled: true
+  - id: "fedex-indonesia"
+    name: "FedEx Indonesia"
+    domain: "fedex.com"
+    website: "https://fedex.com/"
+    career_url: "https://fedex.com/careers"
+    career_url_verified: false
+    category: "Transport & Logistics"
+    enabled: true
+  - id: "maersk-indonesia"
+    name: "Maersk Indonesia"
+    domain: "maersk.com"
+    website: "https://maersk.com/"
+    career_url: "https://maersk.com/careers"
+    career_url_verified: false
+    category: "Transport & Logistics"
+    enabled: true
+  - id: "samudera-indonesia"
+    name: "Samudera Indonesia"
+    domain: "samudera.id"
+    website: "https://samudera.id/"
+    career_url: "https://samudera.id/careers"
+    career_url_verified: false
+    category: "Transport & Logistics"
+    enabled: true
+  - id: "meratus"
+    name: "Meratus"
+    domain: "meratusline.com"
+    website: "https://meratusline.com/"
+    career_url: "https://meratusline.com/careers"
+    career_url_verified: false
+    category: "Transport & Logistics"
+    enabled: true
+  - id: "tiki"
+    name: "TIKI"
+    domain: "tiki.id"
+    website: "https://tiki.id/"
+    career_url: "https://tiki.id/careers"
+    career_url_verified: false
+    category: "Transport & Logistics"
+    enabled: true
+  - id: "sap-express"
+    name: "SAP Express"
+    domain: "sap-express.id"
+    website: "https://sap-express.id/"
+    career_url: "https://sap-express.id/careers"
+    career_url_verified: false
+    category: "Transport & Logistics"
+    enabled: true
+  - id: "paxel"
+    name: "Paxel"
+    domain: "paxel.co"
+    website: "https://paxel.co/"
+    career_url: "https://paxel.co/careers"
+    career_url_verified: false
+    category: "Transport & Logistics"
+    enabled: true
+  - id: "pos-logistik-indonesia"
+    name: "Pos Logistik Indonesia"
+    domain: "poslogistics.co.id"
+    website: "https://poslogistics.co.id/"
+    career_url: "https://poslogistics.co.id/careers"
+    career_url_verified: false
+    category: "Transport & Logistics"
+    enabled: true
+  - id: "paragon-technology-and-innovation"
+    name: "Paragon Technology and Innovation"
+    domain: "paragon-innovation.com"
+    website: "https://paragon-innovation.com/"
+    career_url: "https://paragon-innovation.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "kalla-group"
+    name: "Kalla Group"
+    domain: "kallagroup.co.id"
+    website: "https://kallagroup.co.id/"
+    career_url: "https://kallagroup.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "medion"
+    name: "MEDION"
+    domain: "medion.co.id"
+    website: "https://medion.co.id/"
+    career_url: "https://medion.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "fifgroup"
+    name: "FIFGROUP"
+    domain: "fifgroup.co.id"
+    website: "https://fifgroup.co.id/"
+    career_url: "https://fifgroup.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "acc-astra-credit-companies"
+    name: "ACC (Astra Credit Companies)"
+    domain: "acc.co.id"
+    website: "https://acc.co.id/"
+    career_url: "https://acc.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "astra-otoparts"
+    name: "Astra Otoparts"
+    domain: "astra-otoparts.com"
+    website: "https://astra-otoparts.com/"
+    career_url: "https://astra-otoparts.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "adira-finance"
+    name: "Adira Finance"
+    domain: "adira.co.id"
+    website: "https://adira.co.id/"
+    career_url: "https://adira.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "bca-finance"
+    name: "BCA Finance"
+    domain: "bcafinance.co.id"
+    website: "https://bcafinance.co.id/"
+    career_url: "https://bcafinance.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "mandiri-utama-finance"
+    name: "Mandiri Utama Finance"
+    domain: "muf.co.id"
+    website: "https://muf.co.id/"
+    career_url: "https://muf.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "oto-group"
+    name: "OTO Group"
+    domain: "oto.co.id"
+    website: "https://oto.co.id/"
+    career_url: "https://oto.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "home-credit-indonesia"
+    name: "Home Credit Indonesia"
+    domain: "homecredit.co.id"
+    website: "https://homecredit.co.id/"
+    career_url: "https://homecredit.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "jaccs-mpm-finance"
+    name: "JACCS MPM Finance"
+    domain: "mpm-finance.com"
+    website: "https://mpm-finance.com/"
+    career_url: "https://mpm-finance.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "pegadaian"
+    name: "Pegadaian"
+    domain: "pegadaian.co.id"
+    website: "https://pegadaian.co.id/"
+    career_url: "https://pegadaian.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "pnm"
+    name: "PNM"
+    domain: "pnm.co.id"
+    website: "https://pnm.co.id/"
+    career_url: "https://pnm.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "pupuk-kujang"
+    name: "Pupuk Kujang"
+    domain: "pupuk-kujang.co.id"
+    website: "https://pupuk-kujang.co.id/"
+    career_url: "https://pupuk-kujang.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "pupuk-sriwidjaja-palembang"
+    name: "Pupuk Sriwidjaja Palembang"
+    domain: "pusri.co.id"
+    website: "https://pusri.co.id/"
+    career_url: "https://pusri.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "pupuk-iskandar-muda"
+    name: "Pupuk Iskandar Muda"
+    domain: "pim.co.id"
+    website: "https://pim.co.id/"
+    career_url: "https://pim.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "krakatau-bandar-samudera"
+    name: "Krakatau Bandar Samudera"
+    domain: "krakataubandar.com"
+    website: "https://krakataubandar.com/"
+    career_url: "https://krakataubandar.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "pelayaran-nasional-indonesia"
+    name: "Pelayaran Nasional Indonesia"
+    domain: "pelni.co.id"
+    website: "https://pelni.co.id/"
+    career_url: "https://pelni.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "indonesia-tourism-development-corporation"
+    name: "Indonesia Tourism Development Corporation"
+    domain: "itdc.co.id"
+    website: "https://itdc.co.id/"
+    career_url: "https://itdc.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "perum-perumnas"
+    name: "Perum Perumnas"
+    domain: "perumnas.co.id"
+    website: "https://perumnas.co.id/"
+    career_url: "https://perumnas.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "jasamarga-related-business"
+    name: "Jasamarga Related Business"
+    domain: "jmr.id"
+    website: "https://jmr.id/"
+    career_url: "https://jmr.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "jasa-tirta-ii"
+    name: "Jasa Tirta II"
+    domain: "jasatirta2.co.id"
+    website: "https://jasatirta2.co.id/"
+    career_url: "https://jasatirta2.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "jasa-tirta-i"
+    name: "Jasa Tirta I"
+    domain: "jasatirta1.co.id"
+    website: "https://jasatirta1.co.id/"
+    career_url: "https://jasatirta1.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "binus-university"
+    name: "BINUS University"
+    domain: "binus.ac.id"
+    website: "https://binus.ac.id/"
+    career_url: "https://binus.ac.id/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "telkom-university"
+    name: "Telkom University"
+    domain: "telkomuniversity.ac.id"
+    website: "https://telkomuniversity.ac.id/"
+    career_url: "https://telkomuniversity.ac.id/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "universitas-indonesia"
+    name: "Universitas Indonesia"
+    domain: "ui.ac.id"
+    website: "https://ui.ac.id/"
+    career_url: "https://ui.ac.id/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "universitas-gadjah-mada"
+    name: "Universitas Gadjah Mada"
+    domain: "ugm.ac.id"
+    website: "https://ugm.ac.id/"
+    career_url: "https://ugm.ac.id/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "institut-teknologi-bandung"
+    name: "Institut Teknologi Bandung"
+    domain: "itb.ac.id"
+    website: "https://itb.ac.id/"
+    career_url: "https://itb.ac.id/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "universitas-airlangga"
+    name: "Universitas Airlangga"
+    domain: "unair.ac.id"
+    website: "https://unair.ac.id/"
+    career_url: "https://unair.ac.id/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "universitas-brawijaya"
+    name: "Universitas Brawijaya"
+    domain: "ub.ac.id"
+    website: "https://ub.ac.id/"
+    career_url: "https://ub.ac.id/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "prasetiya-mulya"
+    name: "Prasetiya Mulya"
+    domain: "prasetiyamulya.ac.id"
+    website: "https://prasetiyamulya.ac.id/"
+    career_url: "https://prasetiyamulya.ac.id/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "universitas-atma-jaya-jakarta"
+    name: "Universitas Atma Jaya Jakarta"
+    domain: "atmajaya.ac.id"
+    website: "https://atmajaya.ac.id/"
+    career_url: "https://atmajaya.ac.id/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "universitas-pelita-harapan"
+    name: "Universitas Pelita Harapan"
+    domain: "uph.edu"
+    website: "https://uph.edu/"
+    career_url: "https://uph.edu/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "president-university"
+    name: "President University"
+    domain: "president.ac.id"
+    website: "https://president.ac.id/"
+    career_url: "https://president.ac.id/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "sekolah-pelita-harapan"
+    name: "Sekolah Pelita Harapan"
+    domain: "sph.edu"
+    website: "https://sph.edu/"
+    career_url: "https://sph.edu/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "cikal"
+    name: "Cikal"
+    domain: "cikal.co.id"
+    website: "https://cikal.co.id/"
+    career_url: "https://cikal.co.id/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "ef-indonesia"
+    name: "EF Indonesia"
+    domain: "ef.co.id"
+    website: "https://ef.co.id/"
+    career_url: "https://ef.co.id/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "wall-street-english-indonesia"
+    name: "Wall Street English Indonesia"
+    domain: "wallstreetenglish.co.id"
+    website: "https://wallstreetenglish.co.id/"
+    career_url: "https://wallstreetenglish.co.id/careers"
+    career_url_verified: false
+    category: "Education"
+    enabled: true
+  - id: "kompas-gramedia"
+    name: "Kompas Gramedia"
+    domain: "kompasgramedia.com"
+    website: "https://kompasgramedia.com/"
+    career_url: "https://kompasgramedia.com/careers"
+    career_url_verified: false
+    category: "Media"
+    enabled: true
+  - id: "metro-tv"
+    name: "Metro TV"
+    domain: "metrotvnews.com"
+    website: "https://metrotvnews.com/"
+    career_url: "https://metrotvnews.com/careers"
+    career_url_verified: false
+    category: "Media"
+    enabled: true
+  - id: "trans-tv"
+    name: "Trans TV"
+    domain: "transtv.co.id"
+    website: "https://transtv.co.id/"
+    career_url: "https://transtv.co.id/careers"
+    career_url_verified: false
+    category: "Media"
+    enabled: true
+  - id: "tempo"
+    name: "Tempo"
+    domain: "tempo.co"
+    website: "https://tempo.co/"
+    career_url: "https://tempo.co/careers"
+    career_url_verified: false
+    category: "Media"
+    enabled: true
+  - id: "katadata"
+    name: "Katadata"
+    domain: "katadata.co.id"
+    website: "https://katadata.co.id/"
+    career_url: "https://katadata.co.id/careers"
+    career_url_verified: false
+    category: "Media"
+    enabled: true
+  - id: "narasi"
+    name: "Narasi"
+    domain: "narasi.tv"
+    website: "https://narasi.tv/"
+    career_url: "https://narasi.tv/careers"
+    career_url_verified: false
+    category: "Media"
+    enabled: true
+  - id: "viva"
+    name: "VIVA"
+    domain: "viva.co.id"
+    website: "https://viva.co.id/"
+    career_url: "https://viva.co.id/careers"
+    career_url_verified: false
+    category: "Media"
+    enabled: true
+  - id: "the-jakarta-post"
+    name: "The Jakarta Post"
+    domain: "thejakartapost.com"
+    website: "https://thejakartapost.com/"
+    career_url: "https://thejakartapost.com/careers"
+    career_url_verified: false
+    category: "Media"
+    enabled: true
+  - id: "cnbc-indonesia"
+    name: "CNBC Indonesia"
+    domain: "cnbcindonesia.com"
+    website: "https://cnbcindonesia.com/"
+    career_url: "https://cnbcindonesia.com/careers"
+    career_url_verified: false
+    category: "Media"
+    enabled: true
+  - id: "idn-times"
+    name: "IDN Times"
+    domain: "idntimes.com"
+    website: "https://idntimes.com/"
+    career_url: "https://idntimes.com/careers"
+    career_url_verified: false
+    category: "Media"
+    enabled: true
+  - id: "paragon-corp"
+    name: "Paragon Corp"
+    domain: "paragon-innovation.com"
+    website: "https://paragon-innovation.com/"
+    career_url: "https://paragon-innovation.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "sido-muncul"
+    name: "Sido Muncul"
+    domain: "sidomuncul.co.id"
+    website: "https://sidomuncul.co.id/"
+    career_url: "https://sidomuncul.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "tirta-investama-aqua"
+    name: "Tirta Investama (AQUA)"
+    domain: "danone.com"
+    website: "https://danone.com/"
+    career_url: "https://danone.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "danone-indonesia"
+    name: "Danone Indonesia"
+    domain: "danone.com"
+    website: "https://danone.com/"
+    career_url: "https://danone.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "coca-cola-europacific-partners-indonesia"
+    name: "Coca-Cola Europacific Partners Indonesia"
+    domain: "cocacolaep.com"
+    website: "https://cocacolaep.com/"
+    career_url: "https://cocacolaep.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "pepsico-indonesia"
+    name: "PepsiCo Indonesia"
+    domain: "pepsico.com"
+    website: "https://pepsico.com/"
+    career_url: "https://pepsico.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "mondelez-indonesia"
+    name: "Mondelez Indonesia"
+    domain: "mondelezinternational.com"
+    website: "https://mondelezinternational.com/"
+    career_url: "https://mondelezinternational.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "procter-gamble-indonesia"
+    name: "Procter & Gamble Indonesia"
+    domain: "pg.com"
+    website: "https://pg.com/"
+    career_url: "https://pg.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "colgate-palmolive-indonesia"
+    name: "Colgate-Palmolive Indonesia"
+    domain: "colgatepalmolive.com"
+    website: "https://colgatepalmolive.com/"
+    career_url: "https://colgatepalmolive.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "l-oreal-indonesia"
+    name: "L'Oréal Indonesia"
+    domain: "loreal.com"
+    website: "https://loreal.com/"
+    career_url: "https://loreal.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "eigerindo"
+    name: "Eigerindo"
+    domain: "eigeradventure.com"
+    website: "https://eigeradventure.com/"
+    career_url: "https://eigeradventure.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "mulia-industrindo"
+    name: "Mulia Industrindo"
+    domain: "muliaindustrindo.com"
+    website: "https://muliaindustrindo.com/"
+    career_url: "https://muliaindustrindo.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "semen-merah-putih"
+    name: "Semen Merah Putih"
+    domain: "semenmerahputih.com"
+    website: "https://semenmerahputih.com/"
+    career_url: "https://semenmerahputih.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "indah-kiat-pulp-paper"
+    name: "Indah Kiat Pulp & Paper"
+    domain: "asiapulppaper.com"
+    website: "https://asiapulppaper.com/"
+    career_url: "https://asiapulppaper.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "app-sinar-mas"
+    name: "APP Sinar Mas"
+    domain: "asiapulppaper.com"
+    website: "https://asiapulppaper.com/"
+    career_url: "https://asiapulppaper.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "gajah-tunggal"
+    name: "Gajah Tunggal"
+    domain: "gt-tires.com"
+    website: "https://gt-tires.com/"
+    career_url: "https://gt-tires.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "kmi-wire-and-cable"
+    name: "KMI Wire and Cable"
+    domain: "kmi.co.id"
+    website: "https://kmi.co.id/"
+    career_url: "https://kmi.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "supreme-cable-manufacturing-commerce"
+    name: "Supreme Cable Manufacturing & Commerce"
+    domain: "sucaco.com"
+    website: "https://sucaco.com/"
+    career_url: "https://sucaco.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "aneka-gas-industri"
+    name: "Aneka Gas Industri"
+    domain: "samatorgas.com"
+    website: "https://samatorgas.com/"
+    career_url: "https://samatorgas.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "samator-group"
+    name: "Samator Group"
+    domain: "samator.com"
+    website: "https://samator.com/"
+    career_url: "https://samator.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "kilang-pertamina-internasional"
+    name: "Kilang Pertamina Internasional"
+    domain: "kpi.pertamina.com"
+    website: "https://kpi.pertamina.com/"
+    career_url: "https://kpi.pertamina.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "pertamina-patra-niaga"
+    name: "Pertamina Patra Niaga"
+    domain: "pertaminapatraniaga.com"
+    website: "https://pertaminapatraniaga.com/"
+    career_url: "https://pertaminapatraniaga.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "pertamina-hulu-energi"
+    name: "Pertamina Hulu Energi"
+    domain: "phe.pertamina.com"
+    website: "https://phe.pertamina.com/"
+    career_url: "https://phe.pertamina.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "buma"
+    name: "BUMA"
+    domain: "bumainternational.com"
+    website: "https://bumainternational.com/"
+    career_url: "https://bumainternational.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "petrosea"
+    name: "Petrosea"
+    domain: "petrosea.com"
+    website: "https://petrosea.com/"
+    career_url: "https://petrosea.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "thiess-indonesia"
+    name: "Thiess Indonesia"
+    domain: "thiess.com"
+    website: "https://thiess.com/"
+    career_url: "https://thiess.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "trubaindo-coal-mining"
+    name: "Trubaindo Coal Mining"
+    domain: "banpu.com"
+    website: "https://banpu.com/"
+    career_url: "https://banpu.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "vale-base-metals-indonesia"
+    name: "Vale Base Metals Indonesia"
+    domain: "vale.com"
+    website: "https://vale.com/"
+    career_url: "https://vale.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "pam-mineral"
+    name: "PAM Mineral"
+    domain: "pammineral.co.id"
+    website: "https://pammineral.co.id/"
+    career_url: "https://pammineral.co.id/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "nusantara-infrastructure"
+    name: "Nusantara Infrastructure"
+    domain: "nusantarainfrastructure.com"
+    website: "https://nusantarainfrastructure.com/"
+    career_url: "https://nusantarainfrastructure.com/careers"
+    career_url_verified: false
+    category: "Manufaktur"
+    enabled: true
+  - id: "modalku"
+    name: "Modalku"
+    domain: "modalku.co.id"
+    website: "https://modalku.co.id/"
+    career_url: "https://modalku.co.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "amar-bank"
+    name: "Amar Bank"
+    domain: "amarbank.co.id"
+    website: "https://amarbank.co.id/"
+    career_url: "https://amarbank.co.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "bnc-digital-bank"
+    name: "BNC Digital Bank"
+    domain: "bankneo.co.id"
+    website: "https://bankneo.co.id/"
+    career_url: "https://bankneo.co.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "bank-raya"
+    name: "Bank Raya"
+    domain: "bankraya.co.id"
+    website: "https://bankraya.co.id/"
+    career_url: "https://bankraya.co.id/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "bpr-lestari-group"
+    name: "BPR Lestari Group"
+    domain: "bprlestari.com"
+    website: "https://bprlestari.com/"
+    career_url: "https://bprlestari.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "jago-syariah"
+    name: "Jago Syariah"
+    domain: "jago.com"
+    website: "https://jago.com/"
+    career_url: "https://jago.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "sahabat-sampoerna"
+    name: "Sahabat Sampoerna"
+    domain: "banksampoerna.com"
+    website: "https://banksampoerna.com/"
+    career_url: "https://banksampoerna.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "bpr-kencana"
+    name: "BPR Kencana"
+    domain: "bprkencana.com"
+    website: "https://bprkencana.com/"
+    career_url: "https://bprkencana.com/careers"
+    career_url_verified: false
+    category: "Fintech"
+    enabled: true
+  - id: "qoala"
+    name: "Qoala"
+    domain: "qoala.app"
+    website: "https://qoala.app/"
+    career_url: "https://qoala.app/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "lummo"
+    name: "Lummo"
+    domain: "lummo.com"
+    website: "https://lummo.com/"
+    career_url: "https://lummo.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "mekari-qontak"
+    name: "Mekari Qontak"
+    domain: "mekari.com"
+    website: "https://mekari.com/"
+    career_url: "https://mekari.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "jubelio"
+    name: "Jubelio"
+    domain: "jubelio.com"
+    website: "https://jubelio.com/"
+    career_url: "https://jubelio.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "majoo"
+    name: "Majoo"
+    domain: "majoo.id"
+    website: "https://majoo.id/"
+    career_url: "https://majoo.id/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "moka-pos"
+    name: "Moka POS"
+    domain: "moka.tech"
+    website: "https://moka.tech/"
+    career_url: "https://moka.tech/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "kargo-technologies"
+    name: "Kargo Technologies"
+    domain: "kargo.tech"
+    website: "https://kargo.tech/"
+    career_url: "https://kargo.tech/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "waresix"
+    name: "Waresix"
+    domain: "waresix.com"
+    website: "https://waresix.com/"
+    career_url: "https://waresix.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "shipper"
+    name: "Shipper"
+    domain: "shipper.id"
+    website: "https://shipper.id/"
+    career_url: "https://shipper.id/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "deliveree"
+    name: "Deliveree"
+    domain: "deliveree.com"
+    website: "https://deliveree.com/"
+    career_url: "https://deliveree.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "biteship"
+    name: "Biteship"
+    domain: "biteship.com"
+    website: "https://biteship.com/"
+    career_url: "https://biteship.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "sirclo-store"
+    name: "Sirclo Store"
+    domain: "sirclo.com"
+    website: "https://sirclo.com/"
+    career_url: "https://sirclo.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "everpro"
+    name: "Everpro"
+    domain: "everpro.id"
+    website: "https://everpro.id/"
+    career_url: "https://everpro.id/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "pahamify"
+    name: "Pahamify"
+    domain: "pahamify.com"
+    website: "https://pahamify.com/"
+    career_url: "https://pahamify.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "cakap"
+    name: "Cakap"
+    domain: "cakap.com"
+    website: "https://cakap.com/"
+    career_url: "https://cakap.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "harukaedu"
+    name: "HarukaEdu"
+    domain: "harukaedu.com"
+    website: "https://harukaedu.com/"
+    career_url: "https://harukaedu.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "colearn"
+    name: "CoLearn"
+    domain: "colearn.id"
+    website: "https://colearn.id/"
+    career_url: "https://colearn.id/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "kitalulus"
+    name: "KitaLulus"
+    domain: "kitalulus.com"
+    website: "https://kitalulus.com/"
+    career_url: "https://kitalulus.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "dealls"
+    name: "Dealls"
+    domain: "dealls.com"
+    website: "https://dealls.com/"
+    career_url: "https://dealls.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "glints"
+    name: "Glints"
+    domain: "glints.com"
+    website: "https://glints.com/"
+    career_url: "https://glints.com/careers"
+    career_url_verified: false
+    category: "Startup"
+    enabled: true
+  - id: "qwords"
+    name: "Qwords"
+    domain: "qwords.com"
+    website: "https://qwords.com/"
+    career_url: "https://qwords.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "dewaweb"
+    name: "Dewaweb"
+    domain: "dewaweb.com"
+    website: "https://dewaweb.com/"
+    career_url: "https://dewaweb.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "niagahoster"
+    name: "Niagahoster"
+    domain: "niagahoster.co.id"
+    website: "https://niagahoster.co.id/"
+    career_url: "https://niagahoster.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "idcloudhost"
+    name: "IDCloudHost"
+    domain: "idcloudhost.com"
+    website: "https://idcloudhost.com/"
+    career_url: "https://idcloudhost.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "biznet-gio"
+    name: "Biznet Gio"
+    domain: "biznetgio.com"
+    website: "https://biznetgio.com/"
+    career_url: "https://biznetgio.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "lintasarta"
+    name: "Lintasarta"
+    domain: "lintasarta.net"
+    website: "https://lintasarta.net/"
+    career_url: "https://lintasarta.net/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "mitra-integrasi-informatika"
+    name: "Mitra Integrasi Informatika"
+    domain: "mitrais.com"
+    website: "https://mitrais.com/"
+    career_url: "https://mitrais.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "metrodata"
+    name: "Metrodata"
+    domain: "metrodata.co.id"
+    website: "https://metrodata.co.id/"
+    career_url: "https://metrodata.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "multipolar-technology"
+    name: "Multipolar Technology"
+    domain: "multipolar.com"
+    website: "https://multipolar.com/"
+    career_url: "https://multipolar.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "solusi-sinergi-digital"
+    name: "Solusi Sinergi Digital"
+    domain: "surge.co.id"
+    website: "https://surge.co.id/"
+    career_url: "https://surge.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "jatis-mobile"
+    name: "Jatis Mobile"
+    domain: "jatis.com"
+    website: "https://jatis.com/"
+    career_url: "https://jatis.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "telkomsigma"
+    name: "Telkomsigma"
+    domain: "telkomsigma.co.id"
+    website: "https://telkomsigma.co.id/"
+    career_url: "https://telkomsigma.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "indocyber-global-teknologi"
+    name: "Indocyber Global Teknologi"
+    domain: "indocyber.co.id"
+    website: "https://indocyber.co.id/"
+    career_url: "https://indocyber.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "xl-axiata-business-solutions"
+    name: "XL Axiata Business Solutions"
+    domain: "xl.co.id"
+    website: "https://xl.co.id/"
+    career_url: "https://xl.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "indosat-business"
+    name: "Indosat Business"
+    domain: "ioh.co.id"
+    website: "https://ioh.co.id/"
+    career_url: "https://ioh.co.id/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "samsung-sds-indonesia"
+    name: "Samsung SDS Indonesia"
+    domain: "samsungsds.com"
+    website: "https://samsungsds.com/"
+    career_url: "https://samsungsds.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "accenture-indonesia"
+    name: "Accenture Indonesia"
+    domain: "accenture.com"
+    website: "https://accenture.com/"
+    career_url: "https://accenture.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "deloitte-indonesia"
+    name: "Deloitte Indonesia"
+    domain: "deloitte.com"
+    website: "https://deloitte.com/"
+    career_url: "https://deloitte.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "pwc-indonesia"
+    name: "PwC Indonesia"
+    domain: "pwc.com"
+    website: "https://pwc.com/"
+    career_url: "https://pwc.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "ey-indonesia"
+    name: "EY Indonesia"
+    domain: "ey.com"
+    website: "https://ey.com/"
+    career_url: "https://ey.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "kpmg-indonesia"
+    name: "KPMG Indonesia"
+    domain: "kpmg.com"
+    website: "https://kpmg.com/"
+    career_url: "https://kpmg.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "bcg-indonesia"
+    name: "BCG Indonesia"
+    domain: "bcg.com"
+    website: "https://bcg.com/"
+    career_url: "https://bcg.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "mckinsey-indonesia"
+    name: "McKinsey Indonesia"
+    domain: "mckinsey.com"
+    website: "https://mckinsey.com/"
+    career_url: "https://mckinsey.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "bain-company-indonesia"
+    name: "Bain & Company Indonesia"
+    domain: "bain.com"
+    website: "https://bain.com/"
+    career_url: "https://bain.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "ibm-indonesia"
+    name: "IBM Indonesia"
+    domain: "ibm.com"
+    website: "https://ibm.com/"
+    career_url: "https://ibm.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "microsoft-indonesia"
+    name: "Microsoft Indonesia"
+    domain: "microsoft.com"
+    website: "https://microsoft.com/"
+    career_url: "https://microsoft.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "google-indonesia"
+    name: "Google Indonesia"
+    domain: "google.com"
+    website: "https://google.com/"
+    career_url: "https://google.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "amazon-web-services-indonesia"
+    name: "Amazon Web Services Indonesia"
+    domain: "amazon.jobs"
+    website: "https://amazon.jobs/"
+    career_url: "https://www.amazon.jobs/"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "oracle-indonesia"
+    name: "Oracle Indonesia"
+    domain: "oracle.com"
+    website: "https://oracle.com/"
+    career_url: "https://oracle.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "cisco-indonesia"
+    name: "Cisco Indonesia"
+    domain: "cisco.com"
+    website: "https://cisco.com/"
+    career_url: "https://cisco.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "hp-indonesia"
+    name: "HP Indonesia"
+    domain: "hp.com"
+    website: "https://hp.com/"
+    career_url: "https://hp.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "dell-technologies-indonesia"
+    name: "Dell Technologies Indonesia"
+    domain: "dell.com"
+    website: "https://dell.com/"
+    career_url: "https://dell.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "lenovo-indonesia"
+    name: "Lenovo Indonesia"
+    domain: "lenovo.com"
+    website: "https://lenovo.com/"
+    career_url: "https://lenovo.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "accor-indonesia"
+    name: "Accor Indonesia"
+    domain: "careers.accor.com"
+    website: "https://careers.accor.com/"
+    career_url: "https://careers.accor.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "marriott-indonesia"
+    name: "Marriott Indonesia"
+    domain: "careers.marriott.com"
+    website: "https://careers.marriott.com/"
+    career_url: "https://careers.marriott.com/"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "hilton-indonesia"
+    name: "Hilton Indonesia"
+    domain: "jobs.hilton.com"
+    website: "https://jobs.hilton.com/"
+    career_url: "https://jobs.hilton.com/"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "plaza-indonesia"
+    name: "Plaza Indonesia"
+    domain: "plazaindonesia.com"
+    website: "https://plazaindonesia.com/"
+    career_url: "https://plazaindonesia.com/careers"
+    career_url_verified: false
+    category: "Corporate"
+    enabled: true
+  - id: "jaya-real-property"
+    name: "Jaya Real Property"
+    domain: "jayaproperty.com"
+    website: "https://jayaproperty.com/"
+    career_url: "https://jayaproperty.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "summarecon-agung"
+    name: "Summarecon Agung"
+    domain: "summarecon.com"
+    website: "https://summarecon.com/"
+    career_url: "https://summarecon.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "duta-pertiwi"
+    name: "Duta Pertiwi"
+    domain: "sinarmasland.com"
+    website: "https://sinarmasland.com/"
+    career_url: "https://sinarmasland.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "lippo-malls-indonesia"
+    name: "Lippo Malls Indonesia"
+    domain: "lippomalls.com"
+    website: "https://lippomalls.com/"
+    career_url: "https://lippomalls.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true
+  - id: "grand-indonesia"
+    name: "Grand Indonesia"
+    domain: "grand-indonesia.com"
+    website: "https://grand-indonesia.com/"
+    career_url: "https://grand-indonesia.com/careers"
+    career_url_verified: false
+    category: "Properti"
+    enabled: true

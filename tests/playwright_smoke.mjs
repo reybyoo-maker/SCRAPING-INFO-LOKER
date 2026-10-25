@@ -23,6 +23,10 @@ try {
   }, null, { timeout: 60000 });
 
   const total = await page.locator("#metricTotal").innerText();
+  assert.equal(await page.locator('#source option[value="__company_sites__"]').count(), 1,
+    "Source filter should include Company Sites");
+  assert.equal(await page.locator('#source option[value="__job_portal__"]').count(), 1,
+    "Source filter should include Job Portal");
   const bodyText = await page.locator("body").innerText();
   assert.match(bodyText, /Dataset siap|Dataset terhubung/i, "Dataset status should show successful loading");
   assert.equal(pageErrors.length, 0, `Unexpected page errors: ${pageErrors.join("; ")}`);

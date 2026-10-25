@@ -16,6 +16,41 @@ INFO LOKER is a static job-search website backed by a scheduled collector. It no
 
 An adapter being enabled is not a guarantee that its host will return records. Check data/run_status.json for the result of the latest run.
 
+
+## Official company career-site expansion
+
+The company-site collector uses three discovery layers:
+
+1. **Curated targets (Layer A).** config/company_targets.yaml contains 400+ employer entries across banking/fintech, telecom, tech/startups, conglomerates, BUMN, manufacturing/energy, retail/FMCG, healthcare, property, logistics, education, and media. A target row needs id, name, domain, website, career_url, career_url_verified, category, and enabled; optional specific_parser chooses one of the selector overrides.
+2. **Automatic career-path discovery (Layer B).** If the seed URL does not return an HTTP 200 page containing job/career keywords, the collector checks ordered public paths such as /careers, /career, /karir, /karier, /jobs, /lowongan, /loker, /join-us, /joinus, /work-with-us, /about/careers, /about-us/careers, /tentang-kami/karir, /en/careers, and /id/careers. HTTP redirects are followed one hop at a time, with robots checks on each host. A 404 is skipped.
+3. **Robots and sitemap discovery (Layer C).** The collector reads /robots.txt, checks published Sitemap directives and /sitemap.xml, then finds URLs whose paths match career/job/karir/lowongan/vacancy/hiring patterns. Detail pages are fetched only if robots permits the URL, with a per-target sitemap limit to protect company sites.
+
+career_url in the YAML is a first candidate, not a claim that every career route has been independently verified. The discovery workflow validates pages and records the resulting URL/status in data/company_career_registry.json. The initial curated list includes 400+ entries; duplicate domains are coalesced to one scan per run to avoid repeated hits.
+
+### Company scraper implementation
+
+- scrapers/company_sites/base_company.py — clear InfoLokerBot/1.0 User-Agent, Indonesian Accept-Language, HTTPS-only requests, per-host robots checks, safe redirect handling, rate limiting, and persisted blocklist.
+- scrapers/company_sites/discovery.py — three-layer career URL and sitemap discovery.
+- scrapers/company_sites/generic_parser.py — JSON-LD JobPosting, job/career card heuristics, data-attribute selectors, and URL/text-based fallback extraction.
+- scrapers/company_sites/categories/ — one selector fallback module per configured company category (Bank & Fintech, Fintech, Telecom, Startup, Corporate, Healthcare, Properti, Manufaktur, BUMN, Retail, Transport & Logistics, Education, Media).
+- scrapers/company_sites/specific/ — 20 selector overrides for Astra, Unilever, Telkom, Gojek, Tokopedia, Mandiri, BCA, BRI, BNI, Pertamina, PLN, Telkomsel, Traveloka, Bukalapak, Kalbe, Indofood, Shopee, Blibli, Freeport, and Mayora. Each also falls back to the generic parser.
+- scripts/discover_company_careers.py — one-shot discovery/validation. Run without arguments to record career URLs; pass --scrape --force to also collect and publish results immediately.
+- data/blocked_domains.json — persistent blocklist. An HTTP 403/429 adds the hostname and stops further requests to that hostname on future runs until a maintainer manually removes the entry after reviewing the site's policy.
+
+Company-site runs use at most 8 workers, at least 2 seconds between request starts to the same hostname, and at most 50 requests per hostname per run. A blocked hostname is never retried automatically. One company failure is logged as blocked, no-career-page, or parse-error and cannot terminate the rest of the scan. Company results use the same normalized listing schema as the original collector, with source set to company:<official-domain>, source_group set to Company Sites, and category copied from the curated target. Records are deduplicated against the existing dataset.
+
+The hourly scripts/run_all.py checks whether the six-hour company-site interval is due; normal job portal/feed/API collection remains hourly. The company run does not need a second hourly schedule. For a manual one-shot validation:
+
+    python scripts/discover_company_careers.py
+
+To collect and write the company listings immediately:
+
+    python scripts/discover_company_careers.py --scrape --force
+
+### Website source filter
+
+The advanced “Sumber lowongan” filter now provides **Job Portal**, **Company Sites**, and the categories available in the company target data, including **BUMN**, **Startup**, **Corporate**, **Manufaktur**, **Fintech**, and **Healthcare**. Individual company listings retain their original apply/source link; the category filter does not replace direct source verification.
+
 ## Investigated sources that remain inactive
 
 ### Karir.com API candidate — prepared, not activated

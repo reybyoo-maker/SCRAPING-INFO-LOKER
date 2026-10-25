@@ -135,7 +135,11 @@ def normalize_record(original: dict, source_hint: str = "unknown") -> dict | Non
         "Jobicy": "jobicy",
         "Remote OK": "remoteok",
     }
-    source = source_aliases.get(source_name, source_aliases.get(old_source, slugify(old_source or source_name)))
+    if old_source.startswith("company:"):
+        # Preserve the explicitly namespaced source identity for official career pages.
+        source = old_source
+    else:
+        source = source_aliases.get(source_name, source_aliases.get(old_source, slugify(old_source or source_name)))
     posted = parse_iso(row.get("posted_at") or row.get("source_updated_at") or row.get("published_at") or row.get("source_date"))
     raw_salary = row.get("salary") if row.get("salary") not in (None, "") else row.get("salary_text")
     salary = str(raw_salary).strip() if raw_salary not in (None, "") else None
@@ -349,7 +353,24 @@ def main() -> int:
         existing_jobs = []
 
     module_records, module_statuses = collect_authorized_sources(config)
-    all_records = deduplicate(existing_jobs + module_records)
+    try:
+        from scrapers.company_sites import collect_company_sites
+        company_records, company_status = collect_company_sites()
+    except KeyboardInterrupt:
+        raise
+    except Exception as exc:
+        company_records = []
+        company_status = {
+            "status": "error",
+            "reason": str(exc)[:300],
+            "targets_configured": 0,
+            "targets_checked": 0,
+            "additional_records": 0,
+            "companies": {},
+        }
+        log.exception("Company-site collection failed; continuing with the other sources")
+
+    all_records = deduplicate(existing_jobs + module_records + company_records)
     if not all_records:
         log.error("No valid job records available after collection")
         return 1
@@ -360,7 +381,7 @@ def main() -> int:
         "generated_at": generated_at,
         "timezone": "Asia/Jakarta",
         "total": len(all_records),
-        "fresh_seen_in_this_run": int((payload_after_legacy or {}).get("fresh_seen_in_this_run", 0) or 0) + len(module_records),
+        "fresh_seen_in_this_run": int((payload_after_legacy or {}).get("fresh_seen_in_this_run", 0) or 0) + len(module_records) + len(company_records),
         "jobs": all_records,
     }
     write_json(JOBS_FILE, payload)
@@ -375,11 +396,22 @@ def main() -> int:
         "legacy_pipeline_error": legacy_error,
         "additional_sources": module_statuses,
         "additional_records": len(module_records),
+        "company_site_records": len(company_records),
+        "company_sites": {key: value for key, value in company_status.items() if key != "companies"},
         "records_after_deduplication": len(all_records),
         "output_schema": "common v2 plus compatibility aliases",
         "hourly_rotation_slot": int(time.time() // 3600),
         "elapsed_seconds": round(time.monotonic() - run_started, 2),
     }
+    # Preserve the last complete per-company report on hourly runs that are not due.
+    if company_status.get("status") != "skipped" or not status.get("company_sites"):
+        status["company_sites"] = company_status
+    else:
+        status["company_sites"]["schedule_status"] = {
+            "status": "skipped",
+            "reason": company_status.get("reason"),
+            "due_at": company_status.get("due_at"),
+        }
     write_json(STATUS_FILE, status)
 
     counts = {}
@@ -389,7 +421,8 @@ def main() -> int:
     log.info("Finished run in %.1f seconds", time.monotonic() - run_started)
     log.info("Records after dedupe: %d; count by source: %s", len(all_records), counts)
     log.info("Additional adapter status: %s", module_statuses)
-    return 0 if legacy_code == 0 or module_records else 1
+    log.info("Company-site status: %s", {k: v for k, v in company_status.items() if k != "companies"})
+    return 0 if legacy_code == 0 or module_records or company_records else 1
 
 
 if __name__ == "__main__":
