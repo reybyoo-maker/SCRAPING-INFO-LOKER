@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-25T03:21:02Z",
-  "finished_at": "2026-10-25T03:21:56Z",
+  "started_at": "2026-10-25T04:22:56Z",
+  "finished_at": "2026-10-25T04:23:56Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 714,
+      "records": 713,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -19,8 +19,8 @@
     "public_apis": {
       "jobicy": {
         "status": "ok",
-        "items_received": 200,
-        "records_accepted": 103
+        "items_received": 198,
+        "records_accepted": 102
       },
       "remoteok": {
         "status": "ok",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 872,
-  "records_after_deduplication": 2478,
+  "records_received_this_run": 870,
+  "records_after_deduplication": 2484,
   "quality_label_counts": {
     "HOT": 394,
-    "MEDIUM": 2084,
+    "MEDIUM": 2090,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 2426,
+    "active_unverified": 2432,
     "stale": 52
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-25T03:21:02Z",
-    "finished_at": "2026-10-25T03:22:20Z",
+    "started_at": "2026-10-25T04:22:56Z",
+    "finished_at": "2026-10-25T04:24:21Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,15 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Majalengka",
-        "keyword_query": "fresh graduate"
+        "location_query": "Maumere",
+        "keyword_query": "walk in interview"
       },
       "dealls": {
-        "status": "ok",
-        "records_accepted": 18,
-        "location_query": "Pariaman",
-        "keyword_query": "lowongan kerja"
+        "status": "no_records",
+        "records_accepted": 0,
+        "reason": "Parser returned zero records; the page may be JavaScript-rendered, the search URL may have changed, or selectors/JSON-LD may need updating. Source remains enabled for the next scheduled retry.",
+        "location_query": "Pontianak",
+        "keyword_query": "loker terbaru"
       },
       "maganghub": {
         "status": "blocked",
@@ -124,7 +125,7 @@
         "retry_on_next_scheduled_run": true
       }
     },
-    "additional_records": 33,
+    "additional_records": 15,
     "company_site_records": 0,
     "company_sites": {
       "status": "skipped",
@@ -133,10 +134,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 2478,
+    "records_after_deduplication": 2484,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498027,
-    "elapsed_seconds": 78.25
+    "hourly_rotation_slot": 498028,
+    "elapsed_seconds": 84.99
   },
   "company_sites": {
     "status": "skipped",
