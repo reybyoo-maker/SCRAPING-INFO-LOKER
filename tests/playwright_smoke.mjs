@@ -39,7 +39,7 @@ await page.route("**/data/jobs.json*", async route => {
   const baseIndex = jobs.findIndex(job => {
     if (!job || !(job.position || job.title) || !job.company_name) return false;
     const title = String(job.position || job.title).normalize("NFKD")
-      .replace(/[\\u0300-\\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+      .replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
     return !noiseTitles.has(title);
   });
   if (baseIndex < 0) {
@@ -147,7 +147,7 @@ try {
   ]);
   assert.equal(
     visibleTitles.some(title => rejectedNavigationTitles.has(
-      title.normalize("NFKD").replace(/[\\u0300-\\u036f]/g, "")
+      title.normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
         .toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()
     )),
     false,
