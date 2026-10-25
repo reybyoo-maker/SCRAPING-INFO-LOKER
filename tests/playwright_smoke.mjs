@@ -13,6 +13,7 @@ page.on("pageerror", error => pageErrors.push(error.message));
 // must collapse them before metrics, filtering, pagination, and rendering.
 let injectedRawRecordCount = 0;
 let duplicateFixtureInjected = false;
+const crossCompanyTitle = "Cross-company duplicate fixture";
 await page.route("**/data/jobs.json*", async route => {
   const response = await route.fetch();
   if (!response.ok()) {
@@ -93,7 +94,6 @@ await page.route("**/data/jobs.json*", async route => {
 
   // A feed can repeat a role with inconsistent company names. Identical source,
   // location, pay, and role metadata should still collapse into one visible card.
-  const crossCompanyTitle = "Cross-company duplicate fixture";
   const crossCompanyFixtures = ["Fixture Company A", "Fixture Company B"].map((company_name, index) => ({
     ...base,
     id: `cross-company-dedupe-${index}`,
