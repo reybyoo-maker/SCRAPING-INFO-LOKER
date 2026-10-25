@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-25T05:21:28Z",
-  "finished_at": "2026-10-25T05:22:26Z",
+  "started_at": "2026-10-25T06:12:09Z",
+  "finished_at": "2026-10-25T06:13:06Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 718,
+      "records": 716,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 875,
-  "records_after_deduplication": 2488,
+  "records_received_this_run": 873,
+  "records_after_deduplication": 2494,
   "quality_label_counts": {
     "HOT": 396,
-    "MEDIUM": 2092,
+    "MEDIUM": 2098,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 2436,
+    "active_unverified": 2442,
     "stale": 52
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-25T05:21:28Z",
-    "finished_at": "2026-10-25T05:22:53Z",
+    "started_at": "2026-10-25T06:12:09Z",
+    "finished_at": "2026-10-25T06:13:36Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Nabire",
-        "keyword_query": "lowongan kerja"
+        "location_query": "Palu",
+        "keyword_query": "loker terbaru"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Salatiga",
-        "keyword_query": "rekrutmen"
+        "location_query": "Sidoarjo",
+        "keyword_query": "staff"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 2488,
+    "records_after_deduplication": 2494,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498029,
-    "elapsed_seconds": 85.23
+    "hourly_rotation_slot": 498030,
+    "elapsed_seconds": 87.43
   },
   "company_sites": {
     "status": "skipped",
