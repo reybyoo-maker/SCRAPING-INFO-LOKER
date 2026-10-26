@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-26T09:32:48Z",
-  "finished_at": "2026-10-26T09:33:38Z",
+  "started_at": "2026-10-26T10:32:04Z",
+  "finished_at": "2026-10-26T10:32:52Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 349,
+      "records": 327,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -20,7 +20,7 @@
       "jobicy": {
         "status": "ok",
         "items_received": 200,
-        "records_accepted": 105
+        "records_accepted": 106
       },
       "remoteok": {
         "status": "ok",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 508,
-  "records_after_deduplication": 3843,
+  "records_received_this_run": 487,
+  "records_after_deduplication": 3868,
   "quality_label_counts": {
-    "HOT": 740,
-    "MEDIUM": 3103,
+    "HOT": 760,
+    "MEDIUM": 3108,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 3794,
+    "active_unverified": 3819,
     "stale": 49
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-26T09:32:48Z",
-    "finished_at": "2026-10-26T09:34:06Z",
+    "started_at": "2026-10-26T10:32:04Z",
+    "finished_at": "2026-10-26T10:33:20Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Palopo",
-        "keyword_query": "data analyst"
+        "location_query": "Pasuruan",
+        "keyword_query": "magang"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Sibolga",
-        "keyword_query": "fresh graduate"
+        "location_query": "Sragen",
+        "keyword_query": "walk in interview"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 3860,
+    "records_after_deduplication": 3868,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498057,
-    "elapsed_seconds": 78.33
+    "hourly_rotation_slot": 498058,
+    "elapsed_seconds": 76.56
   },
   "company_sites": {
     "status": "skipped",
