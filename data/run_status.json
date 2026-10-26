@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-26T02:26:20Z",
-  "finished_at": "2026-10-26T02:27:17Z",
+  "started_at": "2026-10-26T03:25:02Z",
+  "finished_at": "2026-10-26T03:25:55Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 482,
+      "records": 504,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 643,
-  "records_after_deduplication": 3527,
+  "records_received_this_run": 665,
+  "records_after_deduplication": 3547,
   "quality_label_counts": {
-    "HOT": 633,
-    "MEDIUM": 2894,
+    "HOT": 652,
+    "MEDIUM": 2895,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 3479,
+    "active_unverified": 3499,
     "stale": 48
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-26T02:26:20Z",
-    "finished_at": "2026-10-26T02:27:47Z",
+    "started_at": "2026-10-26T03:25:01Z",
+    "finished_at": "2026-10-26T03:26:22Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,20 +108,20 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Garut",
-        "keyword_query": "customer service"
-      },
-      "dealls": {
-        "status": "ok",
-        "records_accepted": 18,
-        "location_query": "Luwuk",
-        "keyword_query": "warehouse"
+        "location_query": "Jepara",
+        "keyword_query": "operator produksi"
       },
       "maganghub": {
         "status": "blocked",
         "http_status": 403,
         "error": "maganghub blocked the request with HTTP 403; source will be logged and retried on a later scheduled run",
         "retry_on_next_scheduled_run": true
+      },
+      "dealls": {
+        "status": "ok",
+        "records_accepted": 18,
+        "location_query": "Manado",
+        "keyword_query": "sales"
       }
     },
     "additional_records": 33,
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 3545,
+    "records_after_deduplication": 3558,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498050,
-    "elapsed_seconds": 87.37
+    "hourly_rotation_slot": 498051,
+    "elapsed_seconds": 80.9
   },
   "company_sites": {
     "status": "skipped",
