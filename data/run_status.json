@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-26T06:29:49Z",
-  "finished_at": "2026-10-26T06:30:46Z",
+  "started_at": "2026-10-26T07:44:18Z",
+  "finished_at": "2026-10-26T07:45:11Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 481,
+      "records": 488,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -20,7 +20,7 @@
       "jobicy": {
         "status": "ok",
         "items_received": 200,
-        "records_accepted": 107
+        "records_accepted": 106
       },
       "remoteok": {
         "status": "ok",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 642,
-  "records_after_deduplication": 3795,
+  "records_received_this_run": 648,
+  "records_after_deduplication": 3803,
   "quality_label_counts": {
-    "HOT": 724,
-    "MEDIUM": 3071,
+    "HOT": 729,
+    "MEDIUM": 3074,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 3747,
+    "active_unverified": 3755,
     "stale": 48
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-26T06:29:48Z",
-    "finished_at": "2026-10-26T06:31:17Z",
+    "started_at": "2026-10-26T07:44:18Z",
+    "finished_at": "2026-10-26T07:45:38Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,8 +108,8 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Magelang",
-        "keyword_query": "marketing"
+        "location_query": "Mataram",
+        "keyword_query": "finance"
       },
       "maganghub": {
         "status": "blocked",
@@ -120,8 +120,8 @@
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Parepare",
-        "keyword_query": "programmer"
+        "location_query": "Ponorogo",
+        "keyword_query": "data analyst"
       }
     },
     "additional_records": 33,
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 3796,
+    "records_after_deduplication": 3814,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498054,
-    "elapsed_seconds": 88.85
+    "hourly_rotation_slot": 498055,
+    "elapsed_seconds": 80.71
   },
   "company_sites": {
     "status": "skipped",
