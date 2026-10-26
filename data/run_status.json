@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-26T08:36:44Z",
-  "finished_at": "2026-10-26T08:37:43Z",
+  "started_at": "2026-10-26T09:32:48Z",
+  "finished_at": "2026-10-26T09:33:38Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 345,
+      "records": 349,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 504,
-  "records_after_deduplication": 3836,
+  "records_received_this_run": 508,
+  "records_after_deduplication": 3843,
   "quality_label_counts": {
     "HOT": 740,
-    "MEDIUM": 3096,
+    "MEDIUM": 3103,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 3787,
+    "active_unverified": 3794,
     "stale": 49
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-26T08:36:44Z",
-    "finished_at": "2026-10-26T08:38:08Z",
+    "started_at": "2026-10-26T09:32:48Z",
+    "finished_at": "2026-10-26T09:34:06Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -105,27 +105,26 @@
         "status": "skipped",
         "reason": "disabled in config.yaml"
       },
-      "maganghub": {
-        "status": "blocked",
-        "http_status": 403,
-        "error": "maganghub robots.txt returned HTTP 403; listing URL was not requested",
-        "retry_on_next_scheduled_run": true
-      },
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Muna",
-        "keyword_query": "programmer"
+        "location_query": "Palopo",
+        "keyword_query": "data analyst"
       },
       "dealls": {
-        "status": "no_records",
-        "records_accepted": 0,
-        "reason": "Parser returned zero records; the page may be JavaScript-rendered, the search URL may have changed, or selectors/JSON-LD may need updating. Source remains enabled for the next scheduled retry.",
-        "location_query": "Rembang",
-        "keyword_query": "magang"
+        "status": "ok",
+        "records_accepted": 18,
+        "location_query": "Sibolga",
+        "keyword_query": "fresh graduate"
+      },
+      "maganghub": {
+        "status": "blocked",
+        "http_status": 403,
+        "error": "maganghub blocked the request with HTTP 403; source will be logged and retried on a later scheduled run",
+        "retry_on_next_scheduled_run": true
       }
     },
-    "additional_records": 15,
+    "additional_records": 33,
     "company_site_records": 0,
     "company_sites": {
       "status": "skipped",
@@ -134,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 3836,
+    "records_after_deduplication": 3860,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498056,
-    "elapsed_seconds": 84.66
+    "hourly_rotation_slot": 498057,
+    "elapsed_seconds": 78.33
   },
   "company_sites": {
     "status": "skipped",
