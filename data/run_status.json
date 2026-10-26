@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-26T19:34:24Z",
-  "finished_at": "2026-10-26T19:35:28Z",
+  "started_at": "2026-10-26T20:26:58Z",
+  "finished_at": "2026-10-26T20:27:56Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 721,
+      "records": 747,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 882,
-  "records_after_deduplication": 4302,
+  "records_received_this_run": 908,
+  "records_after_deduplication": 4303,
   "quality_label_counts": {
-    "HOT": 869,
+    "HOT": 870,
     "MEDIUM": 3433,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 4247,
+    "active_unverified": 4248,
     "stale": 55
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-26T19:34:24Z",
-    "finished_at": "2026-10-26T19:35:55Z",
+    "started_at": "2026-10-26T20:26:58Z",
+    "finished_at": "2026-10-26T20:28:24Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Kepulauan Bangka Belitung",
-        "keyword_query": "operator produksi"
+        "location_query": "DI Yogyakarta",
+        "keyword_query": "warehouse"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Papua Barat",
-        "keyword_query": "sales"
+        "location_query": "Balikpapan",
+        "keyword_query": "marketing"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 4302,
+    "records_after_deduplication": 4303,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498067,
-    "elapsed_seconds": 91.52
+    "hourly_rotation_slot": 498068,
+    "elapsed_seconds": 86.09
   },
   "company_sites": {
     "status": "skipped",
