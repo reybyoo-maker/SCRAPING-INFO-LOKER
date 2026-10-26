@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-10-26T15:56:57Z",
-  "finished_at": "2026-10-26T15:57:48Z",
+  "started_at": "2026-10-26T16:41:21Z",
+  "finished_at": "2026-10-26T16:42:18Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 344,
+      "records": 698,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 1,
-      "batch_start": 1410
+      "run_slot": 2,
+      "batch_start": 1467
     },
     "public_apis": {
       "jobicy": {
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 505,
-  "records_after_deduplication": 4186,
+  "records_received_this_run": 859,
+  "records_after_deduplication": 4279,
   "quality_label_counts": {
-    "HOT": 863,
-    "MEDIUM": 3323,
+    "HOT": 859,
+    "MEDIUM": 3420,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 4131,
+    "active_unverified": 4224,
     "stale": 55
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-26T15:56:57Z",
-    "finished_at": "2026-10-26T15:58:18Z",
+    "started_at": "2026-10-26T16:41:21Z",
+    "finished_at": "2026-10-26T16:42:47Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Tangerang Selatan",
-        "keyword_query": "rekrutmen"
+        "location_query": "Tebing Tinggi",
+        "keyword_query": "staff"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Jambi",
-        "keyword_query": "admin"
+        "location_query": "Jawa Barat",
+        "keyword_query": "customer service"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 4186,
+    "records_after_deduplication": 4279,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498063,
-    "elapsed_seconds": 80.69
+    "hourly_rotation_slot": 498064,
+    "elapsed_seconds": 85.78
   },
   "company_sites": {
     "status": "skipped",
