@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-26T01:37:08Z",
-  "finished_at": "2026-10-26T01:38:03Z",
+  "started_at": "2026-10-26T02:26:20Z",
+  "finished_at": "2026-10-26T02:27:17Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 485,
+      "records": 482,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 646,
-  "records_after_deduplication": 3522,
+  "records_received_this_run": 643,
+  "records_after_deduplication": 3527,
   "quality_label_counts": {
-    "HOT": 632,
-    "MEDIUM": 2890,
+    "HOT": 633,
+    "MEDIUM": 2894,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 3474,
+    "active_unverified": 3479,
     "stale": 48
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-26T01:37:08Z",
-    "finished_at": "2026-10-26T01:38:31Z",
+    "started_at": "2026-10-26T02:26:20Z",
+    "finished_at": "2026-10-26T02:27:47Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Deli Serdang",
-        "keyword_query": "admin"
+        "location_query": "Garut",
+        "keyword_query": "customer service"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Kupang",
-        "keyword_query": "operator produksi"
+        "location_query": "Luwuk",
+        "keyword_query": "warehouse"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 3522,
+    "records_after_deduplication": 3545,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498049,
-    "elapsed_seconds": 83.31
+    "hourly_rotation_slot": 498050,
+    "elapsed_seconds": 87.37
   },
   "company_sites": {
     "status": "skipped",
