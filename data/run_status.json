@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-27T20:28:48Z",
-  "finished_at": "2026-10-27T20:29:45Z",
+  "started_at": "2026-10-27T21:25:15Z",
+  "finished_at": "2026-10-27T21:26:08Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 421,
+      "records": 399,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 581,
-  "records_after_deduplication": 5647,
+  "records_received_this_run": 559,
+  "records_after_deduplication": 5651,
   "quality_label_counts": {
     "HOT": 1274,
-    "MEDIUM": 4373,
+    "MEDIUM": 4377,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 5582,
+    "active_unverified": 5586,
     "stale": 65
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-27T20:28:48Z",
-    "finished_at": "2026-10-27T20:30:11Z",
+    "started_at": "2026-10-27T21:25:15Z",
+    "finished_at": "2026-10-27T21:26:38Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Tomohon",
-        "keyword_query": "walk in interview"
+        "location_query": "Indonesia",
+        "keyword_query": "lowongan kerja"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Nusa Tenggara Timur",
-        "keyword_query": "loker terbaru"
+        "location_query": "Gorontalo",
+        "keyword_query": "rekrutmen"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 5648,
+    "records_after_deduplication": 5651,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498092,
-    "elapsed_seconds": 82.86
+    "hourly_rotation_slot": 498093,
+    "elapsed_seconds": 83.39
   },
   "company_sites": {
     "status": "skipped",
