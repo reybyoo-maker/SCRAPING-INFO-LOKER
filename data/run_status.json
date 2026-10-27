@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-10-27T07:39:29Z",
-  "finished_at": "2026-10-27T07:40:19Z",
+  "started_at": "2026-10-27T08:32:16Z",
+  "finished_at": "2026-10-27T08:33:14Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 283,
+      "records": 625,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 0,
-      "batch_start": 1524
+      "run_slot": 1,
+      "batch_start": 1581
     },
     "public_apis": {
       "jobicy": {
@@ -25,7 +25,7 @@
       "remoteok": {
         "status": "ok",
         "items_received": 100,
-        "records_accepted": 55
+        "records_accepted": 56
       },
       "himalayas": {
         "status": "skipped",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 444,
-  "records_after_deduplication": 4874,
+  "records_received_this_run": 787,
+  "records_after_deduplication": 4916,
   "quality_label_counts": {
-    "HOT": 1054,
-    "MEDIUM": 3820,
+    "HOT": 1057,
+    "MEDIUM": 3859,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 4817,
+    "active_unverified": 4859,
     "stale": 57
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-27T07:39:29Z",
-    "finished_at": "2026-10-27T07:40:43Z",
+    "started_at": "2026-10-27T08:32:16Z",
+    "finished_at": "2026-10-27T08:33:42Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Kolaka",
-        "keyword_query": "rekrutmen"
+        "location_query": "Labuan Bajo",
+        "keyword_query": "staff"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Metro",
-        "keyword_query": "admin"
+        "location_query": "Pagar Alam",
+        "keyword_query": "customer service"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 4876,
+    "records_after_deduplication": 4934,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498079,
-    "elapsed_seconds": 74.26
+    "hourly_rotation_slot": 498080,
+    "elapsed_seconds": 86.16
   },
   "company_sites": {
     "status": "skipped",
