@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-27T14:40:14Z",
-  "finished_at": "2026-10-27T14:41:16Z",
+  "started_at": "2026-10-27T15:38:31Z",
+  "finished_at": "2026-10-27T15:39:34Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 591,
+      "records": 659,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 751,
-  "records_after_deduplication": 5283,
+  "records_received_this_run": 819,
+  "records_after_deduplication": 5293,
   "quality_label_counts": {
-    "HOT": 1173,
-    "MEDIUM": 4110,
+    "HOT": 1178,
+    "MEDIUM": 4115,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 5221,
+    "active_unverified": 5231,
     "stale": 62
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-27T14:40:14Z",
-    "finished_at": "2026-10-27T14:41:41Z",
+    "started_at": "2026-10-27T15:38:30Z",
+    "finished_at": "2026-10-27T15:40:13Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Pontianak",
-        "keyword_query": "marketing"
+        "location_query": "Salatiga",
+        "keyword_query": "finance"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Surabaya",
-        "keyword_query": "programmer"
+        "location_query": "Tanjung Selor",
+        "keyword_query": "data analyst"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 5284,
+    "records_after_deduplication": 5293,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498086,
-    "elapsed_seconds": 86.96
+    "hourly_rotation_slot": 498087,
+    "elapsed_seconds": 102.61
   },
   "company_sites": {
     "status": "skipped",
