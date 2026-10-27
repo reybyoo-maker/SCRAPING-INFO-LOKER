@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-27T22:28:17Z",
-  "finished_at": "2026-10-27T22:29:12Z",
+  "started_at": "2026-10-27T23:22:53Z",
+  "finished_at": "2026-10-27T23:23:50Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 376,
+      "records": 390,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,11 +42,11 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 536,
+  "records_received_this_run": 550,
   "records_after_deduplication": 5654,
   "quality_label_counts": {
-    "HOT": 1274,
-    "MEDIUM": 4380,
+    "HOT": 1275,
+    "MEDIUM": 4379,
     "LOW": 0
   },
   "listing_state_counts": {
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-27T22:28:16Z",
-    "finished_at": "2026-10-27T22:29:39Z",
+    "started_at": "2026-10-27T23:22:52Z",
+    "finished_at": "2026-10-27T23:24:15Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Sumatera Selatan",
-        "keyword_query": "loker terbaru"
+        "location_query": "Jawa Tengah",
+        "keyword_query": "rekrutmen"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Papua",
-        "keyword_query": "staff"
+        "location_query": "Badung",
+        "keyword_query": "admin"
       },
       "maganghub": {
         "status": "blocked",
@@ -135,8 +135,8 @@
     },
     "records_after_deduplication": 5654,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498094,
-    "elapsed_seconds": 82.68
+    "hourly_rotation_slot": 498095,
+    "elapsed_seconds": 83.25
   },
   "company_sites": {
     "status": "skipped",
