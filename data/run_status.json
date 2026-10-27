@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-27T06:29:22Z",
-  "finished_at": "2026-10-27T06:30:13Z",
+  "started_at": "2026-10-27T07:39:29Z",
+  "finished_at": "2026-10-27T07:40:19Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 293,
+      "records": 283,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 454,
-  "records_after_deduplication": 4850,
+  "records_received_this_run": 444,
+  "records_after_deduplication": 4874,
   "quality_label_counts": {
-    "HOT": 1036,
-    "MEDIUM": 3814,
+    "HOT": 1054,
+    "MEDIUM": 3820,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 4793,
+    "active_unverified": 4817,
     "stale": 57
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-27T06:29:22Z",
-    "finished_at": "2026-10-27T06:30:42Z",
+    "started_at": "2026-10-27T07:39:29Z",
+    "finished_at": "2026-10-27T07:40:43Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Jember",
-        "keyword_query": "loker terbaru"
+        "location_query": "Kolaka",
+        "keyword_query": "rekrutmen"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Mamuju",
-        "keyword_query": "staff"
+        "location_query": "Metro",
+        "keyword_query": "admin"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 4868,
+    "records_after_deduplication": 4876,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498078,
-    "elapsed_seconds": 80.18
+    "hourly_rotation_slot": 498079,
+    "elapsed_seconds": 74.26
   },
   "company_sites": {
     "status": "skipped",
