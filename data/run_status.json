@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-10-26T23:21:06Z",
-  "finished_at": "2026-10-26T23:22:13Z",
+  "started_at": "2026-10-27T00:26:46Z",
+  "finished_at": "2026-10-27T00:27:39Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 731,
+      "records": 305,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 2,
-      "batch_start": 1467
+      "run_slot": 0,
+      "batch_start": 1524
     },
     "public_apis": {
       "jobicy": {
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 892,
-  "records_after_deduplication": 4523,
+  "records_received_this_run": 466,
+  "records_after_deduplication": 4526,
   "quality_label_counts": {
     "HOT": 948,
-    "MEDIUM": 3575,
+    "MEDIUM": 3578,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 4468,
+    "active_unverified": 4471,
     "stale": 55
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-26T23:21:06Z",
-    "finished_at": "2026-10-26T23:22:32Z",
+    "started_at": "2026-10-27T00:26:45Z",
+    "finished_at": "2026-10-27T00:28:04Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -105,23 +105,23 @@
         "status": "skipped",
         "reason": "disabled in config.yaml"
       },
-      "maganghub": {
-        "status": "blocked",
-        "http_status": 403,
-        "error": "maganghub robots.txt returned HTTP 403; listing URL was not requested",
-        "retry_on_next_scheduled_run": true
-      },
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Papua Tengah",
-        "keyword_query": "finance"
+        "location_query": "Bandar Lampung",
+        "keyword_query": "programmer"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Bondowoso",
-        "keyword_query": "data analyst"
+        "location_query": "Cilegon",
+        "keyword_query": "magang"
+      },
+      "maganghub": {
+        "status": "blocked",
+        "http_status": 403,
+        "error": "maganghub blocked the request with HTTP 403; source will be logged and retried on a later scheduled run",
+        "retry_on_next_scheduled_run": true
       }
     },
     "additional_records": 33,
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 4523,
+    "records_after_deduplication": 4526,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498071,
-    "elapsed_seconds": 86.33
+    "hourly_rotation_slot": 498072,
+    "elapsed_seconds": 79.07
   },
   "company_sites": {
     "status": "skipped",
