@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-28T09:37:29Z",
-  "finished_at": "2026-10-28T09:38:45Z",
+  "started_at": "2026-10-28T10:35:41Z",
+  "finished_at": "2026-10-28T10:36:32Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 401,
+      "records": 379,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -23,8 +23,9 @@
         "records_accepted": 104
       },
       "remoteok": {
-        "status": "error",
-        "error": "HTTPSConnectionPool(host='remoteok.com', port=443): Read timed out. (read timeout=12)"
+        "status": "ok",
+        "items_received": 100,
+        "records_accepted": 56
       },
       "himalayas": {
         "status": "skipped",
@@ -41,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 505,
-  "records_after_deduplication": 6387,
+  "records_received_this_run": 539,
+  "records_after_deduplication": 6416,
   "quality_label_counts": {
-    "HOT": 1559,
-    "MEDIUM": 4828,
+    "HOT": 1577,
+    "MEDIUM": 4839,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 6321,
+    "active_unverified": 6350,
     "stale": 66
   },
   "flyer_ocr_attempted": 0,
@@ -67,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-28T09:37:28Z",
-    "finished_at": "2026-10-28T09:39:12Z",
+    "started_at": "2026-10-28T10:35:41Z",
+    "finished_at": "2026-10-28T10:37:03Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -107,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Jayapura",
-        "keyword_query": "data analyst"
+        "location_query": "Klaten",
+        "keyword_query": "magang"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Malang",
-        "keyword_query": "fresh graduate"
+        "location_query": "Merauke",
+        "keyword_query": "walk in interview"
       },
       "maganghub": {
         "status": "blocked",
@@ -132,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 6405,
+    "records_after_deduplication": 6434,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498105,
-    "elapsed_seconds": 104.05
+    "hourly_rotation_slot": 498106,
+    "elapsed_seconds": 82.25
   },
   "company_sites": {
     "status": "skipped",
