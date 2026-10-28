@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-28T17:35:57Z",
-  "finished_at": "2026-10-28T17:36:43Z",
+  "started_at": "2026-10-28T18:32:59Z",
+  "finished_at": "2026-10-28T18:33:51Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 282,
+      "records": 270,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -20,7 +20,7 @@
       "jobicy": {
         "status": "ok",
         "items_received": 200,
-        "records_accepted": 102
+        "records_accepted": 103
       },
       "remoteok": {
         "status": "ok",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 440,
-  "records_after_deduplication": 6790,
+  "records_received_this_run": 429,
+  "records_after_deduplication": 6793,
   "quality_label_counts": {
-    "HOT": 1729,
-    "MEDIUM": 5061,
+    "HOT": 1730,
+    "MEDIUM": 5063,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 6720,
+    "active_unverified": 6723,
     "stale": 70
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-28T17:35:57Z",
-    "finished_at": "2026-10-28T17:37:13Z",
+    "started_at": "2026-10-28T18:32:58Z",
+    "finished_at": "2026-10-28T18:34:21Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -105,23 +105,23 @@
         "status": "skipped",
         "reason": "disabled in config.yaml"
       },
+      "kalibrr": {
+        "status": "ok",
+        "records_accepted": 15,
+        "location_query": "Rembang",
+        "keyword_query": "customer service"
+      },
+      "dealls": {
+        "status": "ok",
+        "records_accepted": 18,
+        "location_query": "Tanjung Pinang",
+        "keyword_query": "warehouse"
+      },
       "maganghub": {
         "status": "blocked",
         "http_status": 403,
         "error": "maganghub blocked the request with HTTP 403; source will be logged and retried on a later scheduled run",
         "retry_on_next_scheduled_run": true
-      },
-      "kalibrr": {
-        "status": "ok",
-        "records_accepted": 15,
-        "location_query": "Ponorogo",
-        "keyword_query": "admin"
-      },
-      "dealls": {
-        "status": "ok",
-        "records_accepted": 18,
-        "location_query": "Sumenep",
-        "keyword_query": "operator produksi"
       }
     },
     "additional_records": 33,
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 6790,
+    "records_after_deduplication": 6793,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498113,
-    "elapsed_seconds": 76.86
+    "hourly_rotation_slot": 498114,
+    "elapsed_seconds": 82.81
   },
   "company_sites": {
     "status": "skipped",
