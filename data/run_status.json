@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-28T05:31:57Z",
-  "finished_at": "2026-10-28T05:32:50Z",
+  "started_at": "2026-10-28T06:33:37Z",
+  "finished_at": "2026-10-28T06:34:59Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 597,
+      "records": 665,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 757,
-  "records_after_deduplication": 6037,
+  "records_received_this_run": 825,
+  "records_after_deduplication": 6068,
   "quality_label_counts": {
-    "HOT": 1403,
-    "MEDIUM": 4634,
+    "HOT": 1425,
+    "MEDIUM": 4643,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 5972,
+    "active_unverified": 6003,
     "stale": 65
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-28T05:31:57Z",
-    "finished_at": "2026-10-28T05:33:19Z",
+    "started_at": "2026-10-28T06:33:37Z",
+    "finished_at": "2026-10-28T06:35:39Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,20 +108,20 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Bima",
-        "keyword_query": "sales"
-      },
-      "dealls": {
-        "status": "ok",
-        "records_accepted": 18,
-        "location_query": "Indramayu",
-        "keyword_query": "finance"
+        "location_query": "Bontang",
+        "keyword_query": "marketing"
       },
       "maganghub": {
         "status": "blocked",
         "http_status": 403,
         "error": "maganghub blocked the request with HTTP 403; source will be logged and retried on a later scheduled run",
         "retry_on_next_scheduled_run": true
+      },
+      "dealls": {
+        "status": "ok",
+        "records_accepted": 18,
+        "location_query": "Kendari",
+        "keyword_query": "programmer"
       }
     },
     "additional_records": 33,
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 6055,
+    "records_after_deduplication": 6086,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498101,
-    "elapsed_seconds": 82.09
+    "hourly_rotation_slot": 498102,
+    "elapsed_seconds": 122.45
   },
   "company_sites": {
     "status": "skipped",
