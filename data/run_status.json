@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-28T03:33:14Z",
-  "finished_at": "2026-10-28T03:34:10Z",
+  "started_at": "2026-10-28T04:33:40Z",
+  "finished_at": "2026-10-28T04:34:37Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 625,
+      "records": 656,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 785,
-  "records_after_deduplication": 5987,
+  "records_received_this_run": 816,
+  "records_after_deduplication": 6012,
   "quality_label_counts": {
-    "HOT": 1385,
-    "MEDIUM": 4602,
+    "HOT": 1403,
+    "MEDIUM": 4609,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 5922,
+    "active_unverified": 5947,
     "stale": 65
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-28T03:33:14Z",
-    "finished_at": "2026-10-28T03:34:37Z",
+    "started_at": "2026-10-28T04:33:40Z",
+    "finished_at": "2026-10-28T04:35:01Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Banda Aceh",
-        "keyword_query": "operator produksi"
+        "location_query": "Banyumas",
+        "keyword_query": "warehouse"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Cilacap",
-        "keyword_query": "sales"
+        "location_query": "Depok",
+        "keyword_query": "marketing"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 6005,
+    "records_after_deduplication": 6030,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498099,
-    "elapsed_seconds": 82.94
+    "hourly_rotation_slot": 498100,
+    "elapsed_seconds": 80.99
   },
   "company_sites": {
     "status": "skipped",
