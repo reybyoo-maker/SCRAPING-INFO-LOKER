@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "started_at": "2026-10-28T18:32:59Z",
-  "finished_at": "2026-10-28T18:33:51Z",
+  "started_at": "2026-10-28T19:37:57Z",
+  "finished_at": "2026-10-28T19:38:53Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-28T18:32:58Z",
-    "finished_at": "2026-10-28T18:34:21Z",
+    "started_at": "2026-10-28T19:37:56Z",
+    "finished_at": "2026-10-28T19:39:25Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Rembang",
-        "keyword_query": "customer service"
+        "location_query": "Sibolga",
+        "keyword_query": "operator produksi"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Tanjung Pinang",
-        "keyword_query": "warehouse"
+        "location_query": "Tenggarong",
+        "keyword_query": "sales"
       },
       "maganghub": {
         "status": "blocked",
@@ -135,8 +135,8 @@
     },
     "records_after_deduplication": 6793,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498114,
-    "elapsed_seconds": 82.81
+    "hourly_rotation_slot": 498115,
+    "elapsed_seconds": 89.32
   },
   "company_sites": {
     "status": "skipped",
