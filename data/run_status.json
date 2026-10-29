@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-29T21:29:46Z",
-  "finished_at": "2026-10-29T21:30:41Z",
+  "started_at": "2026-10-29T22:29:54Z",
+  "finished_at": "2026-10-29T22:30:52Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 624,
+      "records": 586,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -20,12 +20,12 @@
       "jobicy": {
         "status": "ok",
         "items_received": 200,
-        "records_accepted": 89
+        "records_accepted": 81
       },
       "remoteok": {
         "status": "ok",
         "items_received": 100,
-        "records_accepted": 56
+        "records_accepted": 57
       },
       "himalayas": {
         "status": "skipped",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 769,
-  "records_after_deduplication": 8233,
+  "records_received_this_run": 724,
+  "records_after_deduplication": 8235,
   "quality_label_counts": {
-    "HOT": 2223,
-    "MEDIUM": 6010,
+    "HOT": 2224,
+    "MEDIUM": 6011,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 8149,
+    "active_unverified": 8151,
     "stale": 84
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-29T21:29:46Z",
-    "finished_at": "2026-10-29T21:31:09Z",
+    "started_at": "2026-10-29T22:29:54Z",
+    "finished_at": "2026-10-29T22:31:19Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Purworejo",
-        "keyword_query": "lowongan kerja"
+        "location_query": "Serang",
+        "keyword_query": "loker terbaru"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Tanjung Balai Karimun",
-        "keyword_query": "rekrutmen"
+        "location_query": "Temanggung",
+        "keyword_query": "staff"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 8233,
+    "records_after_deduplication": 8235,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498141,
-    "elapsed_seconds": 83.64
+    "hourly_rotation_slot": 498142,
+    "elapsed_seconds": 85.78
   },
   "company_sites": {
     "status": "skipped",
