@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-10-28T23:26:07Z",
-  "finished_at": "2026-10-28T23:26:57Z",
+  "started_at": "2026-10-29T00:31:56Z",
+  "finished_at": "2026-10-29T00:32:53Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 266,
+      "records": 373,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 2,
-      "batch_start": 1809
+      "run_slot": 0,
+      "batch_start": 1866
     },
     "public_apis": {
       "jobicy": {
@@ -42,16 +42,16 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 425,
-  "records_after_deduplication": 7062,
+  "records_received_this_run": 532,
+  "records_after_deduplication": 7073,
   "quality_label_counts": {
     "HOT": 1810,
-    "MEDIUM": 5252,
+    "MEDIUM": 5263,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 6992,
-    "stale": 70
+    "active_unverified": 7000,
+    "stale": 73
   },
   "flyer_ocr_attempted": 0,
   "configuration": {
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-28T23:26:06Z",
-    "finished_at": "2026-10-28T23:27:25Z",
+    "started_at": "2026-10-29T00:31:56Z",
+    "finished_at": "2026-10-29T00:33:22Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Timika",
-        "keyword_query": "finance"
+        "location_query": "Yogyakarta",
+        "keyword_query": "programmer"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Nusa Tenggara Barat",
-        "keyword_query": "data analyst"
+        "location_query": "Sulawesi Utara",
+        "keyword_query": "magang"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 7062,
+    "records_after_deduplication": 7073,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498119,
-    "elapsed_seconds": 79.21
+    "hourly_rotation_slot": 498120,
+    "elapsed_seconds": 86.21
   },
   "company_sites": {
     "status": "skipped",
