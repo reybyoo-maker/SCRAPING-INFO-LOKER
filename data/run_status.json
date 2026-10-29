@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-29T06:36:19Z",
-  "finished_at": "2026-10-29T06:37:14Z",
+  "started_at": "2026-10-29T07:52:09Z",
+  "finished_at": "2026-10-29T07:53:00Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 365,
+      "records": 368,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -20,7 +20,7 @@
       "jobicy": {
         "status": "ok",
         "items_received": 200,
-        "records_accepted": 103
+        "records_accepted": 89
       },
       "remoteok": {
         "status": "ok",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 524,
-  "records_after_deduplication": 7414,
+  "records_received_this_run": 513,
+  "records_after_deduplication": 7438,
   "quality_label_counts": {
-    "HOT": 1949,
-    "MEDIUM": 5465,
+    "HOT": 1966,
+    "MEDIUM": 5472,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 7337,
+    "active_unverified": 7361,
     "stale": 77
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-29T06:36:19Z",
-    "finished_at": "2026-10-29T06:37:37Z",
+    "started_at": "2026-10-29T07:52:08Z",
+    "finished_at": "2026-10-29T07:53:28Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Balikpapan",
-        "keyword_query": "loker terbaru"
+        "location_query": "Banjarmasin",
+        "keyword_query": "rekrutmen"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Cianjur",
-        "keyword_query": "staff"
+        "location_query": "Denpasar",
+        "keyword_query": "admin"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 7432,
+    "records_after_deduplication": 7456,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498126,
-    "elapsed_seconds": 78.39
+    "hourly_rotation_slot": 498127,
+    "elapsed_seconds": 80.29
   },
   "company_sites": {
     "status": "skipped",
