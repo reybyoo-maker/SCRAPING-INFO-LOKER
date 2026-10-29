@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-10-29T07:52:09Z",
-  "finished_at": "2026-10-29T07:53:00Z",
+  "started_at": "2026-10-29T08:43:30Z",
+  "finished_at": "2026-10-29T08:44:22Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 368,
+      "records": 272,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 0,
-      "batch_start": 1866
+      "run_slot": 1,
+      "batch_start": 1923
     },
     "public_apis": {
       "jobicy": {
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 513,
-  "records_after_deduplication": 7438,
+  "records_received_this_run": 417,
+  "records_after_deduplication": 7481,
   "quality_label_counts": {
-    "HOT": 1966,
-    "MEDIUM": 5472,
+    "HOT": 1984,
+    "MEDIUM": 5497,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 7361,
+    "active_unverified": 7404,
     "stale": 77
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-29T07:52:08Z",
-    "finished_at": "2026-10-29T07:53:28Z",
+    "started_at": "2026-10-29T08:43:29Z",
+    "finished_at": "2026-10-29T08:44:49Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Banjarmasin",
-        "keyword_query": "rekrutmen"
+        "location_query": "Biak",
+        "keyword_query": "staff"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Denpasar",
-        "keyword_query": "admin"
+        "location_query": "Gresik",
+        "keyword_query": "customer service"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 7456,
+    "records_after_deduplication": 7499,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498127,
-    "elapsed_seconds": 80.29
+    "hourly_rotation_slot": 498128,
+    "elapsed_seconds": 79.59
   },
   "company_sites": {
     "status": "skipped",
