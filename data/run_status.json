@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-29T08:43:30Z",
-  "finished_at": "2026-10-29T08:44:22Z",
+  "started_at": "2026-10-29T09:39:52Z",
+  "finished_at": "2026-10-29T09:40:40Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 272,
+      "records": 271,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 417,
-  "records_after_deduplication": 7481,
+  "records_received_this_run": 416,
+  "records_after_deduplication": 7509,
   "quality_label_counts": {
-    "HOT": 1984,
-    "MEDIUM": 5497,
+    "HOT": 2005,
+    "MEDIUM": 5504,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 7404,
+    "active_unverified": 7432,
     "stale": 77
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-29T08:43:29Z",
-    "finished_at": "2026-10-29T08:44:49Z",
+    "started_at": "2026-10-29T09:39:51Z",
+    "finished_at": "2026-10-29T09:41:10Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,15 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Biak",
-        "keyword_query": "staff"
+        "location_query": "Bondowoso",
+        "keyword_query": "admin"
       },
       "dealls": {
-        "status": "ok",
-        "records_accepted": 18,
-        "location_query": "Gresik",
-        "keyword_query": "customer service"
+        "status": "no_records",
+        "records_accepted": 0,
+        "reason": "Parser returned zero records; the page may be JavaScript-rendered, the search URL may have changed, or selectors/JSON-LD may need updating. Source remains enabled for the next scheduled retry.",
+        "location_query": "Kediri",
+        "keyword_query": "operator produksi"
       },
       "maganghub": {
         "status": "blocked",
@@ -124,7 +125,7 @@
         "retry_on_next_scheduled_run": true
       }
     },
-    "additional_records": 33,
+    "additional_records": 15,
     "company_site_records": 0,
     "company_sites": {
       "status": "skipped",
@@ -133,10 +134,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 7499,
+    "records_after_deduplication": 7509,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498128,
-    "elapsed_seconds": 79.59
+    "hourly_rotation_slot": 498129,
+    "elapsed_seconds": 79.08
   },
   "company_sites": {
     "status": "skipped",
