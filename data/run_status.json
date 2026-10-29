@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-29T14:45:30Z",
-  "finished_at": "2026-10-29T14:46:22Z",
+  "started_at": "2026-10-29T15:41:58Z",
+  "finished_at": "2026-10-29T15:42:51Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 267,
+      "records": 304,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 412,
-  "records_after_deduplication": 7830,
+  "records_received_this_run": 449,
+  "records_after_deduplication": 7835,
   "quality_label_counts": {
     "HOT": 2124,
-    "MEDIUM": 5706,
+    "MEDIUM": 5711,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 7748,
+    "active_unverified": 7753,
     "stale": 82
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-29T14:45:29Z",
-    "finished_at": "2026-10-29T14:46:46Z",
+    "started_at": "2026-10-29T15:41:58Z",
+    "finished_at": "2026-10-29T15:43:19Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Kuningan",
-        "keyword_query": "marketing"
+        "location_query": "Lumajang",
+        "keyword_query": "finance"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Nganjuk",
-        "keyword_query": "programmer"
+        "location_query": "Pandeglang",
+        "keyword_query": "data analyst"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 7830,
+    "records_after_deduplication": 7835,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498134,
-    "elapsed_seconds": 76.82
+    "hourly_rotation_slot": 498135,
+    "elapsed_seconds": 81.6
   },
   "company_sites": {
     "status": "skipped",
