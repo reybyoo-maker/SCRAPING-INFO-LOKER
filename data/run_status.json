@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-29T10:37:25Z",
-  "finished_at": "2026-10-29T10:38:13Z",
+  "started_at": "2026-10-29T11:31:13Z",
+  "finished_at": "2026-10-29T11:31:59Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 293,
+      "records": 282,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 438,
-  "records_after_deduplication": 7516,
+  "records_received_this_run": 427,
+  "records_after_deduplication": 7541,
   "quality_label_counts": {
-    "HOT": 2004,
-    "MEDIUM": 5512,
+    "HOT": 2023,
+    "MEDIUM": 5518,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 7439,
+    "active_unverified": 7464,
     "stale": 77
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-29T10:37:24Z",
-    "finished_at": "2026-10-29T10:38:41Z",
+    "started_at": "2026-10-29T11:31:12Z",
+    "finished_at": "2026-10-29T11:32:28Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Cilegon",
-        "keyword_query": "customer service"
+        "location_query": "Dumai",
+        "keyword_query": "operator produksi"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Kotamobagu",
-        "keyword_query": "warehouse"
+        "location_query": "Lombok Tengah",
+        "keyword_query": "sales"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 7534,
+    "records_after_deduplication": 7541,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498130,
-    "elapsed_seconds": 77.25
+    "hourly_rotation_slot": 498131,
+    "elapsed_seconds": 75.48
   },
   "company_sites": {
     "status": "skipped",
