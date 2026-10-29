@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-29T17:38:53Z",
-  "finished_at": "2026-10-29T17:39:50Z",
+  "started_at": "2026-10-29T18:35:32Z",
+  "finished_at": "2026-10-29T18:36:29Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 577,
+      "records": 601,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 722,
-  "records_after_deduplication": 7943,
+  "records_received_this_run": 746,
+  "records_after_deduplication": 7954,
   "quality_label_counts": {
-    "HOT": 2130,
-    "MEDIUM": 5813,
+    "HOT": 2131,
+    "MEDIUM": 5823,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 7861,
+    "active_unverified": 7872,
     "stale": 82
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-29T17:38:52Z",
-    "finished_at": "2026-10-29T17:40:18Z",
+    "started_at": "2026-10-29T18:35:31Z",
+    "finished_at": "2026-10-29T18:36:59Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Metro",
-        "keyword_query": "data analyst"
+        "location_query": "Pagar Alam",
+        "keyword_query": "magang"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Purbalingga",
-        "keyword_query": "fresh graduate"
+        "location_query": "Sampit",
+        "keyword_query": "walk in interview"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 7943,
+    "records_after_deduplication": 7954,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498137,
-    "elapsed_seconds": 86.46
+    "hourly_rotation_slot": 498138,
+    "elapsed_seconds": 88.05
   },
   "company_sites": {
     "status": "skipped",
