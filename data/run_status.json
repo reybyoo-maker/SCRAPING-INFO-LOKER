@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-10-29T23:26:39Z",
-  "finished_at": "2026-10-29T23:27:32Z",
+  "started_at": "2026-10-30T00:32:57Z",
+  "finished_at": "2026-10-30T00:33:53Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 602,
+      "records": 260,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 2,
-      "batch_start": 1980
+      "run_slot": 0,
+      "batch_start": 2037
     },
     "public_apis": {
       "jobicy": {
@@ -25,7 +25,7 @@
       "remoteok": {
         "status": "ok",
         "items_received": 100,
-        "records_accepted": 57
+        "records_accepted": 55
       },
       "himalayas": {
         "status": "skipped",
@@ -42,16 +42,16 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 740,
-  "records_after_deduplication": 8236,
+  "records_received_this_run": 396,
+  "records_after_deduplication": 8244,
   "quality_label_counts": {
-    "HOT": 2224,
-    "MEDIUM": 6012,
+    "HOT": 2226,
+    "MEDIUM": 6018,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 8152,
-    "stale": 84
+    "active_unverified": 8159,
+    "stale": 85
   },
   "flyer_ocr_attempted": 0,
   "configuration": {
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-29T23:26:38Z",
-    "finished_at": "2026-10-29T23:28:03Z",
+    "started_at": "2026-10-30T00:32:57Z",
+    "finished_at": "2026-10-30T00:34:21Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Sorong",
-        "keyword_query": "rekrutmen"
+        "location_query": "Surabaya",
+        "keyword_query": "staff"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Tuban",
-        "keyword_query": "admin"
+        "location_query": "Sumatera Barat",
+        "keyword_query": "customer service"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 8238,
+    "records_after_deduplication": 8244,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498143,
-    "elapsed_seconds": 85.0
+    "hourly_rotation_slot": 498144,
+    "elapsed_seconds": 84.53
   },
   "company_sites": {
     "status": "skipped",
