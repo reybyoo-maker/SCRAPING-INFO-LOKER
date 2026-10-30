@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-30T06:36:54Z",
-  "finished_at": "2026-10-30T06:37:44Z",
+  "started_at": "2026-10-30T07:51:32Z",
+  "finished_at": "2026-10-30T07:52:21Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 253,
+      "records": 254,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -19,8 +19,8 @@
     "public_apis": {
       "jobicy": {
         "status": "ok",
-        "items_received": 200,
-        "records_accepted": 82
+        "items_received": 100,
+        "records_accepted": 15
       },
       "remoteok": {
         "status": "ok",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 390,
-  "records_after_deduplication": 8513,
+  "records_received_this_run": 324,
+  "records_after_deduplication": 8526,
   "quality_label_counts": {
-    "HOT": 2337,
-    "MEDIUM": 6176,
+    "HOT": 2342,
+    "MEDIUM": 6184,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 8433,
+    "active_unverified": 8446,
     "stale": 80
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-30T06:36:54Z",
-    "finished_at": "2026-10-30T06:38:16Z",
+    "started_at": "2026-10-30T07:51:32Z",
+    "finished_at": "2026-10-30T07:52:47Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Nusa Tenggara Timur",
-        "keyword_query": "marketing"
+        "location_query": "Gorontalo",
+        "keyword_query": "finance"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Bangkalan",
-        "keyword_query": "programmer"
+        "location_query": "Bau-Bau",
+        "keyword_query": "data analyst"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 8520,
+    "records_after_deduplication": 8544,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498150,
-    "elapsed_seconds": 82.31
+    "hourly_rotation_slot": 498151,
+    "elapsed_seconds": 75.47
   },
   "company_sites": {
     "status": "skipped",
