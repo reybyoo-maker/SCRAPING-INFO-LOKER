@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-30T12:35:41Z",
-  "finished_at": "2026-10-30T12:36:38Z",
+  "started_at": "2026-10-30T13:50:51Z",
+  "finished_at": "2026-10-30T13:51:41Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 520,
+      "records": 588,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 587,
-  "records_after_deduplication": 8879,
+  "records_received_this_run": 655,
+  "records_after_deduplication": 8892,
   "quality_label_counts": {
-    "HOT": 2442,
-    "MEDIUM": 6437,
+    "HOT": 2444,
+    "MEDIUM": 6448,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 8799,
+    "active_unverified": 8812,
     "stale": 80
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-30T12:35:40Z",
-    "finished_at": "2026-10-30T12:37:08Z",
+    "started_at": "2026-10-30T13:50:51Z",
+    "finished_at": "2026-10-30T13:52:09Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Bojonegoro",
-        "keyword_query": "walk in interview"
+        "location_query": "Cilacap",
+        "keyword_query": "lowongan kerja"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Karawang",
-        "keyword_query": "loker terbaru"
+        "location_query": "Kotabumi",
+        "keyword_query": "rekrutmen"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 8880,
+    "records_after_deduplication": 8893,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498156,
-    "elapsed_seconds": 88.12
+    "hourly_rotation_slot": 498157,
+    "elapsed_seconds": 78.25
   },
   "company_sites": {
     "status": "skipped",
