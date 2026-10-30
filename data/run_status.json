@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-10-30T07:51:32Z",
-  "finished_at": "2026-10-30T07:52:21Z",
+  "started_at": "2026-10-30T08:43:37Z",
+  "finished_at": "2026-10-30T08:44:31Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 254,
+      "records": 610,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 0,
-      "batch_start": 2037
+      "run_slot": 1,
+      "batch_start": 2094
     },
     "public_apis": {
       "jobicy": {
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 324,
-  "records_after_deduplication": 8526,
+  "records_received_this_run": 680,
+  "records_after_deduplication": 8592,
   "quality_label_counts": {
-    "HOT": 2342,
-    "MEDIUM": 6184,
+    "HOT": 2356,
+    "MEDIUM": 6236,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 8446,
+    "active_unverified": 8512,
     "stale": 80
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-30T07:51:32Z",
-    "finished_at": "2026-10-30T07:52:47Z",
+    "started_at": "2026-10-30T08:43:36Z",
+    "finished_at": "2026-10-30T08:45:00Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Gorontalo",
-        "keyword_query": "finance"
+        "location_query": "Papua",
+        "keyword_query": "programmer"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Bau-Bau",
-        "keyword_query": "data analyst"
+        "location_query": "Blitar",
+        "keyword_query": "magang"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 8544,
+    "records_after_deduplication": 8594,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498151,
-    "elapsed_seconds": 75.47
+    "hourly_rotation_slot": 498152,
+    "elapsed_seconds": 84.56
   },
   "company_sites": {
     "status": "skipped",
