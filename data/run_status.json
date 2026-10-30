@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-30T00:32:57Z",
-  "finished_at": "2026-10-30T00:33:53Z",
+  "started_at": "2026-10-30T01:49:50Z",
+  "finished_at": "2026-10-30T01:50:46Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 260,
+      "records": 281,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -20,7 +20,7 @@
       "jobicy": {
         "status": "ok",
         "items_received": 200,
-        "records_accepted": 81
+        "records_accepted": 82
       },
       "remoteok": {
         "status": "ok",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 396,
-  "records_after_deduplication": 8244,
+  "records_received_this_run": 418,
+  "records_after_deduplication": 8248,
   "quality_label_counts": {
     "HOT": 2226,
-    "MEDIUM": 6018,
+    "MEDIUM": 6022,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 8159,
+    "active_unverified": 8163,
     "stale": 85
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-30T00:32:57Z",
-    "finished_at": "2026-10-30T00:34:21Z",
+    "started_at": "2026-10-30T01:49:49Z",
+    "finished_at": "2026-10-30T01:51:16Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Surabaya",
-        "keyword_query": "staff"
+        "location_query": "Tanjung Selor",
+        "keyword_query": "admin"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Sumatera Barat",
-        "keyword_query": "customer service"
+        "location_query": "Lampung",
+        "keyword_query": "operator produksi"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 8244,
+    "records_after_deduplication": 8266,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498144,
-    "elapsed_seconds": 84.53
+    "hourly_rotation_slot": 498145,
+    "elapsed_seconds": 86.65
   },
   "company_sites": {
     "status": "skipped",
