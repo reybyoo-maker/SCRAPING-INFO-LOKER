@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-30T13:50:51Z",
-  "finished_at": "2026-10-30T13:51:41Z",
+  "started_at": "2026-10-30T14:45:50Z",
+  "finished_at": "2026-10-30T14:46:45Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 588,
+      "records": 612,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -20,7 +20,7 @@
       "jobicy": {
         "status": "ok",
         "items_received": 100,
-        "records_accepted": 12
+        "records_accepted": 13
       },
       "remoteok": {
         "status": "ok",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 655,
-  "records_after_deduplication": 8892,
+  "records_received_this_run": 680,
+  "records_after_deduplication": 8900,
   "quality_label_counts": {
-    "HOT": 2444,
-    "MEDIUM": 6448,
+    "HOT": 2446,
+    "MEDIUM": 6454,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 8812,
+    "active_unverified": 8820,
     "stale": 80
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-30T13:50:51Z",
-    "finished_at": "2026-10-30T13:52:09Z",
+    "started_at": "2026-10-30T14:45:49Z",
+    "finished_at": "2026-10-30T14:47:12Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Cilacap",
-        "keyword_query": "lowongan kerja"
+        "location_query": "Depok",
+        "keyword_query": "loker terbaru"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Kotabumi",
-        "keyword_query": "rekrutmen"
+        "location_query": "Lebak",
+        "keyword_query": "staff"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 8893,
+    "records_after_deduplication": 8900,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498157,
-    "elapsed_seconds": 78.25
+    "hourly_rotation_slot": 498158,
+    "elapsed_seconds": 82.7
   },
   "company_sites": {
     "status": "skipped",
