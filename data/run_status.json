@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-30T21:27:11Z",
-  "finished_at": "2026-10-30T21:28:08Z",
+  "started_at": "2026-10-30T22:27:13Z",
+  "finished_at": "2026-10-30T22:28:06Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 394,
+      "records": 362,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,7 +42,7 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 460,
+  "records_received_this_run": 428,
   "records_after_deduplication": 9240,
   "quality_label_counts": {
     "HOT": 2542,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-30T21:27:10Z",
-    "finished_at": "2026-10-30T21:28:32Z",
+    "started_at": "2026-10-30T22:27:13Z",
+    "finished_at": "2026-10-30T22:29:02Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Padang",
-        "keyword_query": "sales"
+        "location_query": "Pangkal Pinang",
+        "keyword_query": "marketing"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Sampang",
-        "keyword_query": "finance"
+        "location_query": "Singkawang",
+        "keyword_query": "programmer"
       },
       "maganghub": {
         "status": "blocked",
@@ -135,8 +135,8 @@
     },
     "records_after_deduplication": 9240,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498165,
-    "elapsed_seconds": 82.71
+    "hourly_rotation_slot": 498166,
+    "elapsed_seconds": 109.88
   },
   "company_sites": {
     "status": "skipped",
