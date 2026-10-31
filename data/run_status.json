@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-10-31T15:25:10Z",
-  "finished_at": "2026-10-31T15:26:05Z",
+  "started_at": "2026-10-31T16:26:16Z",
+  "finished_at": "2026-10-31T16:27:05Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 551,
+      "records": 275,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 1,
-      "batch_start": 2265
+      "run_slot": 2,
+      "batch_start": 34
     },
     "public_apis": {
       "jobicy": {
@@ -25,7 +25,7 @@
       "remoteok": {
         "status": "ok",
         "items_received": 100,
-        "records_accepted": 57
+        "records_accepted": 58
       },
       "himalayas": {
         "status": "skipped",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 620,
-  "records_after_deduplication": 10073,
+  "records_received_this_run": 345,
+  "records_after_deduplication": 10105,
   "quality_label_counts": {
-    "HOT": 2754,
-    "MEDIUM": 7319,
+    "HOT": 2756,
+    "MEDIUM": 7349,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 9985,
+    "active_unverified": 10017,
     "stale": 88
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-31T15:25:10Z",
-    "finished_at": "2026-10-31T15:26:34Z",
+    "started_at": "2026-10-31T16:26:16Z",
+    "finished_at": "2026-10-31T16:27:37Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Bogor",
-        "keyword_query": "finance"
+        "location_query": "Cianjur",
+        "keyword_query": "programmer"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Jepara",
-        "keyword_query": "data analyst"
+        "location_query": "Kotabaru",
+        "keyword_query": "magang"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 10074,
+    "records_after_deduplication": 10105,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498183,
-    "elapsed_seconds": 84.3
+    "hourly_rotation_slot": 498184,
+    "elapsed_seconds": 81.26
   },
   "company_sites": {
     "status": "skipped",
