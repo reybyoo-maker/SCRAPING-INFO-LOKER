@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-31T11:24:42Z",
-  "finished_at": "2026-10-31T11:25:36Z",
+  "started_at": "2026-10-31T12:32:11Z",
+  "finished_at": "2026-10-31T12:33:11Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 473,
+      "records": 533,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -20,7 +20,7 @@
       "jobicy": {
         "status": "ok",
         "items_received": 100,
-        "records_accepted": 11
+        "records_accepted": 12
       },
       "remoteok": {
         "status": "ok",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 541,
-  "records_after_deduplication": 9818,
+  "records_received_this_run": 602,
+  "records_after_deduplication": 9841,
   "quality_label_counts": {
-    "HOT": 2676,
-    "MEDIUM": 7142,
+    "HOT": 2695,
+    "MEDIUM": 7146,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 9730,
+    "active_unverified": 9753,
     "stale": 88
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-31T11:24:42Z",
-    "finished_at": "2026-10-31T11:26:06Z",
+    "started_at": "2026-10-31T12:32:11Z",
+    "finished_at": "2026-10-31T12:33:39Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Maluku Utara",
-        "keyword_query": "operator produksi"
+        "location_query": "Ambon",
+        "keyword_query": "warehouse"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Bitung",
-        "keyword_query": "sales"
+        "location_query": "Brebes",
+        "keyword_query": "marketing"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 9836,
+    "records_after_deduplication": 9841,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498179,
-    "elapsed_seconds": 84.84
+    "hourly_rotation_slot": 498180,
+    "elapsed_seconds": 88.89
   },
   "company_sites": {
     "status": "skipped",
