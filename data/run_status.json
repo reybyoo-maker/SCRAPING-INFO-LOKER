@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-31T03:34:37Z",
-  "finished_at": "2026-10-31T03:35:39Z",
+  "started_at": "2026-10-31T04:33:13Z",
+  "finished_at": "2026-10-31T04:34:04Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 564,
+      "records": 559,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 632,
-  "records_after_deduplication": 9515,
+  "records_received_this_run": 627,
+  "records_after_deduplication": 9530,
   "quality_label_counts": {
-    "HOT": 2622,
-    "MEDIUM": 6893,
+    "HOT": 2627,
+    "MEDIUM": 6903,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 9435,
+    "active_unverified": 9450,
     "stale": 80
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-31T03:34:36Z",
-    "finished_at": "2026-10-31T03:36:13Z",
+    "started_at": "2026-10-31T04:33:13Z",
+    "finished_at": "2026-10-31T04:34:31Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Sumenep",
-        "keyword_query": "fresh graduate"
+        "location_query": "Tanjung Pinang",
+        "keyword_query": "walk in interview"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Sumatera Utara",
-        "keyword_query": "lowongan kerja"
+        "location_query": "Bengkulu",
+        "keyword_query": "loker terbaru"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 9520,
+    "records_after_deduplication": 9531,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498171,
-    "elapsed_seconds": 97.01
+    "hourly_rotation_slot": 498172,
+    "elapsed_seconds": 78.5
   },
   "company_sites": {
     "status": "skipped",
