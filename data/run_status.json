@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-31T12:32:11Z",
-  "finished_at": "2026-10-31T12:33:11Z",
+  "started_at": "2026-10-31T13:38:31Z",
+  "finished_at": "2026-10-31T13:39:26Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 533,
+      "records": 553,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 602,
-  "records_after_deduplication": 9841,
+  "records_received_this_run": 622,
+  "records_after_deduplication": 9843,
   "quality_label_counts": {
     "HOT": 2695,
-    "MEDIUM": 7146,
+    "MEDIUM": 7148,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 9753,
+    "active_unverified": 9755,
     "stale": 88
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-31T12:32:11Z",
-    "finished_at": "2026-10-31T12:33:39Z",
+    "started_at": "2026-10-31T13:38:30Z",
+    "finished_at": "2026-10-31T13:39:53Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Ambon",
-        "keyword_query": "warehouse"
+        "location_query": "Banjar",
+        "keyword_query": "sales"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Brebes",
-        "keyword_query": "marketing"
+        "location_query": "Deli Serdang",
+        "keyword_query": "finance"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 9841,
+    "records_after_deduplication": 9844,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498180,
-    "elapsed_seconds": 88.89
+    "hourly_rotation_slot": 498181,
+    "elapsed_seconds": 82.79
   },
   "company_sites": {
     "status": "skipped",
