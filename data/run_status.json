@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-10-31T08:34:12Z",
-  "finished_at": "2026-10-31T08:35:07Z",
+  "started_at": "2026-10-31T09:29:21Z",
+  "finished_at": "2026-10-31T09:30:10Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 536,
+      "records": 537,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,16 +42,16 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 604,
-  "records_after_deduplication": 9788,
+  "records_received_this_run": 605,
+  "records_after_deduplication": 9799,
   "quality_label_counts": {
-    "HOT": 2669,
-    "MEDIUM": 7119,
+    "HOT": 2676,
+    "MEDIUM": 7123,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 9702,
-    "stale": 86
+    "active_unverified": 9711,
+    "stale": 88
   },
   "flyer_ocr_attempted": 0,
   "configuration": {
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-31T08:34:11Z",
-    "finished_at": "2026-10-31T08:35:38Z",
+    "started_at": "2026-10-31T09:29:20Z",
+    "finished_at": "2026-10-31T09:30:42Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "DKI Jakarta",
-        "keyword_query": "staff"
+        "location_query": "Nusa Tenggara Barat",
+        "keyword_query": "admin"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Papua Pegunungan",
-        "keyword_query": "customer service"
+        "location_query": "Bandung",
+        "keyword_query": "operator produksi"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 9792,
+    "records_after_deduplication": 9803,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498176,
-    "elapsed_seconds": 87.48
+    "hourly_rotation_slot": 498177,
+    "elapsed_seconds": 82.55
   },
   "company_sites": {
     "status": "skipped",
