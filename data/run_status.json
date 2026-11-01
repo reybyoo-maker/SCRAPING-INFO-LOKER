@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-10-31T23:24:53Z",
-  "finished_at": "2026-10-31T23:25:42Z",
+  "started_at": "2026-11-01T00:38:06Z",
+  "finished_at": "2026-11-01T00:38:56Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 250,
+      "records": 367,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 2,
-      "batch_start": 34
+      "run_slot": 0,
+      "batch_start": 91
     },
     "public_apis": {
       "jobicy": {
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 320,
-  "records_after_deduplication": 10358,
+  "records_received_this_run": 437,
+  "records_after_deduplication": 10371,
   "quality_label_counts": {
     "HOT": 2836,
-    "MEDIUM": 7522,
+    "MEDIUM": 7535,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 10267,
+    "active_unverified": 10280,
     "stale": 91
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-10-31T23:24:52Z",
-    "finished_at": "2026-10-31T23:26:10Z",
+    "started_at": "2026-11-01T00:38:06Z",
+    "finished_at": "2026-11-01T00:39:26Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Medan",
-        "keyword_query": "rekrutmen"
+        "location_query": "Nganjuk",
+        "keyword_query": "staff"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Prabumulih",
-        "keyword_query": "admin"
+        "location_query": "Samarinda",
+        "keyword_query": "customer service"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 10358,
+    "records_after_deduplication": 10371,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498191,
-    "elapsed_seconds": 78.81
+    "hourly_rotation_slot": 498192,
+    "elapsed_seconds": 80.34
   },
   "company_sites": {
     "status": "skipped",
