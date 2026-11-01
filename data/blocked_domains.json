@@ -221,6 +221,72 @@
       "reason": "HTTP 403; requests paused until manual review",
       "http_status": 403,
       "retry_policy": "manual_review_required"
+    },
+    "ptfi.co.id": {
+      "blocked_at": "2026-11-01T04:56:02Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "semenbaturaja.co.id": {
+      "blocked_at": "2026-11-01T04:56:41Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "krakatauposco.co.id": {
+      "blocked_at": "2026-11-01T04:56:42Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "hypermart.co.id": {
+      "blocked_at": "2026-11-01T04:58:17Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "modernland.co.id": {
+      "blocked_at": "2026-11-01T05:02:11Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "intiland.com": {
+      "blocked_at": "2026-11-01T05:02:15Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "jababeka.com": {
+      "blocked_at": "2026-11-01T05:02:16Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "itdc.co.id": {
+      "blocked_at": "2026-11-01T05:04:48Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "perumnas.co.id": {
+      "blocked_at": "2026-11-01T05:04:55Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "jasatirta1.co.id": {
+      "blocked_at": "2026-11-01T05:04:57Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "qwords.com": {
+      "blocked_at": "2026-11-01T05:09:02Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
     }
   }
 }
