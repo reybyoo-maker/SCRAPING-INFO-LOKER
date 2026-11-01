@@ -287,6 +287,24 @@
       "reason": "HTTP 403; requests paused until manual review",
       "http_status": 403,
       "retry_policy": "manual_review_required"
+    },
+    "linkaja.id": {
+      "blocked_at": "2026-11-01T18:30:16Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "sicepat.com": {
+      "blocked_at": "2026-11-01T18:37:41Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "ot.id": {
+      "blocked_at": "2026-11-01T18:47:27Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
     }
   }
 }
