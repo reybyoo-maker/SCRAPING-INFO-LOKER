@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-11-01T02:39:06Z",
-  "finished_at": "2026-11-01T02:40:07Z",
+  "started_at": "2026-11-01T03:40:50Z",
+  "finished_at": "2026-11-01T03:41:46Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 384,
+      "records": 393,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,16 +42,16 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 454,
-  "records_after_deduplication": 10376,
+  "records_received_this_run": 463,
+  "records_after_deduplication": 10384,
   "quality_label_counts": {
-    "HOT": 2841,
-    "MEDIUM": 7535,
+    "HOT": 2844,
+    "MEDIUM": 7540,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 10285,
-    "stale": 91
+    "active_unverified": 10292,
+    "stale": 92
   },
   "flyer_ocr_attempted": 0,
   "configuration": {
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-01T02:39:05Z",
-    "finished_at": "2026-11-01T02:40:31Z",
+    "started_at": "2026-11-01T03:40:50Z",
+    "finished_at": "2026-11-01T03:42:20Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -105,23 +105,23 @@
         "status": "skipped",
         "reason": "disabled in config.yaml"
       },
-      "maganghub": {
-        "status": "blocked",
-        "http_status": 403,
-        "error": "maganghub robots.txt returned HTTP 403; listing URL was not requested",
-        "retry_on_next_scheduled_run": true
-      },
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Pekalongan",
-        "keyword_query": "customer service"
+        "location_query": "Purbalingga",
+        "keyword_query": "operator produksi"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Sukabumi",
-        "keyword_query": "warehouse"
+        "location_query": "Tangerang Selatan",
+        "keyword_query": "sales"
+      },
+      "maganghub": {
+        "status": "blocked",
+        "http_status": 403,
+        "error": "maganghub blocked the request with HTTP 403; source will be logged and retried on a later scheduled run",
+        "retry_on_next_scheduled_run": true
       }
     },
     "additional_records": 33,
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 10379,
+    "records_after_deduplication": 10384,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498194,
-    "elapsed_seconds": 86.14
+    "hourly_rotation_slot": 498195,
+    "elapsed_seconds": 90.63
   },
   "company_sites": {
     "status": "skipped",
