@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-11-01T14:28:03Z",
-  "finished_at": "2026-11-01T14:28:57Z",
+  "started_at": "2026-11-01T15:25:23Z",
+  "finished_at": "2026-11-01T15:26:19Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 258,
+      "records": 249,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 325,
-  "records_after_deduplication": 10859,
+  "records_received_this_run": 316,
+  "records_after_deduplication": 10862,
   "quality_label_counts": {
     "HOT": 2935,
-    "MEDIUM": 7924,
+    "MEDIUM": 7927,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 10761,
+    "active_unverified": 10764,
     "stale": 98
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-01T14:28:03Z",
-    "finished_at": "2026-11-01T14:29:27Z",
+    "started_at": "2026-11-01T15:25:23Z",
+    "finished_at": "2026-11-01T15:26:50Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Maluku",
-        "keyword_query": "loker terbaru"
+        "location_query": "Papua Barat Daya",
+        "keyword_query": "rekrutmen"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Binjai",
-        "keyword_query": "staff"
+        "location_query": "Boyolali",
+        "keyword_query": "admin"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 10859,
+    "records_after_deduplication": 10862,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498206,
-    "elapsed_seconds": 84.4
+    "hourly_rotation_slot": 498207,
+    "elapsed_seconds": 88.13
   },
   "company_sites": {
     "status": "skipped",
