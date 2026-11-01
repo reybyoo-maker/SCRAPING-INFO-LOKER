@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-11-01T13:40:05Z",
-  "finished_at": "2026-11-01T13:41:04Z",
+  "started_at": "2026-11-01T14:28:03Z",
+  "finished_at": "2026-11-01T14:28:57Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 266,
+      "records": 258,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 333,
-  "records_after_deduplication": 10857,
+  "records_received_this_run": 325,
+  "records_after_deduplication": 10859,
   "quality_label_counts": {
-    "HOT": 2934,
-    "MEDIUM": 7923,
+    "HOT": 2935,
+    "MEDIUM": 7924,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 10759,
+    "active_unverified": 10761,
     "stale": 98
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-01T13:40:04Z",
-    "finished_at": "2026-11-01T13:41:23Z",
+    "started_at": "2026-11-01T14:28:03Z",
+    "finished_at": "2026-11-01T14:29:27Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -105,23 +105,23 @@
         "status": "skipped",
         "reason": "disabled in config.yaml"
       },
-      "maganghub": {
-        "status": "blocked",
-        "http_status": 403,
-        "error": "maganghub robots.txt returned HTTP 403; listing URL was not requested",
-        "retry_on_next_scheduled_run": true
-      },
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Kalimantan Utara",
-        "keyword_query": "lowongan kerja"
+        "location_query": "Maluku",
+        "keyword_query": "loker terbaru"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Banyuwangi",
-        "keyword_query": "rekrutmen"
+        "location_query": "Binjai",
+        "keyword_query": "staff"
+      },
+      "maganghub": {
+        "status": "blocked",
+        "http_status": 403,
+        "error": "maganghub blocked the request with HTTP 403; source will be logged and retried on a later scheduled run",
+        "retry_on_next_scheduled_run": true
       }
     },
     "additional_records": 33,
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 10858,
+    "records_after_deduplication": 10859,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498205,
-    "elapsed_seconds": 79.8
+    "hourly_rotation_slot": 498206,
+    "elapsed_seconds": 84.4
   },
   "company_sites": {
     "status": "skipped",
