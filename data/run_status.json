@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-11-01T19:29:48Z",
-  "finished_at": "2026-11-01T19:30:46Z",
+  "started_at": "2026-11-01T20:24:25Z",
+  "finished_at": "2026-11-01T20:25:19Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 552,
+      "records": 510,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,7 +42,7 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 619,
+  "records_received_this_run": 577,
   "records_after_deduplication": 11153,
   "quality_label_counts": {
     "HOT": 3012,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-01T19:29:47Z",
-    "finished_at": "2026-11-01T19:31:19Z",
+    "started_at": "2026-11-01T20:24:25Z",
+    "finished_at": "2026-11-01T20:25:49Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Bukittinggi",
-        "keyword_query": "operator produksi"
+        "location_query": "Demak",
+        "keyword_query": "warehouse"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Kolaka",
-        "keyword_query": "sales"
+        "location_query": "Labuan Bajo",
+        "keyword_query": "marketing"
       },
       "maganghub": {
         "status": "blocked",
@@ -135,8 +135,8 @@
     },
     "records_after_deduplication": 11153,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498211,
-    "elapsed_seconds": 91.86
+    "hourly_rotation_slot": 498212,
+    "elapsed_seconds": 84.85
   },
   "company_sites": {
     "status": "skipped",
