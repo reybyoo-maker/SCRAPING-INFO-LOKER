@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-11-02T18:44:50Z",
-  "finished_at": "2026-11-02T18:45:40Z",
+  "started_at": "2026-11-02T19:45:12Z",
+  "finished_at": "2026-11-02T19:46:03Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 395,
+      "records": 343,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 460,
-  "records_after_deduplication": 11693,
+  "records_received_this_run": 408,
+  "records_after_deduplication": 11694,
   "quality_label_counts": {
-    "HOT": 3349,
+    "HOT": 3350,
     "MEDIUM": 8344,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 11591,
+    "active_unverified": 11592,
     "stale": 102
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-02T18:44:49Z",
-    "finished_at": "2026-11-02T18:46:03Z",
+    "started_at": "2026-11-02T19:45:11Z",
+    "finished_at": "2026-11-02T19:46:36Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Papua Pegunungan",
-        "keyword_query": "magang"
+        "location_query": "Bandung",
+        "keyword_query": "fresh graduate"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Bontang",
-        "keyword_query": "walk in interview"
+        "location_query": "Cimahi",
+        "keyword_query": "lowongan kerja"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 11693,
+    "records_after_deduplication": 11694,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498234,
-    "elapsed_seconds": 74.19
+    "hourly_rotation_slot": 498235,
+    "elapsed_seconds": 85.71
   },
   "company_sites": {
     "status": "skipped",
