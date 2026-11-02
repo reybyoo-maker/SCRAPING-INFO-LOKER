@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-11-02T09:51:28Z",
-  "finished_at": "2026-11-02T09:52:22Z",
+  "started_at": "2026-11-02T10:49:58Z",
+  "finished_at": "2026-11-02T10:50:49Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 503,
+      "records": 544,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -25,7 +25,7 @@
       "remoteok": {
         "status": "ok",
         "items_received": 100,
-        "records_accepted": 58
+        "records_accepted": 57
       },
       "himalayas": {
         "status": "skipped",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 568,
-  "records_after_deduplication": 11469,
+  "records_received_this_run": 608,
+  "records_after_deduplication": 11494,
   "quality_label_counts": {
-    "HOT": 3218,
-    "MEDIUM": 8251,
+    "HOT": 3235,
+    "MEDIUM": 8259,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 11367,
+    "active_unverified": 11392,
     "stale": 102
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-02T09:51:28Z",
-    "finished_at": "2026-11-02T09:52:48Z",
+    "started_at": "2026-11-02T10:49:58Z",
+    "finished_at": "2026-11-02T10:51:17Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Sumbawa",
-        "keyword_query": "admin"
+        "location_query": "Tanjung Balai",
+        "keyword_query": "customer service"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Indonesia",
-        "keyword_query": "operator produksi"
+        "location_query": "Sumatera Selatan",
+        "keyword_query": "warehouse"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 11488,
+    "records_after_deduplication": 11512,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498225,
-    "elapsed_seconds": 80.85
+    "hourly_rotation_slot": 498226,
+    "elapsed_seconds": 79.59
   },
   "company_sites": {
     "status": "skipped",
