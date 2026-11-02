@@ -305,6 +305,42 @@
       "reason": "HTTP 403; requests paused until manual review",
       "http_status": 403,
       "retry_policy": "manual_review_required"
+    },
+    "ajaib.co.id": {
+      "blocked_at": "2026-11-02T01:58:13Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "glints.com": {
+      "blocked_at": "2026-11-02T02:00:41Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "antam.com": {
+      "blocked_at": "2026-11-02T02:03:59Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "erafone.com": {
+      "blocked_at": "2026-11-02T02:09:44Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "pegadaian.co.id": {
+      "blocked_at": "2026-11-02T02:15:32Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "narasi.tv": {
+      "blocked_at": "2026-11-02T02:17:12Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
     }
   }
 }
