@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-11-02T03:44:07Z",
-  "finished_at": "2026-11-02T03:44:55Z",
+  "started_at": "2026-11-02T04:50:27Z",
+  "finished_at": "2026-11-02T04:51:18Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 273,
+      "records": 275,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 340,
-  "records_after_deduplication": 11216,
+  "records_received_this_run": 342,
+  "records_after_deduplication": 11235,
   "quality_label_counts": {
-    "HOT": 3065,
-    "MEDIUM": 8151,
+    "HOT": 3083,
+    "MEDIUM": 8152,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 11111,
+    "active_unverified": 11130,
     "stale": 105
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-02T03:44:06Z",
-    "finished_at": "2026-11-02T03:45:23Z",
+    "started_at": "2026-11-02T04:50:26Z",
+    "finished_at": "2026-11-02T04:51:51Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,20 +108,20 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Nabire",
-        "keyword_query": "fresh graduate"
-      },
-      "dealls": {
-        "status": "ok",
-        "records_accepted": 18,
-        "location_query": "Salatiga",
-        "keyword_query": "lowongan kerja"
+        "location_query": "Palu",
+        "keyword_query": "walk in interview"
       },
       "maganghub": {
         "status": "blocked",
         "http_status": 403,
         "error": "maganghub blocked the request with HTTP 403; source will be logged and retried on a later scheduled run",
         "retry_on_next_scheduled_run": true
+      },
+      "dealls": {
+        "status": "ok",
+        "records_accepted": 18,
+        "location_query": "Sidoarjo",
+        "keyword_query": "loker terbaru"
       }
     },
     "additional_records": 33,
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 11234,
+    "records_after_deduplication": 11253,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498219,
-    "elapsed_seconds": 77.1
+    "hourly_rotation_slot": 498220,
+    "elapsed_seconds": 85.64
   },
   "company_sites": {
     "status": "skipped",
