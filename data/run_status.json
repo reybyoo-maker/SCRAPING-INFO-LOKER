@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-11-02T16:54:00Z",
-  "finished_at": "2026-11-02T16:54:57Z",
+  "started_at": "2026-11-02T17:49:10Z",
+  "finished_at": "2026-11-02T17:50:06Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 406,
+      "records": 385,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 471,
-  "records_after_deduplication": 11681,
+  "records_received_this_run": 450,
+  "records_after_deduplication": 11687,
   "quality_label_counts": {
-    "HOT": 3346,
-    "MEDIUM": 8335,
+    "HOT": 3350,
+    "MEDIUM": 8337,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 11579,
+    "active_unverified": 11585,
     "stale": 102
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-02T16:54:00Z",
-    "finished_at": "2026-11-02T16:55:24Z",
+    "started_at": "2026-11-02T17:49:09Z",
+    "finished_at": "2026-11-02T17:50:33Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Kalimantan Timur",
-        "keyword_query": "programmer"
+        "location_query": "Sulawesi Tenggara",
+        "keyword_query": "data analyst"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Banyumas",
-        "keyword_query": "magang"
+        "location_query": "Bima",
+        "keyword_query": "fresh graduate"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 11682,
+    "records_after_deduplication": 11687,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498232,
-    "elapsed_seconds": 85.11
+    "hourly_rotation_slot": 498233,
+    "elapsed_seconds": 84.55
   },
   "company_sites": {
     "status": "skipped",
