@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-11-02T15:52:55Z",
-  "finished_at": "2026-11-02T15:53:46Z",
+  "started_at": "2026-11-02T16:54:00Z",
+  "finished_at": "2026-11-02T16:54:57Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 502,
+      "records": 406,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 1,
-      "batch_start": 319
+      "run_slot": 2,
+      "batch_start": 376
     },
     "public_apis": {
       "jobicy": {
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 567,
-  "records_after_deduplication": 11620,
+  "records_received_this_run": 471,
+  "records_after_deduplication": 11681,
   "quality_label_counts": {
-    "HOT": 3325,
-    "MEDIUM": 8295,
+    "HOT": 3346,
+    "MEDIUM": 8335,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 11518,
+    "active_unverified": 11579,
     "stale": 102
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-02T15:52:55Z",
-    "finished_at": "2026-11-02T15:54:13Z",
+    "started_at": "2026-11-02T16:54:00Z",
+    "finished_at": "2026-11-02T16:55:24Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Jawa Timur",
-        "keyword_query": "finance"
+        "location_query": "Kalimantan Timur",
+        "keyword_query": "programmer"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Banda Aceh",
-        "keyword_query": "data analyst"
+        "location_query": "Banyumas",
+        "keyword_query": "magang"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 11638,
+    "records_after_deduplication": 11682,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498231,
-    "elapsed_seconds": 79.17
+    "hourly_rotation_slot": 498232,
+    "elapsed_seconds": 85.11
   },
   "company_sites": {
     "status": "skipped",
