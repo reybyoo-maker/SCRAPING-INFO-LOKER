@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-11-03T16:44:32Z",
-  "finished_at": "2026-11-03T16:45:21Z",
+  "started_at": "2026-11-03T17:41:52Z",
+  "finished_at": "2026-11-03T17:42:39Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 236,
+      "records": 263,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 303,
-  "records_after_deduplication": 12220,
+  "records_received_this_run": 330,
+  "records_after_deduplication": 12231,
   "quality_label_counts": {
-    "HOT": 3645,
-    "MEDIUM": 8575,
+    "HOT": 3647,
+    "MEDIUM": 8584,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 12117,
+    "active_unverified": 12128,
     "stale": 103
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-03T16:44:31Z",
-    "finished_at": "2026-11-03T16:45:50Z",
+    "started_at": "2026-11-03T17:41:51Z",
+    "finished_at": "2026-11-03T17:43:06Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,21 +108,21 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Aceh",
-        "keyword_query": "staff"
+        "location_query": "Kepulauan Bangka Belitung",
+        "keyword_query": "admin"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Sulawesi Tengah",
-        "keyword_query": "customer service"
+        "location_query": "Papua Barat",
+        "keyword_query": "operator produksi"
       },
       "maganghub": {
         "status": "no_records",
         "records_accepted": 0,
         "reason": "Parser returned zero records; the page may be JavaScript-rendered, the search URL may have changed, or selectors/JSON-LD may need updating. Source remains enabled for the next scheduled retry.",
-        "location_query": "Kolaka",
-        "keyword_query": "finance"
+        "location_query": "Labuan Bajo",
+        "keyword_query": "programmer"
       }
     },
     "additional_records": 33,
@@ -134,10 +134,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 12220,
+    "records_after_deduplication": 12232,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498256,
-    "elapsed_seconds": 79.39
+    "hourly_rotation_slot": 498257,
+    "elapsed_seconds": 75.41
   },
   "company_sites": {
     "status": "skipped",
