@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-11-03T02:40:35Z",
-  "finished_at": "2026-11-03T02:41:27Z",
+  "started_at": "2026-11-03T03:41:08Z",
+  "finished_at": "2026-11-03T03:42:28Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 499,
+      "records": 544,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -18,9 +18,8 @@
     },
     "public_apis": {
       "jobicy": {
-        "status": "ok",
-        "items_received": 100,
-        "records_accepted": 8
+        "status": "error",
+        "error": "HTTPSConnectionPool(host='jobicy.com', port=443): Read timed out. (read timeout=12)"
       },
       "remoteok": {
         "status": "ok",
@@ -42,15 +41,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 565,
-  "records_after_deduplication": 11829,
+  "records_received_this_run": 602,
+  "records_after_deduplication": 11851,
   "quality_label_counts": {
-    "HOT": 3449,
-    "MEDIUM": 8380,
+    "HOT": 3467,
+    "MEDIUM": 8384,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 11727,
+    "active_unverified": 11749,
     "stale": 102
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +67,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-03T02:40:35Z",
-    "finished_at": "2026-11-03T02:41:53Z",
+    "started_at": "2026-11-03T03:41:07Z",
+    "finished_at": "2026-11-03T03:42:59Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +107,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Kotabaru",
-        "keyword_query": "customer service"
+        "location_query": "Lamongan",
+        "keyword_query": "operator produksi"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Mojokerto",
-        "keyword_query": "warehouse"
+        "location_query": "Palangka Raya",
+        "keyword_query": "sales"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +132,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 11847,
+    "records_after_deduplication": 11867,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498242,
-    "elapsed_seconds": 78.9
+    "hourly_rotation_slot": 498243,
+    "elapsed_seconds": 112.68
   },
   "company_sites": {
     "status": "skipped",
