@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-11-03T00:39:34Z",
-  "finished_at": "2026-11-03T00:40:29Z",
+  "started_at": "2026-11-03T01:51:42Z",
+  "finished_at": "2026-11-03T01:52:41Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 497,
+      "records": 534,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 563,
-  "records_after_deduplication": 11789,
+  "records_received_this_run": 600,
+  "records_after_deduplication": 11802,
   "quality_label_counts": {
-    "HOT": 3426,
-    "MEDIUM": 8363,
+    "HOT": 3429,
+    "MEDIUM": 8373,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 11687,
+    "active_unverified": 11700,
     "stale": 102
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-03T00:39:33Z",
-    "finished_at": "2026-11-03T00:40:53Z",
+    "started_at": "2026-11-03T01:51:41Z",
+    "finished_at": "2026-11-03T01:53:08Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Garut",
-        "keyword_query": "staff"
+        "location_query": "Jepara",
+        "keyword_query": "admin"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Luwuk",
-        "keyword_query": "customer service"
+        "location_query": "Manado",
+        "keyword_query": "operator produksi"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 11790,
+    "records_after_deduplication": 11820,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498240,
-    "elapsed_seconds": 80.39
+    "hourly_rotation_slot": 498241,
+    "elapsed_seconds": 86.82
   },
   "company_sites": {
     "status": "skipped",
