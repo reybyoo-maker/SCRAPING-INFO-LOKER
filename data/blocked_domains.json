@@ -341,6 +341,18 @@
       "reason": "HTTP 403; requests paused until manual review",
       "http_status": 403,
       "retry_policy": "manual_review_required"
+    },
+    "kompas.com": {
+      "blocked_at": "2026-11-03T11:48:26Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
+    },
+    "grab.com": {
+      "blocked_at": "2026-11-03T11:49:07Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
     }
   }
 }
