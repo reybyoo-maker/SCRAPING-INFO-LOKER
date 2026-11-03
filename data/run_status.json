@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-11-02T23:28:47Z",
-  "finished_at": "2026-11-02T23:29:39Z",
+  "started_at": "2026-11-03T00:39:34Z",
+  "finished_at": "2026-11-03T00:40:29Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 386,
+      "records": 497,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 2,
-      "batch_start": 376
+      "run_slot": 0,
+      "batch_start": 433
     },
     "public_apis": {
       "jobicy": {
@@ -25,7 +25,7 @@
       "remoteok": {
         "status": "ok",
         "items_received": 100,
-        "records_accepted": 57
+        "records_accepted": 58
       },
       "himalayas": {
         "status": "skipped",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 451,
-  "records_after_deduplication": 11778,
+  "records_received_this_run": 563,
+  "records_after_deduplication": 11789,
   "quality_label_counts": {
-    "HOT": 3424,
-    "MEDIUM": 8354,
+    "HOT": 3426,
+    "MEDIUM": 8363,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 11676,
+    "active_unverified": 11687,
     "stale": 102
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-02T23:28:46Z",
-    "finished_at": "2026-11-02T23:30:15Z",
+    "started_at": "2026-11-03T00:39:33Z",
+    "finished_at": "2026-11-03T00:40:53Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,14 +108,14 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Deli Serdang",
-        "keyword_query": "rekrutmen"
+        "location_query": "Garut",
+        "keyword_query": "staff"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Kupang",
-        "keyword_query": "admin"
+        "location_query": "Luwuk",
+        "keyword_query": "customer service"
       },
       "maganghub": {
         "status": "blocked",
@@ -133,10 +133,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 11778,
+    "records_after_deduplication": 11790,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498239,
-    "elapsed_seconds": 89.39
+    "hourly_rotation_slot": 498240,
+    "elapsed_seconds": 80.39
   },
   "company_sites": {
     "status": "skipped",
