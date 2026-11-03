@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-11-03T15:39:47Z",
-  "finished_at": "2026-11-03T15:40:40Z",
+  "started_at": "2026-11-03T16:44:32Z",
+  "finished_at": "2026-11-03T16:45:21Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 404,
+      "records": 236,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 1,
-      "batch_start": 490
+      "run_slot": 2,
+      "batch_start": 547
     },
     "public_apis": {
       "jobicy": {
@@ -25,7 +25,7 @@
       "remoteok": {
         "status": "ok",
         "items_received": 100,
-        "records_accepted": 58
+        "records_accepted": 59
       },
       "himalayas": {
         "status": "skipped",
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 470,
-  "records_after_deduplication": 12176,
+  "records_received_this_run": 303,
+  "records_after_deduplication": 12220,
   "quality_label_counts": {
     "HOT": 3645,
-    "MEDIUM": 8531,
+    "MEDIUM": 8575,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 12073,
+    "active_unverified": 12117,
     "stale": 103
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-03T15:39:47Z",
-    "finished_at": "2026-11-03T15:41:06Z",
+    "started_at": "2026-11-03T16:44:31Z",
+    "finished_at": "2026-11-03T16:45:50Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,21 +108,21 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Trenggalek",
-        "keyword_query": "rekrutmen"
+        "location_query": "Aceh",
+        "keyword_query": "staff"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Kalimantan Barat",
-        "keyword_query": "admin"
+        "location_query": "Sulawesi Tengah",
+        "keyword_query": "customer service"
       },
       "maganghub": {
         "status": "no_records",
         "records_accepted": 0,
         "reason": "Parser returned zero records; the page may be JavaScript-rendered, the search URL may have changed, or selectors/JSON-LD may need updating. Source remains enabled for the next scheduled retry.",
-        "location_query": "Jember",
-        "keyword_query": "marketing"
+        "location_query": "Kolaka",
+        "keyword_query": "finance"
       }
     },
     "additional_records": 33,
@@ -134,10 +134,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 12176,
+    "records_after_deduplication": 12220,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498255,
-    "elapsed_seconds": 79.87
+    "hourly_rotation_slot": 498256,
+    "elapsed_seconds": 79.39
   },
   "company_sites": {
     "status": "skipped",
