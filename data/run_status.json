@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "started_at": "2026-11-03T14:00:56Z",
-  "finished_at": "2026-11-03T14:01:54Z",
+  "started_at": "2026-11-03T15:39:47Z",
+  "finished_at": "2026-11-03T15:40:40Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 399,
+      "records": 404,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 465,
-  "records_after_deduplication": 12167,
+  "records_received_this_run": 470,
+  "records_after_deduplication": 12176,
   "quality_label_counts": {
     "HOT": 3645,
-    "MEDIUM": 8522,
+    "MEDIUM": 8531,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 12064,
+    "active_unverified": 12073,
     "stale": 103
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-03T14:00:55Z",
-    "finished_at": "2026-11-03T14:03:28Z",
+    "started_at": "2026-11-03T15:39:47Z",
+    "finished_at": "2026-11-03T15:41:06Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,21 +108,21 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Tebing Tinggi",
-        "keyword_query": "loker terbaru"
+        "location_query": "Trenggalek",
+        "keyword_query": "rekrutmen"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Jawa Barat",
-        "keyword_query": "staff"
+        "location_query": "Kalimantan Barat",
+        "keyword_query": "admin"
       },
       "maganghub": {
         "status": "no_records",
         "records_accepted": 0,
         "reason": "Parser returned zero records; the page may be JavaScript-rendered, the search URL may have changed, or selectors/JSON-LD may need updating. Source remains enabled for the next scheduled retry.",
-        "location_query": "Fakfak",
-        "keyword_query": "sales"
+        "location_query": "Jember",
+        "keyword_query": "marketing"
       }
     },
     "additional_records": 33,
@@ -134,10 +134,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 12167,
+    "records_after_deduplication": 12176,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498254,
-    "elapsed_seconds": 153.57
+    "hourly_rotation_slot": 498255,
+    "elapsed_seconds": 79.87
   },
   "company_sites": {
     "status": "skipped",
