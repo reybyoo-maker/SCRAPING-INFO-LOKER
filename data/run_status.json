@@ -1,20 +1,20 @@
 {
   "status": "ok",
-  "started_at": "2026-11-03T06:51:11Z",
-  "finished_at": "2026-11-03T06:52:05Z",
+  "started_at": "2026-11-03T08:02:53Z",
+  "finished_at": "2026-11-03T08:03:40Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
       "succeeded": 120,
       "errors": 0,
-      "records": 500,
+      "records": 360,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 0,
-      "batch_start": 433
+      "run_slot": 1,
+      "batch_start": 490
     },
     "public_apis": {
       "jobicy": {
@@ -42,15 +42,15 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 566,
-  "records_after_deduplication": 12020,
+  "records_received_this_run": 426,
+  "records_after_deduplication": 12046,
   "quality_label_counts": {
-    "HOT": 3563,
-    "MEDIUM": 8457,
+    "HOT": 3571,
+    "MEDIUM": 8475,
     "LOW": 0
   },
   "listing_state_counts": {
-    "active_unverified": 11917,
+    "active_unverified": 11943,
     "stale": 103
   },
   "flyer_ocr_attempted": 0,
@@ -68,8 +68,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-03T06:51:11Z",
-    "finished_at": "2026-11-03T06:52:38Z",
+    "started_at": "2026-11-03T08:02:52Z",
+    "finished_at": "2026-11-03T08:04:05Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -108,21 +108,21 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Muna",
-        "keyword_query": "marketing"
+        "location_query": "Pasuruan",
+        "keyword_query": "programmer"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Rembang",
-        "keyword_query": "programmer"
+        "location_query": "Sragen",
+        "keyword_query": "magang"
       },
       "maganghub": {
         "status": "no_records",
         "records_accepted": 0,
         "reason": "Parser returned zero records; the page may be JavaScript-rendered, the search URL may have changed, or selectors/JSON-LD may need updating. Source remains enabled for the next scheduled retry.",
-        "location_query": "Kalimantan Selatan",
-        "keyword_query": "lowongan kerja"
+        "location_query": "Papua Tengah",
+        "keyword_query": "rekrutmen"
       }
     },
     "additional_records": 33,
@@ -134,10 +134,10 @@
       "targets_configured": 419,
       "additional_records": 0
     },
-    "records_after_deduplication": 12027,
+    "records_after_deduplication": 12049,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498246,
-    "elapsed_seconds": 88.1
+    "hourly_rotation_slot": 498248,
+    "elapsed_seconds": 72.73
   },
   "company_sites": {
     "status": "skipped",
