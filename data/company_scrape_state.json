@@ -1,11 +1,11 @@
 {
   "started_at": "2026-10-25T02:06:33Z",
-  "finished_at": "2026-11-11T18:52:07Z",
+  "finished_at": "2026-11-12T01:47:57Z",
   "targets_checked": 419,
-  "records_accepted": 1130,
+  "records_accepted": 1220,
   "status_counts": {
-    "blocked": 58,
-    "no-career-page": 284,
-    "ok": 77
+    "blocked": 59,
+    "no-career-page": 281,
+    "ok": 79
   }
 }
