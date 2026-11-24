@@ -1,31 +1,31 @@
 {
   "status": "ok",
-  "started_at": "2026-11-24T03:48:30Z",
-  "finished_at": "2026-11-24T03:49:21Z",
+  "started_at": "2026-11-24T14:30:59Z",
+  "finished_at": "2026-11-24T14:32:21Z",
   "timezone": "Asia/Jakarta",
   "sources": {
     "google_news_rss": {
       "attempted": 120,
-      "succeeded": 120,
-      "errors": 0,
-      "records": 776,
+      "succeeded": 117,
+      "errors": 3,
+      "records": 375,
       "query_pool_size": 2477,
       "geo_pool_size": 189,
       "selected_geo_queries": 63,
       "selected_targeted_queries": 57,
-      "run_slot": 0,
-      "batch_start": 1736
+      "run_slot": 1,
+      "batch_start": 1793
     },
     "public_apis": {
       "jobicy": {
         "status": "ok",
         "items_received": 100,
-        "records_accepted": 30
+        "records_accepted": 27
       },
       "remoteok": {
         "status": "ok",
         "items_received": 101,
-        "records_accepted": 9
+        "records_accepted": 10
       },
       "himalayas": {
         "status": "skipped",
@@ -42,17 +42,17 @@
     },
     "approved_rss": {}
   },
-  "records_received_this_run": 815,
-  "records_after_deduplication": 20076,
+  "records_received_this_run": 412,
+  "records_after_deduplication": 20276,
   "quality_label_counts": {
-    "HOT": 7539,
-    "MEDIUM": 12536,
+    "HOT": 7636,
+    "MEDIUM": 12639,
     "LOW": 1
   },
   "listing_state_counts": {
-    "active_unverified": 12675,
-    "stale": 7397,
-    "deadline_passed": 4
+    "active_unverified": 12669,
+    "deadline_passed": 5,
+    "stale": 7602
   },
   "flyer_ocr_attempted": 0,
   "configuration": {
@@ -69,8 +69,8 @@
   ],
   "orchestration": {
     "status": "ok",
-    "started_at": "2026-11-24T03:48:30Z",
-    "finished_at": "2026-11-24T04:15:27Z",
+    "started_at": "2026-11-24T14:30:58Z",
+    "finished_at": "2026-11-24T15:02:14Z",
     "legacy_pipeline_return_code": 0,
     "legacy_pipeline_error": null,
     "additional_sources": {
@@ -109,76 +109,58 @@
       "kalibrr": {
         "status": "ok",
         "records_accepted": 15,
-        "location_query": "Nusa Tenggara Barat",
-        "keyword_query": "fresh graduate"
+        "location_query": "Kotamobagu",
+        "keyword_query": "marketing"
       },
       "dealls": {
         "status": "ok",
         "records_accepted": 18,
-        "location_query": "Bandung",
-        "keyword_query": "lowongan kerja"
+        "location_query": "Muna",
+        "keyword_query": "programmer"
       },
       "maganghub": {
         "status": "no_records",
         "records_accepted": 0,
         "reason": "Parser returned zero records; the page may be JavaScript-rendered, the search URL may have changed, or selectors/JSON-LD may need updating. Source remains enabled for the next scheduled retry.",
-        "location_query": "Makassar",
-        "keyword_query": "customer service"
+        "location_query": "Tuban",
+        "keyword_query": "lowongan kerja"
       }
     },
     "additional_records": 33,
-    "company_site_records": 1087,
+    "company_site_records": 1122,
     "company_sites": {
       "status": "ok",
-      "started_at": "2026-11-24T03:49:50Z",
-      "finished_at": "2026-11-24T04:15:24Z",
+      "started_at": "2026-11-24T14:32:51Z",
+      "finished_at": "2026-11-24T15:02:09Z",
       "targets_configured": 419,
       "targets_checked": 419,
-      "additional_records": 1087,
+      "additional_records": 1122,
       "status_counts": {
         "blocked": 61,
-        "no-career-page": 289,
-        "ok": 69
+        "no-career-page": 286,
+        "ok": 72
       },
       "blocked_domains": 65
     },
-    "records_after_deduplication": 20291,
+    "records_after_deduplication": 20477,
     "output_schema": "common v2 plus compatibility aliases",
-    "hourly_rotation_slot": 498748,
-    "elapsed_seconds": 1617.56
+    "hourly_rotation_slot": 498759,
+    "elapsed_seconds": 1876.77
   },
   "company_sites": {
     "status": "ok",
-    "started_at": "2026-11-24T03:49:50Z",
-    "finished_at": "2026-11-24T04:15:24Z",
+    "started_at": "2026-11-24T14:32:51Z",
+    "finished_at": "2026-11-24T15:02:09Z",
     "targets_configured": 419,
     "targets_checked": 419,
-    "additional_records": 1087,
+    "additional_records": 1122,
     "status_counts": {
       "blocked": 61,
-      "no-career-page": 289,
-      "ok": 69
+      "no-career-page": 286,
+      "ok": 72
     },
     "blocked_domains": 65,
     "companies": {
-      "cimb-niaga": {
-        "company": "CIMB Niaga",
-        "domain": "cimbniaga.co.id",
-        "category": "Bank & Fintech",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "cimbniaga.co.id robots.txt redirected outside its host",
-          "robots.txt disallows https://cimbniaga.co.id/career",
-          "robots.txt disallows https://cimbniaga.co.id/karir",
-          "robots.txt disallows https://cimbniaga.co.id/karier",
-          "robots.txt disallows https://cimbniaga.co.id/jobs"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
       "permatabank": {
         "company": "PermataBank",
         "domain": "permatabank.com",
@@ -197,20 +179,20 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "btn": {
-        "company": "BTN",
-        "domain": "btn.co.id",
+      "cimb-niaga": {
+        "company": "CIMB Niaga",
+        "domain": "cimbniaga.co.id",
         "category": "Bank & Fintech",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
         "discovery_notes": [
-          "btn.co.id robots.txt redirected outside its host",
-          "robots.txt disallows https://btn.co.id/career",
-          "robots.txt disallows https://btn.co.id/karir",
-          "robots.txt disallows https://btn.co.id/karier",
-          "robots.txt disallows https://btn.co.id/jobs"
+          "cimbniaga.co.id robots.txt redirected outside its host",
+          "robots.txt disallows https://cimbniaga.co.id/career",
+          "robots.txt disallows https://cimbniaga.co.id/karir",
+          "robots.txt disallows https://cimbniaga.co.id/karier",
+          "robots.txt disallows https://cimbniaga.co.id/jobs"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -251,6 +233,24 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "btn": {
+        "company": "BTN",
+        "domain": "btn.co.id",
+        "category": "Bank & Fintech",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "btn.co.id robots.txt redirected outside its host",
+          "robots.txt disallows https://btn.co.id/career",
+          "robots.txt disallows https://btn.co.id/karir",
+          "robots.txt disallows https://btn.co.id/karier",
+          "robots.txt disallows https://btn.co.id/jobs"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
       "seabank-indonesia": {
         "company": "SeaBank Indonesia",
         "domain": "seabank.co.id",
@@ -287,6 +287,33 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "bank-mandiri": {
+        "company": "Bank Mandiri",
+        "domain": "bankmandiri.co.id",
+        "category": "Bank & Fintech",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 16,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "bankmandiri.co.id robots.txt redirected outside its host",
+          "robots.txt disallows https://bankmandiri.co.id/careers",
+          "robots.txt disallows https://bankmandiri.co.id/career",
+          "robots.txt disallows https://bankmandiri.co.id/karir",
+          "robots.txt disallows https://bankmandiri.co.id/karier"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "xendit": {
+        "company": "Xendit",
+        "domain": "xendit.co",
+        "category": "Fintech",
+        "status": "blocked",
+        "records_accepted": 0,
+        "reason": "Domain xendit.co is already blocked; manual review is required",
+        "career_url": null
+      },
       "akulaku": {
         "company": "Akulaku",
         "domain": "akulaku.com",
@@ -305,32 +332,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "xendit": {
-        "company": "Xendit",
-        "domain": "xendit.co",
-        "category": "Fintech",
-        "status": "blocked",
-        "records_accepted": 0,
-        "reason": "Domain xendit.co is already blocked; manual review is required",
-        "career_url": null
-      },
-      "bank-mandiri": {
-        "company": "Bank Mandiri",
-        "domain": "bankmandiri.co.id",
+      "bca": {
+        "company": "BCA",
+        "domain": "bca.co.id",
         "category": "Bank & Fintech",
-        "status": "no-career-page",
-        "records_accepted": 0,
+        "status": "ok",
+        "records_accepted": 1,
         "candidate_count": 16,
         "sitemap_matches": 0,
-        "discovery_notes": [
-          "bankmandiri.co.id robots.txt redirected outside its host",
-          "robots.txt disallows https://bankmandiri.co.id/careers",
-          "robots.txt disallows https://bankmandiri.co.id/career",
-          "robots.txt disallows https://bankmandiri.co.id/karir",
-          "robots.txt disallows https://bankmandiri.co.id/karier"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "career_url": "https://karir.bca.co.id/",
+        "pages_checked": 1
       },
       "flip": {
         "company": "Flip",
@@ -350,17 +361,6 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "bca": {
-        "company": "BCA",
-        "domain": "bca.co.id",
-        "category": "Bank & Fintech",
-        "status": "ok",
-        "records_accepted": 1,
-        "candidate_count": 16,
-        "sitemap_matches": 0,
-        "career_url": "https://karir.bca.co.id/",
-        "pages_checked": 1
-      },
       "dana": {
         "company": "DANA",
         "domain": "dana.id",
@@ -379,6 +379,26 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "bri": {
+        "company": "BRI",
+        "domain": "bri.co.id",
+        "category": "Bank & Fintech",
+        "status": "ok",
+        "records_accepted": 1,
+        "candidate_count": 16,
+        "sitemap_matches": 0,
+        "career_url": "https://e-recruitment.bri.co.id/",
+        "pages_checked": 1
+      },
+      "linkaja": {
+        "company": "LinkAja",
+        "domain": "linkaja.id",
+        "category": "Fintech",
+        "status": "blocked",
+        "records_accepted": 0,
+        "reason": "Domain linkaja.id is already blocked; manual review is required",
+        "career_url": null
+      },
       "ovo": {
         "company": "OVO",
         "domain": "ovo.id",
@@ -390,15 +410,6 @@
         "career_url": "https://ovo.id/career",
         "pages_checked": 2
       },
-      "linkaja": {
-        "company": "LinkAja",
-        "domain": "linkaja.id",
-        "category": "Fintech",
-        "status": "blocked",
-        "records_accepted": 0,
-        "reason": "Domain linkaja.id is already blocked; manual review is required",
-        "career_url": null
-      },
       "bank-mega": {
         "company": "Bank Mega",
         "domain": "bankmega.com",
@@ -409,24 +420,6 @@
         "sitemap_matches": 3,
         "career_url": "https://bankmega.com/id/karir/",
         "pages_checked": 3
-      },
-      "bni": {
-        "company": "BNI",
-        "domain": "bni.co.id",
-        "category": "Bank & Fintech",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 16,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "recruitment.bni.co.id robots.txt redirected outside its host",
-          "Redirect left HTTPS; request refused",
-          "Redirect left HTTPS; request refused",
-          "Redirect left HTTPS; request refused",
-          "Redirect left HTTPS; request refused"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
       },
       "ocbc-indonesia": {
         "company": "OCBC Indonesia",
@@ -446,21 +439,27 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "allo-bank": {
-        "company": "Allo Bank",
-        "domain": "allobank.com",
-        "category": "Fintech",
+      "bni": {
+        "company": "BNI",
+        "domain": "bni.co.id",
+        "category": "Bank & Fintech",
         "status": "no-career-page",
         "records_accepted": 0,
-        "candidate_count": 15,
+        "candidate_count": 16,
         "sitemap_matches": 0,
-        "discovery_notes": [],
+        "discovery_notes": [
+          "recruitment.bni.co.id robots.txt redirected outside its host",
+          "Redirect left HTTPS; request refused",
+          "Redirect left HTTPS; request refused",
+          "Redirect left HTTPS; request refused",
+          "Redirect left HTTPS; request refused"
+        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "kredivo": {
-        "company": "Kredivo",
-        "domain": "kredivo.com",
+      "allo-bank": {
+        "company": "Allo Bank",
+        "domain": "allobank.com",
         "category": "Fintech",
         "status": "no-career-page",
         "records_accepted": 0,
@@ -524,6 +523,18 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "kredivo": {
+        "company": "Kredivo",
+        "domain": "kredivo.com",
+        "category": "Fintech",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
       "midtrans": {
         "company": "Midtrans",
         "domain": "midtrans.com",
@@ -534,18 +545,6 @@
         "sitemap_matches": 15,
         "career_url": "https://midtrans.com/careers",
         "pages_checked": 15
-      },
-      "bri": {
-        "company": "BRI",
-        "domain": "bri.co.id",
-        "category": "Bank & Fintech",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 16,
-        "sitemap_matches": 0,
-        "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
       },
       "investree": {
         "company": "Investree",
@@ -577,17 +576,6 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "gopay": {
-        "company": "GoPay",
-        "domain": "gopay.co.id",
-        "category": "Fintech",
-        "status": "ok",
-        "records_accepted": 8,
-        "candidate_count": 15,
-        "sitemap_matches": 21,
-        "career_url": "https://gopay.co.id/karier",
-        "pages_checked": 20
-      },
       "paninbank": {
         "company": "PaninBank",
         "domain": "panin.co.id",
@@ -606,6 +594,17 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "amartha": {
+        "company": "Amartha",
+        "domain": "amartha.com",
+        "category": "Fintech",
+        "status": "ok",
+        "records_accepted": 2,
+        "candidate_count": 15,
+        "sitemap_matches": 25,
+        "career_url": "https://amartha.com/karir",
+        "pages_checked": 20
+      },
       "bank-jatim": {
         "company": "Bank Jatim",
         "domain": "bankjatim.co.id",
@@ -614,6 +613,17 @@
         "records_accepted": 0,
         "reason": "Domain bankjatim.co.id is already blocked; manual review is required",
         "career_url": null
+      },
+      "gopay": {
+        "company": "GoPay",
+        "domain": "gopay.co.id",
+        "category": "Fintech",
+        "status": "ok",
+        "records_accepted": 8,
+        "candidate_count": 15,
+        "sitemap_matches": 21,
+        "career_url": "https://gopay.co.id/karier",
+        "pages_checked": 20
       },
       "bank-jateng": {
         "company": "Bank Jateng",
@@ -633,16 +643,23 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "amartha": {
-        "company": "Amartha",
-        "domain": "amartha.com",
-        "category": "Fintech",
-        "status": "ok",
-        "records_accepted": 2,
+      "bank-sumut": {
+        "company": "Bank Sumut",
+        "domain": "banksumut.co.id",
+        "category": "Bank & Fintech",
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
-        "sitemap_matches": 25,
-        "career_url": "https://amartha.com/karir",
-        "pages_checked": 20
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "banksumut.co.id robots.txt redirected outside its host",
+          "robots.txt disallows https://banksumut.co.id/career",
+          "robots.txt disallows https://banksumut.co.id/karir",
+          "robots.txt disallows https://banksumut.co.id/karier",
+          "robots.txt disallows https://banksumut.co.id/jobs"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "blu-by-bca-digital": {
         "company": "blu by BCA Digital",
@@ -653,24 +670,6 @@
         "candidate_count": 15,
         "sitemap_matches": 0,
         "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "bank-muamalat": {
-        "company": "Bank Muamalat",
-        "domain": "bankmuamalat.co.id",
-        "category": "Bank & Fintech",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='bankmuamalat.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bankmuamalat.co.id', port",
-          "HTTPSConnectionPool(host='bankmuamalat.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bankmuamalat.co.id', port",
-          "HTTPSConnectionPool(host='bankmuamalat.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bankmuamalat.co.id', port",
-          "HTTPSConnectionPool(host='bankmuamalat.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bankmuamalat.co.id', port",
-          "HTTPSConnectionPool(host='bankmuamalat.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bankmuamalat.co.id', port"
-        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -688,6 +687,24 @@
           "robots.txt disallows https://bankntbsyariah.co.id/karir",
           "robots.txt disallows https://bankntbsyariah.co.id/karier",
           "robots.txt disallows https://bankntbsyariah.co.id/jobs"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "bank-muamalat": {
+        "company": "Bank Muamalat",
+        "domain": "bankmuamalat.co.id",
+        "category": "Bank & Fintech",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='bankmuamalat.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bankmuamalat.co.id', port",
+          "HTTPSConnectionPool(host='bankmuamalat.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bankmuamalat.co.id', port",
+          "HTTPSConnectionPool(host='bankmuamalat.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bankmuamalat.co.id', port",
+          "HTTPSConnectionPool(host='bankmuamalat.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bankmuamalat.co.id', port",
+          "HTTPSConnectionPool(host='bankmuamalat.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bankmuamalat.co.id', port"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -722,18 +739,6 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "bank-sumut": {
-        "company": "Bank Sumut",
-        "domain": "banksumut.co.id",
-        "category": "Bank & Fintech",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
       "bank-sinarmas": {
         "company": "Bank Sinarmas",
         "domain": "banksinarmas.com",
@@ -754,20 +759,20 @@
         "reason": "Domain ajaib.co.id is already blocked; manual review is required",
         "career_url": null
       },
-      "bank-sulselbar": {
-        "company": "Bank Sulselbar",
-        "domain": "banksulselbar.co.id",
+      "j-trust-bank-indonesia": {
+        "company": "J Trust Bank Indonesia",
+        "domain": "jtbank.co.id",
         "category": "Bank & Fintech",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
         "discovery_notes": [
-          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+          "HTTPSConnectionPool(host='jtbank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='jtbank.co.id', port=443): Faile",
+          "HTTPSConnectionPool(host='jtbank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='jtbank.co.id', port=443): Faile",
+          "HTTPSConnectionPool(host='jtbank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='jtbank.co.id', port=443): Faile",
+          "HTTPSConnectionPool(host='jtbank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='jtbank.co.id', port=443): Faile",
+          "HTTPSConnectionPool(host='jtbank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='jtbank.co.id', port=443): Faile"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -790,33 +795,6 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "j-trust-bank-indonesia": {
-        "company": "J Trust Bank Indonesia",
-        "domain": "jtbank.co.id",
-        "category": "Bank & Fintech",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='jtbank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='jtbank.co.id', port=443): Faile",
-          "HTTPSConnectionPool(host='jtbank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='jtbank.co.id', port=443): Faile",
-          "HTTPSConnectionPool(host='jtbank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='jtbank.co.id', port=443): Faile",
-          "HTTPSConnectionPool(host='jtbank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='jtbank.co.id', port=443): Faile",
-          "HTTPSConnectionPool(host='jtbank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='jtbank.co.id', port=443): Faile"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "indodax": {
-        "company": "Indodax",
-        "domain": "indodax.com",
-        "category": "Fintech",
-        "status": "blocked",
-        "records_accepted": 0,
-        "reason": "Domain indodax.com is already blocked; manual review is required",
-        "career_url": null
-      },
       "bank-mayapada": {
         "company": "Bank Mayapada",
         "domain": "bankmayapada.com",
@@ -835,6 +813,15 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "indodax": {
+        "company": "Indodax",
+        "domain": "indodax.com",
+        "category": "Fintech",
+        "status": "blocked",
+        "records_accepted": 0,
+        "reason": "Domain indodax.com is already blocked; manual review is required",
+        "career_url": null
+      },
       "bibit": {
         "company": "Bibit",
         "domain": "bibit.id",
@@ -844,6 +831,22 @@
         "candidate_count": 15,
         "sitemap_matches": 0,
         "discovery_notes": [],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "pintu": {
+        "company": "Pintu",
+        "domain": "pintu.co.id",
+        "category": "Fintech",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='careers.pintu.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='careers.pintu.co.id', po",
+          "HTTPSConnectionPool(host='careers.pintu.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='careers.pintu.co.id', po",
+          "HTTPSConnectionPool(host='careers.pintu.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='careers.pintu.co.id', po"
+        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -901,17 +904,6 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "fazz": {
-        "company": "Fazz",
-        "domain": "fazz.com",
-        "category": "Fintech",
-        "status": "ok",
-        "records_accepted": 6,
-        "candidate_count": 15,
-        "sitemap_matches": 4,
-        "career_url": "https://fazz.com/careers/",
-        "pages_checked": 3
-      },
       "reku": {
         "company": "Reku",
         "domain": "reku.id",
@@ -923,21 +915,16 @@
         "career_url": "https://reku.id/careers",
         "pages_checked": 8
       },
-      "pintu": {
-        "company": "Pintu",
-        "domain": "pintu.co.id",
+      "fazz": {
+        "company": "Fazz",
+        "domain": "fazz.com",
         "category": "Fintech",
-        "status": "no-career-page",
-        "records_accepted": 0,
+        "status": "ok",
+        "records_accepted": 6,
         "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='careers.pintu.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='careers.pintu.co.id', po",
-          "HTTPSConnectionPool(host='careers.pintu.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='careers.pintu.co.id', po",
-          "HTTPSConnectionPool(host='careers.pintu.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='careers.pintu.co.id', po"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "sitemap_matches": 4,
+        "career_url": "https://fazz.com/careers/",
+        "pages_checked": 3
       },
       "nium": {
         "company": "Nium",
@@ -953,6 +940,24 @@
           "robots.txt disallows https://nium.com/karir",
           "robots.txt disallows https://nium.com/karier",
           "robots.txt disallows https://nium.com/jobs"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "bank-sulselbar": {
+        "company": "Bank Sulselbar",
+        "domain": "banksulselbar.co.id",
+        "category": "Bank & Fintech",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -1145,6 +1150,18 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "indosat-ooredoo-hutchison": {
+        "company": "Indosat Ooredoo Hutchison",
+        "domain": "ioh.co.id",
+        "category": "Telecom",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
       "blibli": {
         "company": "Blibli",
         "domain": "blibli.com",
@@ -1154,18 +1171,6 @@
         "candidate_count": 16,
         "sitemap_matches": 0,
         "career_url": "https://careers.blibli.com/",
-        "pages_checked": 1,
-        "reason": "Career page was reachable but no supported vacancy record was parsed."
-      },
-      "shopee-indonesia": {
-        "company": "Shopee Indonesia",
-        "domain": "shopee.co.id",
-        "category": "Corporate",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 16,
-        "sitemap_matches": 0,
-        "career_url": "https://careers.shopee.co.id/",
         "pages_checked": 1,
         "reason": "Career page was reachable but no supported vacancy record was parsed."
       },
@@ -1268,6 +1273,18 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "shopee-indonesia": {
+        "company": "Shopee Indonesia",
+        "domain": "shopee.co.id",
+        "category": "Corporate",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 16,
+        "sitemap_matches": 0,
+        "career_url": "https://careers.shopee.co.id/",
+        "pages_checked": 1,
+        "reason": "Career page was reachable but no supported vacancy record was parsed."
+      },
       "sirclo": {
         "company": "SIRCLO",
         "domain": "sirclo.com",
@@ -1279,28 +1296,23 @@
         "career_url": "https://sirclo.com/career",
         "pages_checked": 9
       },
-      "indosat-ooredoo-hutchison": {
-        "company": "Indosat Ooredoo Hutchison",
-        "domain": "ioh.co.id",
-        "category": "Telecom",
+      "maybank-indonesia": {
+        "company": "Maybank Indonesia",
+        "domain": "maybank.co.id",
+        "category": "Bank & Fintech",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [],
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='maybank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='maybank.co.id', port=443) at 0",
+          "HTTPSConnectionPool(host='maybank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='maybank.co.id', port=443) at 0",
+          "HTTPSConnectionPool(host='maybank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='maybank.co.id', port=443) at 0",
+          "HTTPSConnectionPool(host='maybank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='maybank.co.id', port=443) at 0",
+          "HTTPSConnectionPool(host='maybank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='maybank.co.id', port=443) at 0"
+        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
-      },
-      "telkom-indonesia": {
-        "company": "Telkom Indonesia",
-        "domain": "telkom.co.id",
-        "category": "Telecom",
-        "status": "ok",
-        "records_accepted": 14,
-        "candidate_count": 16,
-        "sitemap_matches": 8,
-        "career_url": "https://www.telkom.co.id/sites/news-resources/en_US/news/expanding-global-reach-six-telkom-fostered-msmes-capture-business-opportunities-across-18-countries-4032",
-        "pages_checked": 8
       },
       "talenta": {
         "company": "Talenta",
@@ -1356,20 +1368,20 @@
         "reason": "Domain kumparan.com is already blocked; manual review is required",
         "career_url": null
       },
-      "detik-com": {
-        "company": "Detik.com",
-        "domain": "detik.com",
-        "category": "Corporate",
+      "btpn": {
+        "company": "BTPN",
+        "domain": "btpn.com",
+        "category": "Bank & Fintech",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
         "discovery_notes": [
-          "detik.com robots.txt redirected outside its host",
-          "robots.txt disallows https://detik.com/career",
-          "robots.txt disallows https://detik.com/karir",
-          "robots.txt disallows https://detik.com/karier",
-          "robots.txt disallows https://detik.com/jobs"
+          "HTTPSConnectionPool(host='btpn.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='btpn.com', port=443) at 0x7b335db5f",
+          "HTTPSConnectionPool(host='btpn.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='btpn.com', port=443) at 0x7b335c5ce",
+          "HTTPSConnectionPool(host='btpn.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='btpn.com', port=443) at 0x7b335c59b",
+          "HTTPSConnectionPool(host='btpn.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='btpn.com', port=443) at 0x7b335d210",
+          "HTTPSConnectionPool(host='btpn.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='btpn.com', port=443) at 0x7b335d552"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -1401,23 +1413,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "maybank-indonesia": {
-        "company": "Maybank Indonesia",
-        "domain": "maybank.co.id",
-        "category": "Bank & Fintech",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='maybank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='maybank.co.id', port=443) at 0",
-          "HTTPSConnectionPool(host='maybank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='maybank.co.id', port=443) at 0",
-          "HTTPSConnectionPool(host='maybank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='maybank.co.id', port=443) at 0",
-          "HTTPSConnectionPool(host='maybank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='maybank.co.id', port=443) at 0",
-          "HTTPSConnectionPool(host='maybank.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='maybank.co.id', port=443) at 0"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+      "telkom-indonesia": {
+        "company": "Telkom Indonesia",
+        "domain": "telkom.co.id",
+        "category": "Telecom",
+        "status": "ok",
+        "records_accepted": 14,
+        "candidate_count": 16,
+        "sitemap_matches": 8,
+        "career_url": "https://www.telkom.co.id/sites/news-resources/en_US/news/expanding-global-reach-six-telkom-fostered-msmes-capture-business-opportunities-across-18-countries-4032",
+        "pages_checked": 8
       },
       "sayurbox": {
         "company": "Sayurbox",
@@ -1433,24 +1438,6 @@
           "robots.txt disallows https://sayurbox.com/karir",
           "robots.txt disallows https://sayurbox.com/karier",
           "robots.txt disallows https://sayurbox.com/jobs"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "btpn": {
-        "company": "BTPN",
-        "domain": "btpn.com",
-        "category": "Bank & Fintech",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='btpn.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='btpn.com', port=443) at 0x75dfaa497",
-          "HTTPSConnectionPool(host='btpn.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='btpn.com', port=443) at 0x75dfa8f31",
-          "HTTPSConnectionPool(host='btpn.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='btpn.com', port=443) at 0x75dfa99ab",
-          "HTTPSConnectionPool(host='btpn.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='btpn.com', port=443) at 0x75dfaa4eb",
-          "HTTPSConnectionPool(host='btpn.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='btpn.com', port=443) at 0x75dfa8b12"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -1473,17 +1460,34 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "tanihub": {
-        "company": "TaniHub",
-        "domain": "tanihub.com",
-        "category": "Startup",
+      "detik-com": {
+        "company": "Detik.com",
+        "domain": "detik.com",
+        "category": "Corporate",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [],
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='detik.com', port=443): Read timed out. (read timeout=15)",
+          "detik.com robots.txt redirected outside its host",
+          "robots.txt disallows https://detik.com/karir",
+          "robots.txt disallows https://detik.com/karier",
+          "robots.txt disallows https://detik.com/jobs"
+        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
+      },
+      "mekari": {
+        "company": "Mekari",
+        "domain": "mekari.com",
+        "category": "Startup",
+        "status": "ok",
+        "records_accepted": 93,
+        "candidate_count": 15,
+        "sitemap_matches": 12,
+        "career_url": "https://mekari.com/careers",
+        "pages_checked": 5
       },
       "grab-indonesia": {
         "company": "Grab Indonesia",
@@ -1503,16 +1507,17 @@
         "reason": "Domain sociolla.com is already blocked; manual review is required",
         "career_url": null
       },
-      "mekari": {
-        "company": "Mekari",
-        "domain": "mekari.com",
+      "tanihub": {
+        "company": "TaniHub",
+        "domain": "tanihub.com",
         "category": "Startup",
-        "status": "ok",
-        "records_accepted": 93,
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
-        "sitemap_matches": 12,
-        "career_url": "https://mekari.com/careers",
-        "pages_checked": 5
+        "sitemap_matches": 0,
+        "discovery_notes": [],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "bank-nagari": {
         "company": "Bank Nagari",
@@ -1532,16 +1537,23 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "aruna": {
-        "company": "Aruna",
-        "domain": "aruna.id",
+      "efishery": {
+        "company": "eFishery",
+        "domain": "efishery.com",
         "category": "Startup",
-        "status": "ok",
-        "records_accepted": 3,
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
-        "sitemap_matches": 8,
-        "career_url": "https://aruna.id/career/",
-        "pages_checked": 5
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='efishery.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cer",
+          "HTTPSConnectionPool(host='efishery.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cer",
+          "HTTPSConnectionPool(host='efishery.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cer",
+          "HTTPSConnectionPool(host='efishery.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cer",
+          "HTTPSConnectionPool(host='efishery.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cer"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "julo": {
         "company": "JULO",
@@ -1570,23 +1582,16 @@
         "reason": "Domain koinworks.com is already blocked; manual review is required",
         "career_url": null
       },
-      "efishery": {
-        "company": "eFishery",
-        "domain": "efishery.com",
+      "aruna": {
+        "company": "Aruna",
+        "domain": "aruna.id",
         "category": "Startup",
-        "status": "no-career-page",
-        "records_accepted": 0,
+        "status": "ok",
+        "records_accepted": 3,
         "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='efishery.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cer",
-          "HTTPSConnectionPool(host='efishery.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cer",
-          "HTTPSConnectionPool(host='efishery.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cer",
-          "HTTPSConnectionPool(host='efishery.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cer",
-          "HTTPSConnectionPool(host='efishery.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cer"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "sitemap_matches": 8,
+        "career_url": "https://aruna.id/career/",
+        "pages_checked": 5
       },
       "privy": {
         "company": "Privy",
@@ -1617,6 +1622,17 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "idn-media": {
+        "company": "IDN Media",
+        "domain": "idn.media",
+        "category": "Startup",
+        "status": "ok",
+        "records_accepted": 1,
+        "candidate_count": 15,
+        "sitemap_matches": 18,
+        "career_url": "https://www.idn.media/life-at-idn",
+        "pages_checked": 19
+      },
       "evermos": {
         "company": "Evermos",
         "domain": "evermos.com",
@@ -1628,17 +1644,6 @@
         "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
-      },
-      "idn-media": {
-        "company": "IDN Media",
-        "domain": "idn.media",
-        "category": "Startup",
-        "status": "ok",
-        "records_accepted": 1,
-        "candidate_count": 15,
-        "sitemap_matches": 18,
-        "career_url": "https://www.idn.media/life-at-idn",
-        "pages_checked": 19
       },
       "sicepat": {
         "company": "SiCepat",
@@ -1676,6 +1681,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "astra-international": {
+        "company": "Astra International",
+        "domain": "astra.co.id",
+        "category": "Corporate",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "career_url": "https://career.astra.co.id/",
+        "pages_checked": 1,
+        "reason": "Career page was reachable but no supported vacancy record was parsed."
+      },
       "moka": {
         "company": "Moka",
         "domain": "moka.tech",
@@ -1701,16 +1716,6 @@
         "status": "no-career-page",
         "records_accepted": 0,
         "career_url": "https://mamikos.com/career",
-        "pages_checked": 1,
-        "reason": "Career page was reachable but no supported vacancy record was parsed."
-      },
-      "astra-international": {
-        "company": "Astra International",
-        "domain": "astra.co.id",
-        "category": "Corporate",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "career_url": "https://career.astra.co.id/",
         "pages_checked": 1,
         "reason": "Career page was reachable but no supported vacancy record was parsed."
       },
@@ -1788,23 +1793,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "sinar-mas": {
-        "company": "Sinar Mas",
-        "domain": "sinarmas.com",
-        "category": "Corporate",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
+      "indofood": {
+        "company": "Indofood",
+        "domain": "indofood.com",
+        "category": "Manufaktur",
+        "status": "ok",
+        "records_accepted": 1,
+        "candidate_count": 16,
         "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='sinarmas.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cer",
-          "HTTPSConnectionPool(host='sinarmas.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cer",
-          "HTTPSConnectionPool(host='sinarmas.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cer",
-          "HTTPSConnectionPool(host='sinarmas.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cer",
-          "HTTPSConnectionPool(host='sinarmas.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cer"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "career_url": "https://www.indofood.com/",
+        "pages_checked": 1
       },
       "mayora-indah": {
         "company": "Mayora Indah",
@@ -1835,17 +1833,6 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "indofood": {
-        "company": "Indofood",
-        "domain": "indofood.com",
-        "category": "Manufaktur",
-        "status": "ok",
-        "records_accepted": 1,
-        "candidate_count": 16,
-        "sitemap_matches": 0,
-        "career_url": "https://www.indofood.com/",
-        "pages_checked": 1
-      },
       "hm-sampoerna": {
         "company": "HM Sampoerna",
         "domain": "sampoerna.com",
@@ -1874,6 +1861,24 @@
         "sitemap_matches": 0,
         "career_url": "https://careers.unilever.com/en/indonesia",
         "pages_checked": 1
+      },
+      "sinar-mas": {
+        "company": "Sinar Mas",
+        "domain": "sinarmas.com",
+        "category": "Corporate",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='sinarmas.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cer",
+          "HTTPSConnectionPool(host='sinarmas.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cer",
+          "HTTPSConnectionPool(host='sinarmas.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cer",
+          "HTTPSConnectionPool(host='sinarmas.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cer",
+          "HTTPSConnectionPool(host='sinarmas.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] cer"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "mnc-group": {
         "company": "MNC Group",
@@ -1932,18 +1937,6 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "ct-corp": {
-        "company": "CT Corp",
-        "domain": "ctcorpora.com",
-        "category": "Corporate",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
       "kawan-lama-group": {
         "company": "Kawan Lama Group",
         "domain": "kawanlamagroup.com",
@@ -1959,6 +1952,18 @@
           "robots.txt disallows https://kawanlamagroup.com/karier",
           "robots.txt disallows https://kawanlamagroup.com/jobs"
         ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "ct-corp": {
+        "company": "CT Corp",
+        "domain": "ctcorpora.com",
+        "category": "Corporate",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -1994,29 +1999,29 @@
         "candidate_count": 15,
         "sitemap_matches": 0,
         "discovery_notes": [
-          "HTTPSConnectionPool(host='iconnet.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='iconnet.id', port=443) at 0x75dfa",
-          "HTTPSConnectionPool(host='iconnet.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='iconnet.id', port=443) at 0x75dfa",
-          "HTTPSConnectionPool(host='iconnet.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='iconnet.id', port=443) at 0x75dfa",
-          "HTTPSConnectionPool(host='iconnet.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='iconnet.id', port=443) at 0x75dfa",
-          "HTTPSConnectionPool(host='iconnet.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='iconnet.id', port=443) at 0x75dfa"
+          "HTTPSConnectionPool(host='iconnet.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='iconnet.id', port=443) at 0x7b335",
+          "HTTPSConnectionPool(host='iconnet.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='iconnet.id', port=443) at 0x7b335",
+          "HTTPSConnectionPool(host='iconnet.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='iconnet.id', port=443) at 0x7b335",
+          "HTTPSConnectionPool(host='iconnet.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='iconnet.id', port=443) at 0x7b335",
+          "HTTPSConnectionPool(host='iconnet.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='iconnet.id', port=443) at 0x7b335"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "fishlog": {
-        "company": "FishLog",
-        "domain": "fishlog.co.id",
-        "category": "Startup",
+      "pln": {
+        "company": "PLN",
+        "domain": "pln.co.id",
+        "category": "BUMN",
         "status": "no-career-page",
         "records_accepted": 0,
-        "candidate_count": 15,
+        "candidate_count": 16,
         "sitemap_matches": 0,
         "discovery_notes": [
-          "HTTPSConnectionPool(host='fishlog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='fishlog.co.id', port=443): Fai",
-          "HTTPSConnectionPool(host='fishlog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='fishlog.co.id', port=443): Fai",
-          "HTTPSConnectionPool(host='fishlog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='fishlog.co.id', port=443): Fai",
-          "HTTPSConnectionPool(host='fishlog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='fishlog.co.id', port=443): Fai",
-          "HTTPSConnectionPool(host='fishlog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='fishlog.co.id', port=443): Fai"
+          "HTTPSConnectionPool(host='rekrutmen.pln.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='rekrutmen.pln.co.id', po",
+          "pln.co.id robots.txt redirected outside its host",
+          "robots.txt disallows https://pln.co.id/career",
+          "robots.txt disallows https://pln.co.id/karir",
+          "robots.txt disallows https://pln.co.id/karier"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -2086,23 +2091,17 @@
         "career_url": "https://pupuk-indonesia.com/contact-us",
         "pages_checked": 2
       },
-      "pln": {
-        "company": "PLN",
-        "domain": "pln.co.id",
-        "category": "BUMN",
+      "kapal-api-global": {
+        "company": "Kapal Api Global",
+        "domain": "kapalapiglobal.com",
+        "category": "Corporate",
         "status": "no-career-page",
         "records_accepted": 0,
-        "candidate_count": 16,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='rekrutmen.pln.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='rekrutmen.pln.co.id', po",
-          "pln.co.id robots.txt redirected outside its host",
-          "robots.txt disallows https://pln.co.id/career",
-          "robots.txt disallows https://pln.co.id/karir",
-          "robots.txt disallows https://pln.co.id/karier"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "candidate_count": 15,
+        "sitemap_matches": 29,
+        "career_url": "https://kapalapi.com/job-fair-ugm-2/",
+        "pages_checked": 20,
+        "reason": "Career page was reachable but no supported vacancy record was parsed."
       },
       "pelindo": {
         "company": "Pelindo",
@@ -2116,17 +2115,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "kapal-api-global": {
-        "company": "Kapal Api Global",
-        "domain": "kapalapiglobal.com",
-        "category": "Corporate",
-        "status": "no-career-page",
-        "records_accepted": 0,
+      "polytron": {
+        "company": "Polytron",
+        "domain": "polytron.co.id",
+        "category": "Manufaktur",
+        "status": "ok",
+        "records_accepted": 5,
         "candidate_count": 15,
-        "sitemap_matches": 29,
-        "career_url": "https://kapalapi.com/job-fair-ugm-2/",
-        "pages_checked": 20,
-        "reason": "Career page was reachable but no supported vacancy record was parsed."
+        "sitemap_matches": 1,
+        "career_url": "https://polytron.co.id/berita/tips-efektif-untuk-working-moms-menyeimbangkan-karir-dan-pekerjaan-rumah/",
+        "pages_checked": 1
       },
       "emtek": {
         "company": "Emtek",
@@ -2160,15 +2158,21 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "wijaya-karya": {
-        "company": "Wijaya Karya",
-        "domain": "wika.co.id",
+      "jasa-marga": {
+        "company": "Jasa Marga",
+        "domain": "jasamarga.com",
         "category": "BUMN",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [],
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='www.jasamarga.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED",
+          "HTTPSConnectionPool(host='www.jasamarga.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED",
+          "HTTPSConnectionPool(host='www.jasamarga.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED",
+          "HTTPSConnectionPool(host='www.jasamarga.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED",
+          "HTTPSConnectionPool(host='www.jasamarga.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED"
+        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -2190,32 +2194,15 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "bio-farma": {
-        "company": "Bio Farma",
-        "domain": "biofarma.co.id",
-        "category": "BUMN",
-        "status": "ok",
-        "records_accepted": 3,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "career_url": "https://www.biofarma.co.id/careers",
-        "pages_checked": 1
-      },
-      "jasa-marga": {
-        "company": "Jasa Marga",
-        "domain": "jasamarga.com",
+      "wijaya-karya": {
+        "company": "Wijaya Karya",
+        "domain": "wika.co.id",
         "category": "BUMN",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='www.jasamarga.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED",
-          "HTTPSConnectionPool(host='www.jasamarga.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED",
-          "HTTPSConnectionPool(host='www.jasamarga.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED",
-          "HTTPSConnectionPool(host='www.jasamarga.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED",
-          "HTTPSConnectionPool(host='www.jasamarga.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED"
-        ],
+        "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -2230,6 +2217,18 @@
         "career_url": "https://kimiafarma.co.id/career",
         "pages_checked": 1,
         "reason": "Career page was reachable but no supported vacancy record was parsed."
+      },
+      "pp-persero": {
+        "company": "PP (Persero)",
+        "domain": "ptpp.co.id",
+        "category": "BUMN",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "kai": {
         "company": "KAI",
@@ -2285,35 +2284,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "pp-persero": {
-        "company": "PP (Persero)",
-        "domain": "ptpp.co.id",
-        "category": "BUMN",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
       "indofarma": {
         "company": "Indofarma",
         "domain": "indofarma.id",
         "category": "BUMN",
-        "status": "no-career-page",
-        "records_accepted": 0,
+        "status": "ok",
+        "records_accepted": 1,
         "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-          "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "sitemap_matches": 1,
+        "career_url": "https://indofarma.id/career/",
+        "pages_checked": 1
       },
       "salim-group": {
         "company": "Salim Group",
@@ -2333,6 +2313,24 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "fishlog": {
+        "company": "FishLog",
+        "domain": "fishlog.co.id",
+        "category": "Startup",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='fishlog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='fishlog.co.id', port=443): Fai",
+          "HTTPSConnectionPool(host='fishlog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='fishlog.co.id', port=443): Fai",
+          "HTTPSConnectionPool(host='fishlog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='fishlog.co.id', port=443): Fai",
+          "HTTPSConnectionPool(host='fishlog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='fishlog.co.id', port=443): Fai",
+          "HTTPSConnectionPool(host='fishlog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='fishlog.co.id', port=443): Fai"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
       "asdp-indonesia-ferry": {
         "company": "ASDP Indonesia Ferry",
         "domain": "asdp.id",
@@ -2341,19 +2339,26 @@
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [],
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='asdp.id', port=443): Read timed out. (read timeout=15)",
+          "HTTPSConnectionPool(host='asdp.id', port=443): Read timed out. (read timeout=15)"
+        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "damri": {
-        "company": "DAMRI",
-        "domain": "damri.co.id",
-        "category": "BUMN",
+      "mileapp": {
+        "company": "MileApp",
+        "domain": "mile.app",
+        "category": "Startup",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [],
+        "sitemap_matches": 16,
+        "discovery_notes": [
+          "Per-domain request cap (50) reached for mile.app",
+          "Per-domain request cap (50) reached for mile.app",
+          "Per-domain request cap (50) reached for mile.app"
+        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -2411,9 +2416,9 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "jasa-raharja": {
-        "company": "Jasa Raharja",
-        "domain": "jasaraharja.co.id",
+      "damri": {
+        "company": "DAMRI",
+        "domain": "damri.co.id",
         "category": "BUMN",
         "status": "no-career-page",
         "records_accepted": 0,
@@ -2421,33 +2426,6 @@
         "sitemap_matches": 0,
         "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "polytron": {
-        "company": "Polytron",
-        "domain": "polytron.co.id",
-        "category": "Manufaktur",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='polytron.co.id', port=443): Read timed out. (read timeout=15)",
-          "HTTPSConnectionPool(host='polytron.co.id', port=443): Read timed out. (read timeout=15)",
-          "HTTPSConnectionPool(host='polytron.co.id', port=443): Read timed out. (read timeout=15)",
-          "HTTPSConnectionPool(host='polytron.co.id', port=443): Read timed out. (read timeout=15)",
-          "HTTPSConnectionPool(host='polytron.co.id', port=443): Read timed out. (read timeout=15)"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "honda-indonesia": {
-        "company": "Honda Indonesia",
-        "domain": "honda-indonesia.com",
-        "category": "Manufaktur",
-        "status": "blocked",
-        "records_accepted": 0,
-        "reason": "Domain honda-indonesia.com is already blocked; manual review is required",
         "career_url": null
       },
       "bpjs-kesehatan": {
@@ -2460,6 +2438,15 @@
         "sitemap_matches": 0,
         "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "honda-indonesia": {
+        "company": "Honda Indonesia",
+        "domain": "honda-indonesia.com",
+        "category": "Manufaktur",
+        "status": "blocked",
+        "records_accepted": 0,
+        "reason": "Domain honda-indonesia.com is already blocked; manual review is required",
         "career_url": null
       },
       "injourney-airports": {
@@ -2477,6 +2464,18 @@
           "HTTPSConnectionPool(host='injourneyairports.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='injourneyairports.id', ",
           "HTTPSConnectionPool(host='injourneyairports.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='injourneyairports.id', "
         ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "jasa-raharja": {
+        "company": "Jasa Raharja",
+        "domain": "jasaraharja.co.id",
+        "category": "BUMN",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -2552,23 +2551,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "toyota-astra-motor": {
-        "company": "Toyota Astra Motor",
-        "domain": "toyota.astra.co.id",
+      "sharp-indonesia": {
+        "company": "Sharp Indonesia",
+        "domain": "id.sharp",
         "category": "Manufaktur",
-        "status": "no-career-page",
-        "records_accepted": 0,
+        "status": "ok",
+        "records_accepted": 1,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='toyota.astra.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NewConnectionError(\"HTTPSConnection(host='toyota.astra.co.id', port=",
-          "HTTPSConnectionPool(host='toyota.astra.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NewConnectionError(\"HTTPSConnection(host='toyota.astra.co.id', port=",
-          "HTTPSConnectionPool(host='toyota.astra.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NewConnectionError(\"HTTPSConnection(host='toyota.astra.co.id', port=",
-          "HTTPSConnectionPool(host='toyota.astra.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NewConnectionError(\"HTTPSConnection(host='toyota.astra.co.id', port=",
-          "HTTPSConnectionPool(host='toyota.astra.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NewConnectionError(\"HTTPSConnection(host='toyota.astra.co.id', port="
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "career_url": "https://id.sharp/careers",
+        "pages_checked": 1
       },
       "freeport-indonesia": {
         "company": "Freeport Indonesia",
@@ -2579,15 +2571,21 @@
         "reason": "Domain ptfi.co.id is already blocked; manual review is required",
         "career_url": null
       },
-      "sharp-indonesia": {
-        "company": "Sharp Indonesia",
-        "domain": "id.sharp",
-        "category": "Manufaktur",
+      "waskita-karya": {
+        "company": "Waskita Karya",
+        "domain": "waskita.co.id",
+        "category": "BUMN",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [],
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='waskita.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='waskita.co.id', port=443) at 0",
+          "HTTPSConnectionPool(host='waskita.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='waskita.co.id', port=443) at 0",
+          "HTTPSConnectionPool(host='waskita.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='waskita.co.id', port=443) at 0",
+          "HTTPSConnectionPool(host='waskita.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='waskita.co.id', port=443) at 0",
+          "HTTPSConnectionPool(host='waskita.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='waskita.co.id', port=443) at 0"
+        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -2611,24 +2609,6 @@
         "reason": "Domain bayan.com.sg is already blocked; manual review is required",
         "career_url": null
       },
-      "waskita-karya": {
-        "company": "Waskita Karya",
-        "domain": "waskita.co.id",
-        "category": "BUMN",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='waskita.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='waskita.co.id', port=443) at 0",
-          "HTTPSConnectionPool(host='waskita.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='waskita.co.id', port=443) at 0",
-          "HTTPSConnectionPool(host='waskita.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='waskita.co.id', port=443) at 0",
-          "HTTPSConnectionPool(host='waskita.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='waskita.co.id', port=443) at 0",
-          "HTTPSConnectionPool(host='waskita.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='waskita.co.id', port=443) at 0"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
       "suzuki-indonesia": {
         "company": "Suzuki Indonesia",
         "domain": "suzuki.co.id",
@@ -2639,24 +2619,6 @@
         "sitemap_matches": 1,
         "career_url": "https://www.suzuki.co.id/corporate/karir",
         "pages_checked": 1
-      },
-      "mileapp": {
-        "company": "MileApp",
-        "domain": "mile.app",
-        "category": "Startup",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 9,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='mile.app', port=443): Read timed out. (read timeout=15)",
-          "HTTPSConnectionPool(host='mile.app', port=443): Read timed out. (read timeout=15)",
-          "Per-domain request cap (50) reached for mile.app",
-          "Per-domain request cap (50) reached for mile.app",
-          "Per-domain request cap (50) reached for mile.app"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
       },
       "adaro": {
         "company": "Adaro",
@@ -2670,13 +2632,22 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "semen-indonesia-group": {
-        "company": "Semen Indonesia Group",
-        "domain": "sig.id",
+      "pupuk-kaltim": {
+        "company": "Pupuk Kaltim",
+        "domain": "pupukkaltim.com",
         "category": "Manufaktur",
-        "status": "blocked",
+        "status": "no-career-page",
         "records_accepted": 0,
-        "reason": "Domain sig.id is already blocked; manual review is required",
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='pupukkaltim.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] ",
+          "HTTPSConnectionPool(host='pupukkaltim.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] ",
+          "HTTPSConnectionPool(host='pupukkaltim.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] ",
+          "HTTPSConnectionPool(host='pupukkaltim.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] ",
+          "HTTPSConnectionPool(host='pupukkaltim.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] "
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
       "indocement": {
@@ -2693,6 +2664,33 @@
           "robots.txt disallows https://indocement.co.id/karir",
           "robots.txt disallows https://indocement.co.id/karier",
           "robots.txt disallows https://indocement.co.id/jobs"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "semen-indonesia-group": {
+        "company": "Semen Indonesia Group",
+        "domain": "sig.id",
+        "category": "Manufaktur",
+        "status": "blocked",
+        "records_accepted": 0,
+        "reason": "Domain sig.id is already blocked; manual review is required",
+        "career_url": null
+      },
+      "daihatsu-indonesia": {
+        "company": "Daihatsu Indonesia",
+        "domain": "daihatsu.co.id",
+        "category": "Manufaktur",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 642,
+        "discovery_notes": [
+          "Per-domain request cap (50) reached for daihatsu.co.id",
+          "Per-domain request cap (50) reached for daihatsu.co.id",
+          "Per-domain request cap (50) reached for daihatsu.co.id",
+          "Per-domain request cap (50) reached for daihatsu.co.id",
+          "Per-domain request cap (50) reached for daihatsu.co.id"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -2726,16 +2724,23 @@
         "career_url": "https://semenpadang.co.id/careers",
         "pages_checked": 1
       },
-      "pt-timah": {
-        "company": "PT Timah",
-        "domain": "timah.com",
-        "category": "Manufaktur",
-        "status": "ok",
-        "records_accepted": 1,
+      "bio-farma": {
+        "company": "Bio Farma",
+        "domain": "biofarma.co.id",
+        "category": "BUMN",
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "career_url": "https://timah.com/careers",
-        "pages_checked": 1
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='biofarma.co.id', port=443): Read timed out. (read timeout=15)",
+          "HTTPSConnectionPool(host='biofarma.co.id', port=443): Read timed out. (read timeout=15)",
+          "HTTPSConnectionPool(host='biofarma.co.id', port=443): Read timed out. (read timeout=15)",
+          "HTTPSConnectionPool(host='biofarma.co.id', port=443): Read timed out. (read timeout=15)",
+          "HTTPSConnectionPool(host='biofarma.co.id', port=443): Read timed out. (read timeout=15)"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "inalum": {
         "company": "INALUM",
@@ -2755,24 +2760,6 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "pupuk-kaltim": {
-        "company": "Pupuk Kaltim",
-        "domain": "pupukkaltim.com",
-        "category": "Manufaktur",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='pupukkaltim.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] ",
-          "HTTPSConnectionPool(host='pupukkaltim.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] ",
-          "HTTPSConnectionPool(host='pupukkaltim.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] ",
-          "HTTPSConnectionPool(host='pupukkaltim.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] ",
-          "HTTPSConnectionPool(host='pupukkaltim.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] "
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
       "pertamina-geothermal-energy": {
         "company": "Pertamina Geothermal Energy",
         "domain": "pge.pertamina.com",
@@ -2787,6 +2774,24 @@
           "robots.txt disallows https://pge.pertamina.com/karir",
           "robots.txt disallows https://pge.pertamina.com/karier",
           "robots.txt disallows https://pge.pertamina.com/jobs"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "united-tractors": {
+        "company": "United Tractors",
+        "domain": "unitedtractors.com",
+        "category": "Manufaktur",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "unitedtractors.com robots.txt redirected outside its host",
+          "robots.txt disallows https://unitedtractors.com/career",
+          "robots.txt disallows https://unitedtractors.com/karir",
+          "robots.txt disallows https://unitedtractors.com/karier",
+          "robots.txt disallows https://unitedtractors.com/jobs"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -2845,70 +2850,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "united-tractors": {
-        "company": "United Tractors",
-        "domain": "unitedtractors.com",
-        "category": "Manufaktur",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "unitedtractors.com robots.txt redirected outside its host",
-          "robots.txt disallows https://unitedtractors.com/career",
-          "robots.txt disallows https://unitedtractors.com/karir",
-          "robots.txt disallows https://unitedtractors.com/karier",
-          "robots.txt disallows https://unitedtractors.com/jobs"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "daihatsu-indonesia": {
-        "company": "Daihatsu Indonesia",
-        "domain": "daihatsu.co.id",
-        "category": "Manufaktur",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 641,
-        "discovery_notes": [
-          "Per-domain request cap (50) reached for daihatsu.co.id",
-          "Per-domain request cap (50) reached for daihatsu.co.id",
-          "Per-domain request cap (50) reached for daihatsu.co.id",
-          "Per-domain request cap (50) reached for daihatsu.co.id",
-          "Per-domain request cap (50) reached for daihatsu.co.id"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "vale-indonesia": {
-        "company": "Vale Indonesia",
-        "domain": "vale.com",
+      "pt-timah": {
+        "company": "PT Timah",
+        "domain": "timah.com",
         "category": "Manufaktur",
         "status": "ok",
-        "records_accepted": 6,
-        "candidate_count": 15,
-        "sitemap_matches": 1,
-        "career_url": "https://vale.com/our-people",
-        "pages_checked": 1
-      },
-      "ge-vernova": {
-        "company": "GE Vernova",
-        "domain": "gevernova.com",
-        "category": "Manufaktur",
-        "status": "no-career-page",
-        "records_accepted": 0,
+        "records_accepted": 1,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [
-          "gevernova.com robots.txt redirected outside its host",
-          "robots.txt disallows https://gevernova.com/career",
-          "robots.txt disallows https://gevernova.com/karir",
-          "robots.txt disallows https://gevernova.com/karier",
-          "robots.txt disallows https://gevernova.com/jobs"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "career_url": "https://timah.com/careers",
+        "pages_checked": 1
       },
       "peruri": {
         "company": "Peruri",
@@ -2928,6 +2879,46 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "vale-indonesia": {
+        "company": "Vale Indonesia",
+        "domain": "vale.com",
+        "category": "Manufaktur",
+        "status": "ok",
+        "records_accepted": 18,
+        "candidate_count": 15,
+        "sitemap_matches": 11,
+        "career_url": "https://vale.com/our-people",
+        "pages_checked": 7
+      },
+      "ge-vernova": {
+        "company": "GE Vernova",
+        "domain": "gevernova.com",
+        "category": "Manufaktur",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "gevernova.com robots.txt redirected outside its host",
+          "robots.txt disallows https://gevernova.com/career",
+          "robots.txt disallows https://gevernova.com/karir",
+          "robots.txt disallows https://gevernova.com/karier",
+          "robots.txt disallows https://gevernova.com/jobs"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "trakindo": {
+        "company": "Trakindo",
+        "domain": "trakindo.co.id",
+        "category": "Manufaktur",
+        "status": "ok",
+        "records_accepted": 2,
+        "candidate_count": 15,
+        "sitemap_matches": 1,
+        "career_url": "https://trakindo.co.id/waspada-penipuan-lowongan-kerja",
+        "pages_checked": 1
+      },
       "musim-mas": {
         "company": "Musim Mas",
         "domain": "musimmas.com",
@@ -2946,16 +2937,23 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "trakindo": {
-        "company": "Trakindo",
-        "domain": "trakindo.co.id",
+      "smart-tbk": {
+        "company": "SMART Tbk",
+        "domain": "smart-tbk.com",
         "category": "Manufaktur",
-        "status": "ok",
-        "records_accepted": 2,
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
-        "sitemap_matches": 1,
-        "career_url": "https://trakindo.co.id/waspada-penipuan-lowongan-kerja",
-        "pages_checked": 1
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "smart-tbk.com robots.txt redirected outside its host",
+          "robots.txt disallows https://smart-tbk.com/career",
+          "robots.txt disallows https://smart-tbk.com/karir",
+          "robots.txt disallows https://smart-tbk.com/karier",
+          "robots.txt disallows https://smart-tbk.com/jobs"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "japfa": {
         "company": "Japfa",
@@ -2966,20 +2964,16 @@
         "reason": "Domain japfa.com is already blocked; manual review is required",
         "career_url": null
       },
-      "hitachi-indonesia": {
-        "company": "Hitachi Indonesia",
-        "domain": "hitachi.com",
+      "abb-indonesia": {
+        "company": "ABB Indonesia",
+        "domain": "global.abb",
         "category": "Manufaktur",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
         "discovery_notes": [
-          "HTTPSConnectionPool(host='hitachi.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cert",
-          "HTTPSConnectionPool(host='hitachi.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cert",
-          "HTTPSConnectionPool(host='hitachi.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cert",
-          "HTTPSConnectionPool(host='hitachi.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cert",
-          "HTTPSConnectionPool(host='hitachi.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cert"
+          "HTTPSConnectionPool(host='global.abb', port=443): Read timed out. (read timeout=15)"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -3002,16 +2996,20 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "abb-indonesia": {
-        "company": "ABB Indonesia",
-        "domain": "global.abb",
+      "hitachi-indonesia": {
+        "company": "Hitachi Indonesia",
+        "domain": "hitachi.com",
         "category": "Manufaktur",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
         "discovery_notes": [
-          "HTTPSConnectionPool(host='global.abb', port=443): Read timed out. (read timeout=15)"
+          "HTTPSConnectionPool(host='hitachi.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cert",
+          "HTTPSConnectionPool(host='hitachi.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cert",
+          "HTTPSConnectionPool(host='hitachi.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cert",
+          "HTTPSConnectionPool(host='hitachi.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cert",
+          "HTTPSConnectionPool(host='hitachi.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] cert"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -3034,15 +3032,21 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "smart-tbk": {
-        "company": "SMART Tbk",
-        "domain": "smart-tbk.com",
+      "charoen-pokphand-indonesia": {
+        "company": "Charoen Pokphand Indonesia",
+        "domain": "cp.co.id",
         "category": "Manufaktur",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [],
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='cp.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certifi",
+          "HTTPSConnectionPool(host='cp.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certifi",
+          "HTTPSConnectionPool(host='cp.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certifi",
+          "HTTPSConnectionPool(host='cp.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certifi",
+          "HTTPSConnectionPool(host='cp.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certifi"
+        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -3076,33 +3080,6 @@
         "reason": "Domain hypermart.co.id is already blocked; manual review is required",
         "career_url": null
       },
-      "charoen-pokphand-indonesia": {
-        "company": "Charoen Pokphand Indonesia",
-        "domain": "cp.co.id",
-        "category": "Manufaktur",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='cp.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certifi",
-          "HTTPSConnectionPool(host='cp.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certifi",
-          "HTTPSConnectionPool(host='cp.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certifi",
-          "HTTPSConnectionPool(host='cp.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certifi",
-          "HTTPSConnectionPool(host='cp.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certifi"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "watsons-indonesia": {
-        "company": "Watsons Indonesia",
-        "domain": "watsons.co.id",
-        "category": "Retail",
-        "status": "blocked",
-        "records_accepted": 0,
-        "reason": "Domain watsons.co.id is already blocked; manual review is required",
-        "career_url": null
-      },
       "sampoerna-agro": {
         "company": "Sampoerna Agro",
         "domain": "sampoernaagro.com",
@@ -3119,6 +3096,15 @@
           "HTTPSConnectionPool(host='sampoernaagro.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "watsons-indonesia": {
+        "company": "Watsons Indonesia",
+        "domain": "watsons.co.id",
+        "category": "Retail",
+        "status": "blocked",
+        "records_accepted": 0,
+        "reason": "Domain watsons.co.id is already blocked; manual review is required",
         "career_url": null
       },
       "london-sumatra": {
@@ -3139,15 +3125,6 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "erafone": {
-        "company": "Erafone",
-        "domain": "erafone.com",
-        "category": "Retail",
-        "status": "blocked",
-        "records_accepted": 0,
-        "reason": "Domain erafone.com is already blocked; manual review is required",
-        "career_url": null
-      },
       "alfamart": {
         "company": "Alfamart",
         "domain": "alfamart.co.id",
@@ -3160,6 +3137,15 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "erafone": {
+        "company": "Erafone",
+        "domain": "erafone.com",
+        "category": "Retail",
+        "status": "blocked",
+        "records_accepted": 0,
+        "reason": "Domain erafone.com is already blocked; manual review is required",
+        "career_url": null
+      },
       "transmart": {
         "company": "Transmart",
         "domain": "transmart.co.id",
@@ -3169,6 +3155,24 @@
         "candidate_count": 15,
         "sitemap_matches": 0,
         "discovery_notes": [],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "toyota-astra-motor": {
+        "company": "Toyota Astra Motor",
+        "domain": "toyota.astra.co.id",
+        "category": "Manufaktur",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='toyota.astra.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='toyota.astra.co.id', port",
+          "HTTPSConnectionPool(host='toyota.astra.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='toyota.astra.co.id', port",
+          "HTTPSConnectionPool(host='toyota.astra.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='toyota.astra.co.id', port",
+          "HTTPSConnectionPool(host='toyota.astra.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='toyota.astra.co.id', port",
+          "HTTPSConnectionPool(host='toyota.astra.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='toyota.astra.co.id', port"
+        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -3184,17 +3188,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "informa": {
-        "company": "Informa",
-        "domain": "informa.co.id",
+      "ramayana": {
+        "company": "Ramayana",
+        "domain": "ramayana.co.id",
         "category": "Retail",
-        "status": "no-career-page",
-        "records_accepted": 0,
+        "status": "ok",
+        "records_accepted": 1,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "career_url": "https://ramayana.co.id/careers",
+        "pages_checked": 1
       },
       "erajaya-group": {
         "company": "Erajaya Group",
@@ -3208,16 +3211,17 @@
         "pages_checked": 1,
         "reason": "Career page was reachable but no supported vacancy record was parsed."
       },
-      "matahari-department-store": {
-        "company": "Matahari Department Store",
-        "domain": "matahari.com",
+      "informa": {
+        "company": "Informa",
+        "domain": "informa.co.id",
         "category": "Retail",
-        "status": "ok",
-        "records_accepted": 1,
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "career_url": "https://matahari.com/#gbaid127602",
-        "pages_checked": 1
+        "discovery_notes": [],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "super-indo": {
         "company": "Super Indo",
@@ -3282,23 +3286,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "mr-diy-indonesia": {
-        "company": "MR.DIY Indonesia",
-        "domain": "mrdiy.com",
+      "matahari-department-store": {
+        "company": "Matahari Department Store",
+        "domain": "matahari.com",
         "category": "Retail",
-        "status": "no-career-page",
-        "records_accepted": 0,
+        "status": "ok",
+        "records_accepted": 1,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [
-          "mrdiy.com robots.txt redirected outside its host",
-          "robots.txt disallows https://mrdiy.com/career",
-          "robots.txt disallows https://mrdiy.com/karir",
-          "robots.txt disallows https://mrdiy.com/karier",
-          "robots.txt disallows https://mrdiy.com/jobs"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "career_url": "https://matahari.com/#gbaid127602",
+        "pages_checked": 1
       },
       "uniqlo-indonesia": {
         "company": "Uniqlo Indonesia",
@@ -3447,31 +3444,6 @@
         "reason": "Domain jiwagroup.com is already blocked; manual review is required",
         "career_url": null
       },
-      "mitra-adiperkasa": {
-        "company": "Mitra Adiperkasa",
-        "domain": "map.co.id",
-        "category": "Retail",
-        "status": "ok",
-        "records_accepted": 19,
-        "candidate_count": 15,
-        "sitemap_matches": 4,
-        "career_url": "https://www.map.co.id/careers/",
-        "pages_checked": 4
-      },
-      "ramayana": {
-        "company": "Ramayana",
-        "domain": "ramayana.co.id",
-        "category": "Retail",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='ramayana.co.id', port=443): Read timed out. (read timeout=15)"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
       "fore-coffee": {
         "company": "Fore Coffee",
         "domain": "fore.coffee",
@@ -3482,6 +3454,24 @@
         "sitemap_matches": 4,
         "career_url": "https://fore.coffee/careers",
         "pages_checked": 5
+      },
+      "mr-diy-indonesia": {
+        "company": "MR.DIY Indonesia",
+        "domain": "mrdiy.com",
+        "category": "Retail",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='mrdiy.com', port=443): Read timed out. (read timeout=15)",
+          "HTTPSConnectionPool(host='mrdiy.com', port=443): Read timed out. (read timeout=15)",
+          "HTTPSConnectionPool(host='mrdiy.com', port=443): Read timed out. (read timeout=15)",
+          "mrdiy.com robots.txt redirected outside its host",
+          "robots.txt disallows https://mrdiy.com/jobs"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "ismaya-group": {
         "company": "Ismaya Group",
@@ -3498,6 +3488,18 @@
           "HTTPSConnectionPool(host='ismayanas.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='ismayanas.com', port=443): Fai",
           "HTTPSConnectionPool(host='ismayanas.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='ismayanas.com', port=443): Fai"
         ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "boga-group": {
+        "company": "Boga Group",
+        "domain": "bogagroup.id",
+        "category": "Retail",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -3519,44 +3521,15 @@
         "reason": "Domain siloamhospitals.com is already blocked; manual review is required",
         "career_url": null
       },
-      "rs-pondok-indah-group": {
-        "company": "RS Pondok Indah Group",
-        "domain": "rspondokindah.co.id",
-        "category": "Healthcare",
-        "status": "ok",
-        "records_accepted": 24,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "career_url": "https://rspondokindah.co.id/id/career",
-        "pages_checked": 1
-      },
-      "boga-group": {
-        "company": "Boga Group",
-        "domain": "bogagroup.id",
+      "ikea-indonesia": {
+        "company": "IKEA Indonesia",
+        "domain": "ikea.co.id",
         "category": "Retail",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
         "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "kalbe-farma": {
-        "company": "Kalbe Farma",
-        "domain": "kalbe.co.id",
-        "category": "Healthcare",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 16,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "kalbe.co.id robots.txt redirected outside its host",
-          "robots.txt disallows https://kalbe.co.id/career",
-          "robots.txt disallows https://kalbe.co.id/karir",
-          "robots.txt disallows https://kalbe.co.id/karier",
-          "robots.txt disallows https://kalbe.co.id/jobs"
-        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -3578,17 +3551,45 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "ikea-indonesia": {
-        "company": "IKEA Indonesia",
-        "domain": "ikea.co.id",
+      "mitra-adiperkasa": {
+        "company": "Mitra Adiperkasa",
+        "domain": "map.co.id",
         "category": "Retail",
+        "status": "ok",
+        "records_accepted": 19,
+        "candidate_count": 15,
+        "sitemap_matches": 4,
+        "career_url": "https://www.map.co.id/careers/",
+        "pages_checked": 4
+      },
+      "kalbe-farma": {
+        "company": "Kalbe Farma",
+        "domain": "kalbe.co.id",
+        "category": "Healthcare",
         "status": "no-career-page",
         "records_accepted": 0,
-        "candidate_count": 15,
+        "candidate_count": 16,
         "sitemap_matches": 0,
-        "discovery_notes": [],
+        "discovery_notes": [
+          "kalbe.co.id robots.txt redirected outside its host",
+          "robots.txt disallows https://kalbe.co.id/career",
+          "robots.txt disallows https://kalbe.co.id/karir",
+          "robots.txt disallows https://kalbe.co.id/karier",
+          "robots.txt disallows https://kalbe.co.id/jobs"
+        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
+      },
+      "rs-pondok-indah-group": {
+        "company": "RS Pondok Indah Group",
+        "domain": "rspondokindah.co.id",
+        "category": "Healthcare",
+        "status": "ok",
+        "records_accepted": 24,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "career_url": "https://rspondokindah.co.id/id/career",
+        "pages_checked": 1
       },
       "prodia": {
         "company": "Prodia",
@@ -3599,21 +3600,15 @@
         "reason": "Domain prodia.co.id is already blocked; manual review is required",
         "career_url": null
       },
-      "bundamedik": {
-        "company": "Bundamedik",
-        "domain": "bundamedik.com",
-        "category": "Healthcare",
+      "garudafood": {
+        "company": "Garudafood",
+        "domain": "garudafood.com",
+        "category": "Retail",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='bundamedik.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bundamedik.com', port=443): F",
-          "HTTPSConnectionPool(host='bundamedik.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bundamedik.com', port=443): F",
-          "HTTPSConnectionPool(host='bundamedik.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bundamedik.com', port=443): F",
-          "HTTPSConnectionPool(host='bundamedik.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bundamedik.com', port=443): F",
-          "HTTPSConnectionPool(host='bundamedik.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bundamedik.com', port=443): F"
-        ],
+        "sitemap_matches": 6,
+        "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -3635,17 +3630,17 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "garudafood": {
-        "company": "Garudafood",
-        "domain": "garudafood.com",
-        "category": "Retail",
+      "hermina-hospitals": {
+        "company": "Hermina Hospitals",
+        "domain": "herminahospitals.com",
+        "category": "Healthcare",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
-        "sitemap_matches": 6,
-        "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "sitemap_matches": 0,
+        "career_url": "https://herminahospitals.com/id/careers",
+        "pages_checked": 1,
+        "reason": "Career page was reachable but no supported vacancy record was parsed."
       },
       "mayapada-hospital": {
         "company": "Mayapada Hospital",
@@ -3656,20 +3651,20 @@
         "reason": "Domain mayapadahospital.com is already blocked; manual review is required",
         "career_url": null
       },
-      "tempo-scan-group": {
-        "company": "Tempo Scan Group",
-        "domain": "temposcangroup.com",
+      "bundamedik": {
+        "company": "Bundamedik",
+        "domain": "bundamedik.com",
         "category": "Healthcare",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
         "discovery_notes": [
-          "HTTPSConnectionPool(host='temposcangroup.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILE",
-          "HTTPSConnectionPool(host='temposcangroup.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILE",
-          "HTTPSConnectionPool(host='temposcangroup.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILE",
-          "HTTPSConnectionPool(host='temposcangroup.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILE",
-          "HTTPSConnectionPool(host='temposcangroup.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILE"
+          "HTTPSConnectionPool(host='bundamedik.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bundamedik.com', port=443): F",
+          "HTTPSConnectionPool(host='bundamedik.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bundamedik.com', port=443): F",
+          "HTTPSConnectionPool(host='bundamedik.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bundamedik.com', port=443): F",
+          "HTTPSConnectionPool(host='bundamedik.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bundamedik.com', port=443): F",
+          "HTTPSConnectionPool(host='bundamedik.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='bundamedik.com', port=443): F"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -3692,18 +3687,6 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "hermina-hospitals": {
-        "company": "Hermina Hospitals",
-        "domain": "herminahospitals.com",
-        "category": "Healthcare",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "career_url": "https://herminahospitals.com/id/careers",
-        "pages_checked": 1,
-        "reason": "Career page was reachable but no supported vacancy record was parsed."
-      },
       "emc-healthcare": {
         "company": "EMC Healthcare",
         "domain": "emc.id",
@@ -3718,6 +3701,24 @@
           "robots.txt disallows https://emc.id/karir",
           "robots.txt disallows https://emc.id/karier",
           "robots.txt disallows https://emc.id/jobs"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "tempo-scan-group": {
+        "company": "Tempo Scan Group",
+        "domain": "temposcangroup.com",
+        "category": "Healthcare",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='temposcangroup.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILE",
+          "HTTPSConnectionPool(host='temposcangroup.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILE",
+          "HTTPSConnectionPool(host='temposcangroup.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILE",
+          "HTTPSConnectionPool(host='temposcangroup.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILE",
+          "HTTPSConnectionPool(host='temposcangroup.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILE"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -3758,6 +3759,24 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "elnusa": {
+        "company": "Elnusa",
+        "domain": "elnusa.co.id",
+        "category": "Manufaktur",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='elnusa.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='elnusa.co.id', port=443) at 0x7",
+          "HTTPSConnectionPool(host='elnusa.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='elnusa.co.id', port=443) at 0x7",
+          "HTTPSConnectionPool(host='elnusa.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='elnusa.co.id', port=443) at 0x7",
+          "HTTPSConnectionPool(host='elnusa.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='elnusa.co.id', port=443) at 0x7",
+          "HTTPSConnectionPool(host='elnusa.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='elnusa.co.id', port=443) at 0x7"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
       "dexa-group": {
         "company": "Dexa Group",
         "domain": "dexagroup.com",
@@ -3767,24 +3786,6 @@
         "candidate_count": 15,
         "sitemap_matches": 0,
         "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "parahita-diagnostic-center": {
-        "company": "Parahita Diagnostic Center",
-        "domain": "parahita.com",
-        "category": "Healthcare",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='parahita.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred ",
-          "HTTPSConnectionPool(host='parahita.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred ",
-          "HTTPSConnectionPool(host='parahita.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred ",
-          "HTTPSConnectionPool(host='parahita.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred ",
-          "HTTPSConnectionPool(host='parahita.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred "
-        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -3806,16 +3807,23 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "primaya-hospital": {
-        "company": "Primaya Hospital",
-        "domain": "primayahospital.com",
+      "parahita-diagnostic-center": {
+        "company": "Parahita Diagnostic Center",
+        "domain": "parahita.com",
         "category": "Healthcare",
-        "status": "ok",
-        "records_accepted": 5,
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
-        "sitemap_matches": 6,
-        "career_url": "https://primayahospital.com/en/career/",
-        "pages_checked": 2
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='parahita.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred ",
+          "HTTPSConnectionPool(host='parahita.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred ",
+          "HTTPSConnectionPool(host='parahita.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred ",
+          "HTTPSConnectionPool(host='parahita.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred ",
+          "HTTPSConnectionPool(host='parahita.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred "
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "bumi-serpong-damai": {
         "company": "Bumi Serpong Damai",
@@ -3835,23 +3843,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "elnusa": {
-        "company": "Elnusa",
-        "domain": "elnusa.co.id",
-        "category": "Manufaktur",
-        "status": "no-career-page",
-        "records_accepted": 0,
+      "primaya-hospital": {
+        "company": "Primaya Hospital",
+        "domain": "primayahospital.com",
+        "category": "Healthcare",
+        "status": "ok",
+        "records_accepted": 5,
         "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='elnusa.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='elnusa.co.id', port=443) at 0x7",
-          "HTTPSConnectionPool(host='elnusa.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='elnusa.co.id', port=443) at 0x7",
-          "HTTPSConnectionPool(host='elnusa.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='elnusa.co.id', port=443) at 0x7",
-          "HTTPSConnectionPool(host='elnusa.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='elnusa.co.id', port=443) at 0x7",
-          "HTTPSConnectionPool(host='elnusa.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='elnusa.co.id', port=443) at 0x7"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "sitemap_matches": 6,
+        "career_url": "https://primayahospital.com/en/career/",
+        "pages_checked": 2
       },
       "rs-awal-bros": {
         "company": "RS Awal Bros",
@@ -3904,16 +3905,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "pp-properti": {
-        "company": "PP Properti",
-        "domain": "pp-properti.com",
-        "category": "Properti",
+      "rsup-nasional-dr-cipto-mangunkusumo": {
+        "company": "RSUP Nasional Dr Cipto Mangunkusumo",
+        "domain": "rscm.co.id",
+        "category": "Healthcare",
         "status": "ok",
         "records_accepted": 1,
         "candidate_count": 15,
-        "sitemap_matches": 0,
-        "career_url": "https://pp-properti.com/karir",
-        "pages_checked": 1
+        "sitemap_matches": 2,
+        "career_url": "https://rscm.co.id/id/information/professionals/careers",
+        "pages_checked": 2
       },
       "lippo-karawaci": {
         "company": "Lippo Karawaci",
@@ -3933,16 +3934,23 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "rsup-nasional-dr-cipto-mangunkusumo": {
-        "company": "RSUP Nasional Dr Cipto Mangunkusumo",
-        "domain": "rscm.co.id",
-        "category": "Healthcare",
-        "status": "ok",
-        "records_accepted": 1,
+      "paramount-land": {
+        "company": "Paramount Land",
+        "domain": "paramount-land.com",
+        "category": "Properti",
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
-        "sitemap_matches": 2,
-        "career_url": "https://rscm.co.id/id/information/professionals/careers",
-        "pages_checked": 2
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "paramount-land.com robots.txt redirected outside its host",
+          "robots.txt disallows https://paramount-land.com/career",
+          "robots.txt disallows https://paramount-land.com/karir",
+          "robots.txt disallows https://paramount-land.com/karier",
+          "robots.txt disallows https://paramount-land.com/jobs"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "ciputra-development": {
         "company": "Ciputra Development",
@@ -3971,23 +3979,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "paramount-land": {
-        "company": "Paramount Land",
-        "domain": "paramount-land.com",
+      "pp-properti": {
+        "company": "PP Properti",
+        "domain": "pp-properti.com",
         "category": "Properti",
-        "status": "no-career-page",
-        "records_accepted": 0,
+        "status": "ok",
+        "records_accepted": 1,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [
-          "paramount-land.com robots.txt redirected outside its host",
-          "robots.txt disallows https://paramount-land.com/career",
-          "robots.txt disallows https://paramount-land.com/karir",
-          "robots.txt disallows https://paramount-land.com/karier",
-          "robots.txt disallows https://paramount-land.com/jobs"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "career_url": "https://pp-properti.com/karir",
+        "pages_checked": 1
       },
       "bluebird-group": {
         "company": "Bluebird Group",
@@ -4061,21 +4062,15 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "metropolitan-land": {
-        "company": "Metropolitan Land",
-        "domain": "metland.co.id",
+      "pakuwon-jati": {
+        "company": "Pakuwon Jati",
+        "domain": "pakuwonjati.com",
         "category": "Properti",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='metland.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='metland.co.id', port=443): Fai",
-          "HTTPSConnectionPool(host='metland.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='metland.co.id', port=443): Fai",
-          "HTTPSConnectionPool(host='metland.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='metland.co.id', port=443): Fai",
-          "HTTPSConnectionPool(host='metland.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='metland.co.id', port=443): Fai",
-          "HTTPSConnectionPool(host='metland.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='metland.co.id', port=443): Fai"
-        ],
+        "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -4106,20 +4101,20 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "soho-global-health": {
-        "company": "SOHO Global Health",
-        "domain": "sohoglobalhealth.com",
-        "category": "Healthcare",
+      "metropolitan-land": {
+        "company": "Metropolitan Land",
+        "domain": "metland.co.id",
+        "category": "Properti",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
         "discovery_notes": [
-          "Too many redirects while resolving https://sohoglobalhealth.com/careers",
-          "Too many redirects while resolving https://sohoglobalhealth.com/career",
-          "Too many redirects while resolving https://sohoglobalhealth.com/karir",
-          "Too many redirects while resolving https://sohoglobalhealth.com/karier",
-          "Too many redirects while resolving https://sohoglobalhealth.com/jobs"
+          "HTTPSConnectionPool(host='metland.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='metland.co.id', port=443): Fai",
+          "HTTPSConnectionPool(host='metland.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='metland.co.id', port=443): Fai",
+          "HTTPSConnectionPool(host='metland.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='metland.co.id', port=443): Fai",
+          "HTTPSConnectionPool(host='metland.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='metland.co.id', port=443): Fai",
+          "HTTPSConnectionPool(host='metland.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='metland.co.id', port=443): Fai"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -4160,15 +4155,21 @@
         "reason": "Domain poslogistics.co.id is already blocked; manual review is required",
         "career_url": null
       },
-      "pakuwon-jati": {
-        "company": "Pakuwon Jati",
-        "domain": "pakuwonjati.com",
-        "category": "Properti",
+      "soho-global-health": {
+        "company": "SOHO Global Health",
+        "domain": "sohoglobalhealth.com",
+        "category": "Healthcare",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [],
+        "discovery_notes": [
+          "Too many redirects while resolving https://sohoglobalhealth.com/careers",
+          "Too many redirects while resolving https://sohoglobalhealth.com/career",
+          "Too many redirects while resolving https://sohoglobalhealth.com/karir",
+          "Too many redirects while resolving https://sohoglobalhealth.com/karier",
+          "Too many redirects while resolving https://sohoglobalhealth.com/jobs"
+        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -4334,44 +4335,6 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "astra-otoparts": {
-        "company": "Astra Otoparts",
-        "domain": "astra-otoparts.com",
-        "category": "Corporate",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='astra-otoparts.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='astra-otoparts.com', port",
-          "HTTPSConnectionPool(host='astra-otoparts.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='astra-otoparts.com', port",
-          "HTTPSConnectionPool(host='astra-otoparts.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='astra-otoparts.com', port",
-          "HTTPSConnectionPool(host='astra-otoparts.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='astra-otoparts.com', port",
-          "HTTPSConnectionPool(host='astra-otoparts.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='astra-otoparts.com', port"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "pegadaian": {
-        "company": "Pegadaian",
-        "domain": "pegadaian.co.id",
-        "category": "Corporate",
-        "status": "blocked",
-        "records_accepted": 0,
-        "reason": "Domain pegadaian.co.id is already blocked; manual review is required",
-        "career_url": null
-      },
-      "bca-finance": {
-        "company": "BCA Finance",
-        "domain": "bcafinance.co.id",
-        "category": "Corporate",
-        "status": "ok",
-        "records_accepted": 37,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "career_url": "https://bcafinance.co.id/karir",
-        "pages_checked": 1
-      },
       "fifgroup": {
         "company": "FIFGROUP",
         "domain": "fifgroup.co.id",
@@ -4382,6 +4345,15 @@
         "sitemap_matches": 0,
         "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "pegadaian": {
+        "company": "Pegadaian",
+        "domain": "pegadaian.co.id",
+        "category": "Corporate",
+        "status": "blocked",
+        "records_accepted": 0,
+        "reason": "Domain pegadaian.co.id is already blocked; manual review is required",
         "career_url": null
       },
       "circle-k-indonesia": {
@@ -4401,6 +4373,35 @@
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
+      },
+      "astra-otoparts": {
+        "company": "Astra Otoparts",
+        "domain": "astra-otoparts.com",
+        "category": "Corporate",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='astra-otoparts.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='astra-otoparts.com', port",
+          "HTTPSConnectionPool(host='astra-otoparts.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='astra-otoparts.com', port",
+          "HTTPSConnectionPool(host='astra-otoparts.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='astra-otoparts.com', port",
+          "HTTPSConnectionPool(host='astra-otoparts.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='astra-otoparts.com', port",
+          "HTTPSConnectionPool(host='astra-otoparts.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='astra-otoparts.com', port"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "bca-finance": {
+        "company": "BCA Finance",
+        "domain": "bcafinance.co.id",
+        "category": "Corporate",
+        "status": "ok",
+        "records_accepted": 37,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "career_url": "https://bcafinance.co.id/karir",
+        "pages_checked": 1
       },
       "pnm": {
         "company": "PNM",
@@ -4460,9 +4461,9 @@
         "reason": "Domain perumnas.co.id is already blocked; manual review is required",
         "career_url": null
       },
-      "pupuk-sriwidjaja-palembang": {
-        "company": "Pupuk Sriwidjaja Palembang",
-        "domain": "pusri.co.id",
+      "pupuk-kujang": {
+        "company": "Pupuk Kujang",
+        "domain": "pupuk-kujang.co.id",
         "category": "Corporate",
         "status": "no-career-page",
         "records_accepted": 0,
@@ -4472,9 +4473,9 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "pupuk-kujang": {
-        "company": "Pupuk Kujang",
-        "domain": "pupuk-kujang.co.id",
+      "pupuk-sriwidjaja-palembang": {
+        "company": "Pupuk Sriwidjaja Palembang",
+        "domain": "pusri.co.id",
         "category": "Corporate",
         "status": "no-career-page",
         "records_accepted": 0,
@@ -4493,16 +4494,19 @@
         "reason": "Domain jasatirta1.co.id is already blocked; manual review is required",
         "career_url": null
       },
-      "jasa-tirta-ii": {
-        "company": "Jasa Tirta II",
-        "domain": "jasatirta2.co.id",
+      "pupuk-iskandar-muda": {
+        "company": "Pupuk Iskandar Muda",
+        "domain": "pim.co.id",
         "category": "Corporate",
-        "status": "ok",
-        "records_accepted": 3,
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "career_url": "https://jasatirta2.co.id/careers",
-        "pages_checked": 1
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='pim.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='pim.co.id', port=443): Failed to r"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "telkom-university": {
         "company": "Telkom University",
@@ -4513,17 +4517,16 @@
         "reason": "Domain telkomuniversity.ac.id is already blocked; manual review is required",
         "career_url": null
       },
-      "pupuk-iskandar-muda": {
-        "company": "Pupuk Iskandar Muda",
-        "domain": "pim.co.id",
+      "jasa-tirta-ii": {
+        "company": "Jasa Tirta II",
+        "domain": "jasatirta2.co.id",
         "category": "Corporate",
-        "status": "no-career-page",
-        "records_accepted": 0,
+        "status": "ok",
+        "records_accepted": 3,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "career_url": "https://jasatirta2.co.id/careers",
+        "pages_checked": 1
       },
       "krakatau-bandar-samudera": {
         "company": "Krakatau Bandar Samudera",
@@ -4543,17 +4546,16 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "pelayaran-nasional-indonesia": {
-        "company": "Pelayaran Nasional Indonesia",
-        "domain": "pelni.co.id",
-        "category": "Corporate",
-        "status": "no-career-page",
-        "records_accepted": 0,
+      "universitas-indonesia": {
+        "company": "Universitas Indonesia",
+        "domain": "ui.ac.id",
+        "category": "Education",
+        "status": "ok",
+        "records_accepted": 5,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "career_url": "https://www.ui.ac.id/",
+        "pages_checked": 1
       },
       "institut-teknologi-bandung": {
         "company": "Institut Teknologi Bandung",
@@ -4566,17 +4568,6 @@
         "career_url": "https://itb.ac.id/career",
         "pages_checked": 1,
         "reason": "Career page was reachable but no supported vacancy record was parsed."
-      },
-      "universitas-indonesia": {
-        "company": "Universitas Indonesia",
-        "domain": "ui.ac.id",
-        "category": "Education",
-        "status": "ok",
-        "records_accepted": 5,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "career_url": "https://www.ui.ac.id/",
-        "pages_checked": 1
       },
       "universitas-brawijaya": {
         "company": "Universitas Brawijaya",
@@ -4593,6 +4584,18 @@
           "robots.txt disallows https://ub.ac.id/karier",
           "robots.txt disallows https://ub.ac.id/jobs"
         ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "pelayaran-nasional-indonesia": {
+        "company": "Pelayaran Nasional Indonesia",
+        "domain": "pelni.co.id",
+        "category": "Corporate",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -4742,18 +4745,6 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "president-university": {
-        "company": "President University",
-        "domain": "president.ac.id",
-        "category": "Education",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
       "tempo": {
         "company": "Tempo",
         "domain": "tempo.co",
@@ -4769,6 +4760,18 @@
           "robots.txt disallows https://tempo.co/karier",
           "robots.txt disallows https://tempo.co/jobs"
         ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "president-university": {
+        "company": "President University",
+        "domain": "president.ac.id",
+        "category": "Education",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -5087,16 +5090,17 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "aneka-gas-industri": {
-        "company": "Aneka Gas Industri",
-        "domain": "samatorgas.com",
+      "kmi-wire-and-cable": {
+        "company": "KMI Wire and Cable",
+        "domain": "kmi.co.id",
         "category": "Manufaktur",
-        "status": "ok",
-        "records_accepted": 8,
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "career_url": "https://samatorgas.com/career",
-        "pages_checked": 1
+        "discovery_notes": [],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "samator-group": {
         "company": "Samator Group",
@@ -5134,18 +5138,6 @@
         "reason": "Domain pertaminapatraniaga.com is already blocked; manual review is required",
         "career_url": null
       },
-      "kmi-wire-and-cable": {
-        "company": "KMI Wire and Cable",
-        "domain": "kmi.co.id",
-        "category": "Manufaktur",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
       "supreme-cable-manufacturing-commerce": {
         "company": "Supreme Cable Manufacturing & Commerce",
         "domain": "sucaco.com",
@@ -5169,26 +5161,32 @@
         "career_url": "https://bumainternational.com/career",
         "pages_checked": 1
       },
-      "idn-times": {
-        "company": "IDN Times",
-        "domain": "idntimes.com",
-        "category": "Media",
-        "status": "ok",
-        "records_accepted": 31,
-        "candidate_count": 15,
-        "sitemap_matches": 20,
-        "career_url": "https://www.idntimes.com/life/career/5-hal-yang-membuat-kehidupan-first-jobber-terasa-lebih-ringan-c1c2-01-zgdyq-t4r5hl",
-        "pages_checked": 7
-      },
-      "pertamina-hulu-energi": {
-        "company": "Pertamina Hulu Energi",
-        "domain": "phe.pertamina.com",
+      "aneka-gas-industri": {
+        "company": "Aneka Gas Industri",
+        "domain": "samatorgas.com",
         "category": "Manufaktur",
+        "status": "ok",
+        "records_accepted": 21,
+        "candidate_count": 15,
+        "sitemap_matches": 9,
+        "career_url": "https://samatorgas.com/career",
+        "pages_checked": 8
+      },
+      "perum-bulog": {
+        "company": "Perum Bulog",
+        "domain": "bulog.co.id",
+        "category": "BUMN",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [],
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='bulog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bulog.co.id', port=443) at 0x7b3",
+          "HTTPSConnectionPool(host='bulog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bulog.co.id', port=443) at 0x7b3",
+          "HTTPSConnectionPool(host='bulog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bulog.co.id', port=443) at 0x7b3",
+          "HTTPSConnectionPool(host='bulog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bulog.co.id', port=443) at 0x7b3",
+          "HTTPSConnectionPool(host='bulog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bulog.co.id', port=443) at 0x7b3"
+        ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -5202,6 +5200,29 @@
         "sitemap_matches": 29,
         "career_url": "https://wallstreetenglish.co.id/category/business-and-career/",
         "pages_checked": 16
+      },
+      "idn-times": {
+        "company": "IDN Times",
+        "domain": "idntimes.com",
+        "category": "Media",
+        "status": "ok",
+        "records_accepted": 40,
+        "candidate_count": 15,
+        "sitemap_matches": 19,
+        "career_url": "https://www.idntimes.com/news/indonesia/cerita-farhan-yang-ikut-dididik-uri-selama-9-bulan-demi-karier-di-bumn-00-bbwlv-xyzspp",
+        "pages_checked": 18
+      },
+      "pertamina-hulu-energi": {
+        "company": "Pertamina Hulu Energi",
+        "domain": "phe.pertamina.com",
+        "category": "Manufaktur",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "maersk-indonesia": {
         "company": "Maersk Indonesia",
@@ -5217,24 +5238,6 @@
           "HTTPSConnectionPool(host='maersk.com', port=443): Read timed out. (read timeout=15)",
           "HTTPSConnectionPool(host='maersk.com', port=443): Read timed out. (read timeout=15)",
           "HTTPSConnectionPool(host='maersk.com', port=443): Read timed out. (read timeout=15)"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "perum-bulog": {
-        "company": "Perum Bulog",
-        "domain": "bulog.co.id",
-        "category": "BUMN",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='bulog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bulog.co.id', port=443) at 0x75d",
-          "HTTPSConnectionPool(host='bulog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bulog.co.id', port=443) at 0x75d",
-          "HTTPSConnectionPool(host='bulog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bulog.co.id', port=443) at 0x75d",
-          "HTTPSConnectionPool(host='bulog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bulog.co.id', port=443) at 0x75d",
-          "HTTPSConnectionPool(host='bulog.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bulog.co.id', port=443) at 0x75d"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -5307,16 +5310,23 @@
         "reason": "Domain banksampoerna.com is already blocked; manual review is required",
         "career_url": null
       },
-      "bpr-lestari-group": {
-        "company": "BPR Lestari Group",
-        "domain": "bprlestari.com",
-        "category": "Fintech",
-        "status": "ok",
-        "records_accepted": 5,
+      "trubaindo-coal-mining": {
+        "company": "Trubaindo Coal Mining",
+        "domain": "banpu.com",
+        "category": "Manufaktur",
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "career_url": "https://bprlestari.com/careers",
-        "pages_checked": 1
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='banpu.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='banpu.com', port=443): Failed to r",
+          "HTTPSConnectionPool(host='banpu.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='banpu.com', port=443): Failed to r",
+          "HTTPSConnectionPool(host='banpu.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='banpu.com', port=443): Failed to r",
+          "HTTPSConnectionPool(host='banpu.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='banpu.com', port=443): Failed to r",
+          "HTTPSConnectionPool(host='banpu.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='banpu.com', port=443): Failed to r"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "qoala": {
         "company": "Qoala",
@@ -5359,23 +5369,16 @@
         "career_url": "https://thiess.com/careers",
         "pages_checked": 21
       },
-      "trubaindo-coal-mining": {
-        "company": "Trubaindo Coal Mining",
-        "domain": "banpu.com",
+      "nusantara-infrastructure": {
+        "company": "Nusantara Infrastructure",
+        "domain": "nusantarainfrastructure.com",
         "category": "Manufaktur",
-        "status": "no-career-page",
-        "records_accepted": 0,
+        "status": "ok",
+        "records_accepted": 1,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [
-          "HTTPSConnectionPool(host='banpu.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='banpu.com', port=443): Failed to r",
-          "HTTPSConnectionPool(host='banpu.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='banpu.com', port=443): Failed to r",
-          "HTTPSConnectionPool(host='banpu.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='banpu.com', port=443): Failed to r",
-          "HTTPSConnectionPool(host='banpu.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='banpu.com', port=443): Failed to r",
-          "HTTPSConnectionPool(host='banpu.com', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='banpu.com', port=443): Failed to r"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
+        "career_url": "https://nusantarainfrastructure.com/about-us/careers",
+        "pages_checked": 1
       },
       "kargo-technologies": {
         "company": "Kargo Technologies",
@@ -5395,16 +5398,17 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "nusantara-infrastructure": {
-        "company": "Nusantara Infrastructure",
-        "domain": "nusantarainfrastructure.com",
+      "pam-mineral": {
+        "company": "PAM Mineral",
+        "domain": "pammineral.co.id",
         "category": "Manufaktur",
-        "status": "ok",
-        "records_accepted": 1,
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "career_url": "https://nusantarainfrastructure.com/about-us/careers",
-        "pages_checked": 1
+        "discovery_notes": [],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "shipper": {
         "company": "Shipper",
@@ -5430,18 +5434,6 @@
           "robots.txt disallows https://deliveree.com/karier",
           "robots.txt disallows https://deliveree.com/jobs"
         ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "pam-mineral": {
-        "company": "PAM Mineral",
-        "domain": "pammineral.co.id",
-        "category": "Manufaktur",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -5486,6 +5478,17 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "waresix": {
+        "company": "Waresix",
+        "domain": "waresix.com",
+        "category": "Startup",
+        "status": "ok",
+        "records_accepted": 20,
+        "candidate_count": 15,
+        "sitemap_matches": 8,
+        "career_url": "https://waresix.com/careers/",
+        "pages_checked": 5
+      },
       "pahamify": {
         "company": "Pahamify",
         "domain": "pahamify.com",
@@ -5498,16 +5501,16 @@
         "pages_checked": 1,
         "reason": "Career page was reachable but no supported vacancy record was parsed."
       },
-      "waresix": {
-        "company": "Waresix",
-        "domain": "waresix.com",
+      "cakap": {
+        "company": "Cakap",
+        "domain": "cakap.com",
         "category": "Startup",
         "status": "ok",
-        "records_accepted": 20,
+        "records_accepted": 16,
         "candidate_count": 15,
-        "sitemap_matches": 8,
-        "career_url": "https://waresix.com/careers/",
-        "pages_checked": 5
+        "sitemap_matches": 3,
+        "career_url": "https://career.cakap.com/",
+        "pages_checked": 4
       },
       "kitalulus": {
         "company": "KitaLulus",
@@ -5635,16 +5638,17 @@
         "reason": "Domain mitrais.com is already blocked; manual review is required",
         "career_url": null
       },
-      "cakap": {
-        "company": "Cakap",
-        "domain": "cakap.com",
+      "jubelio": {
+        "company": "Jubelio",
+        "domain": "jubelio.com",
         "category": "Startup",
-        "status": "ok",
-        "records_accepted": 16,
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 3,
-        "career_url": "https://career.cakap.com/",
-        "pages_checked": 4
+        "career_url": "https://jubelio.com/wp-content/uploads/2023/09/influencer-marketing-job-concept.jpg",
+        "pages_checked": 1,
+        "reason": "Career page was reachable but no supported vacancy record was parsed."
       },
       "multipolar-technology": {
         "company": "Multipolar Technology",
@@ -5664,6 +5668,17 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
+      "majoo": {
+        "company": "Majoo",
+        "domain": "majoo.id",
+        "category": "Startup",
+        "status": "ok",
+        "records_accepted": 17,
+        "candidate_count": 15,
+        "sitemap_matches": 16,
+        "career_url": "https://majoo.id/karir",
+        "pages_checked": 16
+      },
       "solusi-sinergi-digital": {
         "company": "Solusi Sinergi Digital",
         "domain": "surge.co.id",
@@ -5674,24 +5689,6 @@
         "sitemap_matches": 0,
         "career_url": "https://surge.co.id/career",
         "pages_checked": 1
-      },
-      "jatis-mobile": {
-        "company": "Jatis Mobile",
-        "domain": "jatis.com",
-        "category": "Corporate",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "jatis.com robots.txt returned HTTP 421; fail closed",
-          "robots.txt disallows https://jatis.com/career",
-          "robots.txt disallows https://jatis.com/karir",
-          "robots.txt disallows https://jatis.com/karier",
-          "robots.txt disallows https://jatis.com/jobs"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
       },
       "telkomsigma": {
         "company": "Telkomsigma",
@@ -5765,21 +5762,27 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "deloitte-indonesia": {
-        "company": "Deloitte Indonesia",
-        "domain": "deloitte.com",
-        "category": "Corporate",
+      "biteship": {
+        "company": "Biteship",
+        "domain": "biteship.com",
+        "category": "Startup",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
         "sitemap_matches": 0,
-        "discovery_notes": [
-          "deloitte.com robots.txt redirected outside its host",
-          "robots.txt disallows https://deloitte.com/career",
-          "robots.txt disallows https://deloitte.com/karir",
-          "robots.txt disallows https://deloitte.com/karier",
-          "robots.txt disallows https://deloitte.com/jobs"
-        ],
+        "discovery_notes": [],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "harukaedu": {
+        "company": "HarukaEdu",
+        "domain": "harukaedu.com",
+        "category": "Startup",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
@@ -5801,16 +5804,23 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "majoo": {
-        "company": "Majoo",
-        "domain": "majoo.id",
-        "category": "Startup",
-        "status": "ok",
-        "records_accepted": 17,
+      "deloitte-indonesia": {
+        "company": "Deloitte Indonesia",
+        "domain": "deloitte.com",
+        "category": "Corporate",
+        "status": "no-career-page",
+        "records_accepted": 0,
         "candidate_count": 15,
-        "sitemap_matches": 16,
-        "career_url": "https://majoo.id/karir",
-        "pages_checked": 16
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "deloitte.com robots.txt redirected outside its host",
+          "robots.txt disallows https://deloitte.com/career",
+          "robots.txt disallows https://deloitte.com/karir",
+          "robots.txt disallows https://deloitte.com/karier",
+          "robots.txt disallows https://deloitte.com/jobs"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "ey-indonesia": {
         "company": "EY Indonesia",
@@ -5826,24 +5836,6 @@
           "robots.txt disallows https://ey.com/karir",
           "robots.txt disallows https://ey.com/karier",
           "robots.txt disallows https://ey.com/jobs"
-        ],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "bcg-indonesia": {
-        "company": "BCG Indonesia",
-        "domain": "bcg.com",
-        "category": "Corporate",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [
-          "bcg.com robots.txt redirected outside its host",
-          "robots.txt disallows https://bcg.com/career",
-          "robots.txt disallows https://bcg.com/karir",
-          "robots.txt disallows https://bcg.com/karier",
-          "robots.txt disallows https://bcg.com/jobs"
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
@@ -5938,17 +5930,23 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "jubelio": {
-        "company": "Jubelio",
-        "domain": "jubelio.com",
-        "category": "Startup",
+      "bcg-indonesia": {
+        "company": "BCG Indonesia",
+        "domain": "bcg.com",
+        "category": "Corporate",
         "status": "no-career-page",
         "records_accepted": 0,
         "candidate_count": 15,
-        "sitemap_matches": 3,
-        "career_url": "https://jubelio.com/wp-content/uploads/2023/09/influencer-marketing-job-concept.jpg",
-        "pages_checked": 1,
-        "reason": "Career page was reachable but no supported vacancy record was parsed."
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "bcg.com robots.txt redirected outside its host",
+          "robots.txt disallows https://bcg.com/career",
+          "robots.txt disallows https://bcg.com/karir",
+          "robots.txt disallows https://bcg.com/karier",
+          "robots.txt disallows https://bcg.com/jobs"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "oracle-indonesia": {
         "company": "Oracle Indonesia",
@@ -6040,18 +6038,6 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "harukaedu": {
-        "company": "HarukaEdu",
-        "domain": "harukaedu.com",
-        "category": "Startup",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
       "amazon-web-services-indonesia": {
         "company": "Amazon Web Services Indonesia",
         "domain": "amazon.jobs",
@@ -6062,18 +6048,6 @@
         "sitemap_matches": 0,
         "career_url": "https://www.amazon.jobs/en/",
         "pages_checked": 1
-      },
-      "biteship": {
-        "company": "Biteship",
-        "domain": "biteship.com",
-        "category": "Startup",
-        "status": "no-career-page",
-        "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
       },
       "metrodata": {
         "company": "Metrodata",
@@ -6091,26 +6065,6 @@
           "HTTPSConnectionPool(host='metrodata.co.id', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] "
         ],
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
-        "career_url": null
-      },
-      "jaya-real-property": {
-        "company": "Jaya Real Property",
-        "domain": "jayaproperty.com",
-        "category": "Properti",
-        "status": "ok",
-        "records_accepted": 3,
-        "candidate_count": 15,
-        "sitemap_matches": 2,
-        "career_url": "https://jayaproperty.com/career",
-        "pages_checked": 3
-      },
-      "lippo-malls-indonesia": {
-        "company": "Lippo Malls Indonesia",
-        "domain": "lippomalls.com",
-        "category": "Properti",
-        "status": "blocked",
-        "records_accepted": 0,
-        "reason": "Domain lippomalls.com is already blocked; manual review is required",
         "career_url": null
       },
       "dealls": {
@@ -6136,27 +6090,24 @@
         "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
         "career_url": null
       },
-      "grand-indonesia": {
-        "company": "Grand Indonesia",
-        "domain": "grand-indonesia.com",
+      "jaya-real-property": {
+        "company": "Jaya Real Property",
+        "domain": "jayaproperty.com",
         "category": "Properti",
         "status": "ok",
-        "records_accepted": 1,
+        "records_accepted": 3,
         "candidate_count": 15,
         "sitemap_matches": 2,
-        "career_url": "https://www.grand-indonesia.com/careers",
+        "career_url": "https://jayaproperty.com/career",
         "pages_checked": 3
       },
-      "plaza-indonesia": {
-        "company": "Plaza Indonesia",
-        "domain": "plazaindonesia.com",
-        "category": "Corporate",
-        "status": "no-career-page",
+      "lippo-malls-indonesia": {
+        "company": "Lippo Malls Indonesia",
+        "domain": "lippomalls.com",
+        "category": "Properti",
+        "status": "blocked",
         "records_accepted": 0,
-        "candidate_count": 15,
-        "sitemap_matches": 0,
-        "discovery_notes": [],
-        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "reason": "Domain lippomalls.com is already blocked; manual review is required",
         "career_url": null
       },
       "kpmg-indonesia": {
@@ -6170,6 +6121,17 @@
         "career_url": "https://kpmg.com/xx/en/careers.html",
         "pages_checked": 19
       },
+      "grand-indonesia": {
+        "company": "Grand Indonesia",
+        "domain": "grand-indonesia.com",
+        "category": "Properti",
+        "status": "ok",
+        "records_accepted": 1,
+        "candidate_count": 15,
+        "sitemap_matches": 2,
+        "career_url": "https://www.grand-indonesia.com/careers",
+        "pages_checked": 3
+      },
       "marriott-indonesia": {
         "company": "Marriott Indonesia",
         "domain": "careers.marriott.com",
@@ -6177,9 +6139,21 @@
         "status": "ok",
         "records_accepted": 65,
         "candidate_count": 16,
-        "sitemap_matches": 335,
+        "sitemap_matches": 333,
         "career_url": "https://careers.marriott.com/",
         "pages_checked": 21
+      },
+      "plaza-indonesia": {
+        "company": "Plaza Indonesia",
+        "domain": "plazaindonesia.com",
+        "category": "Corporate",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       },
       "accor-indonesia": {
         "company": "Accor Indonesia",
@@ -6188,7 +6162,7 @@
         "status": "ok",
         "records_accepted": 209,
         "candidate_count": 15,
-        "sitemap_matches": 7069,
+        "sitemap_matches": 6998,
         "career_url": "https://careers.accor.com/jobs",
         "pages_checked": 21
       },
@@ -6202,6 +6176,42 @@
         "sitemap_matches": 38,
         "career_url": "https://jobs.hilton.com/",
         "pages_checked": 21
+      },
+      "bpr-lestari-group": {
+        "company": "BPR Lestari Group",
+        "domain": "bprlestari.com",
+        "category": "Fintech",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='bprlestari.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bprlestari.com', port=443) at",
+          "HTTPSConnectionPool(host='bprlestari.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bprlestari.com', port=443) at",
+          "HTTPSConnectionPool(host='bprlestari.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bprlestari.com', port=443) at",
+          "HTTPSConnectionPool(host='bprlestari.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bprlestari.com', port=443) at",
+          "HTTPSConnectionPool(host='bprlestari.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='bprlestari.com', port=443) at"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
+      },
+      "jatis-mobile": {
+        "company": "Jatis Mobile",
+        "domain": "jatis.com",
+        "category": "Corporate",
+        "status": "no-career-page",
+        "records_accepted": 0,
+        "candidate_count": 15,
+        "sitemap_matches": 0,
+        "discovery_notes": [
+          "HTTPSConnectionPool(host='jatis.com', port=443): Read timed out. (read timeout=15)",
+          "HTTPSConnectionPool(host='jatis.com', port=443): Read timed out. (read timeout=15)",
+          "HTTPSConnectionPool(host='jatis.com', port=443): Read timed out. (read timeout=15)",
+          "HTTPSConnectionPool(host='jatis.com', port=443): Read timed out. (read timeout=15)",
+          "HTTPSConnectionPool(host='jatis.com', port=443): Read timed out. (read timeout=15)"
+        ],
+        "reason": "No permitted URL-pattern or sitemap page returned HTTP 200 with career/job keywords.",
+        "career_url": null
       }
     }
   }
