@@ -389,6 +389,12 @@
       "reason": "HTTP 403; requests paused until manual review",
       "http_status": 403,
       "retry_policy": "manual_review_required"
+    },
+    "career.astra.co.id": {
+      "blocked_at": "2026-11-25T17:54:56Z",
+      "reason": "HTTP 403; requests paused until manual review",
+      "http_status": 403,
+      "retry_policy": "manual_review_required"
     }
   }
 }
